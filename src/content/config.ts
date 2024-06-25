@@ -6,6 +6,8 @@ const questionCollection = defineCollection({
     title: z.string(),
     author: z.string(),
     path: z.string(),
+    solution: z.string().optional(),
+    generator: z.string().optional(),
     tags: z.array(z.string()),
   }),
 });

@@ -1,5 +1,10 @@
 ---
 import { getCollection } from "astro:content";
+import Latex from "../../components/Latex.astro";
+// @ts-ignore
+import fs from "fs";
+// @ts-ignore
+import * as p from "path";
 
 export async function getStaticPaths() {
   const questions = await getCollection("questions");
@@ -14,8 +19,19 @@ export async function getStaticPaths() {
 const { path } = Astro.params;
 const { page } = Astro.props;
 const { Content } = await page.render();
+
+const filePath = p.join(`src/content/questions/${page.data.solution}`);
+
+let texContent = "";
+try {
+  texContent = fs.readFileSync(filePath, "utf8");
+} catch (err) {
+  // @ts-ignore
+  console.error(`Failed to read the file: ${err.message}`);
+}
 ---
 
 <div>Question Path: {path}!</div>
 
 <Content />
+<Latex formula={texContent} />
