@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const questions = await getCollection("questions");
+  return questions.map((page) => {
+    return {
+      params: { path: page.slug },
+      props: { page },
+    };
+  });
+}
+
+const { path } = Astro.params;
+const { page } = Astro.props;
+const { Content } = await page.render();
+---
+
+<div>Question Path: {path}!</div>
+
+<Content />
