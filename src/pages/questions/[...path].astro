@@ -19,7 +19,6 @@ const { Content } = await page.render();
 // load the generator
 const module = await import(`../../content/questions/${page.data.generator}`);
 const klass = new module.default();
-
 const defaultQuestion = klass.getQuestion();
 const generatedQuestion = klass.generateQuestion();
 
@@ -27,8 +26,21 @@ const generatedQuestion = klass.generateQuestion();
 const solutionString = `../../content/questions/${page.data.solution}`;
 const solutionFile = await import(solutionString);
 const SolutionComponent = solutionFile.default;
+
+const questions = await getCollection("questions");
 ---
 
+<!-- <div>
+  {
+    questions.map((page) => (
+      // return {
+      //   params: { path: page.slug },
+      //   props: { page },
+      // };
+      <div>{page.slug}</div>
+    ))
+  }
+</div> -->
 <div>Question Path: {path}!</div>
 
 <h1>generator.ts</h1>
