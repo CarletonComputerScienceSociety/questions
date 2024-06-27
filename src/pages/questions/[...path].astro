@@ -20,8 +20,20 @@ const { path } = Astro.params;
 const { page } = Astro.props;
 const { Content } = await page.render();
 
-const filePath = p.join(`src/content/questions/${page.data.solution}`);
+// load the generator
+const module = await import(`../../content/questions/${page.data.generator}`);
+const klass = new module.default();
+console.log(klass.generateQuestion());
+console.log(klass.getQuestion());
 
+// load markdown solution
+const solutionMd = "comp2804/midterm-fall-2013/1/solution.md";
+const solutionString = `../../content/questions/${solutionMd}`;
+const solutionFile = await import(solutionString);
+const SolutionComponent = solutionFile.default;
+
+// load tex solution
+const filePath = p.join(`src/content/questions/${page.data.solution}`);
 let texContent = "";
 try {
   texContent = fs.readFileSync(filePath, "utf8");
@@ -31,7 +43,20 @@ try {
 }
 ---
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.css"
+  integrity="sha384-WsHMgfkABRyG494OmuiNmkAOk8nhO1qE+Y6wns6v+EoNoTNxrWxYpl5ZYWFOLPCM"
+  crossorigin="anonymous"
+/>
+
 <div>Question Path: {path}!</div>
 
+<h1>index.mdx</h1>
 <Content />
+
+<h1>solution.tex</h1>
 <Latex formula={texContent} />
+
+<h1>solution.md</h1>
+<SolutionComponent />

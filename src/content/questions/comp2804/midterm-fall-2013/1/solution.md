@@ -1,5 +1,5 @@
 ---
-title: Astro in brief
+title: TBD
 path: comp2804/midterm-fall-2013/1
 author: Pat Morin
 solution: comp2804/midterm-fall-2013/1/solution.tex
@@ -8,4 +8,6 @@ tags:
   - comp2804
 ---
 
-This is a post written in Markdown.
+## Solution.md (markdown)
+
+$$ \int_0^\infty = \frac{1}{x^2+1} \;dx=\frac{\pi}{2} $$
