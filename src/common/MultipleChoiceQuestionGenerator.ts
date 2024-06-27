@@ -9,22 +9,6 @@ export interface MultipleChoiceQuestion {
 }
 
 export class MultipleChoiceQuestionGenerator {
-  // this should return the default question
-  question(): MultipleChoiceQuestion {
-    throw new Error("Not implemented");
-  }
-
-  // this is how the base questions should be retrieved
-  getQuestion(shuffle: boolean = false): MultipleChoiceQuestion {
-    const question = this.question();
-    return {
-      body: question.body,
-      options: shuffle
-        ? this.shuffleOptions(question.options)
-        : question.options,
-    };
-  }
-
   // this should return a generated question
   generateQuestion(): MultipleChoiceQuestion {
     throw new Error("Not implemented");

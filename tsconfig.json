@@ -5,6 +5,7 @@
     "module": "ESNext",
     "target": "ESNext",
     "moduleResolution": "node",
+    "verbatimModuleSyntax": false,
     "baseUrl": ".",
     "paths": {
       "@common/*": ["./src/common/*"],

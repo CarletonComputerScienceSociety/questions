@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
+    "test": "npx jest",
     "preview": "astro preview",
     "astro": "astro",
     "check": "prettier --check '**/*.{css,scss,html,js,md,ts,tsx,astro,svelte}'",
@@ -27,9 +28,13 @@
     "typescript": "^5.5.2"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "@types/katex": "^0.16.7",
-    "@types/node": "^20.14.8",
+    "@types/node": "^20.14.9",
+    "jest": "^29.7.0",
     "prettier": "^3.3.2",
-    "prettier-plugin-astro": "^0.14.0"
+    "prettier-plugin-astro": "^0.14.0",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2"
   }
 }

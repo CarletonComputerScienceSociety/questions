@@ -5,41 +5,76 @@ import type {
 } from "@common/MultipleChoiceQuestionGenerator";
 
 class Generator extends MultipleChoiceQuestionGenerator {
-  question(): MultipleChoiceQuestion {
-    return {
-      body: "You are given 5 books and 7 bookshelves. How many ways are there to place these books on the shelves? (The order on the shelves matters.)",
-      options: [
-        { label: "${7}\\choose{5}$", correct: false },
-        { label: "$\\frac{11!}{6!}$", correct: true },
-        { label: "$\\frac{11!}{7!}$", correct: false },
-        { label: "$\\frac{12!}{7!}$", correct: false },
-      ],
-    };
-  }
-
   generateQuestion(): MultipleChoiceQuestion {
+    const [sizeA, sizeB] = this.createSetSizes();
+
+    const dynamicQuestionBody = `Let $A$ be a set of size ${sizeA} and let $B$ be a set of size ${sizeB}. How many one-to-one functions $f: A \\rightarrow B$ are there?`;
+
     return {
-      body: this.question().body,
-      options: this.createRandomOptions(),
+      body: dynamicQuestionBody,
+      options: this.createOptions(sizeA, sizeB),
     };
   }
 
-  createRandomOptions(): MultipleChoiceQuestionOption[] {
-    const options = [
-      "$\\frac{11!}{6!}$",
-      "$\\frac{11!}{7!}$",
-      "$\\frac{12!}{7!}$",
-      "$\\frac{12!}{7!}$",
-    ];
-    const shuffledOptions = options.sort(() => Math.random() - 0.5);
-    const correctIndex = Math.floor(Math.random() * 4);
-    return shuffledOptions.map((label, index) => ({
-      label:
-        index === correctIndex
-          ? "$f: \\mathbb{N} \\rightarrow \\mathbb{N}$"
-          : label,
-      correct: index === correctIndex ? true : false,
-    }));
+  createSetSizes(): [number, number] {
+    // Generate random sizes for sets A and B, ensuring B > A
+    const sizeA = Math.floor(Math.random() * 5) + 1; // For simplicity, sizeA: 1-5
+    const sizeB = sizeA + Math.floor(Math.random() * 5) + 1; // Ensure sizeB > sizeA, sizeB: 2-10
+    return [sizeA, sizeB];
+  }
+
+  createOptions(sizeA: number, sizeB: number): MultipleChoiceQuestionOption[] {
+    const correctOption = this.createCorrectOption(sizeA, sizeB);
+    const incorrectOption1 = this.createIncorrectOption1(sizeA, sizeB);
+    const incorrectOption2 = this.createIncorrectOption2(sizeA, sizeB);
+    const incorrectOption3 = this.createIncorrectOption3(sizeA, sizeB);
+
+    return this.shuffleOptions([
+      correctOption,
+      incorrectOption1,
+      incorrectOption2,
+      incorrectOption3,
+    ]);
+  }
+
+  createCorrectOption(
+    sizeA: number,
+    sizeB: number,
+  ): MultipleChoiceQuestionOption {
+    return {
+      label: `$\\frac{${sizeB}!}{${sizeB - sizeA}!}$`,
+      correct: true,
+    };
+  }
+
+  createIncorrectOption1(
+    sizeA: number,
+    sizeB: number,
+  ): MultipleChoiceQuestionOption {
+    return {
+      label: `$\\frac{${sizeB - sizeA}!}{${sizeB}!}$`,
+      correct: false,
+    };
+  }
+
+  createIncorrectOption2(
+    sizeA: number,
+    sizeB: number,
+  ): MultipleChoiceQuestionOption {
+    return {
+      label: `$\\frac{${sizeB}!}{${sizeB - sizeA - 1}!}$`,
+      correct: false,
+    };
+  }
+
+  createIncorrectOption3(
+    sizeA: number,
+    sizeB: number,
+  ): MultipleChoiceQuestionOption {
+    return {
+      label: `$\\frac{${sizeB - 1}!}{${sizeB - sizeA + 1}!}$`,
+      correct: false,
+    };
   }
 }
 
