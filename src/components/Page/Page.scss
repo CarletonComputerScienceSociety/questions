@@ -1,0 +1,12 @@
+$layout-width-primary-max: 41.375rem;
+$layout-width-secondary-max: 20rem;
+$layout-width-inner-spacing-base: 1rem;
+
+.Page {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: calc(
+    $layout-width-primary-max + $layout-width-secondary-max +
+      $layout-width-inner-spacing-base
+  );
+}

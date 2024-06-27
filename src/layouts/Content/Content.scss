@@ -1,0 +1,18 @@
+.Content {
+  display: flex;
+
+  &__page {
+    width: 100%;
+    margin-left: 15rem;
+  }
+
+  @media (max-width: 768px) {
+    &__sidebar {
+      display: none;
+    }
+
+    &__page {
+      margin-left: 0;
+    }
+  }
+}

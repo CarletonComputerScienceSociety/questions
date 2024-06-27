@@ -1,0 +1,25 @@
+---
+import Sidebar from "@components/Sidebar/Sidebar.astro";
+import Page from "@components/Page/Page.astro";
+import Base from "../Base/Base.astro";
+import "./Content.scss";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<Base title={title}>
+  <div class="Content">
+    <div class="Content__sidebar">
+      <Sidebar />
+    </div>
+    <div class="Content__page">
+      <Page>
+        <slot />
+      </Page>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,12 @@
+.Sidebar {
+  position: fixed;
+  top: 0;
+  width: 15rem;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fafafa;
+  border-right: 0.1rem solid #ebebeb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

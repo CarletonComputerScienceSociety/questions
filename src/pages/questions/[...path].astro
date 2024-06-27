@@ -1,6 +1,7 @@
 ---
 import MathJax from "@components/MathJax.svelte";
 import { getCollection } from "astro:content";
+import { default as Layout } from "src/layouts/Content/Content.astro";
 
 export async function getStaticPaths() {
   const questions = await getCollection("questions");
@@ -30,64 +31,66 @@ const solutionFile = await import(solutionString);
 const SolutionComponent = solutionFile.default;
 ---
 
-<div>Question Path: {path}</div>
+<Layout title="Welcome to Astro.">
+  <div>Question Path: {path}</div>
 
-<h1>question.ts</h1>
-<div>{data.question.body}</div>
-<div>
-  Options: {
-    data.question.options.map((option: any, index: number) => (
-      <div style="display:flex">
-        <div>{option.label}</div>
-        <div>{option.correct ? "Correct" : "Incorrect"}</div>
-      </div>
-    ))
-  }
-
-  <h1>generator.ts</h1>
-  <div>Ok: {generatedQuestion.body}</div>
+  <h1>question.ts</h1>
+  <div>{data.question.body}</div>
   <div>
     Options: {
-      generatedQuestion.options.map((option: any, index: number) => (
+      data.question.options.map((option: any, index: number) => (
         <div style="display:flex">
-          <button
-            class="generated-question-option"
-            id={`generated-question-option-${index}`}
-          >
-            Pick
-          </button>
           <div>{option.label}</div>
-          <div
-            id={`generated-question-option-${index}-answer`}
-            style="display:none"
-          >
-            {option.correct ? "Correct" : "Incorrect"}
-          </div>
+          <div>{option.correct ? "Correct" : "Incorrect"}</div>
         </div>
       ))
     }
-  </div>
-  <button onclick="window.location.reload();">Regenerate</button>
 
-  <script>
-    function handleClick() {
+    <h1>generator.ts</h1>
+    <div>Ok: {generatedQuestion.body}</div>
+    <div>
+      Options: {
+        generatedQuestion.options.map((option: any, index: number) => (
+          <div style="display:flex">
+            <button
+              class="generated-question-option"
+              id={`generated-question-option-${index}`}
+            >
+              Pick
+            </button>
+            <div>{option.label}</div>
+            <div
+              id={`generated-question-option-${index}-answer`}
+              style="display:none"
+            >
+              {option.correct ? "Correct" : "Incorrect"}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <button onclick="window.location.reload();">Regenerate</button>
+
+    <script>
+      function handleClick() {
+        // @ts-ignore
+        document.getElementById(this.id + "-answer").style.display = "block";
+      }
       // @ts-ignore
-      document.getElementById(this.id + "-answer").style.display = "block";
-    }
-    // @ts-ignore
-    const options = document.getElementsByClassName(
-      "generated-question-option",
-    );
-    Array.from(options).forEach((option) => {
-      option.addEventListener("click", handleClick);
-    });
-  </script>
+      const options = document.getElementsByClassName(
+        "generated-question-option",
+      );
+      Array.from(options).forEach((option) => {
+        option.addEventListener("click", handleClick);
+      });
+    </script>
 
-  <h1>index.md</h1>
-  <Content />
+    <h1>index.md</h1>
+    <Content />
 
-  <h1>solution.md</h1>
-  <SolutionComponent />
+    <h1>solution.md</h1>
+    <SolutionComponent />
 
-  <MathJax client:load />
-</div>
+    <MathJax client:load />
+  </div>
+</Layout>
