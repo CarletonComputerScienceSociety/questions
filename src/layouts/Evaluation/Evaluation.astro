@@ -18,10 +18,10 @@ const { path, page, generate, includeLinks } = Astro.props;
 
     <div>
       <a href={`/evaluations/${path}`}
-        ><Button icon="mdi mdi-book-open-variant" /></a
+        ><Button icon="mdi mdi-book-open-variant" highlight={!generate} /></a
       >
       <a href={`/evaluations/generator/${path}`}
-        ><Button icon="mdi mdi-creation" /></a
+        ><Button icon="mdi mdi-creation" highlight={generate} /></a
       >
     </div>
   </h1>

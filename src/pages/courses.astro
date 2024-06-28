@@ -1,11 +1,75 @@
 ---
 import Back from "@components/Back/Back.astro";
+import RowCard from "@components/RowCard/RowCard.astro";
+import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
+const evaluations = await getCollection("evaluations");
+const comp2804Evaluations = evaluations.filter(
+  (evaluation) => evaluation.data.course === "comp2804",
+);
+
+const courseCodes = {
+  comp2804: "COMP 2804",
+};
 ---
 
 <Layout title="Courses">
   <div class="Question__bar">
     <div><Back href={`/`} label="Home" /></div>
   </div>
-  <h1>Courses</h1>
+  <!-- <h1>Courses</h1>
+  <p>
+    Practice previous evaluations from Carleton University's Computer Science
+    courses.
+  </p> -->
+  <!-- <div style="margin-top:2.5rem"></div> -->
+  <h1>COMP 2804: Discrete Structures II</h1>
+  <p>
+    Topics include: counting, sequences and sums, discrete probability, basic
+    statistics, recurrence relations, randomized algorithms. Material is
+    illustrated through examples from computing.
+  </p>
+  <div style="margin-top:2rem"></div>
+  <h3>Textbook</h3>
+  <div>
+    <a
+      href="https://patmorin.me/teaching/2804/resources/DiscreteStructures.pdf"
+    >
+      <RowCard
+        title={`Discrete Structures for Computer Science: Counting, Recursion, and Probability`}
+        icon="mdi mdi-school"
+      />
+    </a>
+  </div>
+  <div style="margin-top:2rem"></div>
+  <h3>Lectures</h3>
+  <div>
+    <a
+      href="https://www.youtube.com/playlist?list=PLY7TEz3ZRQHTnY56q2uJtdXg-bl-c0sDk"
+    >
+      <RowCard title={`Fall 2020`} icon="mdi mdi-video" />
+    </a>
+  </div>
+  <div style="margin-top:2rem"></div>
+  <h3>Evaluations</h3>
+  <div style="margin-bottom:0.5rem">
+    {
+      comp2804Evaluations.map((evaluation) => (
+        <div>
+          <a href={`/evaluations/${evaluation.slug}`}>
+            <RowCard
+              title={`${evaluation.data.title}`}
+              icon="mdi mdi-book-open-variant"
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
 </Layout>
+
+<style>
+  p {
+    color: gray;
+  }
+</style>

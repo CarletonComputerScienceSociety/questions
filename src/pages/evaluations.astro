@@ -1,8 +1,17 @@
 ---
 import Back from "@components/Back/Back.astro";
+import RowCard from "@components/RowCard/RowCard.astro";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
 const evaluations = await getCollection("evaluations");
+
+const courseCodes = {
+  comp2804: "COMP 2804",
+};
+
+const comp2804Evaluations = evaluations.filter(
+  (evaluation) => evaluation.data.course === "comp2804",
+);
 ---
 
 <Layout title="Evaluations">
@@ -10,15 +19,64 @@ const evaluations = await getCollection("evaluations");
     <div><Back href={`/`} label="Home" /></div>
   </div>
   <h1>Evaluations</h1>
-  <div>
+  <p>
+    Practice previous evaluations from Carleton University's Computer Science
+    courses.
+  </p>
+  <div style="margin-top:2.5rem"></div>
+  <!-- <h2>COMP 2804: Discrete Structures II</h2>
+  <p>
+    Topics include: counting, sequences and sums, discrete probability, basic
+    statistics, recurrence relations, randomized algorithms. Material is
+    illustrated through examples from computing.
+  </p>
+  <br /> -->
+  <div style="margin-bottom:0.75rem">
     {
-      evaluations.map((evaluation) => (
+      comp2804Evaluations.map((evaluation) => (
         <div>
           <a href={`/evaluations/${evaluation.slug}`}>
-            {evaluation.data.course} {evaluation.data.title}
+            <RowCard
+              title={`${courseCodes.comp2804}: ${evaluation.data.title}`}
+              icon="mdi mdi-book-open-variant"
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
+  <div style="margin-bottom:0.75rem">
+    {
+      comp2804Evaluations.map((evaluation) => (
+        <div>
+          <a href={`/evaluations/${evaluation.slug}`}>
+            <RowCard
+              title={`${courseCodes.comp2804}: ${evaluation.data.title}`}
+              icon="mdi mdi-book-open-variant"
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
+  <div style="margin-bottom:0.75rem">
+    {
+      comp2804Evaluations.map((evaluation) => (
+        <div>
+          <a href={`/evaluations/${evaluation.slug}`}>
+            <RowCard
+              title={`${courseCodes.comp2804}: ${evaluation.data.title}`}
+              icon="mdi mdi-book-open-variant"
+            />
           </a>
         </div>
       ))
     }
   </div>
 </Layout>
+
+<style>
+  p {
+    color: gray;
+  }
+</style>

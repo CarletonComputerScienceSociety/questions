@@ -36,9 +36,8 @@ const generatedQuestion = klass.generateQuestion();
   </div>
 
   <Evaluation questions={[path]} generate={true} />
-  <hr />
 
-  <div>{generatedQuestion.body}</div>
+  <!-- <div>{generatedQuestion.body}</div>
   <div>
     {
       generatedQuestion.options.map((option: any, index: number) => (
@@ -59,8 +58,8 @@ const generatedQuestion = klass.generateQuestion();
         </div>
       ))
     }
-  </div>
-  <div class="Question__buttons">
+  </div> -->
+  <div>
     <Button onclick="window.location.reload()" label="Regenerate" />
     <a
       href={`https://github.com/CarletonComputerScienceSociety/questions/blob/main/src/content/questions/${path}/generator.ts`}

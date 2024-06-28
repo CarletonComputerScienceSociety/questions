@@ -1,11 +1,13 @@
 ---
-const { id, icon, label, onclick, disabled } = Astro.props;
+const { id, icon, label, onclick, disabled, highlight } = Astro.props;
 import "./Button.scss";
 ---
 
 <button
   id={id}
-  class={`Button ${disabled ? "Button--disabled" : "Button--enabled"}`}
+  class={`Button ${disabled ? "Button--disabled" : "Button--enabled"} ${
+    highlight ? "Button--highlighted" : ""
+  }`}
   onclick={onclick}
 >
   <div class="Button__label">{label} {icon && <i class={icon} />}</div>
