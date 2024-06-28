@@ -1,5 +1,6 @@
 ---
 import Back from "@components/Back/Back.astro";
+import Evaluation from "@components/Evaluation/Evaluation.astro";
 import MathJax from "@components/MathJax.svelte";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
@@ -45,5 +46,7 @@ const questions = await Promise.all(
       ))
     }
   </div>
+  <hr />
+  <Evaluation questions={page.data.questions} generate={true} />
   <MathJax client:load />
 </Layout>

@@ -1,0 +1,69 @@
+---
+const { questions, generate } = Astro.props;
+import { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGenerator";
+import "./Evaluation.scss";
+
+const loadedQuestions = await Promise.all(
+  questions.map(async (question: any) => {
+    const importString = `../../content/questions/${question}/index.md`;
+    const data = await import(importString);
+    return data;
+  }),
+);
+
+const multipleChoiceQuestions = loadedQuestions.filter(
+  (data: any) => data.frontmatter.type === "multiple-choice",
+);
+
+let multipleChoiceQuestionData: MultipleChoiceQuestion[] = [];
+
+await Promise.all(
+  multipleChoiceQuestions.map(async (question: any) => {
+    // if generate is true and a generator is present on the question, generate the question
+    if (generate && question.frontmatter.generator) {
+      const importString = `../../content/questions/${question.frontmatter.path}/generator`;
+      const module = await import(importString);
+      const klass = new module.default();
+      const generatedQuestion = klass.generateQuestion();
+      multipleChoiceQuestionData.push(generatedQuestion);
+    } else {
+      const importString = `../../content/questions/${question.frontmatter.path}/question`;
+      const data = await import(importString);
+
+      // shuffle since this is the hardcoded question
+      const shuffledQuestion = {
+        ...data.question,
+        options: data.question.options.sort(() => Math.random() - 0.5),
+      };
+      multipleChoiceQuestionData.push(shuffledQuestion);
+    }
+  }),
+);
+---
+
+<div>
+  {
+    multipleChoiceQuestionData.map(
+      (question: MultipleChoiceQuestion, index: number) => (
+        <div class="question">
+          <div class="question__body">{question.body}</div>
+          <div class="question__options">
+            {question.options.map((option, optionIndex) => (
+              <div class="question__option">
+                <input
+                  type="radio"
+                  id={`question-${index}-option-${optionIndex}`}
+                  name={`question-${index}`}
+                  value={optionIndex}
+                />
+                <label for={`question-${index}-option-${optionIndex}`}>
+                  {option.label}
+                </label>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    )
+  }
+</div>

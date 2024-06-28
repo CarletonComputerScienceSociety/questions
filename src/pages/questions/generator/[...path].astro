@@ -1,6 +1,7 @@
 ---
 import Back from "@components/Back/Back.astro";
 import Button from "@components/Button/Button.astro";
+import Evaluation from "@components/Evaluation/Evaluation.astro";
 import MathJax from "@components/MathJax.svelte";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
@@ -29,6 +30,10 @@ const generatedQuestion = klass.generateQuestion();
   <div class="Question__bar">
     <div><Back href={`/questions/${path}`} label="Back" /></div>
   </div>
+
+  <hr />
+  <Evaluation questions={[path]} generate={true} />
+  <hr />
 
   <div>{generatedQuestion.body}</div>
   <div>
