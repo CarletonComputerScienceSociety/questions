@@ -1,5 +1,6 @@
 ---
 import Back from "@components/Back/Back.astro";
+import Button from "@components/Button/Button.astro";
 import MathJax from "@components/MathJax.svelte";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
@@ -31,7 +32,7 @@ const generatedQuestion = klass.generateQuestion();
 
   <div>{generatedQuestion.body}</div>
   <div>
-    Options: {
+    {
       generatedQuestion.options.map((option: any, index: number) => (
         <div style="display:flex">
           <button
@@ -51,7 +52,13 @@ const generatedQuestion = klass.generateQuestion();
       ))
     }
   </div>
-  <button onclick="window.location.reload();">Regenerate</button>
+  <div class="Question__buttons">
+    <Button onclick="window.location.reload();" label="Regenerate" />
+    <a
+      href={`https://github.com/CarletonComputerScienceSociety/questions/blob/main/src/content/questions/${path}/generator.ts`}
+      ><Button label="Contribute" /></a
+    >
+  </div>
 
   <script>
     function handleClick() {
@@ -66,5 +73,6 @@ const generatedQuestion = klass.generateQuestion();
       option.addEventListener("click", handleClick);
     });
   </script>
+
   <MathJax client:load />
 </Layout>
