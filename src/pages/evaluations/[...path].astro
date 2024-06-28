@@ -34,19 +34,10 @@ const questions = await Promise.all(
   </h1>
   <p><i>Author: {page.data.author}</i></p>
   <br />
-  <div>
-    {
-      questions.map((data, index) => (
-        <>
-          <div>
-            {index + 1}. {data.question.body}
-          </div>
-          <a href={`/questions/${page.data.questions[index]}`}>View Question</a>
-        </>
-      ))
-    }
-  </div>
-  <hr />
-  <Evaluation questions={page.data.questions} generate={true} />
+  <Evaluation
+    questions={page.data.questions}
+    generate={false}
+    includeLinks={true}
+  />
   <MathJax client:load />
 </Layout>

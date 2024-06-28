@@ -1,0 +1,15 @@
+.MultipleChoiceQuestionOption {
+  height: 3rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-style: solid;
+  border-radius: 0.6rem;
+  border-width: 0.1rem;
+  border-color: #c0c0c0;
+  margin: 1rem 0rem;
+
+  &__letter {
+    margin: 0.5rem;
+  }
+}

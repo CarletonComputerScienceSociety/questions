@@ -1,7 +1,18 @@
 ---
-const { questions, generate } = Astro.props;
+const { questions, generate, includeLinks } = Astro.props;
 import { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGenerator";
+import { default as Question } from "@components/MultipleChoiceQuestion/MultipleChoiceQuestion.astro";
 import "./Evaluation.scss";
+import Button from "@components/Button/Button.astro";
+
+interface QuestionData {
+  question: MultipleChoiceQuestion;
+  links: {
+    question: string;
+    solution?: string;
+    generator?: string;
+  };
+}
 
 const loadedQuestions = await Promise.all(
   questions.map(async (question: any) => {
@@ -15,7 +26,7 @@ const multipleChoiceQuestions = loadedQuestions.filter(
   (data: any) => data.frontmatter.type === "multiple-choice",
 );
 
-let multipleChoiceQuestionData: MultipleChoiceQuestion[] = [];
+let multipleChoiceQuestionData: QuestionData[] = [];
 
 await Promise.all(
   multipleChoiceQuestions.map(async (question: any) => {
@@ -25,7 +36,20 @@ await Promise.all(
       const module = await import(importString);
       const klass = new module.default();
       const generatedQuestion = klass.generateQuestion();
-      multipleChoiceQuestionData.push(generatedQuestion);
+      const questionData: QuestionData = {
+        question: generatedQuestion,
+        links: {
+          question: question.frontmatter.path,
+          solution: question.frontmatter.solution
+            ? `solution/${question.frontmatter.path}`
+            : undefined,
+          generator: question.frontmatter.generator
+            ? `generator/${question.frontmatter.path}`
+            : undefined,
+        },
+      };
+
+      multipleChoiceQuestionData.push(questionData);
     } else {
       const importString = `../../content/questions/${question.frontmatter.path}/question`;
       const data = await import(importString);
@@ -35,7 +59,23 @@ await Promise.all(
         ...data.question,
         options: data.question.options.sort(() => Math.random() - 0.5),
       };
-      multipleChoiceQuestionData.push(shuffledQuestion);
+
+      const dataLinks = {
+        question: question.frontmatter.path,
+        solution: question.frontmatter.solution
+          ? `solution/${question.frontmatter.path}`
+          : undefined,
+        generator: question.frontmatter.generator
+          ? `generator/${question.frontmatter.path}`
+          : undefined,
+      };
+
+      const questionData: QuestionData = {
+        question: shuffledQuestion,
+        links: dataLinks,
+      };
+
+      multipleChoiceQuestionData.push(questionData);
     }
   }),
 );
@@ -43,27 +83,38 @@ await Promise.all(
 
 <div>
   {
-    multipleChoiceQuestionData.map(
-      (question: MultipleChoiceQuestion, index: number) => (
-        <div class="question">
-          <div class="question__body">{question.body}</div>
-          <div class="question__options">
-            {question.options.map((option, optionIndex) => (
-              <div class="question__option">
-                <input
-                  type="radio"
-                  id={`question-${index}-option-${optionIndex}`}
-                  name={`question-${index}`}
-                  value={optionIndex}
-                />
-                <label for={`question-${index}-option-${optionIndex}`}>
-                  {option.label}
-                </label>
-              </div>
-            ))}
+    multipleChoiceQuestionData.map((data: QuestionData, index: number) => (
+      <div class="Evaluation__question">
+        <Question question={data.question} index={index} />
+        {includeLinks && (
+          <div class="Evaluation__questionLinks">
+            <a href={`/questions/${data.links.question}`}>
+              <Button
+                icon="mdi mdi-help"
+                disabled={data.links.question ? false : true}
+              />
+            </a>
+            <a href={`/questions/${data.links.solution}`}>
+              <Button
+                icon="mdi mdi-check-bold"
+                disabled={data.links.solution ? false : true}
+              />
+            </a>
+            <a href={`/questions/${data.links.generator}`}>
+              <Button
+                icon="mdi mdi-creation"
+                disabled={data.links.generator ? false : true}
+              />
+            </a>
+            <a
+              href={`https://github.com/CarletonComputerScienceSociety/questions/blob/main/src/content/questions/${data.links.question}/index.md`}
+            >
+              <Button icon="mdi mdi-github" />
+            </a>
           </div>
-        </div>
-      ),
-    )
+        )}
+        <br />
+      </div>
+    ))
   }
 </div>

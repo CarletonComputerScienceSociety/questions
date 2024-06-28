@@ -1,7 +1,7 @@
 .Button {
   border-radius: 0.5rem;
   border-width: 0px;
-  background-color: #efefef;
+  background-color: #f5f5f5;
   color: #3a3a3a;
   transition: all 0.15s;
   font-weight: 600;
@@ -18,14 +18,14 @@
 
   &--disabled {
     cursor: not-allowed;
-    opacity: 0.5;
+    opacity: 0.3;
   }
 
   &--enabled {
     &:hover {
-      background-color: #e8e8e8;
+      background-color: #f0f0f0;
       i {
-        color: #e30614;
+        color: red;
       }
     }
   }

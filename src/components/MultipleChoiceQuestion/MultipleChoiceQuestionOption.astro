@@ -1,0 +1,15 @@
+---
+const { questionIndex, optionIndex, option, interactive } = Astro.props;
+import "./MultipleChoiceQuestionOption.scss";
+
+const letterOptions = ["a", "b", "c", "d", "e"];
+---
+
+<div
+  class={`MultipleChoiceQuestionOption MultipleChoiceQuestion-${questionIndex}-option-${optionIndex}`}
+>
+  <div class="MultipleChoiceQuestionOption__letter">
+    ({letterOptions[optionIndex]})
+  </div>
+  <div class="MultipleChoiceQuestionOption__label">{option.label}</div>
+</div>

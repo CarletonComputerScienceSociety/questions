@@ -7,12 +7,14 @@ import { default as Layout } from "src/layouts/Content/Content.astro";
 
 export async function getStaticPaths() {
   const questions = await getCollection("questions");
-  return questions.map((page) => {
-    return {
-      params: { path: page.slug },
-      props: { page },
-    };
-  });
+  return questions
+    .filter((question: any) => question.id.includes("index.md"))
+    .map((page) => {
+      return {
+        params: { path: page.slug },
+        props: { page },
+      };
+    });
 }
 
 const { path } = Astro.params;

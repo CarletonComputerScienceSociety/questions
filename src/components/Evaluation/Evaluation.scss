@@ -1,0 +1,11 @@
+.Evaluation {
+  &__question {
+    margin-bottom: 1.5rem;
+  }
+  &__questionLinks {
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: left;
+    gap: 0.25rem;
+  }
+}

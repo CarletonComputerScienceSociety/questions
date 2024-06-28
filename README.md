@@ -23,4 +23,3 @@ Every multiple choice question directory should have the following structure
 - `solution.md` (optional): The markdown solution
 - `generator.ts` (optional): A script that generates a question alike to the one in the director
 - `generator.test.ts` (optional): The unit tests for `generator.ts`
-
