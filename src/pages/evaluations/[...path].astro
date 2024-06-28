@@ -1,0 +1,46 @@
+---
+import MathJax from "@components/MathJax.svelte";
+import { getCollection } from "astro:content";
+import { default as Layout } from "src/layouts/Content/Content.astro";
+
+export async function getStaticPaths() {
+  const evaluations = await getCollection("evaluations");
+  return evaluations.map((page) => {
+    return {
+      params: { path: page.slug },
+      props: { page },
+    };
+  });
+}
+const { path } = Astro.params;
+const { page } = Astro.props;
+
+const questions = await Promise.all(
+  page.data.questions.map(async (question) => {
+    const data = await import(`../../content/questions/${question}/question`);
+    return data;
+  }),
+);
+---
+
+<Layout title={`Evaluation ${path}`}>
+  <h1>
+    {page.data.title}
+  </h1>
+  <p><i>Author: {page.data.author}</i></p>
+  <br />
+  <div>
+    {
+      questions.map((data, index) => (
+        <>
+          <div>
+            {index + 1}. {data.question.body}
+          </div>
+          <br />
+          <a href={`/questions/${page.data.questions[index]}`}>View Question</a>
+        </>
+      ))
+    }
+  </div>
+  <MathJax client:load />
+</Layout>

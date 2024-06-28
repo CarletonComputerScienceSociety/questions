@@ -1,12 +1,79 @@
 .Sidebar {
   position: fixed;
   top: 0;
-  width: 15rem;
+  width: 14rem;
   height: 100vh;
   overflow: hidden;
   background-color: #fafafa;
-  border-right: 0.1rem solid #ebebeb;
+  border-right: 0.1rem solid #f3f3f3;
   display: flex;
+  padding: 0.5rem;
   flex-direction: column;
   gap: 0.75rem;
+  padding-top: 2rem;
+  padding-left: 0.7rem;
+
+  &__logo {
+    padding-left: 0.5rem;
+    width: 85%;
+    object-fit: cover;
+    padding-bottom: 1rem;
+  }
+
+  &__title {
+    padding: 0;
+    padding-left: 0.2rem;
+    padding-top: -0.3rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  &__sections {
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &--enabled {
+      cursor: pointer;
+      &:hover {
+        background-color: #f0f0f0;
+        .Sidebar__item__icon {
+          color: #e30614;
+        }
+      }
+    }
+
+    &--disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    &--active {
+      background-color: #f3f3f3;
+    }
+
+    &__icon {
+      font-size: 1.5rem;
+      color: #000000;
+    }
+
+    &__title {
+      padding-left: 0.75rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #000000;
+    }
+  }
 }

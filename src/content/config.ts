@@ -13,6 +13,17 @@ const questionCollection = defineCollection({
   // }),
 });
 
+const evaluationCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    author: z.string(),
+    course: z.string(),
+    questions: z.array(z.string()),
+  }),
+});
+
 export const collections = {
   questions: questionCollection,
+  evaluations: evaluationCollection,
 };

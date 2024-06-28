@@ -1,7 +1,11 @@
 ---
-import Base from "../layouts//Base/Base.astro";
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base/Base.astro";
 ---
 
-<Base title="Welcome to Astro.">
-  <h1>Hello World</h1>
+<Base title="Question Repository">
+  <h1>Carleton Computer Science Question Repository</h1>
+  <div>
+    <a href="/evaluations">Evaluations</a>
+  </div>
 </Base>

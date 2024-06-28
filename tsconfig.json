@@ -9,6 +9,7 @@
     "baseUrl": ".",
     "paths": {
       "@common/*": ["./src/common/*"],
+      "@content/*": ["./src/content/*"],
       "@components/*": ["./src/components/*"],
       "@utilities/*": ["./src/utilities/*"],
     }

@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import { default as Layout } from "src/layouts/Content/Content.astro";
+const evaluations = await getCollection("evaluations");
+---
+
+<Layout title="Evaluations">
+  <h1>Evaluations</h1>
+  <div>
+    {
+      evaluations.map((evaluation) => (
+        <div>
+          <a href={`/evaluations/${evaluation.slug}`}>
+            {evaluation.data.course} {evaluation.data.title}
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</Layout>

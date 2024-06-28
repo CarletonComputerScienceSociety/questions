@@ -1,12 +1,72 @@
 ---
 import "./Sidebar.scss";
-const { sections } = Astro.props;
+
+// mdi mdi-file-document-multiple-outline
+// mdi mdi-bookmark-box-multiple-outline
+const sections = [
+  { icon: "mdi mdi-home", title: "Home", disabled: false, link: "/" },
+  {
+    icon: "mdi mdi-book-open-variant",
+    title: "Evaluations",
+    disabled: false,
+    link: "/evaluations",
+  },
+  { icon: "mdi mdi-creation", title: "Generators", disabled: true },
+  { icon: "mdi mdi-tag", title: "Tags", disabled: true },
+  { icon: "mdi mdi-beaker", title: "Experiments", disabled: true },
+];
+
+const endSections = [
+  {
+    icon: "mdi mdi-newspaper-variant-outline",
+    title: "Changelog",
+    disabled: false,
+    link: "/changelog",
+  },
+  { icon: "mdi mdi-cog", title: "Settings", disabled: true },
+];
 ---
 
 <div class="Sidebar">
-  <span class="mdi mdi-home"></span>
-  <span class="mdi mdi-message-question"></span>
-  <span class="mdi mdi-creation"></span>
-  <span class="mdi mdi-tag"></span>
-  <span class="mdi mdi-beaker"></span>
+  <img
+    class="Sidebar__logo"
+    src="https://ccss.carleton.ca/images/ccss-logo-2022.png"
+    alt="CCSS Logo"
+  />
+  <!-- <div class="Sidebar__title">Course Content Repository</div> -->
+
+  <div class="Sidebar__sections">
+    <div>
+      {
+        sections.map((section) => (
+          <a href={section.link}>
+            <div
+              class={`Sidebar__item ${section.disabled ? "Sidebar__item--disabled" : "Sidebar__item--enabled"}`}
+            >
+              <div class="Sidebar__item__icon">
+                <i class={section.icon} />
+              </div>
+              <div class="Sidebar__item__title">{section.title}</div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+    <div>
+      {
+        endSections.map((endSection) => (
+          <a href={endSection.link}>
+            <div
+              class={`Sidebar__item ${endSection.disabled ? "Sidebar__item--disabled" : "Sidebar__item--enabled"}`}
+            >
+              <div class="Sidebar__item__icon">
+                <i class={endSection.icon} />
+              </div>
+              <div class="Sidebar__item__title">{endSection.title}</div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
 </div>
