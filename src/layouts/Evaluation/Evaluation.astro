@@ -1,0 +1,39 @@
+---
+import Back from "@components/Back/Back.astro";
+import Button from "@components/Button/Button.astro";
+import { default as Component } from "@components/Evaluation/Evaluation.astro";
+import MathJax from "@components/MathJax.svelte";
+import { default as Layout } from "src/layouts/Content/Content.astro";
+import "./Evaluation.scss";
+
+const { path, page, generate, includeLinks } = Astro.props;
+---
+
+<Layout title={`Evaluation ${path}`}>
+  <div class="Question__bar">
+    <div><Back href={`/evaluations`} label="Evaluations" /></div>
+  </div>
+  <h1 class="Question__title">
+    {page.data.title}
+
+    <div>
+      <a href={`/evaluations/${path}`}
+        ><Button icon="mdi mdi-book-open-variant" /></a
+      >
+      <a href={`/evaluations/generator/${path}`}
+        ><Button icon="mdi mdi-creation" /></a
+      >
+    </div>
+  </h1>
+  <p>
+    <i>Author: {page.data.author}</i>
+  </p>
+
+  <br />
+  <Component
+    questions={page.data.questions}
+    generate={generate}
+    includeLinks={includeLinks}
+  />
+  <MathJax client:load />
+</Layout>

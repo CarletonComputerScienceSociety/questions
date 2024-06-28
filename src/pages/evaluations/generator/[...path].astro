@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import Evaluation from "../../layouts/Evaluation/Evaluation.astro";
+import Evaluation from "../../../layouts/Evaluation/Evaluation.astro";
 
 export async function getStaticPaths() {
   const evaluations = await getCollection("evaluations");
@@ -19,6 +19,6 @@ const { page } = Astro.props;
   title={`Evaluation ${path}`}
   page={page}
   path={path}
-  generate={false}
+  generate={true}
   includeLinks={true}
 />

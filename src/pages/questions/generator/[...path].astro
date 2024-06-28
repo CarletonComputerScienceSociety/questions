@@ -35,7 +35,6 @@ const generatedQuestion = klass.generateQuestion();
     <div><Back href={`/questions/${path}`} label="Back" /></div>
   </div>
 
-  <hr />
   <Evaluation questions={[path]} generate={true} />
   <hr />
 
@@ -62,7 +61,7 @@ const generatedQuestion = klass.generateQuestion();
     }
   </div>
   <div class="Question__buttons">
-    <Button onclick="history.back();" label="Regenerate" />
+    <Button onclick="window.location.reload()" label="Regenerate" />
     <a
       href={`https://github.com/CarletonComputerScienceSociety/questions/blob/main/src/content/questions/${path}/generator.ts`}
       ><Button label="Contribute" /></a

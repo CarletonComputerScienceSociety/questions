@@ -94,18 +94,22 @@ await Promise.all(
                 disabled={data.links.question ? false : true}
               />
             </a>
-            <a href={`/questions/${data.links.solution}`}>
-              <Button
-                icon="mdi mdi-check-bold"
-                disabled={data.links.solution ? false : true}
-              />
-            </a>
-            <a href={`/questions/${data.links.generator}`}>
-              <Button
-                icon="mdi mdi-creation"
-                disabled={data.links.generator ? false : true}
-              />
-            </a>
+            {data.links.solution && (
+              <a href={`/questions/${data.links.solution}`}>
+                <Button
+                  icon="mdi mdi-check-bold"
+                  disabled={data.links.solution ? false : true}
+                />
+              </a>
+            )}
+            {data.links.generator && (
+              <a href={`/questions/${data.links.generator}`}>
+                <Button
+                  icon="mdi mdi-creation"
+                  disabled={data.links.generator ? false : true}
+                />
+              </a>
+            )}
             <a
               href={`https://github.com/CarletonComputerScienceSociety/questions/blob/main/src/content/questions/${data.links.question}/index.md`}
             >
