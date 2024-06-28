@@ -8,5 +8,6 @@ export default defineConfig({
   integrations: [
     svelte(),
     mdx()
-  ]
+  ],
+  site: 'https://questions.carletoncomputerscience.ca',
 });
