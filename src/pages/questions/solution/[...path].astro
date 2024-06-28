@@ -1,8 +1,7 @@
 ---
-import MathJax from "@components/MathJax.svelte";
 import Back from "@components/Back/Back.astro";
 import Button from "@components/Button/Button.astro";
-
+import MathJax from "@components/MathJax.svelte";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
 
@@ -19,31 +18,25 @@ export async function getStaticPaths() {
 const { path } = Astro.params;
 const { page } = Astro.props;
 const { Content } = await page.render();
+
+// load markdown solution
+const solutionString = `../../../content/questions/${page.data.solution}`;
+const solutionFile = await import(solutionString);
+const SolutionComponent = solutionFile.default;
 ---
 
 <Layout title="Welcome to Astro.">
   <div class="Question__bar">
-    <div><Back href={`/evaluations`} label="Evaluations" /></div>
+    <div><Back href={`/questions/${path}`} label="Back" /></div>
   </div>
   <Content />
-  <div class="Question__buttons">
-    <a href={`/questions/solution/${path}`}
-      ><Button
-        label="Solution"
-        disabled={page.data.solution ? false : true}
-      /></a
-    >
-    <a href={`/questions/generator/${path}`}
-      ><Button
-        icon="mdi mdi-creation"
-        label="Practice"
-        disabled={page.data.generator ? false : true}
-      /></a
-    >
-    <a
-      href={`https://github.com/CarletonComputerScienceSociety/tbd/tree/master/content/questions/${path}/index.md`}
-      ><Button label="Contribute" /></a
-    >
-  </div>
+  <br />
+  <SolutionComponent />
+  <br />
+  <a
+    style="margin-left: -0.4rem"
+    href={`https://github.com/CarletonComputerScienceSociety/tbd/tree/master/content/questions/${page.data.solution}`}
+    ><Button label="Contribute" /></a
+  >
   <MathJax client:load />
 </Layout>

@@ -1,0 +1,70 @@
+---
+import Back from "@components/Back/Back.astro";
+import MathJax from "@components/MathJax.svelte";
+import { getCollection } from "astro:content";
+import { default as Layout } from "src/layouts/Content/Content.astro";
+
+export async function getStaticPaths() {
+  const questions = await getCollection("questions");
+  return questions.map((page) => {
+    return {
+      params: { path: page.slug },
+      props: { page },
+    };
+  });
+}
+
+const { path } = Astro.params;
+const { page } = Astro.props;
+
+const module = await import(
+  `../../../content/questions/${page.data.generator}`
+);
+const klass = new module.default();
+const generatedQuestion = klass.generateQuestion();
+---
+
+<Layout title="Welcome to Astro.">
+  <div class="Question__bar">
+    <div><Back href={`/questions/${path}`} label="Back" /></div>
+  </div>
+
+  <div>{generatedQuestion.body}</div>
+  <div>
+    Options: {
+      generatedQuestion.options.map((option: any, index: number) => (
+        <div style="display:flex">
+          <button
+            class="generated-question-option"
+            id={`generated-question-option-${index}`}
+          >
+            Pick
+          </button>
+          <div>{option.label}</div>
+          <div
+            id={`generated-question-option-${index}-answer`}
+            style="display:none"
+          >
+            {option.correct ? "Correct" : "Incorrect"}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <button onclick="window.location.reload();">Regenerate</button>
+
+  <script>
+    function handleClick() {
+      // @ts-ignore
+      document.getElementById(this.id + "-answer").style.display = "block";
+    }
+    // @ts-ignore
+    const options = document.getElementsByClassName(
+      "generated-question-option",
+    );
+    Array.from(options).forEach((option) => {
+      option.addEventListener("click", handleClick);
+    });
+  </script>
+  <MathJax client:load />
+</Layout>

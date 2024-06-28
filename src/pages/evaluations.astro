@@ -1,10 +1,14 @@
 ---
+import Back from "@components/Back/Back.astro";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
 const evaluations = await getCollection("evaluations");
 ---
 
 <Layout title="Evaluations">
+  <div class="Question__bar">
+    <div><Back href={`/`} label="Home" /></div>
+  </div>
   <h1>Evaluations</h1>
   <div>
     {

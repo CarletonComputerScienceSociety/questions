@@ -10,8 +10,4 @@ The formula for permutations, which gives the number of ways to choose $k$ eleme
 
 Apply the Formula: Plugging the values into the formula gives $P(13, 7) = \frac{13!}{(13-7)!} = \frac{13!}{6!}$.
 
-Conclusion: The correct answer is $\frac{13!}{6!}$, which represents the total number of one-to-one functions from set $A$ to set $B$.
-
-Therefore, the correct choice is:
-
-c) $\frac{13!}{6!}$
+Conclusion: The correct answer is c) $\frac{13!}{6!}$, which represents the total number of one-to-one functions from set $A$ to set $B$.

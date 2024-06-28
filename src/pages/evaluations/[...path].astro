@@ -1,4 +1,5 @@
 ---
+import Back from "@components/Back/Back.astro";
 import MathJax from "@components/MathJax.svelte";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
@@ -24,6 +25,9 @@ const questions = await Promise.all(
 ---
 
 <Layout title={`Evaluation ${path}`}>
+  <div class="Question__bar">
+    <div><Back href={`/evaluations`} label="Evaluations" /></div>
+  </div>
   <h1>
     {page.data.title}
   </h1>
@@ -36,7 +40,6 @@ const questions = await Promise.all(
           <div>
             {index + 1}. {data.question.body}
           </div>
-          <br />
           <a href={`/questions/${page.data.questions[index]}`}>View Question</a>
         </>
       ))
