@@ -14,7 +14,7 @@ npm install
 npm run dev
 ```
 
-# Add A New Multiple Choice Question
+# Add a new Multiple Choice Question
 
 Every multiple choice question directory should have the following structure
 
