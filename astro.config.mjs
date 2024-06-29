@@ -10,5 +10,8 @@ export default defineConfig({
     mdx()
   ],
   site: 'https://questions.carletoncomputerscience.ca',
-  server: { port: 10000, host: true }
+  server: { port: 10000, host: true },
+  devToolbar: {
+    enabled: false
+  }
 });

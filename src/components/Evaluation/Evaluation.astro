@@ -1,5 +1,5 @@
 ---
-const { questions, generate, includeLinks } = Astro.props;
+const { questions, generate, includeLinks, shuffle } = Astro.props;
 import { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGenerator";
 import { default as Question } from "@components/MultipleChoiceQuestion/MultipleChoiceQuestion.astro";
 import "./Evaluation.scss";
@@ -22,7 +22,19 @@ const loadedQuestions = await Promise.all(
   }),
 );
 
-const multipleChoiceQuestions = loadedQuestions.filter(
+const sorttedQuestions = loadedQuestions.sort
+  ? loadedQuestions.sort(
+      (a: any, b: any) =>
+        questions.indexOf(a.frontmatter.path) -
+        questions.indexOf(b.frontmatter.path),
+    )
+  : loadedQuestions;
+
+if (shuffle) {
+  sorttedQuestions.sort(() => Math.random() - 0.5);
+}
+
+const multipleChoiceQuestions = sorttedQuestions.filter(
   (data: any) => data.frontmatter.type === "multiple-choice",
 );
 

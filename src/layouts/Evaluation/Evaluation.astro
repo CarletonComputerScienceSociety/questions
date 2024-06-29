@@ -6,16 +6,18 @@ import MathJax from "@components/MathJax.svelte";
 import { default as Layout } from "src/layouts/Content/Content.astro";
 import "./Evaluation.scss";
 
-const { path, page, generate, includeLinks } = Astro.props;
+const { path, page, generate, includeLinks, shuffle } = Astro.props;
 ---
 
 <Layout title={`Evaluation ${path}`}>
   <div class="Question__bar">
     <div><Back href={`/evaluations`} label="Evaluations" /></div>
   </div>
-  <h1 class="Question__title">
+  <h1>
     {page.data.title}
-
+  </h1>
+  <div class="Question__title">
+    <i>Author: {page.data.author}</i>
     <div>
       <a href={`/evaluations/${path}`}
         ><Button icon="mdi mdi-book-open-variant" highlight={!generate} /></a
@@ -23,17 +25,19 @@ const { path, page, generate, includeLinks } = Astro.props;
       <a href={`/evaluations/generator/${path}`}
         ><Button icon="mdi mdi-creation" highlight={generate} /></a
       >
+      <a
+        href={`https://github.com/CarletonComputerScienceSociety/questions/blob/main/src/content/evaluations/${path}.md`}
+        ><Button icon="mdi mdi-github" /></a
+      >
     </div>
-  </h1>
-  <p>
-    <i>Author: {page.data.author}</i>
-  </p>
+  </div>
 
   <br />
   <Component
     questions={page.data.questions}
     generate={generate}
     includeLinks={includeLinks}
+    shuffle={shuffle}
   />
   <MathJax client:load />
 </Layout>
