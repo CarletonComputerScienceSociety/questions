@@ -5,3 +5,9 @@
   margin-bottom: 1.5rem;
   margin-top: -0.25rem;
 }
+
+@media (max-width: 768px) {
+  .Question__contribute {
+    display: none;
+  }
+}
