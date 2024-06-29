@@ -81,3 +81,23 @@ const endSections = [
     </div>
   </div>
 </div>
+
+<div class="Sidebar__mobile">
+  <div class="Sidebar__mobile__inner">
+    {
+      sections
+        .filter((section) => !section.disabled)
+        .slice(0, 4)
+        .map((section) => (
+          <a href={section.link}>
+            <div class={`Sidebar__item`}>
+              <div class="Sidebar__item__icon">
+                <i class={section.icon} />
+              </div>
+              <div class="Sidebar__item__title">{section.title}</div>
+            </div>
+          </a>
+        ))
+    }
+  </div>
+</div>

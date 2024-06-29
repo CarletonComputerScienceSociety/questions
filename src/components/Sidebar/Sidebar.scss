@@ -76,4 +76,55 @@
       color: #000000;
     }
   }
+
+  display: block;
+
+  @media (max-width: 768px) {
+    display: none;
+
+    .Sidebar__item {
+      flex-direction: column;
+    }
+
+    .Sidebar__item__title {
+      font-size: 0.1rem;
+    }
+  }
+}
+
+.Sidebar__mobile {
+  display: none;
+  width: 100vw;
+  z-index: 1;
+  position: fixed;
+  background-color: #ffffff;
+  bottom: 0;
+  justify-content: center;
+  border-top-width: 0.1rem;
+  border-color: #f1f1f1;
+  border-style: solid;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    min-width: 14rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Sidebar__item {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+  }
+  .Sidebar__item__title {
+    font-size: 0.6rem;
+    padding-left: 0rem;
+  }
 }
