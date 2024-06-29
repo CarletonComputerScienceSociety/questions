@@ -13,17 +13,17 @@ a {
     "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   /* color-scheme: light dark; */
-  background-color: var(--color-background);
-  color: var(--color-foreground);
+  // background-color: #1f2023; // var(--color-background);
+  // color: #1f2023; //var(--color-foreground);
 
-  --color-background: #ffffff;
-  --color-foreground: #1f2023;
-  --color-accent: #5c6ac4;
+  // --color-background: #ffffff;
+  // --color-foreground: #1f2023;
+  // --color-accent: #5c6ac4;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-background: #1f2023;
-    --color-foreground: #ffffff;
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     --color-background: #1f2023;
+//     --color-foreground: #ffffff;
+//   }
+// }
