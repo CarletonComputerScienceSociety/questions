@@ -52,7 +52,7 @@ const courseCodes = {
   </div>
   <div style="margin-top:2rem"></div>
   <h3>Evaluations</h3>
-  <div style="margin-bottom:0.5rem">
+  <div class="Evaluations__list" style="margin-bottom:0.5rem">
     {
       comp2804Evaluations.map((evaluation) => (
         <div>
@@ -71,5 +71,11 @@ const courseCodes = {
 <style>
   p {
     color: gray;
+  }
+
+  .Evaluations__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
 </style>
