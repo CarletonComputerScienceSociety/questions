@@ -6,4 +6,5 @@ author: Michiel Smid
 question: comp2804/exam-winter-2017/20/question.ts
 tags:
   - comp2804
+  - comp2804-exam
 ---

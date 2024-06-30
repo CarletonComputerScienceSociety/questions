@@ -42,8 +42,8 @@ def add_tag_to_questions_in_test(root_dir, test_name, new_tag):
 
 # Define the root directory, test name, and the new tag
 root_directory = '../content/questions'
-test_name = 'exam-fall-2014'
-new_tag = 'new-tag'
+test_name = 'exam-fall-2016'
+new_tag = 'comp2804-exam'
 
 # Run the function
 add_tag_to_questions_in_test(root_directory, test_name, new_tag)
