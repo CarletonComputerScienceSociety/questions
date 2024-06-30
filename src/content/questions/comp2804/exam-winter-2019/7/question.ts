@@ -13,10 +13,14 @@ A string that is obtained by rearranging the letters of the word
 		is not cool. What is the number of cool strings?
 `;
 
-const label1 = "${11 \\choose 3} \\cdot {8 \\choose 4} \\cdot {4 \\choose 2} \\cdot {2 \\choose 1} \\cdot {1 \\choose 1}$";
-const label2 = "${11 \\choose 3} \\cdot {8 \\choose 4} \\cdot {4 \\choose 2} \\cdot {2 \\choose 1} \\cdot {1 \\choose 1} \\cdot 2$";
-const label3 = "${11 \\choose 3} \\cdot {8 \\choose 4} \\cdot {4 \\choose 2} \\cdot {2 \\choose 1} \\cdot {1 \\choose 1} \\cdot 3$";
-const label4 = "${11 \\choose 3} \\cdot {8 \\choose 4} \\cdot {4 \\choose 2} \\cdot {2 \\choose 1} \\cdot {1 \\choose 1} \\cdot 4$";
+const label1 =
+  "${11 \\choose 3} \\cdot {8 \\choose 4} \\cdot {4 \\choose 2} \\cdot {2 \\choose 1} \\cdot {1 \\choose 1}$";
+const label2 =
+  "${11 \\choose 3} \\cdot {8 \\choose 4} \\cdot {4 \\choose 2} \\cdot {2 \\choose 1} \\cdot {1 \\choose 1} \\cdot 2$";
+const label3 =
+  "${11 \\choose 3} \\cdot {8 \\choose 4} \\cdot {4 \\choose 2} \\cdot {2 \\choose 1} \\cdot {1 \\choose 1} \\cdot 3$";
+const label4 =
+  "${11 \\choose 3} \\cdot {8 \\choose 4} \\cdot {4 \\choose 2} \\cdot {2 \\choose 1} \\cdot {1 \\choose 1} \\cdot 4$";
 
 export const question: MultipleChoiceQuestion = {
   body: body,

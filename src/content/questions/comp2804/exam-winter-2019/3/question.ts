@@ -6,9 +6,12 @@ Consider a set $S$ consisting of 25 beer bottles $b_1,b_2,...,b_{25}$ and 30 cid
 `;
 
 const label1 = "${55 \\choose 10} - {30 \\choose 10} - {30 \\choose 9}$";
-const label2 = "${55 \\choose 10} - {30 \\choose 10} - 25 \\cdot {29 \\choose 9}$";
-const label3 = "${55 \\choose 10} - {30 \\choose 10} - 25 \\cdot {30 \\choose 9}$";
-const label4 = "${55 \\choose 10} - {30 \\choose 10} - 25 \\cdot {30 \\choose 10}$";
+const label2 =
+  "${55 \\choose 10} - {30 \\choose 10} - 25 \\cdot {29 \\choose 9}$";
+const label3 =
+  "${55 \\choose 10} - {30 \\choose 10} - 25 \\cdot {30 \\choose 9}$";
+const label4 =
+  "${55 \\choose 10} - {30 \\choose 10} - 25 \\cdot {30 \\choose 10}$";
 
 export const question: MultipleChoiceQuestion = {
   body: body,

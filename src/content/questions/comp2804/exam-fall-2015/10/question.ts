@@ -1,13 +1,13 @@
 import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGenerator";
 
 const body = String.raw`
-What is the coefficient of $x^{20}y^{35}$ in the expansion of $(5x - 3y)^{55}$?
+What is the number of bitstrings of length $n$ that contain 00 or 11?
 `;
 
-const label1 = "${55 \\choose 20} \\cdot 5^{35} \\cdot 3^{20}$";
-const label2 = "$-{55 \\choose 20} \\cdot 5^{35} \\cdot 3^{20}$";
-const label3 = "${55 \\choose 35} \\cdot 5^{20} \\cdot 3^{35}$";
-const label4 = "$-{55 \\choose 35} \\cdot 5^{20} \\cdot 3^{35}$";
+const label1 = String.raw`$2 \cdot (n-1) \cdot 2^{n-2}$`;
+const label2 = String.raw`$2 \cdot n \cdot 2^{n-1}$`;
+const label3 = String.raw`$2^n - 4$`;
+const label4 = String.raw`$2^n - 2$`;
 
 export const question: MultipleChoiceQuestion = {
   body: body,
