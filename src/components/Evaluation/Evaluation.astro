@@ -134,3 +134,55 @@ await Promise.all(
     ))
   }
 </div>
+<Button id="submit" icon="mdi mdi-upload" label="Submit" />
+<Button
+  id="refresh"
+  icon="mdi mdi-refresh"
+  label="Refresh"
+  onclick="window.location.reload()"
+/>
+
+<script>
+  const nodes = document.getElementsByClassName("MultipleChoiceQuestion");
+
+  for (let i = 0; i < nodes.length; i++) {
+    const options = nodes[i].children[1].children;
+    for (let j = 0; j < options.length; j++) {
+      const option = options[j];
+      option.addEventListener("click", () => {
+        for (let k = 0; k < options.length; k++) {
+          options[k].setAttribute("data-selected", "false");
+        }
+        option.setAttribute("data-selected", "true");
+      });
+    }
+  }
+
+  const submit = document.getElementById("submit");
+  // @ts-ignore
+  submit.addEventListener("click", () => {
+    let correct = 0;
+    let total = 0;
+    for (let i = 0; i < nodes.length; i++) {
+      const options = nodes[i].children[1].children;
+      for (let j = 0; j < options.length; j++) {
+        const option = options[j];
+        const correctOption = option.getAttribute("data-correct");
+        const selectedOption = option.getAttribute("data-selected");
+        if (correctOption === "true") {
+          total++;
+          if (selectedOption === "true") {
+            correct++;
+          }
+        }
+      }
+    }
+
+    const options = document.querySelectorAll(".MultipleChoiceQuestionOption");
+    for (let i = 0; i < options.length; i++) {
+      const element = options[i] as Element;
+      element.setAttribute("data-revealed", "true");
+    }
+    // alert(`You got ${correct} out of ${total} correct!`);
+  });
+</script>

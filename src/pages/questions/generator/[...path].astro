@@ -37,35 +37,13 @@ const generatedQuestion = klass.generateQuestion();
 
   <Evaluation questions={[path]} generate={true} />
 
-  <!-- <div>{generatedQuestion.body}</div>
-  <div>
-    {
-      generatedQuestion.options.map((option: any, index: number) => (
-        <div style="display:flex">
-          <button
-            class="generated-question-option"
-            id={`generated-question-option-${index}`}
-          >
-            Pick
-          </button>
-          <div>{option.label}</div>
-          <div
-            id={`generated-question-option-${index}-answer`}
-            style="display:none"
-          >
-            {option.correct ? "Correct" : "Incorrect"}
-          </div>
-        </div>
-      ))
-    }
-  </div> -->
-  <div>
-    <Button onclick="window.location.reload()" label="Regenerate" />
+  <!-- <div>
+    <Button onclick="window.location.reload()" label="Refresh" />
     <a
       href={`https://github.com/CarletonComputerScienceSociety/questions/blob/main/src/content/questions/${path}/generator.ts`}
       ><Button label="Contribute" /></a
     >
-  </div>
+  </div> -->
 
   <script>
     function handleClick() {

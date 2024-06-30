@@ -4,7 +4,7 @@ import MultipleChoiceQuestionOption from "./MultipleChoiceQuestionOption.astro";
 import "./MultipleChoiceQuestion.scss";
 ---
 
-<div class="MultipleChoiceQuestion">
+<div id={`MultipleChoiceQuestion-${index}`} class="MultipleChoiceQuestion">
   <div class="MultipleChoiceQuestion__body">
     <div set:html={`${index + 1}. ${question.body}`} />
   </div>

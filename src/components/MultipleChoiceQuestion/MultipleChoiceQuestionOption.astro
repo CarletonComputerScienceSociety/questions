@@ -6,7 +6,11 @@ const letterOptions = ["a", "b", "c", "d", "e"];
 ---
 
 <div
-  class={`MultipleChoiceQuestionOption MultipleChoiceQuestion-${questionIndex}-option-${optionIndex}`}
+  id={`MultipleChoiceQuestion-${questionIndex}-option-${optionIndex}`}
+  class={`MultipleChoiceQuestionOption`}
+  data-correct={option.correct ? "true" : "false"}
+  data-selected="false"
+  data-revealed="false"
 >
   <div class="MultipleChoiceQuestionOption__letter">
     ({letterOptions[optionIndex]})
