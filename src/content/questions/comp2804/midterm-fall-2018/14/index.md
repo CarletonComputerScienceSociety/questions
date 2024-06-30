@@ -6,4 +6,5 @@ author: Michiel Smid
 question: comp2804/midterm-fall-2018/14/question.ts
 tags:
   - comp2804
+  - comp2804-midterm
 ---
