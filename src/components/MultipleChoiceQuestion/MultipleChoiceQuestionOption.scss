@@ -6,10 +6,15 @@
   border-style: solid;
   border-radius: 0.6rem;
   border-width: 0.1rem;
-  border-color: #c0c0c0;
+  border-color: #c0c0c07f;
   margin: 1rem 0rem;
+  transition: all 0.15s;
 
   &__letter {
     margin: 0.5rem;
+  }
+
+  &:hover {
+    background-color: #f0f0f0;
   }
 }
