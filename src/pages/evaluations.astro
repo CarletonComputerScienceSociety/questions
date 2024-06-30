@@ -31,35 +31,7 @@ const comp2804Evaluations = evaluations.filter(
     illustrated through examples from computing.
   </p>
   <br /> -->
-  <div style="margin-bottom:0.75rem">
-    {
-      comp2804Evaluations.map((evaluation) => (
-        <div>
-          <a href={`/evaluations/${evaluation.slug}`}>
-            <RowCard
-              title={`${courseCodes.comp2804}: ${evaluation.data.title}`}
-              icon="mdi mdi-book-open-variant"
-            />
-          </a>
-        </div>
-      ))
-    }
-  </div>
-  <div style="margin-bottom:0.75rem">
-    {
-      comp2804Evaluations.map((evaluation) => (
-        <div>
-          <a href={`/evaluations/${evaluation.slug}`}>
-            <RowCard
-              title={`${courseCodes.comp2804}: ${evaluation.data.title}`}
-              icon="mdi mdi-book-open-variant"
-            />
-          </a>
-        </div>
-      ))
-    }
-  </div>
-  <div style="margin-bottom:0.75rem">
+  <div class="Evaluations__list" style="margin-bottom:0.75rem">
     {
       comp2804Evaluations.map((evaluation) => (
         <div>
@@ -78,5 +50,11 @@ const comp2804Evaluations = evaluations.filter(
 <style>
   p {
     color: gray;
+  }
+
+  .Evaluations__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
 </style>

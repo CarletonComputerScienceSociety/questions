@@ -6,8 +6,7 @@ import "./MultipleChoiceQuestion.scss";
 
 <div class="MultipleChoiceQuestion">
   <div class="MultipleChoiceQuestion__body">
-    {index !== undefined && `${index + 1}.`}
-    {question.body}
+    <div set:html={`${index + 1}. ${question.body}`} />
   </div>
   <div>
     {
