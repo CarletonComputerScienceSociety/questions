@@ -21,12 +21,27 @@ export async function getStaticPaths() {
 const { path } = Astro.params;
 const { page } = Astro.props;
 const { Content } = await page.render();
+
+// TODO we should not be generated the title of the path
+function formatString(input: string) {
+  let [_course, mainPart, numberPart] = input.split("/");
+
+  mainPart = mainPart
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+  return `${mainPart} - ${numberPart}`;
+}
+
+const title = formatString(path);
 ---
 
 <Layout title="Welcome to Astro.">
   <div class="Question__bar">
     <div><Back href={`/evaluations`} label="Evaluations" /></div>
   </div>
+  <h1>{title}</h1>
   <Content />
   <div class="Question__buttons">
     <a href={`/questions/solution/${path}`}
