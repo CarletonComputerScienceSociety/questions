@@ -91,11 +91,16 @@ await Promise.all(
     }
   }),
 );
+
+const sortedQuestionData = multipleChoiceQuestionData.sort(
+  (a: QuestionData, b: QuestionData) =>
+    questions.indexOf(a.links.question) - questions.indexOf(b.links.question),
+);
 ---
 
 <div>
   {
-    multipleChoiceQuestionData.map((data: QuestionData, index: number) => (
+    sortedQuestionData.map((data: QuestionData, index: number) => (
       <div class="Evaluation__question">
         <Question question={data.question} index={index} />
         {includeLinks && (
