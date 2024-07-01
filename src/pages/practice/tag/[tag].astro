@@ -1,0 +1,40 @@
+---
+import { getCollection } from "astro:content";
+import Back from "@components/Back/Back.astro";
+import Evaluation from "@components/Evaluation/Evaluation.astro";
+import { default as Layout } from "src/layouts/Content/Content.astro";
+import MathJax from "@components/MathJax.svelte";
+
+export async function getStaticPaths() {
+  return [
+    { params: { tag: "comp2804-midterm" } },
+    { params: { tag: "comp2804-exam" } },
+  ];
+}
+
+const { tag } = Astro.params;
+
+const taggedQuestions = await getCollection("questions", (page) => {
+  if (!page || !page.data || !page.data.tags) return false;
+  return page.data.tags.includes(tag);
+});
+
+const randomQuestion =
+  taggedQuestions[Math.floor(Math.random() * taggedQuestions.length)];
+---
+
+<Layout title="Welcome to Astro.">
+  <div class="Question__bar">
+    <div>
+      <Back href={`/questions/${randomQuestion.data.path}`} label="Back" />
+    </div>
+  </div>
+
+  <Evaluation
+    questions={[randomQuestion.data.path]}
+    generate={true}
+    includeLinks={true}
+  />
+
+  <MathJax client:load />
+</Layout>

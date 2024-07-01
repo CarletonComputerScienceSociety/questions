@@ -11,6 +11,12 @@ const comp2804Evaluations = evaluations.filter(
 const courseCodes = {
   comp2804: "COMP 2804",
 };
+
+const tags = ["comp2804-midterm", "comp2804-exam"];
+const displayTags: { [key: string]: string } = {
+  "comp2804-midterm": "Midterm",
+  "comp2804-exam": "Exam",
+};
 ---
 
 <Layout title="Courses">
@@ -49,6 +55,22 @@ const courseCodes = {
     >
       <RowCard title={`Fall 2020`} icon="mdi mdi-video" />
     </a>
+  </div>
+  <div style="margin-top:2rem"></div>
+  <h3>Practice By Tag</h3>
+  <div class="Evaluations__list" style="margin-bottom:0.75rem">
+    {
+      tags.map((tags) => (
+        <div>
+          <a href={`/practice/tag/${tags}`}>
+            <RowCard
+              title={`${displayTags[tags]} Questions`}
+              icon="mdi mdi-tag"
+            />
+          </a>
+        </div>
+      ))
+    }
   </div>
   <div style="margin-top:2rem"></div>
   <h3>Evaluations</h3>
