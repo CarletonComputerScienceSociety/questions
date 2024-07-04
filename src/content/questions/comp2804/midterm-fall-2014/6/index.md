@@ -20,4 +20,3 @@ b) At least two of these $n$ points are at distance at most $\left. 1 \middle/ \
 c) At least two of these $n$ points are at distance at most $\sqrt{2}$
 
 d) None of the above
-

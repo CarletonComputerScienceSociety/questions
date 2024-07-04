@@ -14,7 +14,6 @@ tags:
 Let $m \geq 1$ and $n \geq 1$ be integers. Consider a rectangle whose horizontal side has length $m$ and whose vertical side has length $n$. A path from the bottom-left corner to the top-right corner is called <em>valid</em>, if in each step, it either goes one unit to the right or one unit upwards. <br>
 
 In the example below, you see a valid path for the case when $m = 5$ and $n = 3$.
-		
 <img width="342" height="222" style="display: block; max-width: 100%; height: auto; margin: 1rem auto;"
   src="data:image/png;base64,
   iVBORw0KGgoAAAANSUhEUgAAAVYAAADeAQMAAABc9brBAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAAfZJREFUaN7t
@@ -25,7 +24,6 @@ In the example below, you see a valid path for the case when $m = 5$ and $n = 3$
   jbefpAVSrPH2jO8Hg5n6aXuh96/kK/lKvpKv5Cv5nmG+RUJmZYKtWoatwgy7XCkWsSoLdj3ghGtNE9UN7aqD2vnNZmhzZ3DvbAvt
   P7rytnN249Z3fdOA3ox+V2V9DxtPwebZyOrcrRl2pUfP/86whTuTz2E3tfBnaIdWrxfsjTfh/FObDZ8t8zY7YsOey/2wYAt3lHz4
   3fyY3YY92tZ9yzbehrXejK0d2So8o16PrNLhHRzUahffySu3pzXYtdrP7XwBhSQdbPCsOHQAAAAASUVORK5CYII=">
-		
 How many valid paths are there?
 
 a) ${m + n \\choose n - 1}$

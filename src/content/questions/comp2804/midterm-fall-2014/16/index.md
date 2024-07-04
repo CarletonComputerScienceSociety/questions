@@ -11,7 +11,6 @@ tags:
   - comp2804-probability
 ---
 
-
 Consider 10 boxes and 10 balls. We throw each ball, uniformly, in a random box. What is the probability that, after we have thrown all 10 balls, none of the 10 boxes is empty?
 
 a) $\frac{10!}{10^{10}}$

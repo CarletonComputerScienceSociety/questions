@@ -2,7 +2,7 @@ We can write it out $\ldots$
 
 The first ball has a $10/10$ possibility of getting into an empty box
 
-The second ball has $9/10$ possibility of getting into an empty box 
+The second ball has $9/10$ possibility of getting into an empty box
 
 Assuming the previous balls are in different boxes, the third ball has 8/10 possibility of getting into an empty box
 

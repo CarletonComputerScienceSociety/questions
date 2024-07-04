@@ -11,7 +11,6 @@ tags:
   - comp2804-recursion
 ---
 
-
 <div hidden>
   $\newcommand{\Fib}{{\rm F \scriptsize IB}}$
 </div>

@@ -12,7 +12,7 @@ tags:
 ---
 
 You flip a fair coin 5 times. Define the events
-		$$ A = \text{"the number of heads is odd"} $$
+$$ A = \text{"the number of heads is odd"} $$
 and
 		$$ B = \text{"the number of tails is even"} $$
 Which of the following is true?
