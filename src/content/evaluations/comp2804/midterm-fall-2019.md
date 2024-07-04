@@ -3,6 +3,7 @@ title: Midterm Fall 2019
 path: comp2804/midterm-fall-2019
 author: Michiel Smid
 course: comp2804
+created_at: 2019-10-14
 questions:
   - comp2804/midterm-fall-2019/1
   - comp2804/midterm-fall-2019/2

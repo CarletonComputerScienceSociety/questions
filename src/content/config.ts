@@ -19,6 +19,7 @@ const evaluationCollection = defineCollection({
     title: z.string(),
     author: z.string(),
     course: z.string(),
+    created_at: z.date(),
     questions: z.array(z.string()),
   }),
 });

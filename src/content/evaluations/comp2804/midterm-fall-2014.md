@@ -3,6 +3,7 @@ title: Midterm Fall 2014
 path: comp2804/midterm-fall-2014
 author: Michiel Smid
 course: comp2804
+created_at: 2014-10-13
 questions:
   - comp2804/midterm-fall-2014/1
   - comp2804/midterm-fall-2014/2
