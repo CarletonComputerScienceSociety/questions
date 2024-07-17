@@ -17,7 +17,7 @@ The second bit can be anything: 2
 ldots 
 The second last bit can be anything: 2 
 The last bit must be the same as the first bit: 1 
-$ 2 cdot 2 cdot 2 cdot ldots cdot 2 cdot 1 = 2^{n-1} $
+$ 2 \cdot 2 \cdot 2 \cdot ldots \cdot 2 \cdot 1 = 2^{n-1} $
 	<li> The number of bitstrings of length $n$ in which the first bit is not equal to the last bit. 
 This is basically the same as the third option. The last bit's value is dependent on the first bit's value: $ 2^{n-1} $
 </ul>

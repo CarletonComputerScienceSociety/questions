@@ -10,5 +10,5 @@ This one is saying enquote{All subsets that are at least size two}
 We subtract the empty set and choosing 1 element from the n elements: $ 2^{n} - 1 - n $
 	<li> The number of subsets of a set of size $n$ that have size at least three. 
 This one is saying enquote{All subsets that are at least size three} 
-We subtract the empty set, choosing 1 element from the n elements, and choosing 2 elements from the n elements: $ 2^{n} - 1 - n - binom{n}{2} $
+We subtract the empty set, choosing 1 element from the n elements, and choosing 2 elements from the n elements: $ 2^{n} - 1 - n - \binom{n}{2} $
 </ul>

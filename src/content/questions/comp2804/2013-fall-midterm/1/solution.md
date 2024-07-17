@@ -6,8 +6,8 @@ For the first element in $A$, there are 13 possible elements in $B$ it can map t
 
 The number of ways to assign a unique element in $B$ to each element in $A$ is calculated by multiplying these choices together. This is the principle of counting.
 
-The formula for permutations, which gives the number of ways to choose $k$ elements from a set of $n$ elements where order matters and without replacement, is $P(n, k) = frac{n!}{(n-k)!}$. Here, $n = 13$ (the size of $B$) and $k = 7$ (the size of $A$).
+The formula for permutations, which gives the number of ways to choose $k$ elements from a set of $n$ elements where order matters and without replacement, is $P(n, k) = \frac{n!}{(n-k)!}$. Here, $n = 13$ (the size of $B$) and $k = 7$ (the size of $A$).
 
-Apply the Formula: Plugging the values into the formula gives $P(13, 7) = frac{13!}{(13-7)!} = frac{13!}{6!}$.
+Apply the Formula: Plugging the values into the formula gives $P(13, 7) = \frac{13!}{(13-7)!} = \frac{13!}{6!}$.
 
-Conclusion: The correct answer is c) $frac{13!}{6!}$, which represents the total number of one-to-one functions from set $A$ to set $B$.
+Conclusion: The correct answer is c) $\frac{13!}{6!}$, which represents the total number of one-to-one functions from set $A$ to set $B$.

@@ -9,5 +9,5 @@ tags:
   - comp2804
   - comp2804-exam
   - Indicator Random Variables (6.4)
-  - Permutations and Binomial Coefficients (3.6.1)
+  - Permutations and \binomial Coefficients (3.6.1)
 ---

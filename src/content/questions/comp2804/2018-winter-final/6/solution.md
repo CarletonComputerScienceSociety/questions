@@ -13,4 +13,4 @@ Assume we have 25 bananas and 6 dividers. We place the dividers between any set 
 <li> $x_7$ is represented as the number of bananas eaten to the right of the sixth divider
 </ul>
 Since we place dividers down, we need to add 6 dividers to the 25 bananas 
-We choose 6 positions out of the 31 for the dividers: $ binom{31}{6} $
+We choose 6 positions out of the 31 for the dividers: $ \binom{31}{6} $

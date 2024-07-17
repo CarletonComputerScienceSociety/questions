@@ -6,4 +6,4 @@ If we put dividers between each x, then we have 3 dividers. Since the dividers a
 
 We can put the dividers into any of these 30 spots and are looking for the number of combinations. We are choosing 3 spots from 30.
 
-$binom{30}{3}$
+$\binom{30}{3}$

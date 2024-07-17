@@ -2,9 +2,9 @@ procedure ElisaDrinksCider $ (n) $
 if $ n = 1 $ then
 order Fibonachos
 else
-ElisaDrinksCider$ (frac{n}{2}) $
+ElisaDrinksCider$ ( \frac{n}{2}) $
 drink n bottles of cider
-ElisaDrinksCider$ (frac{n}{2}) $
+ElisaDrinksCider$ ( \frac{n}{2}) $
 end if
 end procedure
 We can calculate the first couple of values of $ C(n) $ to see if we can find a pattern.

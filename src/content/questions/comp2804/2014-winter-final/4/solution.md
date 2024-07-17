@@ -6,4 +6,4 @@ The second entity has 6 possible positions to choose from
 The third entity has 5 possible positions to choose from
 ldots
 The seventh entity has 1 possible position to choose from
-The total number of ways to arrange the 8 people is $ 2 times 7 cdot 6! $
+The total number of ways to arrange the 8 people is $ 2 times 7 \cdot 6! $

@@ -12,4 +12,4 @@ textbf{6} & 1 & 2 & 3 & 4 & 5 & 6
 end{tabular}
 end{table}
 As we can see, the minimum of 2 occurs 9 times out of the total 36 possibilities
-$ Pr(Z=2) = frac{9}{36} = frac{1}{4} $
+$ Pr(Z=2) = \frac{9}{36} = \frac{1}{4} $

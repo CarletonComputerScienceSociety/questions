@@ -4,4 +4,4 @@ The third element in A can be mapped to any of the 11 remaining elements in B = 
 The fourth element in A can be mapped to any of the 10 remaining elements in B = 10 possibilities
 The fifth element in A can be mapped to any of the 9 remaining elements in B = 9 possibilities
 The sixth element in A can be mapped to any of the 8 remaining elements in B = 8 possibilities
-Thus, the number of one-to-one functions is $13 cdot 12 cdot 11 cdot 10 cdot 9 cdot 8$
+Thus, the number of one-to-one functions is $13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8$

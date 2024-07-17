@@ -21,28 +21,28 @@ subsection\*{Step-by-Step Solution}
 3. **Calculate the Expected Value $ E(X) $:**
 The expected value $ E(X) $ is calculated using the formula:
 [
-E(X) = sum_{i} P(X = x_i) cdot x_i
+E(X) = sum_{i} P(X = x_i) \cdot x_i
 ]
-Each of the four outcomes has a probability of $ frac{1}{4} $, as the coins are fair and independent.
+Each of the four outcomes has a probability of $ \frac{1}{4} $, as the coins are fair and independent.
 Therefore, we have:
 begin{itemize}
-	<li> $ P(X = 1) = frac{1}{4} $ (from the $(H, H)$ outcome)
-   <li> $ P(X = 0) = frac{1}{4} $ (from the $(H, T)$ outcome)
-   <li> $ P(X = -1) = frac{1}{2} $ (from the $(T, H)$ and $(T, T)$ outcomes combined)
+	<li> $ P(X = 1) = \frac{1}{4} $ (from the $(H, H)$ outcome)
+   <li> $ P(X = 0) = \frac{1}{4} $ (from the $(H, T)$ outcome)
+   <li> $ P(X = -1) = \frac{1}{2} $ (from the $(T, H)$ and $(T, T)$ outcomes combined)
    end{itemize}
 
 4. **Substitute the Values into the Expected Value Formula:**
    [
-   E(X) = 1 cdot frac{1}{4} + 0 cdot frac{1}{4} + (-1) cdot frac{1}{2}
+   E(X) = 1 \cdot \frac{1}{4} + 0 \cdot \frac{1}{4} + (-1) \cdot \frac{1}{2}
    ]
    [
-   E(X) = frac{1}{4} + 0 - frac{1}{2}
+   E(X) = \frac{1}{4} + 0 - \frac{1}{2}
    ]
    [
-   E(X) = frac{1}{4} - frac{2}{4}
+   E(X) = \frac{1}{4} - \frac{2}{4}
    ]
    [
-   E(X) = -frac{1}{4}
+   E(X) = -\frac{1}{4}
    ]
 
-Therefore, the expected value of $ X $ is $ boxed{-frac{1}{4}} $.
+Therefore, the expected value of $ X $ is $ boxed{-\frac{1}{4}} $.

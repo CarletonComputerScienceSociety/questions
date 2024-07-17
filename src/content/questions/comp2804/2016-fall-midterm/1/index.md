@@ -9,5 +9,5 @@ tags:
   - comp2804
   - comp2804-midterm
   - Product Rule (3.1)
-  - Permutations and Binomial Coefficients(3.6)
+  - Permutations and \binomial Coefficients(3.6)
 ---

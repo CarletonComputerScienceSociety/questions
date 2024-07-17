@@ -8,5 +8,5 @@ $ |B| = 3 $
 	<li> Let $A cap B$ = Event that $x$ is even and divisible by 3 
 $ |A cap B| = 1 $
 </ul>
-$ Pr(A|B) = frac{|A cap B|}{|B|} $ 
-$ Pr(A|B) = frac{1}{3} $
+$ Pr(A|B) = \frac{|A cap B|}{|B|} $ 
+$ Pr(A|B) = \frac{1}{3} $

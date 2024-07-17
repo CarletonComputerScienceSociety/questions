@@ -22,8 +22,8 @@ Think about it in a different way. A is the set of all subsets that contain $x$ 
 By subtracting B from A, we get rid of all subsets that contain $x$, $y$ and $z$ from all subsets that contain $x$ and $y$. 
 This pretty much just leaves us with the subsets that contain $x$ and $y$ but not $z$. 
 $ |A| - |B| = 2^{23} - 2^{22} $ 
-$ |A| - |B| = 2^1 cdot 2^{22} - 2^0 cdot 2^{22} $ 
-$ |A| - |B| = 2 cdot 2^{22} - 1 cdot 2^{22} $ 
-$ |A| - |B| = (2-1) cdot 2^{22} $ 
-$ |A| - |B| = 1 cdot 2^{22} $ 
+$ |A| - |B| = 2^1 \cdot 2^{22} - 2^0 \cdot 2^{22} $ 
+$ |A| - |B| = 2 \cdot 2^{22} - 1 \cdot 2^{22} $ 
+$ |A| - |B| = (2-1) \cdot 2^{22} $ 
+$ |A| - |B| = 1 \cdot 2^{22} $ 
 $ |A| - |B| = 2^{22} $

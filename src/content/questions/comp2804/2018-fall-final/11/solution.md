@@ -1,7 +1,7 @@
 Okay, there are two ways to go about this
 
 <ul>
-<li> The first is to realize that the chance the coin comes up a certain face an odd or even number of times is straight up $ frac{1}{2} $ 
+<li> The first is to realize that the chance the coin comes up a certain face an odd or even number of times is straight up $ \frac{1}{2} $ 
 Screw drawing out the whole 5-level deep recursive tree. We can just draw out a 3-level deep tree 
 begin{forest}
 [
@@ -39,21 +39,21 @@ It's as intuitive as it is unintuitive
 <ul>
 <li> Let S be all possible outcomes of the coin flips: $ |S| = 2^5 = 32 $
 <li> Let A represent the event that the coin comes up heads once 
-We choose 1 position out of the 5 for the head: $ binom{5}{1} $ 
+We choose 1 position out of the 5 for the head: $ \binom{5}{1} $ 
 The remaining 4 positions are for the tails: 1 
-$ |A| = binom{5}{1} $
+$ |A| = \binom{5}{1} $
 <li> Let B represent the event that the coin comes up heads 3 times 
-We choose 3 positions out of the 5 for the heads: $ binom{5}{3} $ 
+We choose 3 positions out of the 5 for the heads: $ \binom{5}{3} $ 
 The remaining 2 positions are for the tails: 1 
-$ |B| = binom{5}{3} $
+$ |B| = \binom{5}{3} $
 <li> Let C represent the event that the coin comes up heads 5 times 
-We choose 5 positions out of the 5 for the heads: $ binom{5}{5} $ 
+We choose 5 positions out of the 5 for the heads: $ \binom{5}{5} $ 
 The remaining 0 positions are for the tails: 1 
-$ |C| = binom{5}{5} $
+$ |C| = \binom{5}{5} $
 </ul>
 $ Pr(text{odd number of heads}) = Pr(A) + Pr(B) + Pr(C) $ 
-$ Pr(text{odd number of heads}) = frac{ binom{5}{1} + binom{5}{3} + binom{5}{5} }{32} $ 
-$ Pr(text{odd number of heads}) = frac{5 + 10 + 1}{32} $ 
-$ Pr(text{odd number of heads}) = frac{16}{32} $ 
-$ Pr(text{odd number of heads}) = frac{1}{2} $
+$ Pr(text{odd number of heads}) = \frac{ \binom{5}{1} + \binom{5}{3} + \binom{5}{5} }{32} $ 
+$ Pr(text{odd number of heads}) = \frac{5 + 10 + 1}{32} $ 
+$ Pr(text{odd number of heads}) = \frac{16}{32} $ 
+$ Pr(text{odd number of heads}) = \frac{1}{2} $
 </ul>

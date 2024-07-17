@@ -9,6 +9,6 @@ tags:
   - comp2804
   - comp2804-exam
   - Counting Bitstrings of Length $n$ (3.1.1)
-  - Permutations and Binomial Coefficients (3.6.1)
+  - Permutations and \binomial Coefficients (3.6.1)
   - The Complement Rule ()
 ---

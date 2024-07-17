@@ -7,4 +7,4 @@ There is only 1 number that is both even and divisible by 3, which is 6: 1
 $ |A cap B| = 1 $
 </ul>
 I enjoy Jujutsu Kaisen and Donal/Joe/Obama AI voice skits 
-$ Pr(A|B) = frac{|A cap B|}{|B|} = frac{1}{3} $
+$ Pr(A|B) = \frac{|A cap B|}{|B|} = \frac{1}{3} $

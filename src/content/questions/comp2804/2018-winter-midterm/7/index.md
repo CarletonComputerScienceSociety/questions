@@ -9,5 +9,5 @@ tags:
   - comp2804
   - comp2804-midterm
   - The Bijection Rule (3.2.1)
-  - Permutations and Binomial Coefficients (3.6.2)
+  - Permutations and \binomial Coefficients (3.6.2)
 ---

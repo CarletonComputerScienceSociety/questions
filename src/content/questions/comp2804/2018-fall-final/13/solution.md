@@ -14,7 +14,7 @@ textbf{c} & a & NA & NA & NA & NA & NA
 end{tabular}
 end{table}
 $ |B| = 11 $ 
-$ Pr(B) = frac{11}{36} $
+$ Pr(B) = \frac{11}{36} $
 	<li> Let's determine $ A cap B $ 
 	      We only care about the cases when both rolls result in the same letter AND at least one of the rolls result in the letter $a$ 
 begin{table}[h!]
@@ -30,8 +30,8 @@ textbf{c} & NA & NA & NA & NA & NA & NA
 end{tabular}
 end{table}
 $ |A cap B| = 1 $ 
-$ Pr(A cap B) = frac{1}{36} $
+$ Pr(A cap B) = \frac{1}{36} $
 </ul>
-$ Pr(A|B) = frac{ Pr(A cap B) }{ Pr(B) } $ 
-$ Pr(A|B) = frac{ frac{1}{36} }{ frac{11}{36} } $ 
-$ Pr(A|B) = frac{1}{11} $
+$ Pr(A|B) = \frac{ Pr(A cap B) }{ Pr(B) } $ 
+$ Pr(A|B) = \frac{ \frac{1}{36} }{ \frac{11}{36} } $ 
+$ Pr(A|B) = \frac{1}{11} $
