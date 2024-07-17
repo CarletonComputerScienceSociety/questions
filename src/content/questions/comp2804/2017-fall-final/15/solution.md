@@ -33,13 +33,13 @@ $ Pr(A) = \frac{2}{8} $
 	      $ { (HHH), (HHT), (HTH), (THH) } $ 
 	      $ |B| = 4 $ 
 	      $ Pr(B) = \frac{4}{8} $
-	<li> Let's determine $ A cap B $ 
+	<li> Let's determine $ A \cap B $ 
 	      $ { (HHH), (HHT) } $ 
-	      $ |A cap B| = 2 $ 
-	      $ Pr(A cap B) = \frac{2}{8} $
+	      $ |A \cap B| = 2 $ 
+	      $ Pr(A \cap B) = \frac{2}{8} $
 </ul>
 Now, let's check if A and B are independent 
-$ Pr(A cap B) = Pr(A) \cdot Pr(B) $ 
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
 $ \frac{2}{8} = \frac{2}{8} \cdot \frac{4}{8} $ 
 $ \frac{2}{8} = \frac{1}{4} \cdot \frac{1}{2} $ 
 $ \frac{2}{8} = \frac{1}{8} $ 

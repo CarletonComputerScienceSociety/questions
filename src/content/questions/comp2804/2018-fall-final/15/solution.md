@@ -30,18 +30,18 @@ $ |B| = 12 $
 $ Pr(B) = \frac{12}{24} $ 
 $ Pr(B) = \frac{1}{2} $
 	      </ul>
-	<li> Let's determine $ A cap B $ 
+	<li> Let's determine $ A \cap B $ 
 	      We take any 2 random values from the set ${1, 2, 3, 4}$ to take the place of $a_1$ and $a_2$: $ \binom{4}{2} $ 
 Now, there's only 1 correct permutation of the 2 values that allow $ a_1 > a_2 $: $ 1 $ 
 	      Smilarly, we take 2 random values from the remaining set: $ \binom{2}{2} $ 
 	      There's only 1 correct permutation of the remaining 2 values that allow $ a_4 > a_3 $: $ 1 $ 
-	      $ |A cap B| = \binom{4}{2} \cdot 1 \cdot \binom{2}{2} \cdot 1 $ 
-	      $ |A cap B| = 6 $
-	      $ Pr(A cap B) = \frac{6}{24} $ 
-	      $ Pr(A cap B) = \frac{1}{4} $
+	      $ |A \cap B| = \binom{4}{2} \cdot 1 \cdot \binom{2}{2} \cdot 1 $ 
+	      $ |A \cap B| = 6 $
+	      $ Pr(A \cap B) = \frac{6}{24} $ 
+	      $ Pr(A \cap B) = \frac{1}{4} $
 </ul>
 Now, let's check whether they're independent 
-$ Pr(A cap B) = Pr(A) \cdot Pr(B) $ 
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
 $ \frac{1}{4} = \frac{1}{2} \cdot \frac{1}{2} $ 
 $ \frac{1}{4} = \frac{1}{4} $ 
 They are independent

@@ -5,7 +5,7 @@ Given $ S $ is a set with $ n $ elements, each element $ x in S $ must belong to
 	<li> $ x in A $
 	<li> $ x in B $
 	<li> $ x in C $
-	<li> $ x notin A cup B cup C $
+	<li> $ x notin A \cup B \cup C $
 </ul>
 Since the elements of $ S $ are independently distributed among these four choices, each element has 4 options. Therefore, for each of the $ n $ elements, there are 4 independent choices. 
 $ 4 \cdot 4 \cdot 4 \cdot ldots \cdot 4$ 

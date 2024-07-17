@@ -9,7 +9,7 @@ def find_incorrect_binom_usage(start_dir):
                 with open(file_path, 'r', encoding='utf-8') as f:
                     lines = f.readlines()
                     for line in lines:
-                        if re.search(r'(?<!\\)cdot', line):
+                        if re.search(r'(?<!\\)overline', line):
                             print(f"File: {file_path}")
                             print(f"Line: {line.strip()}")
 

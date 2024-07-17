@@ -17,13 +17,13 @@ $ |B| = \binom{5}{2} + \binom{5}{3} + \binom{5}{4} + \binom{5}{5} $
 $ |B| = 10 + 10 + 5 + 1 $ 
 $ |B| = 26 $ 
 $ Pr(B) = \frac{26}{32} = \frac{13}{16} $
-	<li> Let's determine $A cap B$ 
+	<li> Let's determine $A \cap B$ 
 If the first three flips are heads and you want to have at least two tails, then the two tails must be the last 2 flips 
-$ |A cap B| = 1 $ 
-$ Pr(A cap B) = \frac{1}{32} $
+$ |A \cap B| = 1 $ 
+$ Pr(A \cap B) = \frac{1}{32} $
 </ul>
 Now, let's check whether it's independent 
-$ Pr(A cap B) = Pr(A) \cdot Pr(B) $ 
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
 $ \frac{1}{32} = \frac{1}{8} \cdot \frac{13}{16} $ 
 $ \frac{1}{32} = \frac{13}{128} $ 
 Since the two sides are not equal, the events are not independent

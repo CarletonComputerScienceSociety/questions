@@ -14,15 +14,15 @@ $ |S| = 2^5 $
 $ |B| = 2^2 $ 
 $ Pr(B) = \frac{2^2}{2^5} $ 
 $ Pr(B) = \frac{1}{2^3} $
-	<li> $ A cap B $ occurs when the first 3 bits are 111 and there is 1 0
+	<li> $ A \cap B $ occurs when the first 3 bits are 111 and there is 1 0
 	      The 0 can be at either position 4 or 5: 2 
 	      The other bit is forced to be a 1: 1 
-	      $ |A cap B| = 2 $ 
-	      $ Pr(A cap B) = \frac{2}{2^5} $ 
-	      $ Pr(A cap B) = \frac{1}{2^4} $
+	      $ |A \cap B| = 2 $ 
+	      $ Pr(A \cap B) = \frac{2}{2^5} $ 
+	      $ Pr(A \cap B) = \frac{1}{2^4} $
 </ul>
 If they are independent, the probability of both events occurring is the product of the probabilities of each event occurring. 
-$ Pr(A cap B) = Pr(A) \cdot Pr(B) $ 
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
 $ \frac{1}{2^4} = \frac{1}{2} \cdot \frac{1}{2^3} $ 
 $ \frac{1}{2^4} = \frac{1}{2^4} $ 
 $ 1 = 1 $ 

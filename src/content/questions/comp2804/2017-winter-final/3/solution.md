@@ -12,9 +12,9 @@ Let's do this anyway$ ( $cries internally $ ) $
 	      Then, choose how many beer bottles we want. We subsets with 0 beer bottles to 17 beer bottles 
 	      Somewhere out there, there's a rule that states that it's $ 2^{17} $ 
 	      $ |C| = \binom{28}{5} \cdot 2^{17} $
-	<li> Determine $ B cap C $ 
+	<li> Determine $ B \cap C $ 
 	      We have exactly 5 beer bottles and 5 cider bottles 
-	      $ | B cap C | = \binom{17}{5} \cdot \binom{28}{5} $
+	      $ | B \cap C | = \binom{17}{5} \cdot \binom{28}{5} $
 </ul>
-$ B cup C = |B| + |C| - |B cap C| $ 
-$ B cup C = \binom{17}{5} \cdot 2^{28} + \binom{28}{5} \cdot 2^{17} - \binom{17}{5} \cdot \binom{28}{5} $
+$ B \cup C = |B| + |C| - |B \cap C| $ 
+$ B \cup C = \binom{17}{5} \cdot 2^{28} + \binom{28}{5} \cdot 2^{17} - \binom{17}{5} \cdot \binom{28}{5} $

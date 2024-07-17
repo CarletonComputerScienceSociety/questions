@@ -13,14 +13,14 @@ $ |S| = 2^5 = 32 $
 	      The first 2 bitstrings can be any of the 2 bits: $ 2^2 = 4 $ 
 	      $ |B| = 1 \cdot 4 = 4 $ 
 	      $ Pr(B) = \frac{4}{32} = \frac{1}{8} $
-	<li> Now, let's determine $ A cap B $ 
+	<li> Now, let's determine $ A \cap B $ 
 	      The last 3 bits are 111: 1 
 	      The first 3 bits are 101 and can't be 110 because the third bit as discussed above is a 1: 1 
-	      $ |A cap B| = 1 $ 
-	      $ Pr(A cap B) = \frac{1}{32} $
+	      $ |A \cap B| = 1 $ 
+	      $ Pr(A \cap B) = \frac{1}{32} $
 </ul>
 Now, let's check whether it's independent 
-$ Pr(A cap B) = Pr(A) \cdot Pr(B) $ 
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
 $ \frac{1}{32} = \frac{1}{4} \cdot \frac{1}{8} $ 
 $ \frac{1}{32} = \frac{1}{32} $ 
 BOOM. THE RESULTS SPEAK FOR THEMSELVES. HAPPY INDEPENDENCE DAY. MURICAAAA

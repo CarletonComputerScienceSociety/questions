@@ -14,7 +14,7 @@ $ |A| = 24 $
 	      $ |B| = 10 times 3! $ 
 	      $ |B| = 60 $
 </ul>
-The total number of arrangements is the sum of the arrangements in sets $ A cup B $: 
+The total number of arrangements is the sum of the arrangements in sets $ A \cup B $: 
 $ |A| + |B| $ 
 $ = 24 + 60 $ 
 $ = 84 $

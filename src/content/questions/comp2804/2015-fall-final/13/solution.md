@@ -9,14 +9,14 @@ $ Pr(A) = \frac{8}{32} = \frac{1}{4} $
 The last 3 bits are fixed as 111: 1 way. 
 $ |B| = 2^{2} = 4 $ 
 $ Pr(B) = \frac{4}{32} = \frac{1}{8} $
-	<li> Let $A cap B$ be the event that the first 3 bits are 101 or 110 AND the last 3 bits are 111. 
+	<li> Let $A \cap B$ be the event that the first 3 bits are 101 or 110 AND the last 3 bits are 111. 
 When the last 3 bits are 111, the first 3 bits cannot be 110 
 This leaves us with 10111 as the only bitstring that satisfies both conditions. 
-$ |A cap B| = 1 $ 
-$ Pr(A cap B) = \frac{1}{32} $
+$ |A \cap B| = 1 $ 
+$ Pr(A \cap B) = \frac{1}{32} $
 </ul>
 Now, we check whether they are independent or not 
-$ Pr(A cap B) = Pr(A) \cdot Pr(B) $ 
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
 $ \frac{1}{32} = \frac{1}{4} \cdot \frac{1}{8} $ 
 $ \frac{1}{32} = \frac{1}{32} $ 
 The events A and B are independent.
