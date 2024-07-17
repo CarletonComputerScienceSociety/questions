@@ -9,7 +9,7 @@ But the equation given shows that we could have 2 men or 2 women as a unordered 
 For this one, it says $x$ and $y$ cannot both be men but $ \binom{m}{2} $ gives us unordered pairs of men in the equation 
 Since the phrase doesn't match the equation, this one is wrong.
 <li> The number of ways to choose an unordered pair of people from a group consisting of $m$ men and $n$ women, where at least one man must be chosen. 
-For this one, it says enquote{at least one man must be chosen} but the equation has $ \binom{m}{2} $ which gives us unordered of women as well 
+For this one, it says \enquote{at least one man must be chosen} but the equation has $ \binom{m}{2} $ which gives us unordered of women as well 
 Since the phrase doesn't match the equation, this one is wrong.
 <li> The number of ways to choose an unordered pair of people from a group consisting of $m$
 men and $n$ women. 

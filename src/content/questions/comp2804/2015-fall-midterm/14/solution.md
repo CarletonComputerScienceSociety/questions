@@ -4,11 +4,11 @@ order chicken wings
 else if n=2 then
 drink one pint of Indian Pale Ale
 else
-print enquote{I don't like Justine Bieber}
+print \enquote{I don't like Justine Bieber}
 JustinBieber$\frac{n}{2}$
 end if
 end procedure
-Let's run the algorithem for n=1, n=2, n=4, and n=8 to see how many times it says enquote{I don't like Justin Bieber}.
+Let's run the algorithem for n=1, n=2, n=4, and n=8 to see how many times it says \enquote{I don't like Justin Bieber}.
 JustinBieber$(1)$ = 0
 JustinBieber$(2)$ = 0
 JustinBieber$(4)$ = 1

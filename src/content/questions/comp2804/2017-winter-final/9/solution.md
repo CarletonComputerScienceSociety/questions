@@ -32,4 +32,4 @@ begin{forest}
 ]
 ]
 end{forest}
-The word enquote{hello} is printed 11 times
+The word \enquote{hello} is printed 11 times

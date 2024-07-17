@@ -1,6 +1,6 @@
 <ul>
 <li> Let A be the set of all bitstrings of length k that contain at least 1 
-To do this question, we can think of it as enquote{All bitstrings minus bitstrings that have exactly 0 1's} 
+To do this question, we can think of it as \enquote{All bitstrings minus bitstrings that have exactly 0 1's} 
 The only way to have exactly 0 1's is to have all 0's 
 Thus, the number of bitstrings that have exactly 0 1's is 1 
 $ |A| = 2^{k} - 1 $

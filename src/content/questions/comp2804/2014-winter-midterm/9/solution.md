@@ -1,4 +1,4 @@
-There are 13 letters in the word enquote{POOPERSCOOPER}.
+There are 13 letters in the word \enquote{POOPERSCOOPER}.
 We can break down how many letters of each there are:
 3 P's
 4 O's

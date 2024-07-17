@@ -6,9 +6,9 @@ If this was the case, it would subtract the set with all 0's and the set with a 
 	<li> The number of bitstrings of length $n$ that have at most two 1's. 
 If this was the case, it would just be the set with all 0's and the set with a single 1 in any of the $n$ positions: $ 1 + n $
 	<li> The number of subsets of a set of size $n$ that have size at least two. 
-This one is saying enquote{All subsets that are at least size two} 
+This one is saying \enquote{All subsets that are at least size two} 
 We subtract the empty set and choosing 1 element from the n elements: $ 2^{n} - 1 - n $
 	<li> The number of subsets of a set of size $n$ that have size at least three. 
-This one is saying enquote{All subsets that are at least size three} 
+This one is saying \enquote{All subsets that are at least size three} 
 We subtract the empty set, choosing 1 element from the n elements, and choosing 2 elements from the n elements: $ 2^{n} - 1 - n - \binom{n}{2} $
 </ul>

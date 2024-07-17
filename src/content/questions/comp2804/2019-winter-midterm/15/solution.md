@@ -5,7 +5,7 @@
 </ul>
 There is an unlimited supply for each of these types. 
 There are 75 students at the party, and each of them gets one drink, which is chosen uniformly at random from these three types. 
-Let be the event $ A = text{enquote{exactly 50 students get Magners Original Irish Cider}.} $
+Let be the event $ A = text{\enquote{exactly 50 students get Magners Original Irish Cider}.} $
 What is Pr $ (A) $?
 We need to choose 50 students to get Magners Original Irish Cider from the 75 students: $ \binom{75}{50} $ 
 For each of the 50 students, there is a $ \frac{1}{3} $ chance of getting Magners Original Irish Cider: $ {( \frac{1}{3})}^{50} $ 

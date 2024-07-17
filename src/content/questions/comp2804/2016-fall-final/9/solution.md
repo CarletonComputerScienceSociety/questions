@@ -1,4 +1,4 @@
-Let's draw a recursive tree to find out how many times the word enquote{hello} is printed when we run $HELLO(7)$.
+Let's draw a recursive tree to find out how many times the word \enquote{hello} is printed when we run $HELLO(7)$.
 begin{forest}
 [HELLO$ (7) $
 		[HELLO$ (6) $
@@ -24,4 +24,4 @@ begin{forest}
 			]
 	]
 end{forest} 
-As can be seen, the word enquote{hello} is printed 5 times when we run $HELLO(7)$.
+As can be seen, the word \enquote{hello} is printed 5 times when we run $HELLO(7)$.
