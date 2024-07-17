@@ -6,6 +6,6 @@ export const question: MultipleChoiceQuestion = {
     { label: "${1, 2, 3, ..., n}$", correct: false },
     { label: "${1, 2, 3, ..., n}$", correct: true },
     { label: "${1, 2, 3, ..., n}$", correct: false },
-    { label: "$None of the above.$", correct: false },
+    { label: "None of the above.", correct: false },
   ],
 };
