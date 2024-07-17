@@ -1,5 +1,5 @@
-Draw the treeeeeee \\
-\begin{forest}
+Draw the treeeeeee 
+begin{forest}
 [Hello$ (7) $
 		[Hello$ (6) $
 				[Hello$ (3) $
@@ -31,5 +31,5 @@ Draw the treeeeeee \\
 ]
 ]
 ]
-\end{forest} \\
-The word \enquote{hello} is printed 11 times
+end{forest} 
+The word enquote{hello} is printed 11 times

@@ -1,6 +1,6 @@
 There are 4 possibilities every time.
 
-It can go as follows without getting 4 consecutive 1s $\ldots$
+It can go as follows without getting 4 consecutive 1s $ldots$
 
 0 $B_{n-1}$
 

@@ -10,12 +10,12 @@ You've just put down 9 points. Put 1 more point in one of the boxes. So let's us
 
 Assuming you put the 10th point in that box, then you'll put it in the bottom left part of the upper right box.
 
-The length of the right of the box is ${\sqrt{1}}$. Distance from the points is hypotenuse.
+The length of the right of the box is ${sqrt{1}}$. Distance from the points is hypotenuse.
 
-$\text{Hypotenuse}^2 = {\sqrt{1}}^2 + {\sqrt{1}}^2$
+$text{Hypotenuse}^2 = {sqrt{1}}^2 + {sqrt{1}}^2$
 
-$\text{Hypotenuse}^2 = 2 {\sqrt{1}}^2$
+$text{Hypotenuse}^2 = 2 {sqrt{1}}^2$
 
-$\text{Hypotenuse}^2 = 2$
+$text{Hypotenuse}^2 = 2$
 
-$\text{Hypotenuse} = \sqrt{2}$
+$text{Hypotenuse} = sqrt{2}$

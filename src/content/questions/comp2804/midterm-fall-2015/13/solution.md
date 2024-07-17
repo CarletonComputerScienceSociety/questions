@@ -1,5 +1,5 @@
-We can quickly draw a tree and count the number of calls to $FIB(50)$ \\
-\begin{forest}
+We can quickly draw a tree and count the number of calls to $FIB(50)$ 
+begin{forest}
 [FIB$(55)$
 [FIB$(54)$
 [FIB$(53)$
@@ -30,5 +30,5 @@ We can quickly draw a tree and count the number of calls to $FIB(50)$ \\
 ]
 ]
 ]
-\end{forest} \\
+end{forest} 
 We have 8 calls to $FIB(50)$

@@ -1,5 +1,5 @@
-We can draw a recursive tree to visualize the number of calls to $FIB(14)$ when running $FIB(18)$. \\
-\begin{forest}
+We can draw a recursive tree to visualize the number of calls to $FIB(14)$ when running $FIB(18)$. 
+begin{forest}
 [Fib$ (18) $
 		[Fib$ (17) $
 				[Fib$ (16) $
@@ -22,5 +22,5 @@ We can draw a recursive tree to visualize the number of calls to $FIB(14)$ when 
 					[FIB$ (14) $]
 			]
 	]
-\end{forest} \\
+end{forest} 
 There are 5 calls to $FIB(14)$ when running $FIB(18)$.
