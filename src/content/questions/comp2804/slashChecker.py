@@ -4,12 +4,12 @@ import re
 def find_incorrect_binom_usage(start_dir):
     for root, dirs, files in os.walk(start_dir):
         for file in files:
-            if file == "solution.md":
+            if file == "question.ts":
                 file_path = os.path.join(root, file)
                 with open(file_path, 'r', encoding='utf-8') as f:
                     lines = f.readlines()
                     for line in lines:
-                        if re.search(r'(?<!\\)cup', line):
+                        if re.search(r'(?<!\\)choose', line):
                             print(f"File: {file_path}")
                             print(f"Line: {line.strip()}")
 
