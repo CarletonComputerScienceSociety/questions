@@ -23,20 +23,20 @@ Draw out a tree \\
 ]
 ]
 \end{forest}
-\begin{enumerate}
-\item Let's determine A \\
+<ul>
+<li> Let's determine A \\
 $ \{ (HHH), (HHT) \} $ \\
 $ |A| = 2 $ \\
 $ \Pr(A) = \frac{2}{8} $
-	\item Let's determine B \\
+	<li> Let's determine B \\
 	      $ \{ (HHH), (HHT), (HTH), (THH) \} $ \\
 	      $ |B| = 4 $ \\
 	      $ \Pr(B) = \frac{4}{8} $
-	\item Let's determine $ A \cap B $ \\
+	<li> Let's determine $ A \cap B $ \\
 	      $ \{ (HHH), (HHT) \} $ \\
 	      $ |A \cap B| = 2 $ \\
 	      $ \Pr(A \cap B) = \frac{2}{8} $
-\end{enumerate}
+</ul>
 Now, let's check if A and B are independent \\
 $ \Pr(A \cap B) = \Pr(A) \cdot \Pr(B) $ \\
 $ \frac{2}{8} = \frac{2}{8} \cdot \frac{4}{8} $ \\

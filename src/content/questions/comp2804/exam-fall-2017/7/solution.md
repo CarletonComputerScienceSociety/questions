@@ -1,11 +1,11 @@
-\begin{enumerate}
-\item B 1
-\item P 1
-\item R 1
-\item O 2
-\item K 2
-\item E 3
-\end{enumerate}
+<ul>
+<li> B 1
+<li> P 1
+<li> R 1
+<li> O 2
+<li> K 2
+<li> E 3
+</ul>
 First, we choose 2 of the 10 positions for the $O$'s: $ \binom{10}{2} $ \\
 Then, we choose 2 of the remaining 8 positions for the $K$'s: $ \binom{8}{2} $ \\
 Then, we choose 3 of the remaining 6 positions for the $E$'s: $ \binom{6}{3} $ \\

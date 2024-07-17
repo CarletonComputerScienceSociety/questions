@@ -1,11 +1,11 @@
-\begin{enumerate}
-\item Let B be the event that a student likes beer \\
+<ul>
+<li> Let B be the event that a student likes beer \\
 $ |B| = 63 $
-	\item Let C be the event that a student likes cider \\
+	<li> Let C be the event that a student likes cider \\
 	      $ |C| = 71 $
-	\item Let's determine $ \overline{B} \cap \overline{C} $ \\
+	<li> Let's determine $ \overline{B} \cap \overline{C} $ \\
 	      $ | \overline{B} \cap \overline{C} | = 25 $
-\end{enumerate}
+</ul>
 Now, let's determine $ B \cup C $ \\
 $ B \cup C = 100 - | \overline{B} \cap \overline{C} | $ \\
 $ B \cup C = 100 - 25 $ \\

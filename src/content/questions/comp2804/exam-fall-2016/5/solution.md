@@ -1,13 +1,13 @@
-\begin{enumerate}
-\item Let S be the set of all students. \\
+<ul>
+<li> Let S be the set of all students. \\
 $ |S| = 100 $
-	\item Let C be the event that someone drinks cider \\
+	<li> Let C be the event that someone drinks cider \\
 	      $ |C| = 25 $
-	\item Let B be the event that someone drinks beer \\
+	<li> Let B be the event that someone drinks beer \\
 	      $ |B| = 50 $
-	\item Let $ \overline{C} \cap \overline{B} $ be the event that someone does not drink cider and does not drink beer \\
+	<li> Let $ \overline{C} \cap \overline{B} $ be the event that someone does not drink cider and does not drink beer \\
 	      $ | \overline{C} \cap \overline{B} | = 33 $
-\end{enumerate}
+</ul>
 Find the union of C and B \\
 $ |C \cup B| = |S| - | \overline{C} \cap \overline{B} | $ \\
 $ |C \cup B| = 100 - 33 $ \\

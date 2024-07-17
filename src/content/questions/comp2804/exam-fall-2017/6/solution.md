@@ -1,11 +1,11 @@
-\begin{enumerate}
-\item Let D be the set of students that like Donald Trump \\
+<ul>
+<li> Let D be the set of students that like Donald Trump \\
 $ |D| = 13 $
-	\item Let B be the set of students that like Justin Bieber \\
+	<li> Let B be the set of students that like Justin Bieber \\
 	      $ |B| = 25 $
-	\item Let $ D \cap B $ be the set of students that like both Donald Trump and Justin Bieber \\
+	<li> Let $ D \cap B $ be the set of students that like both Donald Trump and Justin Bieber \\
 	      $ |D \cap B| = 8 $
-\end{enumerate}
+</ul>
 Let's find $ |D \cup B| $ \\
 $ |D \cup B| = |D| + |B| - |D \cap B| $ \\
 $ |D \cup B| = 13 + 25 - 8 $ \\

@@ -1,6 +1,6 @@
 Let's write out all recursive cases for $S_n$
-\begin{enumerate}
-\item $0, S_{n-1} $
-	\item $1, 0, S_{n-2} $
-\end{enumerate}
+<ul>
+<li> $0, S_{n-1} $
+	<li> $1, 0, S_{n-2} $
+</ul>
 $S*n = S*{n-1} + S\_{n-2} $

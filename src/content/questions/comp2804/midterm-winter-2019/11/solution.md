@@ -9,12 +9,12 @@ Which of the following is true for all integers $ n \geq 0 $? \\
 We can find the first few values of $ f(n) $ to find a pattern: \\
 $ f(1) = 4 \cdot f(0) + 2^1 = 4 \cdot 6 + 2 = 26 $ \\
 $ f(2) = 4 \cdot f(1) + 2^2 = 4 \cdot 26 + 4 = 108 $
-\begin{enumerate}
-\item $ f(n) = 6 \cdot 4^{n} - 2^{n} $ \\
+<ul>
+<li> $ f(n) = 6 \cdot 4^{n} - 2^{n} $ \\
 $ f(1) = 6 \cdot 4^{1} - 2^{1} = 24 - 2 = 22 $
-\item $ f(n) = 7 \cdot 4^{n} - 2^{n} $
+<li> $ f(n) = 7 \cdot 4^{n} - 2^{n} $
 $ f(1) = 7 \cdot 4^{1} - 2^{1} = 28 - 2 = 26 $
-\item $ f(n) = 8 \cdot 4^{n} - 2^{n+1} $ \\
+<li> $ f(n) = 8 \cdot 4^{n} - 2^{n+1} $ \\
 $ f(1) = 8 \cdot 4^{1} - 2^{2} = 32 - 4 = 28 $
-\end{enumerate}
+</ul>
 Thus, the correct answer is $ f(n) = 7 \cdot 4^{n} - 2^{n} $.

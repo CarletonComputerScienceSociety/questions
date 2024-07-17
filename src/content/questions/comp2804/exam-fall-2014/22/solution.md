@@ -9,10 +9,10 @@
    Since we are looking for consecutive $ HTH $ patterns, we need to consider overlapping patterns in the sequence.
    In a sequence of 6 coin flips, the positions where a $ HTH $ can start are:
    \begin{itemize}
-   \item 1st position: $ \{1, 2, 3\} $
-   \item 2nd position: $ \{2, 3, 4\} $
-   \item 3rd position: $ \{3, 4, 5\} $
-   \item 4th position: $ \{4, 5, 6\} $
+   <li> 1st position: $ \{1, 2, 3\} $
+   <li> 2nd position: $ \{2, 3, 4\} $
+   <li> 3rd position: $ \{3, 4, 5\} $
+   <li> 4th position: $ \{4, 5, 6\} $
    \end{itemize}
    Therefore, there are 4 possible positions for a $ HTH $ to occur.
 3. **Expected Value Contribution from Each Position:**

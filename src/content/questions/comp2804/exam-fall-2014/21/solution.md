@@ -3,19 +3,19 @@
 1. **Possible Outcomes and Corresponding Values:**
    There are four possible outcomes when flipping two fair coins:
    \begin{itemize}
-   \item First coin is heads (H), second coin is heads (H): $(H, H)$
-   \item First coin is heads (H), second coin is tails (T): $(H, T)$
-   \item First coin is tails (T), second coin is heads (H): $(T, H)$
-   \item First coin is tails (T), second coin is tails (T): $(T, T)$
+   <li> First coin is heads (H), second coin is heads (H): $(H, H)$
+   <li> First coin is heads (H), second coin is tails (T): $(H, T)$
+   <li> First coin is tails (T), second coin is heads (H): $(T, H)$
+   <li> First coin is tails (T), second coin is tails (T): $(T, T)$
    \end{itemize}
 
 2. **Winning Amount for Each Outcome:**
    For each outcome, we determine the amount $ X $ that you win:
    \begin{itemize}
-   \item $(H, H)$: The first coin is heads, so we don't lose. The second coin is heads, so we win 1 dollar. Thus, $ X = 1 $.
-	\item $(H, T)$: The first coin is heads, so we don't lose. The second coin is tails, so we don't win. Thus, $ X = 0 $.
-	\item $(T, H)$: The first coin is tails, so we lose (i.e., we win $-1$ dollars). The second coin is heads, so we win 1 dollar, but since the first coin being tails means we lose, this overrides the second coin's result. Thus, $ X = -1 $.
-	\item $(T, T)$: The first coin is tails, so we lose (i.e., we win $-1$ dollars). The second coin is tails, so we don't win. Thus, $ X = -1 $.
+   <li> $(H, H)$: The first coin is heads, so we don't lose. The second coin is heads, so we win 1 dollar. Thus, $ X = 1 $.
+	<li> $(H, T)$: The first coin is heads, so we don't lose. The second coin is tails, so we don't win. Thus, $ X = 0 $.
+	<li> $(T, H)$: The first coin is tails, so we lose (i.e., we win $-1$ dollars). The second coin is heads, so we win 1 dollar, but since the first coin being tails means we lose, this overrides the second coin's result. Thus, $ X = -1 $.
+	<li> $(T, T)$: The first coin is tails, so we lose (i.e., we win $-1$ dollars). The second coin is tails, so we don't win. Thus, $ X = -1 $.
    \end{itemize}
 
 3. **Calculate the Expected Value $ E(X) $:**
@@ -26,9 +26,9 @@
    Each of the four outcomes has a probability of $ \frac{1}{4} $, as the coins are fair and independent.
 Therefore, we have:
 \begin{itemize}
-	\item $ P(X = 1) = \frac{1}{4} $ (from the $(H, H)$ outcome)
-   \item $ P(X = 0) = \frac{1}{4} $ (from the $(H, T)$ outcome)
-   \item $ P(X = -1) = \frac{1}{2} $ (from the $(T, H)$ and $(T, T)$ outcomes combined)
+	<li> $ P(X = 1) = \frac{1}{4} $ (from the $(H, H)$ outcome)
+   <li> $ P(X = 0) = \frac{1}{4} $ (from the $(H, T)$ outcome)
+   <li> $ P(X = -1) = \frac{1}{2} $ (from the $(T, H)$ and $(T, T)$ outcomes combined)
    \end{itemize}
 
 4. **Substitute the Values into the Expected Value Formula:**
