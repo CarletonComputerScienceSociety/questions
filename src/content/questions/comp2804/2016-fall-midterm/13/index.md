@@ -8,4 +8,5 @@ solution: comp2804/2016-fall-midterm/13/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - Fibonacci Numbers (4.2)
 ---

@@ -8,4 +8,5 @@ solution: comp2804/2014-winter-midterm/7/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - Newton’s Binomial Theorem (3.6.2)
 ---

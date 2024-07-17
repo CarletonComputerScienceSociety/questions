@@ -8,4 +8,6 @@ solution: comp2804/2015-fall-midterm/2/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - The Bijection Rule (3.2.1)
+  - The Complement Rule (3.3)
 ---

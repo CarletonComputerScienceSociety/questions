@@ -9,6 +9,7 @@ tags:
   - comp2804
   - comp2804-midterm
   - comp2804-newton-binomial-coefficients
+  - Newton’s Binomial Theorem (3.6.2)
 ---
 
 What is the coefficient of $x^{20}y^{80}$ in the expansion of $(5x - 3y)^{100}$?

@@ -9,6 +9,9 @@ tags:
   - comp2804
   - comp2804-midterm
   - comp2804-bitstrings
+  - Product Rule (3.1)
+  - Counting Bitstrings of Length n (3.1.1)
+  - Principle of Inclusion and Exclusion (3.5)
 ---
 
 How many bitstrings of length 99 are there that start with 1010 or end with 1010?

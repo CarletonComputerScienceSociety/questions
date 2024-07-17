@@ -8,4 +8,5 @@ solution: comp2804/2018-fall-midterm/1/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - The Product Rule (3.1)
 ---

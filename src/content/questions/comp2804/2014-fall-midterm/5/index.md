@@ -9,6 +9,7 @@ tags:
   - comp2804
   - comp2804-midterm
   - comp2804-pigeonhole-principle
+  - Pigeonhole Principle (3.10)
 ---
 
 Is the following true or false? In any group of 900 people, there must be at least three people that have the same birthday.

@@ -8,4 +8,5 @@ solution: comp2804/2018-winter-midterm/13/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - Independent Events (5.11)
 ---

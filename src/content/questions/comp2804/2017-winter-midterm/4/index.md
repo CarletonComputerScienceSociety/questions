@@ -8,4 +8,6 @@ solution: comp2804/2017-winter-midterm/4/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - Permutations and Binomial Coefficients (3.6.2)
+  - The Principle of Inclusion and Exclusion (3.5)
 ---

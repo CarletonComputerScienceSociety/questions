@@ -8,4 +8,6 @@ solution: comp2804/2017-winter-midterm/8/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - Counting Functions (3.1.1)
+  - The Pigeonhole Principle (3.10)
 ---

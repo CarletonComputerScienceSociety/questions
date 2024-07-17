@@ -8,4 +8,6 @@ solution: comp2804/2016-fall-midterm/5/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - The Product Rule (3.1)
+  - The Principle of Inclusion and Exclusion (3.5)
 ---

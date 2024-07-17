@@ -8,4 +8,6 @@ solution: comp2804/2017-winter-midterm/2/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - Product Rule (3.1)
+  - Placing Books on Shelves (3.1.3)
 ---

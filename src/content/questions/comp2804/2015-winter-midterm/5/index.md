@@ -8,4 +8,5 @@ solution: comp2804/2015-winter-midterm/5/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - The Principle of Inclusion and Exclusion (3.5)
 ---

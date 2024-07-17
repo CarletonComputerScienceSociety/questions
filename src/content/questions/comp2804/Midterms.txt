@@ -1,0 +1,3675 @@
+\documentclass{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{fdsymbol}
+\usepackage[linguistics]{forest}
+\usepackage{cancel}
+\usepackage{csquotes}
+
+
+\usepackage{charter}
+\usepackage{verbatim}
+\usepackage{amssymb}
+\usepackage{charter}
+\usepackage{graphicx}
+\usepackage{verbatim} 
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{xcolor, graphicx}
+
+\setlength{\textwidth}{7in}
+\setlength{\evensidemargin}{-0.24in}
+\setlength{\oddsidemargin}{-0.24in}
+\setlength{\textheight}{8.45in}
+\setlength{\topmargin}{-0.45in}
+\setlength{\parindent}{0.3in}
+\headheight20pt
+\headsep22pt
+
+\pagestyle{myheadings}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{}\vspace{-5pt}\\\hrulefill}
+
+\def\qed{\ \ \vrule height6pt width5pt depth3pt}
+\newcommand{\eps}{\epsilon}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\setcounter{page}{1}
+\setcounter{section}{0}
+\setcounter{subsection}{0}
+\renewcommand{\implies}{\rightarrow}
+\newcommand{\xor}{\oplus}
+\newcommand{\same}{\leftrightarrow}
+
+\usepackage{pifont} 
+\renewcommand{\qed}{\ding{113}}
+
+
+
+\begin{document}
+\bibliographystyle{alpha}
+\title{COMP 2804 Midterms}
+\author{john.lu10212004 }
+\maketitle
+\thispagestyle{fancy}
+\noindent
+\medskip
+\section{2013 Fall Midterm}
+
+\subsection{Question 1}
+\textbf{Plaintext Question:} Let $ A $ be a set of size 7 and let $ B $ be a set of size 13. How many one-to-one functions $ f: A \rightarrow B $ are there? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Counting Functions (3.1.2) \\
+\textbf{Explanation: } \\
+The first input can be any of the 13 outputs. \\
+The second input can be any of the 12 remaining outputs. \\
+... \\
+The seventh input can be any of the 7 remaining outputs. \\
+$ 13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 $ \\
+$ = \frac{13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}{6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} $ \\
+$ = \frac{13!}{6!} $
+
+\subsection{Question 2}
+\textbf{Plaintext Question:} You are given  books and 7 bookshelves.
+How many ways are there to place these books on the shelves? (The order on the shelves matters.) \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Placing Books on Shelves (3.1.3) \\
+\textbf{Explanation: } \\
+The first book can be placed on any of the 7 shelves. \\
+The second book can be placed in 8 spots because it can be put to the left of the first book or the right of the first book \\
+The third book can be placed in 9 spots because it can be put to the left of the first book, between the first and second book, or to the right of the second book \\
+The fourth book can be placed in 10 spots because it can be put to the left of the first book, between the first and second book, between the second and third book, or to the right of the third book \\
+The fifth book can be placed in 11 spots because it can be put to the left of the first book, between the first and second book, between the second and third book, between the third and fourth book, or to the right of the fourth book \\
+$ 7 \cdot 8 \cdot 9 \cdot 10 \cdot 11 $ \\
+$ = \frac{11!}{6!} $
+
+\subsection{Question 3}
+\textbf{Plaintext Question:} A password consists of 6 or 7 characters, each character being an uppercase or a lowercase letter. A password must contain at least one uppercase letter. How many passwords are there? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Complement Rule (3.3), Sum Rule (3.4) \\
+\textbf{Explanation: } \\
+For 7 characters, there are $ 52^7 $ total possibilities. \\
+For 6 characters, there are $ 52^6 $ total possibilities. \\
+We can subtract the number of passwords that do not contain an uppercase letter from the total number of possibilities. \\
+For 7 characters, there are $ 26^7 $ possibilities that do not contain an uppercase letter. \\
+For 6 characters, there are $ 26^6 $ possibilities that do not contain an uppercase letter. \\
+Thus, the number of passwords that contain an uppercase letter is $ 52^7 - 26^7 + 52^6 - 26^6 $
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} \\
+In a group of 20 people,
+\begin{itemize}
+	\item 6 are blond,
+	\item 7 have green eyes,
+	\item 11 are not blond and do not have green eyes.
+\end{itemize}
+How many people are blond and have green eyes? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Principle of Inclusion and Exclusion (3.5), De Morgan's Law (no corresponding chapter) \\
+\textbf{Explanation: } \\
+A = blond
+$ |A| = 6 $ \\
+B = green eyes
+$ |B| = 7 $ \\
+$ |\overline{A \cap B}| = 11 $ \\
+$ | A \cup B | = 20 - 11 = 9 $ \\
+$ | A \cup B | = |A| + |B| - |A \cap B| $ \\
+$ 9 = 6 + 7 - |A \cap B| $ \\
+$ |A \cap B| = 4 $
+
+\subsection{Question 5}
+\textbf{Plaintext Question:} How many bitstrings of length 55 start with 101 or end with 1111? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length $n$ (3.1.1), Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+Let A be the set of all bitstrings of length 55 that start with 101. \\
+$ |A| = 2^{55-3} = 2^{52} $ \\
+Let B be the set of all bitstrings of length 55 that end with 1111. \\
+$ |B| = 2^{55-4} = 2^{51} $ \\
+Let C be the set of all bitstrings of length 55 that start with 101 and end with 1111. \\
+$ |C| = 2^{55-3-4} = 2^{48} $ \\
+$ |A \cup B| = |A| + |B| - |A \cap B| $ \\
+$ |A \cup B| = 2^{52} + 2^{51} - 2^{48} $
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} Each person in a group of $ n $ people has a last name consisting of two uppercase letters. For what values of $ n $ can we guarantee that there are at least two people with the same last name? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+There are $ 26^2 = 676 $ possible last names. \\
+If $ n = 676+1 $, then we can guarantee that there are at least two people with the same last name.
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} How many bitstrings of length 13 contain exactly 3 zeros? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Permutations and Binomial Coefficients (3.6) \\
+\textbf{Explanation: } \\
+We can choose 3 spots for the zeros out of the 13 spots. \\
+$ \binom{13}{3} $ \\
+$ = \binom{13}{10} $
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} What is the coefficient of $ x^{12}y^{12} $ in the expansion of $ {(3x-7y)}^{24} $? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Newton’s Binomial Theorem (3.6.2) \\
+\textbf{Explanation: } \\
+$ = \sum^{24}_{k=0} \binom{24}{k} {(3x)}^k {(-7y)}^{24-k} $ \\
+$ = \binom{24}{12} {(3x)}^{12} {(-7y)}^{12} $ \\
+$ = \binom{24}{12} 3^{12} 7^{12} x^{12} y^{12} $ \\
+$ = \binom{24}{12} {21}^{12} x^{12} y^{12} $
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} Which of the following is true? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Newton’s Binomial Theorem (3.6.2) \\
+\textbf{Explanation: } \\
+If we apply Newton's Binomial Theorem, we can reverse engineer the LHS using the RHS
+\begin{enumerate}
+	\item $6^n = (1+5)^n = \sum_{k=0}^{n} \binom{n}{k} (1)^{n-k} (5^k) = \sum_{k=0}^{n} \binom{n}{k} (5^k)$
+\end{enumerate}
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} How many strings can be obtained by rearranging the letters of the word POOPERSCOOPER \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Reordering The Letters of a Word (3.9.1) \\
+\textbf{Explanation: } \\
+There are 13 letters in the word "POOPERSCOOPER". \\
+We can break down how many letters of each there are: \\
+3 P's, 4 O's, 2 E's, 2 R's, 1 S, 1 C \\
+We choose 4 spots for the O's out of the 13 spots: $ \binom{13}{4} $ \\
+We choose 3 spots for the P's out of the 9 spots: $ \binom{9}{3} $ \\
+We choose 2 spots for the E's out of the 6 spots: $ \binom{6}{2} $ \\
+We choose 2 spots for the R's out of the 4 spots: $ \binom{4}{2} $ \\
+We choose 1 spot for the S out of the 2 spots: $ \binom{2}{1} $ \\
+We choose 1 spot for the C out of the 1 spot: $ \binom{1}{1} $ \\
+Thus, there are $ \binom{13}{4} \cdot \binom{9}{3} \cdot \binom{6}{2} \cdot \binom{4}{2} \cdot \binom{2}{1} \cdot \binom{1}{1} $ = $ \binom{13}{4} \cdot \binom{9}{3} \cdot \binom{6}{2} \cdot \binom{4}{2} \cdot \binom{2}{1} $ strings
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} \\
+The function $ f: \mathbb{N} \rightarrow \mathbb{N} $ is defined by \\
+$ f(0) = 14 $ \\
+$ f(n+1) = f(n) + 4n - 5 $ for $ n \geq 0 $ \\
+What is $ f(n) $? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+Let's calculate $ f(1) $ \\
+$ f(1) = 14 + 4(0) - 5 = 9 $
+\begin{enumerate}
+	\item $ f(n) = 2n^{2} + 6n + 14 $ \\
+	      $ f(1) = 2(1)^2 + 6(1) + 14 = 22 $
+	\item $ f(n) = 2n^{2} - 6n + 14 $ \\
+	      $ f(1) = 2(1)^2 - 6(1) + 14 = 10 $
+	\item $ f(n) = 2n^{2} + 7n + 14 $ \\
+	      $ f(1) = 2(1)^2 + 7(1) + 14 = 23 $
+	\item $ f(n) = 2n^{2} - 7n + 14 $ \\
+	      $ f(1) = 2(1)^2 - 7(1) + 14 = 9 $
+\end{enumerate}
+Thus, (d) is the most appropriate response
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} Consider the recursive algorithm $ FIB $, which takes as input an integer $ n \geq 0 $.
+\begin{verbatim}
+Algorithm Fib(n):
+if n = 0 or n = 1
+then f = n
+else f = Fib(n - 1) + Fib(n - 2)
+endif
+return f
+\end{verbatim}
+When running $ FIB(5) $, how many calls are there to $ FIB(2) $? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Fibonacci Numbers (4.2) \\
+\textbf{Explanation: } \\
+We can draw a recursive tree to see how many calls there are to $ FIB(2) $ \\
+\begin{forest}
+	[f$(5)$
+		[f$(4)$
+				[f$(3)$
+						[f$(2)$]
+							[f$(1)$]
+					]
+					[f$(2)$]
+			]
+			[f$(3)$
+				[f$(2)$]
+					[f$(1)$]
+			]
+	]
+\end{forest}
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} \\
+The Fibonacci numbers are defined as follows: $ f_0 = 0, f_1 = 1 $, and $ f_n = f_{n-1} + f_{n-2} $ for $n \geq 2 $. \\
+Consider the recursive algorithm $ FIB $, which takes as input an integer $ n \geq 0$.
+\begin{verbatim}
+Algorithm Fib(n):
+if n = 0 or n = 1
+then f = n
+else f = Fib(n - 1) + Fib(n - 2)
+endif
+return f
+\end{verbatim}
+For $ n \geq 2 $, run algorithm $ FIB(n)$ and let $ a_n $ be the number of times that $ FIB(0) $ is called. \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Fibonacci Numbers (4.2) \\
+\textbf{Explanation: } \\
+We can draw a recursive tree to see how many calls there are to $ FIB(0) $ \\
+\begin{forest}
+	[f$(5)$
+		[f$(4)$
+				[f$(3)$
+						[f$(2)$]
+							[f$(1)$]
+							[f$(0)$]
+					]
+					[f$(2)$
+						[f$(1)$]
+							[f$(0)$]
+					]
+			]
+			[f$(3)$
+				[f$(2)$
+						[f$(1)$]
+							[f$(0)$]
+					]
+					[f$(1)$]
+			]
+	]
+\end{forest} \\
+As can be seen, $ FIB(0) $ is called 3 times, which corresponds to $f_{n-1} = f_{5-1} = f_{4}$
+
+\subsection{Question 14}
+\textbf{Plaintext Question:} What does the summation $ \sum_{k=7}^{n} \binom{k-1}{6} $ count? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Combinatorial Proof (3.7) \\
+\textbf{Explanation: } \\
+For answer c), if we sub in $n = 7$, then we are trying to find the number osf subsets of $\{1, 2, ... 7 \}$ having size 7. There is only 1 way to do this (choosing all the numbers in the set $\{1, 2, ... 7 \}$, which matches the summation $\sum_{k=7}^{n} \binom{k-1}{6} = \sum_{k=7}^{7} \binom{k-1}{6} = 1$. \\
+For the options a) and b), there are more than one subset having size 5 and size 6, which means it doesn't match the summation in the question description.
+
+\subsection{Question 15}
+\textbf{Plaintext Question:} If you flip a fair coin 4 times, what is the probability that the coin comes up heads exactly twice? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Probability (5) \\
+\textbf{Explanation: } \\
+There are $ 2^4 = 16 $ possible outcomes. \\
+We can choose 2 spots for the heads out of the 4 spots: $ \binom{4}{2} $ \\
+Thus, the probability is $ \frac{\binom{4}{2}}{16} $
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} If you choose an element $ x $ uniformly at random from the set $ {1, 2, \ldots, 100} $, what is the probability that $ x $ is divisible by 4 or 5?\\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Principle of Inclusion and Exclusion (3.5), Probability (5) \\
+\textbf{Explanation: } \\
+Let's break this down into two cases. \\
+A = divisible by 4 \\
+$ |A| = 25 $ \\
+B = divisible by 5 \\
+$ |B| = 20 $ \\
+$ |A \cap B| = 5 $ \\
+$ |A \cup B| = |A| + |B| - |A \cap B| $ \\
+$ |A \cup B| = 25 + 20 - 5 $ \\
+$ |A \cup B| = 40 $ \\
+Pr($A \cup B$) = $ \frac{40}{100} $ \\
+Pr($A \cup B$) = $ \frac{2}{5} $
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} If you answer each question in this midterm by choosing an answer uniformly at random, what is the probability that you get all answers correct? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Probability (5) \\
+\textbf{Explanation: } \\
+The probability of getting a single question correct is $ \frac{1}{4} $ \\
+The probability of getting all 17 questions correct is $ \frac{1}{4^{17}} $
+
+
+
+
+
+
+
+
+
+\section{2014 Fall Midterm}
+
+\subsection{Question 1}
+\textbf{Plaintext Question:} Let n $\geq$ 2 be an integer. How many bitstrings of length $n$ are there that contain at least
+two 1s? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Counting Bitstrings of Length n (3.1.1), Complement Rule (3.3) \\
+\textbf{Explanation: } \\
+We can break it down \\
+Let U be the set of all possible n-length bitstrings \\
+$ |U|=2^n $ \\
+Let A be the set of all bitstrings with all 0's \\
+$ |A|= $n choose n zeros $ = \binom{n}{n} $ \\
+Let B be the set of all bitstrings no zeros \\
+$|B|= $n choose n-1 zeros $ = \binom{n}{n-1} $ \\
+$|U| - |A| - |B|$ \\
+$=2^n - \binom{n}{n} - \binom{n}{n-1}$ \\
+$=2^n - \frac{n!}{n!0!} - \frac{n!}{(n-1)!1!}$ \\
+$=2^n - 1 - n$ \\
+We can also write it differently and get the same answer \\
+Let U be the set of all possible n-length bitstrings \\
+$|U|=2^n$ \\
+Let A be the set of all bitstrings with zero 1's \\
+$|A|=$n choose zero 1's $= \binom{n}{0}$ \\
+Let B be the set of all bitstrings a single 1 \\
+$|B|=$n choose a single 1 $= \binom{n}{1}$ \\
+$|U| - |A| - |B|$ \\
+$=2^n - \binom{n}{0} - \binom{n}{1}$ \\
+$=2^n - \frac{n!}{n!0!} - \frac{n!}{(n-1)!1!}$ \\
+$=2^n - 1 - n$
+
+\subsection{Question 2}
+\textbf{Plaintext Question:} How many bitstrings of length 99 are there that start with 1010 or end with 1010? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Counting Bitstrings of Length n (3.1.1), Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+We can break it down \\
+Let A be the set of all bitstrings of length 55 starting with 1010 \\
+$|B|=2^{99-4 \text{ bits that I set}}$ \\
+$|A|=2^{95}$
+Let B be the set of all bitstrings of length 55 ending with 1010 \\
+$|B|=2^{99-4 \text{ bits that I set}}$ \\
+$|B|=2^{95}$ \\
+Set A takes into account the cases in Set B, but Set B also takes into account cases in Set A $ \ldots $ \\
+To avoid double counting, we subtract the case when both occur \\
+$|A \cap B| = 2^{95-4-4} = 2^{91}$ \\
+Now, to put everything together \\
+$|A \cup B| = |A|+|B|-|A \cap B|$ \\
+$|A \cup B| = 2^{95} + 2^{95} - 2^{91}$ \\
+$|A \cup B| = 2(2^{95}) - 2^{91}$ \\
+$|A \cup B| = 2^1 \cdot 2^{95} - 2^{91}$ \\
+$|A \cup B| = 2^{96} - 2^{91}$
+
+\subsection{Question 3}
+\textbf{Plaintext Question:} Consider 17 boys and 17 girls. How many ways are there to arrange them on a line if all boys are standing next to each other and all girls are standing next to each other. \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Placing Books on Shelves (3.1.3) \\
+\textbf{Explanation: } \\
+We can break it down \\
+Let B be the \# of ways to place boys \\
+$|B| = 17 \cdot 16 \cdot 15 \cdot 14 \cdot 13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 17! $ \\
+Let G be the \# of ways to place girls \\
+$|G| = 17 \cdot 16 \cdot 15 \cdot 14 \cdot 13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 17! $ \\
+Now, all the boys are together and all the girls are together. \\
+We can rearrange these groups in 2 ways. \\
+Boys on the left and girls on the right OR Boys on right right and girls on the left. \\
+These are two possible ways to rearrange these groups. As such, we multiply by 2 \\
+$2 \cdot |B| \cdot |G| $ \\
+$2 \cdot 17! \cdot 17! $ \\
+$2{(17!)}^2$
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} Consider 12 boys, 17 girls, and 25 dogs. How many ways are there to arrange them on a line if
+• all boys stand next to each other,
+• all girls stand next to each other,
+• all dogs stand next to each other,
+• none of the boys is standing next to any of the girls\\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Placing Books on Shelves (3.1.3) \\
+\textbf{Explanation: } \\
+We can break it down \\
+Let B be the \# of ways to place boys \\
+$|B| = 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 12! $ \\
+Let G be the \# of ways to place girls \\
+$|G| = 17 \cdot 16 \cdot 15 \cdot 14 \cdot 13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 17! $ \\
+Let D be the \# of ways to place girls \\
+$|D| = 25 \cdot 24 \cdot 23 \cdot 22 \cdot 21 \cdot 20 \cdot 19 \cdot 18 \cdot 17 \cdot 16 \cdot 15 \cdot 14 \cdot 13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 25! $ \\
+Imagine $B,D$, and $G$ are all groups. Boy group can't be beside the girl group, so the arrangement will either be $BDG$ or $GDB$. \\
+That's 2 possible 2 combos of groups \\
+$2 \cdot |B| \cdot |G| \cdot |D| $ \\
+$2 \cdot 12! \cdot 17! \cdot 25! $ \\
+$2(12!)(17!)(25!)$
+
+\subsection{Question 5}
+\textbf{Plaintext Question:} Is the following true or false? In any group of 900 people, there must be at least three people that have the same birthday. \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+We can use pigeonhole principle to find the answer. If the result is 3 or above, then the statement is true. \\
+$= \lceil \frac{900}{365} \rceil $ \\
+$=\lceil 2.465\rceil $ \\
+$=3$ \\
+True
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} Consider a square with sides of length 3. Assume this square contains 10 points. Which of the following is true? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+This is too hard to draw out, so I'll explain \\
+Split the square into 9 pieces. 3 rows and 3 columns. \\
+You now have 9 squares that are each 1 unit long \\
+Put a point in each of them as far away from the others. \\
+For instance, the point in the upper right square will try to move to the upper right corner to get even further from the other points in other squares \\
+You've just put down 9 points. Put 1 more point in one of the boxes. So let's use the upper right square as example. \\
+Assuming you put the 10th point in that box, then you'll put it in the bottom left part of the upper right box. \\
+The length of the right of the box is ${\sqrt{1}}$. Distance from the points is hypotenuse. \\
+Hypotenuse $^2 = {\sqrt{1}}^2 + {\sqrt{1}}^2 $ \\
+Hypotenuse $^2 = 2 {\sqrt{1}}^2 $ \\
+Hypotenuse $^2 = 2 $ \\
+Hypotenuse $ = \sqrt{2} $
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} What is the coefficient of $x^{20}y^{80}$ in the expansion of $(5x - 3y)^{100}$ ? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Newton’s Binomial Theorem (3.6.2) \\
+\textbf{Explanation: } \\
+${(5x-36)}^{100}$ \\
+$=\sum^{100}_{k=0} \binom{100}{k}{(5x)}^k {(-3y)}^{n-k}$ \\
+$=\binom{100}{20}{(5x)}^{20} {(-3y)}^{80}$ \\
+$=\binom{100}{20}5^{20} 3^{80} x^{20} y^{80}$ \\
+$=\binom{100}{80}5^{20} 3^{80} x^{20} y^{80}$
+$=\binom{100}{80}5^{20} 3^{80} $ (this is the coefficient)
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 = 27$, where $x_1 \geq 0, x_2 \geq 0,
+	x_3 \geq 0$, and $x_4 \geq 0$ are integers? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Counting Solutions of Linear Equations (3.9.2) \\
+\textbf{Explanation: } \\
+Suppose we have 27 blocks. \\
+$x_1$ takes up 0 to 27 blocks. Same goes with $x_2, x_3$ and $x_4$ \\
+If we put dividers between each x, then we have 3 dividers. Since the dividers also take up space, then we can assume we have 27 spots + 3 spots for dividers. \\
+We can put the dividers into any of these 30 spots and are looking for the number of combinations. We are choosing 3 spots from 30. \\
+$\binom{30}{3}$
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} Let $m \geq 1$ and $n \geq 1$ be integers. Consider a rectangle whose horizontal side has length m
+and whose vertical side has length n. A path from the bottom-left corner to the top-right corner is called valid, if in each step, it either goes one unit to the right or one unit upwards. How many valid paths are there? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+We can check the first few cases to see which answer matches the pattern:
+\begin{itemize}
+	\item $m=1, n=1$: 2
+	\item $m=2, n=2$: 6
+\end{itemize}
+If we now plug in these values into the answers we are given for m=1, n=1:
+\begin{enumerate}
+	\item $\binom{m+n}{n-1} = \binom{1+1}{1-1} = \binom{2}{0} = 1$
+	\item $\binom{m+n}{n} = \binom{1+1}{1} = \binom{2}{1} = 2$
+	\item $2^{m+n} = 2^{1+1} = 2^{2} = 4$
+	\item $2^{m} + 2^{n} = 2^{1} + 2^{1} = 2 + 2 = 4$
+\end{enumerate}
+As you can see, the only answer that works is b).
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} The function $f : N \xrightarrow[]{} N$ is defined by
+$f(0) = 8$
+$f(n) = f(n - 1) + 6n - 8$ for $n \geq 1$
+What is $f(n)$? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+For a question like this, let's first calculate $ f(1) $. \\
+$f(1)=8+6-8=6$
+\begin{enumerate}
+	\item $ f(1)=2-5+7=4 $
+	\item $ f(1)=2-5+8=5 $
+	\item $ f(1)=3-5+8=6 $
+	\item $ f(2)=4-5+8=9 $
+\end{enumerate}
+As we can see, only (c) fits the original
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} Let $B_n$ be the number of bitstrings of length $n$ that do not contain 1111. Which of the following is true? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length $n$ (3.1.1), Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+There are 4 possibilities every time. \\
+It can go as follows without getting 4 consecutive 1s $ \ldots $ \\
+0 $B_{n-1}$ \\
+1 0 $B_{n-2}$ \\
+1 1 0 $B_{n-3}$ \\
+1 1 1 0 $B_{n-4}$ \\
+We have the following amount of recursive possibilities: $B_{n-1}+B_{n-2}+B_{n-3}+B_{n-4}$
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} Consider the following recursive algorithm Fib, which takes as input an integer $n \geq 0$:
+
+\begin{verbatim}
+Algorithm Fib(n):
+if n = 0 or n = 1
+then f = n
+else f = Fib(n - 1) + Fib(n - 2)
+endif;
+return f
+\end{verbatim}
+When running Fib(9), how many calls are there to Fib(4)? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Fibonacci Numbers (4.2)
+\textbf{Explanation: } \\
+The best way to do this is to draw it out \\
+\begin{forest}
+	[f$(9)$
+		[f$(8)$
+				[f$(7)$
+						[f$(6)$
+								[f$(5)$
+										[f$(4)$]
+											[f$(3)$]
+									]
+									[f$(4)$]
+							]
+							[f$(5)$
+								[f$(4)$]
+									[f$(3)$]
+							]
+					]
+					[f$(6)$
+						[f$(5)$
+								[f$(4)$]
+									[f$(3)$]
+							]
+							[f$(4)$]
+					]
+			]
+			[f$(7)$
+				[f$(6)$
+						[f$(5)$
+								[f$(4)$]
+									[f$(3)$]
+							]
+							[f$(4)$]
+					]
+					[f$(5)$
+						[f$(4)$]
+							[f$(3)$]
+					]
+			]
+	]
+\end{forest} \\
+As can be seen, f$(4)$ is called 8 times
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} Consider the following recursive algorithm Silly, which takes as input an integer $n \geq 1$ which is a power of 2:
+
+\begin{verbatim}
+Algorithm Silly(n):
+if n = 1
+then drink one pint of beer
+else if n = 2
+then fart once
+else fart once;
+Silly(n/2);
+fart once
+endif
+endif
+\end{verbatim}
+For n a power of 2, let F(n) be the number of times you fart when running algorithm Silly(n). Which of the following is true? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+Let's test it out\\
+$f(1)=0$ \\
+$f(2)=1$ \\
+$f(4)=3$ \\
+$f(8)=5$ \\
+$f(16)=7$ \\
+$f(32)=9$
+\begin{enumerate}
+	\item $F(32)=\log{32}=5$
+	\item $F(32)=2\log{32}=10$
+	\item $F(32)=2\log{32}-1=9$ \\
+	      $F(1)=2 \log{1}-1=-1$
+	\item $F(32)=2\log{32}-1=9$ \\
+	      $F(2)=2 \log{2}-1=1$
+\end{enumerate}
+As can be seen, (d) gives the most appropriate response
+
+\subsection{Question 14}
+\textbf{Plaintext Question:}  You flip a fair coin 5 times. What is the probability that the first flip results in heads or the fifth flip results in heads? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Basic Rules of Probability (5.3) \\
+\textbf{Explanation: } \\
+$\Pr(A)$ = probability of first flip being heads \\
+$\Pr(A)$ = 1/2 \\
+$\Pr(B)$ = probability of fifth flip being heads \\
+$\Pr(B)$ = 1/2 \\
+Pr$(A \cap B)$ = probability of both the first and fifth flip being heads \\
+Pr$(A \cap B) = (1/2) * (1/2) = 1/4 $ \\
+$|A \cup B| = |A|+|B|-|A \cap B|$ \\
+$|A \cup B| = \frac{1}{2}+\frac{1}{2}-\frac{1}{4}$ \\
+$|A \cup B| = \frac{3}{4}$
+
+\subsection{Question 15}
+\textbf{Plaintext Question:} You flip a fair coin 5 times. Define the events A = “the number of heads is odd” and B = “the number of tails is even”. Which of the following is true? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Basic Rules of Probability (5.3) \\
+\textbf{Explanation: } \\
+We can draw this out for clarification with a smaller example of 3 flips\\
+\begin{forest}
+	[XXX
+			[HXX
+					[HHX
+							[HHH]
+							[HHT]
+					]
+					[HTX
+							[HTH]
+							[HTT]
+					]
+			]
+			[TXX
+					[THX
+							[THH]
+							[THT]
+					]
+					[TTX
+							[TTH]
+							[TTT]
+					]
+			]
+	]
+\end{forest} \\
+Here, there are 4 possibilities of even tails out of 8 possibilities \\
+There are 4 possibilities of even heads out of 8 possibilities \\
+$\Pr(A)$=1/2\\
+$\Pr(B)$=1/2\\
+(a) is correct
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} Consider 10 boxes and 10 balls. We throw each ball, uniformly, in a random box. What is the probability that, after we have thrown all 10 balls, none of the 10 boxes is empty? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Basic Rules of Probability (5.3) \\
+\textbf{Explanation: } \\
+We can write it out $ \ldots $ \\
+The first ball has a 10/10 possibility of getting into an empty box \\
+The second ball has 9/10 possibility of getting into an empty box \\
+Assuming the previous balls are in different boxes, the third ball has 8/10 possibility of getting into an empty box \\
+We can write this down as$ \ldots $ \\
+$=\frac{10}{10} \cdot \frac{9}{10} \cdot \frac{8}{10} \cdot \frac{7}{10} \cdot \frac{6}{10} \cdot \frac{5}{10} \cdot \frac{4}{10} \cdot \frac{3}{10} \cdot \frac{2}{10} \cdot \frac{1}{10}$ \\
+$=\frac{10!}{{10}^{10}}$
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} Assume you write a multiple-choice exam that consists of 100 questions. For each question, 4 options are given, one of which is the correct one. If you answer each of the 100 questions by choosing an answer uniformly at random, what is the probability that you have exactly one correct answer? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Independent Events (5.11) \\
+\textbf{Explanation: } \\
+We can expand it. First, we pick 1 out of the 100 questions. There are 100 possibilities. \\
+Then, the probability that we got it right is (1/4) \\
+Then, the probability that the second question we do is wrong is $(3/4)$
+Then, the probability that the third question we do is wrong is $(3/4)$
+We can write this as$ \ldots $ \\
+$100 \cdot \frac{1}{4} \cdot \frac{3}{4} \cdot \frac{3}{4} \cdot $ \ldots $ \cdot \frac{3}{4}$ \\
+$=100 \cdot \frac{1}{4} \cdot \frac{3^{99}}{4^{99}}$ \\
+$=100 \cdot \frac{3^{99}}{4 \cdot 4^{99}}$ \\
+$=100 \cdot \frac{3^{99}}{4^{100}}$
+
+
+
+\section{2014 Winter Midterm}
+\subsection{Question 1}
+\textbf{Plaintext Question:} On a table, you see three types of fruit: apples, bananas, and oranges. \\
+There are $m \geq 2$ apples, $n \geq 2$ bananas, and $k\geq 2$ oranges. \\
+How many ways are there to choose 7 pieces of fruit, if you must take at least two pieces of each type? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+We can break this down into 3 cases. \\
+Case 1: 3 apples, 2 bananas, 2 oranges \\
+$\binom{m}{3} \cdot \binom{n}{2} \cdot \binom{k}{2}$ \\
+Case 2: 2 apples, 3 bananas, 2 oranges \\
+$\binom{m}{2} \cdot \binom{n}{3} \cdot \binom{k}{2}$ \\
+Case 3: 2 apples, 2 bananas, 3 oranges \\
+$\binom{m}{2} \cdot \binom{n}{2} \cdot \binom{k}{3}$ \\
+Thus, the total number of ways is $\binom{m}{3} \cdot \binom{n}{2} \cdot \binom{k}{2} + \binom{m}{2} \cdot \binom{n}{3} \cdot \binom{k}{2} + \binom{m}{2} \cdot \binom{n}{2} \cdot \binom{k}{3}$
+\subsection{Question 2}
+\textbf{Plaintext Question:} Consider 9 boys and 15 girls. How many ways are there to arrange these 24 people on a line if all boys stand next to each other and all girls stand next to each other? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Placing Books on Shelves (3.1.3) \\
+\textbf{Explanation: } \\
+First, we can either put the boys on the left side and girls on the right side or vice versa. \\
+This doubles the number of ways. \\
+Then, we can arrange the boys in their section. \\
+The first boy can be in any of the 9 spots in the boys section. \\
+The second boy can be in any of the 8 remaining spots in the boys section. \\
+We can continue this pattern until the last boy. \\
+There are $9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1$ ways to arrange \\
+We can rewrite this as $9! $ \\
+In the girls section, we can do the same thing. \\
+The first girl can be in any of the 15 spots in the girls section. \\
+The second girl can be in any of the 14 remaining spots in the girls section. \\
+We can continue this pattern until the last girl. \\
+There are $15 \cdot 14 \cdot 13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1$ ways to arrange \\
+We can rewrite this as $15! $
+Thus, the total number of ways is $2 \cdot 9! \cdot 15! $
+\subsection{Question 3}
+\textbf{Plaintext Question:} Let $S$ be a set of 37, and let $x,y$, and $z$ be three distinct elements of $S$. How many subsets of $S$ are there that contain $x$ and $y$, but do not contain $z$? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } The Bijection Rule (3.2.1), The Complement Rule (3.3) \\
+\textbf{Explanation: } \\
+Let's break it down.
+\begin{enumerate}
+	\item Let $A$ be the set of all subsets of $S$ that contain $x$ and $y$ \\
+	      We take for granted that one of the element has a fixed possibility of being $x$: 1 \\
+	      We take for granted that one of the element has a fixed possibility of being $y$: 1 \\
+	      Now that we've guaranteed that $x$ and $y$ are in the subset, we need to calculate all possible add-ons. \\
+	      For instance, it could $ (x,y) $ or $ (x,y,a) $ or $ (x,y,a,b) $ or $ (x,y,a,b,z) $ and so many others \\
+	      Looking at it, it's basically asking for $x$, $y$, and any subset of $S$
+	      We can create subsets from the remaining 35 elements. \\
+	      $|A| = 2^{35}$
+	\item Let $B$ be the set of all subsets of $S$ that contain $x$, $y$ AND $z$ \\
+	      We take for granted that one of the element has a fixed possibility of being $x$: 1 \\
+	      We take for granted that one of the element has a fixed possibility of being $y$: 1 \\
+	      We take for granted that one of the element has a fixed possibility of being $z$: 1 \\
+	      Now that we've guaranteed that $x$, $y$, and $z$ are in the subset, we need to calculate all possible add-ons. \\
+	      For instance, it could $ (x,y,z) $ or $ (x,y,z,a) $ or $ (x,y,z,a,b) $ or $ (x,y,z,a,b,c) $ and so many others \\
+	      Looking at it, it's basically asking for $x$, $y$, $z$, and any subset of $S$
+	      We can create subsets from the remaining 34 elements. \\
+	      $|B| = 2^{34}$
+\end{enumerate}
+Now, it's pretty much just subtraction. We can subtract B from A to get all subsets that contain $x$ and $y$ but not $z$. \\
+Think about it in a different way. A is the set of all subsets that contain $x$ and $y$. B is the set of all subsets that contain $x$, $y$, and $z$. \\
+By subtracting B from A, we get rid of all subsets that contain $x$, $y$ and $z$. \\
+This pretty much just leaves us with the subsets that contain $x$ and $y$ but not $z$. \\
+$ |A| - |B| = 2^{35} - 2^{34} $ \\
+$ |A| - |B| = 2^{34} $
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} Let $S$ be a set of 37, and let $x,y$, and $z$ be three distinct elements of $S$. How many subsets of $S$ are there that contain $x$ or $y$, but do not contain $z$? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } The Bijection Rule (3.3), The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: }
+\begin{enumerate}
+	\item A = set of subsets that contain x but not z \\
+	      We can take for granted that one of the element has a fixed possibility of being x: 1 \\
+	      Since $z$ can't be in this subset and $x$ is in this subset, we can create subsets from the remaining 35 elements. \\
+	      $|A| = 2^{35} $
+	\item B = set of subsets that contain y but not z \\
+	      We can take for granted that one of the element has a fixed possibility of being y: 1 \\
+	      Since $z$ can't be in this subset and $y$ is in this subset, we can create subsets from the remaining 35 elements. \\
+	      $|B| = 2^{35} $
+	\item Now, let's try to determine $ A \cap B $, which is, \enquote{subsets that have x and don't have z and have y and don't have z} \\
+	      We can take for granted that one of the element has a fixed possibility of being x: 1 \\
+	      We can take for granted that one of the element has a fixed possibility of being y: 1 \\
+	      Since $z$ can't be in this subset and $x$ and $y$ are in this subset already, we can create subsets from the remaining 34 elements. \\
+	      $|A \cap B| = 2^{34} $
+\end{enumerate}
+$|A \cup B| = |A| + |B| - |A \cap B|$ \\
+$|A \cup B| = 2^{35} + 2^{35} - 2^{34}$ \\
+$|A \cup B| = (1+1) \cdot 2^{35} - 2^{34}$ \\
+$|A \cup B| = 2 \cdot 2^{35} - 2^{34}$ \\
+$|A \cup B| = 2^{36} - 2^{34}$
+\subsection{Question 5}
+\textbf{Plaintext Question:} A password consists of 12 or 13 characters \\
+Each character is one of the 10 digits $0,1,2, \ldots ,9$. \\
+A password must contain the digit 7 at least once. How many passwords are there? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Complement Rule (3.3), Sum Rule (3.4) \\
+\textbf{Explanation: } \\
+For 13 characters, there are $10^{13}$ total possibilities. \\
+For 12 characters, there are $10^{12}$ total possibilities. \\
+We can subtract the number of passwords that do not contain the digit 7 from the total number of possibilities. \\
+For 13 characters, there are $9^{13}$ possibilities that do not contain the digit 7. \\
+For 12 characters, there are $9^{12}$ possibilities that do not contain the digit 7. \\
+Thus, the number of passwords that contain the digit 7 at least once is $10^{13} - 9^{13} + 10^{12} - 9^{12}$
+\subsection{Question 6}
+\textbf{Plaintext Question:} Let $n \geq 6$ and $k \geq 1$ be integers, let $A$ be the set of all bitstrings of length $n$ that contain exactly seven 0s, and let $B$ be the set of all bitstrings of length $k$ that contain at least 1. Assume there exists a one-to-one function $f: A \rightarrow B$. Which of the following is true? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting Functions (3.1.2), The Complement Rule (3.3), Permutations and Binomial Coefficients (3.6.2) \\
+\textbf{Explanation: }
+\begin{enumerate}
+	\item Let A be the set of all bitstrings of length k that contain at least 1 \\
+	      To do this question, we can think of it as \enquote{All bitstrings minus bitstrings that have exactly 0 1's} \\
+	      The only way to have exactly 0 1's is to have all 0's \\
+	      Thus, the number of bitstrings that have exactly 0 1's is 1 \\
+	      $ |A| = 2^{k} - 1 $
+	\item Let B be the set of all bitstrings of length n that contain exactly seven 0s \\
+	      We choose 7 spots out of the n spots to place the 0s \\
+	      $ |B| = \binom{n}{7} $
+\end{enumerate}
+Let's just see what happens when $n = 7$ \\
+$ |A| = 2^{7} - 1 = 127 $ \\
+$ |B| = \binom{7}{7} = 1 $ \\
+Now, we can say for certain that $2^{n} - 1 \geq \binom{n}{7} $
+\subsection{Question 7}
+\textbf{Plaintext Question:} What is tnhe coefficient of $x^{96}y^{16}$ in the expansion of ${(7x + 21y)}^{25}$? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Newton’s Binomial Theorem (3.6.2) \\
+\textbf{Explanation: } \\
+$=\sum^{25}_{k=0} \binom{25}{k}{(7x)}^k {(21y)}^{25-k}$ \\
+$=\binom{25}{16}{(7x)}^{9} {(21y)}^{16}$ \\
+$=\binom{25}{16}7^{9} x^{9} {21}^{16} y^{16}$ \\
+$=\binom{25}{16}7^{9} x^{9} 3^{16} 7^{16} y^{16}$ \\
+$=\binom{25}{16}7^{25} 3^{16} x^{9} y^{16}$ \\
+Thus, the coefficient is $\binom{25}{16}7^{25} 3^{16}$
+\subsection{Question 8}
+\textbf{Plaintext Question:} How many solutions are there to the equation $x_1 + x_2 + x_3 = 17$, where $x_1 \geq 0, x_2 \geq 0$, and $x \geq 0$ are integers? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting Solutions of Linear Equations (3.9.2) \\
+\textbf{Explanation: } \\
+We can use the dividers method. \\
+We have 17 buckets and 2 extra spots for the dividers to go. \\
+Thus, there are $\binom{17+2}{2}$ solutions.
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} How many strings can be obtained by rearranging the letters of the word \enquote{POOPERSCOOPER}? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Reordering the Letters of a Word (3.9.1) \\
+\textbf{Explanation: } \\
+There are 13 letters in the word \enquote{POOPERSCOOPER}. \\
+We can break down how many letters of each there are: \\
+3 P's \\
+4 O's \\
+2 E's \\
+2 R's \\
+1 C \\
+1 S \\
+We choose 1 C from the 13 spots = $\binom{13}{1}$ \\
+We choose 4 O's from the remaining 12 spots = $\binom{12}{4}$ \\
+We choose 2 E's from the remaining 8 spots = $\binom{8}{2}$ \\
+We choose 1 S from the remaining 6 spots = $\binom{6}{1}$ \\
+We choose 2 R's from the remaining 5 spots = $\binom{5}{2}$ \\
+We choose 3 P's from the remaining 3 spots = $\binom{3}{3}$ \\
+Thus, the total number of strings is \\
+$\binom{13}{1} \cdot \binom{12}{4} \cdot \binom{8}{2} \cdot \binom{6}{1} \cdot \binom{5}{2} \cdot \binom{3}{3}$
+\subsection{Question 10}
+\textbf{Plaintext Question:} The function $f: \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+$f(0) = 2$ \\
+$f(n+1) = f(n) + 6n - 2$ for $n \geq 0$ \\
+What is $f(n)$? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+First, we can calculate values of f$(1)$, $f(2)$, and $f(3)$ to see if we can find a pattern. \\
+$f(1) = f(0) + 6(0) - 2 = 2 - 2 = 0$ \\
+$f(2) = f(1) + 6(1) - 2 = 0 + 6 - 2 = 4$
+\begin{enumerate}
+	\item $f(n) = 3n^{2} - 5n + 2$
+	      $f(1) = 3{(1)}^{2} - 5(1) + 2 = 3 - 5 + 2 = 0$
+	\item $f(n) = 3n^{2} + 5n + 2$
+	      $f(1) = 3{(1)}^{2} + 5(1) + 2 = 3 + 5 + 2 = 10$
+	\item $f(n) = 2n^{2} - 5n + 2$
+	      $f(1) = 2{(1)}^{2} - 5(1) + 2 = 2 - 5 + 2 = -1$
+	\item $f(n) = 2n^{2} + 5n + 2$
+	      $f(1) = 2{(1)}^{2} + 5(1) + 2 = 2 + 5 + 2 = 9$
+\end{enumerate}
+Therefore, we know that $f(n) = 3n^{2} - 5n + 2$ is the correct answer since it fits the pattern
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} The Fibonacci numbers are defined as follows: $f_0 = 0, f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for $n \geq 2$.
+Consider the recursive algorithm $FIB$, which takes as input an integer $n \geq 0$. \\
+For $ n \geq 3 $, run algorithm $ \text{\small FIB}(n) $ and let $ a_n $ be the number of times that $ \text{\small FIB}(2) $ is called.\\
+procedure Fib$ (n) $
+if n=0 or n=1 then
+f = n
+else
+f = $ Fib(n-1) + Fib(n-2) $
+end if
+return f
+end procedure \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Fibonacci Numbers (4.2) \\
+\textbf{Explanation: } \\
+Warning: Confusion
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} Let $B_n$ be the number of bitstrings of length $n$ that do not contain 111. Which of the following is true? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length $n$ (3.1.1), Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+We can write down some valid possibilities first. \\
+$0, B_{n-1}$ possibilities left\\
+$1,0, B_{n-2}$ possibilities left\\
+$1,1,0, B_{n-3}$ possibilities left\\
+Once we add up all possibilities, we get $B_n = B_{n-1}+B_{n-2}+B_{n-3}$
+\subsection{Question 14}
+\textbf{Plaintext Question:} A standard deck of 52 cards has 4 Kings. Consider a hand of 9 cards, chosen uniformly at random. What is the probability that there are exactly two Kings in this hand? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+$S$ = You pick any 9 cards from a deck of 52 = $\binom{52}{9}$ \\
+$A$ = You pick 2 Kings from 4 and 7 non-Kings from 48 = $\binom{4}{2} \cdot \binom{48}{7}$ \\
+$P(A) = \frac{\binom{4}{2} \cdot \binom{48}{7}}{\binom{52}{9}}$
+\subsection{Question 15}
+\textbf{Plaintext Question:} We choose a bitstring of length 25 uniformly at random. What is the probability that this string contains at least two 1s? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+$S$ = You pick any 25 bitstring = $2^{25}$ \\
+$A$ = You pick a single 1 = $\binom{25}{1}$ \\
+$B$ = You pick no 1s = $\binom{25}{0}$ \\
+All possibilities that don't include zero 1s or a single 1 = $|S| - |A| - |B|$ \\
+$= 2^{25} - \binom{25}{1} - \binom{25}{0}$ \\
+$= 2^{25} - \binom{25}{24} - \binom{25}{25}$ \\
+$= 2^{25} - 25 - 1$ \\
+Probability = $\frac{2^{25} - 25 - 1}{2^{25}}$ \\
+$= \frac{2^{25}}{2^{25}} - \frac{25}{2^{25}} - \frac{1}{2^{25}}$ \\
+$= 1 - \frac{25}{2^{25}} - \frac{1}{2^{25}}$
+\subsection{Question 16}
+\textbf{Plaintext Question:} Consider three people, each one having a uniformly random birthday (out of 365 days; we ignore leap years). What is the probability that at least two of them have the same birthday? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+A = All 3 people have different birthdays \\
+First person can have any birthday = 365 \\
+Second person can have any birthday except the first person's = 364 \\
+Third person can have any birthday except the first two people's = 363 \\
+$|A| = 365 \cdot 364 \cdot 363$ \\
+$ \Pr(A) = \frac{365 \cdot 364 \cdot 363}{365^3}$ \\
+$ \Pr(A) = \frac{364 \cdot 363}{365^2}$ \\
+$1 - \Pr(A)$ is the probability that at least two of them have the same birthday
+$= 1 - \frac{364 \cdot 363}{365^2}$
+
+
+
+
+
+
+
+
+
+\section{2015 Fall Midterm}
+\subsection{Question 1}
+\textbf{Plaintext Question:} The Carleton Computer Science Society has a Board of Directors consisting of a President, two Vice-Presidents, and a five-person Advisory Board. \\
+The President cannot be Vice-President and cannot be on the Advisory Board. A Vice-President cannot be on the Advisory Board. \\
+Let $n$ be the number of students in Carleton's Computer Science program, where $n \geq 8$. In how many ways can a Board of Directors be chosen? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Product Rule (3.1),  Permutations and Binomial Coefficients(3.6) \\
+\textbf{Explanation: } \\
+First, we choose 2 of the n students to be Vice-Presidents. There are $\binom{n}{2}$ ways to do this. \\
+Then, we choose 5 of the remaining n-2 students to be on the Advisory Board. There are $\binom{n-2}{5}$ ways to do this. \\
+Finally, we choose one of the remaining n-7 students to be the President. There are $\binom{n-7}{1}=(n-7) ways to do this. $ \\
+Thus, the number of ways to choose the Board of Directors is $\binom{n}{2} \cdot \binom{n-2}{5} \cdot (n-7)$
+\subsection{Question 2}
+\textbf{Plaintext Question:} Let $S$ be a set of 25 elements and let $x,y$, and $z$ be three distinct elements of $S$. \\
+What is the number of subsets of $S$ that contain both $x$ and $y$, but do not contain $z$? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } The Bijection Rule (3.2.1), The Complement Rule (3.3) \\
+\textbf{Explanation: }
+\begin{enumerate}
+	\item Let $A$ be the set of all subsets of $S$ that contain $x$ and $y$ \\
+	      We take for granted that one of the element has a fixed possibility of being $x$: 1 \\
+	      We take for granted that one of the element has a fixed possibility of being $y$: 1 \\
+	      Now that we've guaranteed that $x$ and $y$ are in the subset, we need to calculate all possible add-ons. \\
+	      For instance, it could $ (x,y) $ or $ (x,y,a) $ or $ (x,y,a,b) $ or $ (x,y,a,b,z) $ and so many others \\
+	      Looking at it, it's basically asking for $x$, $y$, and any subset of $S$
+	      We can create subsets from the remaining 23 elements. \\
+	      $|A| = 2^{23}$
+	\item Let $B$ be the set of all subsets of $S$ that contain $x$, $y$ AND $z$ \\
+	      We take for granted that one of the element has a fixed possibility of being $x$: 1 \\
+	      We take for granted that one of the element has a fixed possibility of being $y$: 1 \\
+	      We take for granted that one of the element has a fixed possibility of being $z$: 1 \\
+	      Now that we've guaranteed that $x$, $y$, and $z$ are in the subset, we need to calculate all possible add-ons. \\
+	      For instance, it could $ (x,y,z) $ or $ (x,y,z,a) $ or $ (x,y,z,a,b) $ or $ (x,y,z,a,b,c) $ and so many others \\
+	      Looking at it, it's basically asking for $x$, $y$, $z$, and any subset of $S$
+	      We can create subsets from the remaining 22 elements. \\
+	      $|B| = 2^{22}$
+\end{enumerate}
+Now, it's pretty much just subtraction. We can subtract B from A to get all subsets that contain $x$ and $y$ but not $z$. \\
+Think about it in a different way. A is the set of all subsets that contain $x$ and $y$. B is the set of all subsets that contain $x$, $y$, and $z$. \\
+By subtracting B from A, we get rid of all subsets that contain $x$, $y$ and $z$ from all subsets that contain $x$ and $y$. \\
+This pretty much just leaves us with the subsets that contain $x$ and $y$ but not $z$. \\
+$ |A| - |B| = 2^{23} - 2^{22} $ \\
+$ |A| - |B| = 2^1 \cdot 2^{22} - 2^0 \cdot 2^{22} $ \\
+$ |A| - |B| = 2 \cdot 2^{22} - 1 \cdot 2^{22} $ \\
+$ |A| - |B| = (2-1) \cdot 2^{22} $ \\
+$ |A| - |B| = 1 \cdot 2^{22} $ \\
+$ |A| - |B| = 2^{22} $
+\subsection{Question 3}
+\textbf{Plaintext Question:} Let $A$ be a set of 6 elements and let $B$ be a set of 13 elements. \\
+How many one-to-one (i.e., injective) functions $f: A \rightarrow B$ are there? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Counting Functions (3.1.2) \\
+\textbf{Explanation: } \\
+The first element in A can be mapped to any of the 13 elements in B = 13 possibilities \\
+The second element in A can be mapped to any of the 12 remaining elements in B = 12 possibilities \\
+The third element in A can be mapped to any of the 11 remaining elements in B = 11 possibilities \\
+The fourth element in A can be mapped to any of the 10 remaining elements in B = 10 possibilities \\
+The fifth element in A can be mapped to any of the 9 remaining elements in B = 9 possibilities \\
+The sixth element in A can be mapped to any of the 8 remaining elements in B = 8 possibilities \\
+Thus, the number of one-to-one functions is $13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8$
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} For any integer $n \geq 2$, let $S_n$ be the number of bitstrings of length $n$ in which the first bit is not equal to the last bit. Which of the following is true? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length $n$ (3.1.1), Recursive Functions (4.1) \\
+\textbf{Explanation: }
+So the first bit can be 1 or 0: 2 possibilities \\
+The last bit has to be the opposite of the first bit: 1 possibility \\
+The remaining n-2 bits can be anything: $2^{n-2}$ possibilities \\
+Thus, the number of bitstrings is $2 \cdot 1 \cdot 2^{n-2} = 2^{n-1}$
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} What does $\sum_{k=1}^{m} {\binom{m}{k}}$ count? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Permutations and Binomial Coefficients (3.6.2) \\
+\textbf{Explanation: } \\
+Let's just write out the first couple I guess
+\begin{enumerate}
+	\item We choose 1 element from m elements = $\binom{m}{1}$
+	\item We choose 2 elements from m elements = $\binom{m}{2}$
+	\item \ldots
+	\item We choose m elements from m elements = $\binom{m}{m}$
+\end{enumerate}
+Thus, $\sum_{k=1}^{m} {\binom{m}{k}}$ counts the number of ways to choose k elements from m elements for all k from 1 to m
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} In the city of $ShortLastName$, every person has a last name consisting of two characters, the first one being an uppercase letter and the second one being a lowercase letter. \\
+What is the minimum number of people needed so that we can guarantee that at least 4 of them have the same last name? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+We can use the pigeon hole principle. \\
+There are $26 \cdot 26 = 26^2$ possible last names. \\
+To guarantee that at least 2 people have the same last name, we need $26^2+1$ people. \\
+To guarantee that at least 4 people have the same last name, we need $3 \cdot 26^2+1$ people.
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} What is the coefficient of $x^{81}y^7$ in the expansion of ${(3x-17y)}^{88}$? \\
+\textbf{Relevant Theorems: } Newton’s Binomial Theorem (3.6.2) \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+$=\sum^{88}_{k=0} \binom{88}{k}{(3x)}^k {(-17y)}^{88-k}$ \\
+$=\binom{88}{7}{(3x)}^{81} {(-17y)}^{7}$ \\
+$=\binom{88}{7}3^{81} x^{81} {(-17)}^{7} y^{7}$ \\
+$=\binom{88}{7}3^{81} x^{81} {(-17)}^{7} y^{7}$ \\
+$=\binom{88}{7}3^{81} {(-17)}^{7} x^{81} y^{7}$ \\
+Multiplying a negative number by an odd number of negative numbers results in a negative number. \\
+$=-\binom{88}{7}3^{81} {(17)}^{7} x^{81} y^{7}$
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 = 55$, where $x_1 \geq 0, x_2 \geq 0, x_3 \geq 0$, and $x_4 \geq 0$ are integers? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Counting Solutions of Linear Equations (3.9.2) \\
+\textbf{Explanation: } \\
+We can use the dividers method. \\
+We have 55 buckets and 3 extra spots for the dividers to go. \\
+Thus, there are $\binom{55+3}{3}$ solutions.
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} The function $f: \mathbb{N} \rightarrow \mathbb{N}$ is defined by \\
+$f(0)=7$ \\
+$f(n) = f(n-1) + 10n - 6$ for $n \geq 1$ \\
+What is f$ (n) $? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+First, we can calculate values of f$(1)$ and f$(2)$ to see if we can find a pattern. \\
+$f(1) = f(0) + 10(0) - 6 = 7 + 10 - 6 = 11$ \\
+$f(2) = f(1) + 10(1) - 6 = 11 + 10 - 6 = 15$
+\begin{enumerate}
+	\item $f(n) = 4n^{2} - 2n + $
+	      $f(1) = 4{(1)}^{2} - 2(1) + 7 = 4 - 2 + 7 = 9$
+	\item $f(n) = 4n^{2} - n + 7$
+	      $f(1) = 4{(1)}^{2} - 1 + 7 = 4 - 1 + 7 = 10$
+	\item $f(n) = 5n^{2} - 2n + 7$
+	      $f(1) = 5{(1)}^{2} - 2(1) + 7 = 5 - 2 + 7 = 10$
+	\item $f(n) = 5n^{2} - n + 7$
+	      $f(1) = 5{(1)}^{2} - 1 + 7 = 5 - 1 + 7 = 11$
+\end{enumerate}
+Based on the pattern, we can see that $f(n) = 5n^{2} - n + 7$ is the correct answer
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} Let $S_n$ be the number of bitstrings of length $n$ that contain the substring 0000. Which of the following is true? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+Warning: No clear answer
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} Let $n \geq 1$ be an integer and let $S_n$ be the number of ways in which $n$ can be written as a sum of 1s and 2s, such that \\
+the order in which the 1s and 2s occur in the sum matters, and \\
+it is not allowed to have two consecutive 2s. \\
+For example, if $n=7$, then both \\
+$7 = 1 + 2 + 1 + 2 + 1$ and $7 = 2 + 1 + 1 + 2 + 1$ are allowed, whereas \\
+$7 = 1 + 2 + 2 + 1 + 1$ is not allowed. \\
+Which of the following is true? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+We can write down some valid possibilities first. \\
+$1, S_{n-1}$ possibilities left \\
+$2, 1, S_{n-3}$ possibilities left \\
+$S_n = S_{n-1} + S_{n-3}$
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} Consider the following recursive algorithm $FIB$, which takes as input an integer $n \geq 0$.
+When running $FIB(55)$, how many calls are there to $FIB(50) $? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+We can quickly draw a tree and count the number of calls to $FIB(50)$ \\
+\begin{forest}
+	[FIB$(55)$
+		[FIB$(54)$
+				[FIB$(53)$
+						[FIB$(52)$
+								[FIB$(51)$
+										[FIB$(50)$]
+									]
+									[FIB$(50)$]
+							]
+							[FIB$(50)$]
+					]
+					[FIB$(52)$
+						[FIB$(51)$
+								[FIB$(50)$]
+							]
+							[FIB$(50)$]
+					]
+			]
+			[FIB$(53)$
+				[FIB$(52)$
+						[FIB$(51)$
+								[FIB$(50)$]
+							]
+							[FIB$(50)$]
+					]
+					[FIB$(51)$
+						[FIB$(50)$]
+					]
+			]
+	]
+\end{forest} \\
+We have 8 calls to $FIB(50)$
+
+\subsection{Question 14}
+\textbf{Plaintext Question:} Consider the following recursive algorithm $ JUSTINBIEBER $, which takes as input an integer $ n \geq 1 $, which is a power of 2. \\
+For $n$ a power of 2, let $B_n$ be the number of times you print \enquote{I don't like Justin Bieber} when running algorithm $JUSTINBIEBER(n)$. \\
+Which of the following is true? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+procedure JustinBieber$(n)$ \\
+if n=1 then \\
+order chicken wings \\
+else if n=2 then \\
+drink one pint of Indian Pale Ale \\
+else \\
+print \enquote{I don't like Justine Bieber}
+JustinBieber$\frac{n}{2}$
+end if
+end procedure
+Let's run the algorithem for n=1, n=2, n=4, and n=8 to see how many times it says \enquote{I don't like Justin Bieber}. \\
+JustinBieber$(1)$ = 0 \\
+JustinBieber$(2)$ = 0 \\
+JustinBieber$(4)$ = 1 \\
+JustinBieber$(8)$ = 2 \\
+JustinBieber$(16)$ = 3
+\begin{enumerate}
+	\item $B(n) = \text{log } n - 1 \text{ for all } n \geq 2. $
+	      $B(2) = 0$ \\
+	      $B(4) = 1$
+	\item $B(n) = \text{log } n - 1 \text{ for all } n \geq 1. $
+	      $B(1) = -1$ \\
+	      $B(2) = 0$ \\
+	      $B(4) = 1$
+	\item $B(n) = \text{log } n \text{ for all } n \geq 2. $
+	      $B(2) = 1$ \\
+	      $B(4) = 2$
+	\item $B(n) = n - 2 \text{ for all } n \geq 2. $
+	      $B(2) = 0$ \\
+	      $B(4) = 2$
+\end{enumerate}
+Thus, the correct answer is $B(n) = \text{log } n - 1 \text{ for all } n \geq 2. $
+
+\subsection{Question 15}
+\textbf{Plaintext Question:} You flip a fair coin 7 times. Define the event \\
+$A$ = \enquote{the result of the first flip is equal to the result of the 7-th flip}. \\
+What is $\Pr(A)$? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Basic Rules of Probability (5.3) \\
+\textbf{Explanation: } \\
+There are 4 possible total outcomes for the first and last flip:
+\begin{enumerate}
+	\item HH
+	\item HT
+	\item TH
+	\item TT
+\end{enumerate}
+|A| = 2 \\
+$\Pr(A) = \frac{2}{4} = \frac{1}{2}$
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} You roll a 6-sided die twice. Define the events \\
+$A$=\enquote{the sum of the results of the two rolls is 7} \\
+$B$=\enquote{the result of the first roll is 3} \\
+Which of the following is true? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+For this question, we can draw a table to see the possible outcomes. \\
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{c c c c c c c}
+		           & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} \\
+		\textbf{1} & 2          & 3          & 4          & 5          & 6          & 7          \\
+		\textbf{2} & 3          & 4          & 5          & 6          & 7          & 8          \\
+		\textbf{3} & 4          & 5          & 6          & 7          & 8          & 9          \\
+		\textbf{4} & 5          & 6          & 7          & 8          & 9          & 10         \\
+		\textbf{5} & 6          & 7          & 8          & 9          & 10         & 11         \\
+		\textbf{6} & 7          & 8          & 9          & 10         & 11         & 12         \\
+	\end{tabular}
+\end{table}
+A total of 7 can be obtained by 6 combinations: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) \\
+$|A|=6$ \\
+$ \Pr(A) = \frac{6}{36} = \frac{1}{6}$ \\
+Out of 36 possibilities, a 3 on the first roll can be obtained 6 times: (3,1), (3,2), (3,3), (3,4), (3,5), (3,6) \\
+$|B|=6$ \\
+$ \Pr(B) = \frac{6}{36} = \frac{1}{6}$ \\
+$ \Pr(A)=\Pr(B)$
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} Let $S = {1, 2, 3, 4, 5, 6, 7}$. You choose a uniformly random 3-element subset $X$ of $S$. \\
+Thus, each 3-element subset of $S$ has a probability of $1/{\binom{7}{3}}$ of being $X$. Define the event: \\
+$A$ = \enquote{4 is an element of $X$} \\
+What is the $ \Pr(A)$? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+Assuming we obtained a 4 in our 3-element subset, we have 2 more spots to fill. \\
+Thus, there are $\binom{6}{2}$ ways to fill the remaining spots. \\
+$|A| = \binom{6}{2}$ \\
+$ \Pr(A) = \frac{\binom{6}{2}}{\binom{7}{3}} $ \\
+$ \Pr(A) = \frac{\frac{6!}{2!4!}}{\frac{7!}{3!4!}}$ \\
+$ \Pr(A) = \frac{6!}{2!4!} \cdot \frac{3!4!}{7!}$ \\
+$ \Pr(A) = \frac{1}{2!4!} \cdot \frac{3!4!}{7}$ \\
+$ \Pr(A) = \frac{1}{2!} \cdot \frac{3!}{7}$ \\
+$ \Pr(A) = \frac{1}{1} \cdot \frac{3}{7}$ \\
+$ \Pr(A) = \frac{3}{7}$
+
+
+
+
+
+
+
+
+
+\section{2015 Winter Midterm}
+\subsection{Question 1}
+\textbf{Plaintext Question:} The Carleton Computer Science Society has a Board of Directors consisting of a President and a seven-person Advisory Board. The President cannot be on the Advisory Board. Let n be the number of students in Carleton's Computer Science program, where n>=8. In how many ways can a Board of Directors be chosen? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Product Rule (3.1),  Permutations and Binomial Coefficients(3.6) \\
+\textbf{Explanation: } \\
+First, we choose 7 of the n students. \\
+Then, we choose one of the remaining n-7 students to be the President. \\
+Thus, the number of ways to choose the Board of Directors is $\binom{n}{7} \cdot (n-7)$.
+
+\subsection{Question 2}
+\textbf{Plaintext Question:} Let A be a set of 7 elements and let B be a set of 15 elements. How many $f:A \rightarrow B$ functions are there? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Counting Functions (3.1.2) \\
+\textbf{Explanation: } \\
+For each element in A, there are output 15 choices in B. \\
+Thus, there are $15^7$ functions.
+
+\subsection{Question 3}
+\textbf{Plaintext Question:} Let A be a set of 7 elements and let B be a set of 15 elements. How many one-to-one (i.e., injective) functions $f:A \rightarrow B$ are there? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Counting Functions (3.1.2) \\
+\textbf{Explanation: } \\
+There are 15 choices for the first element in A, 14 choices for the second element in A, and so on. \\
+Thus, there are $15 \cdot 14 \cdot 13 \cdot 12 \cdot 11 \cdot 10 \cdot 9$ one-to-one functions.
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} Consider strings consisting of the characters $a,b$, and $c$. Such a string is called valid, if no two consecutive characters are equal. Thus, $abacbac$ is valid, whereas $abaccac$ is not valid. \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } The Product Rule (3.1) \\
+\textbf{Explanation: } \\
+The first letter can be anything. So there are 3 choices. \\
+The second letter cannot be the same as the first letter. So there are 2 choices. \\
+For the third letter, there are 2 choices. Same as the second letter. \\
+We can continue this pattern until the end of the string. \\
+Thus, there are $3 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ valid strings. \\
+Rewriting this, we get $V_n = 3 \cdot 2^{n-1}$.
+
+\subsection{Question 5}
+\textbf{Plaintext Question:} Consider strings of length 99 consisting of the characters $a,b$, and $c$. How many such strings are there that start with $abc$ or end with $bbb$? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+Let A be the set of strings that start with $abc$. \\
+|A| = first 3 letters are set in stone while other 96 letters can be anything. \\
+Thus, there are $3 \cdot 3 \cdot 3 \cdot 3^{96}$ strings in A. \\
+Let B be the set of strings that end with $bbb$. \\
+|B| = last 3 letters are set in stone while other 96 letters can be anything. \\
+Thus, there are $3^{96} \cdot 3 \cdot 3 \cdot 3$ strings in B. \\
+Let $A \cap B$ be the set of strings that start with $abc$ and end with $bbb$. \\
+$|A \cap B|$ = first 3 letters and last 3 letters are set in stone while other 93 etters can be anything. \\
+$|A \cup B| = |A| + |B| - |A \cap B|$ \\
+$|A \cup B| = 3^{96} + 3^{96} - 3^{93}$ \\
+$|A \cup B| = 2 \cdot 3^{96} - 3^{93}$
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} What does $\sum_{k=2}^{n-1} (k-1)(n-k)$ count? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+Let's write it out and see what it represents if n is a small value like 5. \\
+$\sum_{k=2}^{4} (k-1)(5-k)$ \\
+$(2-1)(5-2) + (3-1)(5-3) + (4-1)(5-4)$ \\
+$1 \cdot 3 + 2 \cdot 2 + 3 \cdot 1$ \\
+We can rewrite in binomial form as \\
+$\binom{n}{3}$
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} What is the minimum number of people needed so that we can guarantee that at least three of them have the same birthday? (We ignore leap years; thus, a year has 365 days.)
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } The Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+To guarantee that at least two people share the same birthday, the first 365 people each have a different birthday. \\
+The last person must have a birthday that is the same as one of the previous 365 people. \\
+We can apply this to 3 people. \\
+Thus, the minimum number of people needed is double 365 + 1. \\
+$2 \cdot 365 + 1 = 731$
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} What is the coefficient of $x^{17}$ in the expansion of ${(17 + 2x)}^{99}$? \\
+\textbf{Relevant Theorems: } Newton’s Binomial Theorem (3.6.2) \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } A Recursively Defined Set (4.3) \\
+\textbf{Explanation: } \\
+$=\sum^{99}_{k=0} \binom{99}{k}17^{99-k}{(2x)}^k$ \\
+$=\binom{99}{17}17^{82}{(2x)}^{17}$ \\
+$=\binom{99}{17}17^{82}2^{17}x^{17}$
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} How many solutions are there to the equation $ x_1 + x_2 + x_3 = 99$, where $x_1 \geq 0, x_2 \geq 0 $, and $ x_3 \geq 0 $ are integers? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Counting Solutions of Linear Equations (3.9.2) \\
+\textbf{Explanation: } \\
+We can use the dividers method. \\
+We have 99 buckets and 2 extra spots for the dividers to go. \\
+Thus, there are $\binom{99+2}{2}$ solutions.
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} The function $f: \mathbb{N} \rightarrow \mathbb{N}$ is defined by $f(0) = 15$ and $f(n) = f(n-1) + 6n - 4$ \\
+What is f$(n)$? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+We can first calculate values of f$(1)$ and f$(2)$ to see if we can find a pattern. \\
+$f(1) = f(0) + 6(1) - 4 = 15 + 6 - 4 = 17$ \\
+$f(2) = f(1) + 6(2) - 4 = 17 + 12 - 4 = 25$
+\begin{enumerate}
+	\item $f(n) = 3n^{2} + 2n + 15$ \\
+	      $f(1) = 3{(1)}^{2} + 2(1) + 15 = 3 + 2 + 15 = 20$
+	\item $f(n) = 3n^{2} - 2n + 15$ \\
+	      $f(1) = 3{(1)}^{2} - 2(1) + 15 = 3 - 2 + 15 = 16$
+	\item $f(n) = 3n^{2} + n + 15$ \\
+	      $f(1) = 3{(1)}^{2} + 1 + 15 = 3 + 1 + 15 = 19$
+	\item $f(n) = 3n^{2} - n + 15$ \\
+	      $f(1) = 3{(1)}^{2} - 1 + 15 = 3 - 1 + 15 = 17$
+\end{enumerate}
+Therefore, we know that $f(n) = 3n^{2} - n + 15$ is the correct answer
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} Consider strings consisting of the characters $a,b$, and $c$. Such a string is called valid, if it does not contain the substring $aaa$. \\
+Let $S_n$ be the number of valid strings of length $n$. Which of the following is true? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } A Recursively Defined Set (4.3) \\
+\textbf{Explanation: } \\
+We can write down some valid possibilities first. \\
+$b, B_{n-1}$ possibilities left\\
+$c, B_{n-1}$ possibilities left\\
+$a,b, B_{n-2}$ possibilities left\\
+$a,c, B_{n-2}$ possibilities left\\
+$a,a,b, B_{n-3}$ possibilities left\\
+$a,a,c, B_{n-3}$ possibilities left\\
+$S_n = 2 \cdot B_{n-1} + 2 \cdot B_{n-2} + 2 \cdot B_{n-3}$
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} Let $n \geq 1$ be an integer and let $S_n$ be the number of ways in which $n$ can be written as a sum of 1s and 2s, such that \ldots
+\begin{enumerate}
+	\item the order in which the 1s and 2s occur in the sum matters, and
+	\item it is not allowed to have two consecutive 1s.
+\end{enumerate}
+For example, if $n=7$, then 7=1+2+1+2+1 is allowed, whereas 7 = 1+2+1+1+2 is not allowed. \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } A Recursively Defined Set (4.3) \\
+\textbf{Explanation: } \\
+Let's suppose we have a string of 1s and 2s. \\
+We can write down some possibilities. \\
+$2, S_{n-2}$ possibilities left\\
+$1,2, S_{n-3}$ possibilities left\\
+$S_n = S_{n-2} + S_{n-3}$
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} Consider the recursive algorithm $FIB$, which takes as input an integer $n \geq 0$. When running $FIB(99)$, how many calls are there to $FIB(95)$? \\
+procedure Fib$(n)$
+if n=0 or n=1 then
+f=n
+else
+f=Fib$(n-1)$+Fib$(n-2)$
+end if
+return f
+end procedure
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Fibonacci Numbers (4.2) \\
+\textbf{Explanation: } \\
+We can draw a recursive tree to see how many calls there are to $FIB(95)$. \\
+\begin{forest}
+	[FIB$(99)$
+		[FIB$(98)$
+				[FIB$(97)$
+						[FIB$(96)$
+								[FIB$(95)$]
+							]
+							[FIB$(95)$]
+					]
+					[FIB$(96)$
+						[FIB$(95)$]
+							[FIB$(94)$]
+					]
+			]
+			[FIB$(97)$
+				[FIB$(96)$
+						[FIB$(95)$]
+					]
+					[FIB$(95)$]
+			]
+	]
+\end{forest} \\
+We can see that there are 5 calls to $FIB(95)$.
+
+\subsection{Question 14}
+\textbf{Plaintext Question:} Consider the following recursive algorithm $NATIONALANTHEM$, which takes as input an integer $n \geq 1$, which is a power of 2. \\
+Let S$ (n) $ be the number of times you sing O Canada when running algorithm $ NATIONALANTHEM(n) $. \\
+Which of the following is true?
+procedure NationalAnthem$(n)$ \\
+if n=1 then \\
+sing O Canada \\
+else \\
+NationalAnthem $( \frac{n}{2} )$ \\
+sing O Canada \\
+NationalAnthem $( \frac{n}{2} )$ \\
+end if \\
+end procedure \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Euclid's Algorithm (4.5) \\
+\textbf{Explanation: } \\
+We can calculate the first couple of values of $S(n)$ to see if we can find a pattern. \\
+$S(1) = 1$ \\
+$S(2) = 3$
+\begin{enumerate}
+	\item $S(n)=1+logn$ \\
+	      $S(2) = 1+\log{2} = 1+1 = 2$
+	\item $S(n)=2+nlogn$ \\
+	      $S(2) = 2+2 \log{2} = 2+2 = 4$
+	\item $S(n)=2n+1$ \\
+	      $S(2) = 2 \cdot 2 + 1 = 5$
+	\item $S(n)=2n-1$
+	      $S(2) = 2 \cdot 2 - 1 = 3$
+\end{enumerate}
+Therefore, we know that $S(n)=2n-1$ is the correct answer.
+
+\subsection{Question 15}
+\textbf{Plaintext Question:} You flip a fair coin 5 times. Define the event \\
+A = \enquote{the number of heads is odd}. \\
+What is $ \Pr(A) $? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Basic Rules of Probability (5.3) \\
+\textbf{Explanation: } \\
+$ \Pr\text{(number of heads is even)}=1/2 $ \\
+$ \Pr\text{(number of heads is odd)}=1/2 $ \\
+$ \Pr\text{(number of tails is even)}=1/2 $ \\
+$ \Pr\text{(number of tails is odd)}=1/2 $ \\
+1/2 is the answer
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} You flip a fair coin 11 times. Define the event \\
+A=\enquote{the number of heads is odd}. \\
+B=\enquote{the number of tails is even}. \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Basic Rules of Probability (5.3) \\
+\textbf{Explanation: } \\
+As discussed in the previous question, they are all half; therefore, it is equal
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} In order to celebrate that the COMP 2804 midterm went well, you go to your neighborhood pub. This pub has 16 different beers on tap:\\
+There are 7 beers of the pilsner type. \\
+There are 5 beers of the India pale ale type.\\
+There are 4 beers of the German wheatbeer type.\\
+You order 4 different beers with at least one beer of each type. What is the number of ways in which you can do this? (The order in which you order the beers does not matter.) \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+We can grab 2 pilsner beers, 1 India pale ale beer, and 1 German wheatbeer beer. \\
+$\binom{7}{2} \cdot 5 \cdot 4$ \\
+We can also grab 1 pilsner beer, 2 India pale ale beers, and 1 German wheatbeer beer.\\
+$7 \cdot \binom{5}{2} \cdot 4$ \\
+We can also grab 1 pilsner beer, 1 India pale ale beer, and 2 German wheatbeer beers.\\
+$7 \cdot 5 \cdot \binom{4}{2}$ \\
+Thus, the total number of ways is $\binom{7}{2} \cdot 5 \cdot 4 + 7 \cdot \binom{5}{2} \cdot 4 + 7 \cdot 5 \cdot \binom{4}{2}$
+
+
+
+
+
+
+
+
+
+\section{2016 Fall Midterm}
+
+\subsection{Question 1}
+\textbf{Plaintext Question:} Carleton's Computer Science program has $f$ female students and $m$ male students, where $f \geq 1$ and $f+m \geq 4$.
+The Carleton Computer Science Society has a Board of Directors consisting of a President and three Vice-Presidents, all of whom are Computer Science students. \\
+The President is female and cannot be Vice-President. In how many ways can a Board of Directors be chosen? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Permutations and Binomial Coefficients(3.6) \\
+\textbf{Explanation: } \\
+First, we pick a female to be the President. There are $f$ ways to do this. \\
+Then, we pick 3 of the remaining females-1(subtracted 1 because 1 of them is already president) and ales to be vice presidents. \\
+There are $\binom{m-1+f}{3} \cdot m$ ways to do this.
+
+\subsection{Question 2}
+\textbf{Plaintext Question:} Let $k$ and $n$ be integers with $2 \leq k \leq n$ and consider the set $S=1,2, \ldots ,n$. \\
+What is the number of $k$-element subsets of $S$ that do not contain 1 and do not contain 2? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } Permutationsand Binomial Coefficients (3.6) \\
+Well, we take away 1 and 2 from the bag that we get to choose from \\
+Thus, we need to choose $k$ elements from $n-2$ elements. \\
+There are $\binom{n-2}{k}$ ways to do this.
+
+\subsection{Question 3}
+\textbf{Plaintext Question:} Let $k$ and $n$ be integers with $2 \leq k \leq n$ and consider the set $S=1,2, \ldots ,n$. \\
+What is the number of $k$-element subsets of $S$ that do not contain 1 or do not contain 2? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Permutations and Binomial Coefficients (3.6.2) The Complement Rule (3.3)\\
+\textbf{Explanation: } \\
+Let's break it down I guess
+\begin{enumerate}
+	\item Let T be the set of all $k$-element subsets of $S$. \\
+	      $ |T| = \binom{n}{k} $
+	\item Let A be the event that there is a 1 and a 2 in the subset. \\
+	      That means we've gotten 1 and 2 already, leaving us with n-2 elements in the bag
+	      This also means we have to choose k-2 more elements from the bag
+	      $ |A| = \binom{n-2}{k-2} $
+\end{enumerate}
+Let's just subtract the number of ways to get 1 or 2 from the total number of ways to get a subset. \\
+$ \binom{n}{k} - \binom{n-2}{k-2} $
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} For any integer $n \geq 3$, let $B_n$ be the number of bitstrings of length $n$ in which the first three bits are not all equal. Which of the following is true? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length $n$ (3.1.1) \\
+\textbf{Explanation: } \\
+There are 6 possibilities for the first 3 bits.
+\begin{enumerate}
+	\item 000
+	\item 001
+	\item 010
+	\item 011
+	\item 100
+	\item 101
+	\item 110
+\end{enumerate}
+We can also get 6 possibilities by taking all 8 possible 3 bit combinations and subtracting the 2 possibilities where all 3 bits are the same. \\
+For all other bits, there are 2 possibilities. \\
+Thus, there are $6 \cdot 2^{n-3}$ bitstrings.
+
+\subsection{Question 5}
+\textbf{Plaintext Question:} Consider strings of length 4 consisting of the characters $ a,b,c,d$ and $ d$. \\
+How many such strings are there that start with $ ad$ or end with $ dcb$? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+A = strings that start with $ ad$. \\
+A = first 2 bits are set in stone while other 2 bits can be a,b,c, or d. \\
+$ |A| = 1 \cdot 4 \cdot 4 = 16$ \\
+B = strings that end with $ dcb$. \\
+B = last 3 bits are set in stone while the final bit can be a,b,c, or d. \\
+$ |B| = 1 \cdot 4 = 4$ \\
+A $ \cap $ B = strings that start with $ ad$ and end with $ dcb$. \\
+The only string that satisfies this is $ adcb$. \\
+$ |A \cap B| = 1$ \\
+$ |A \cup B| = |A| + |B| - |A \cap B|$ \\
+$ |A \cup B| = 16 + 4 - 1 = 19$
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} Let $ n \geq 5 $ and consider strings of length $ n $ consisting of the characters $ a, b, c, $ and $ d $. \\
+How many such strings are there that start with $ ad $ r end with $ dcb $? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+A = strings that start with $ ad $. \\
+A = first 2 bits are set in stone while other $ n-2 $ bits can be a, b, c, or d. \\
+$ |A| = 1 \cdot 4^{n-2} $ \\
+B = strings that end with $ dcb $. \\
+B = last 3 bits are set in stone while the final $ n-3 $ bits can be a, b, c, or d. \\
+$ |B| = 1 \cdot 4^{n-3} $ \\
+$ A \cap B $ = strings that start with $ ad $ and end with $ dcb $. \\
+Assuming the string starts with $ ad $ and ends with $ dcb $, there are $ n-5 $ bits left that can be a, b, c, or d. \\
+$ |A \cap B| = 1 \cdot 4^{n-5} $ \\
+$ |A \cap B| = 1 $ \\
+$ |A \cup B| = |A| + |B| - |A \cap B| $ \\
+$ |A \cup B| = 1 \cdot 4^{n-2} + 1 \cdot 4^{n-3} - 4^{n-5} $ \\
+$ |A \cup B| = 4^{n-2} + 4^{n-3} - 4^{n-5} $
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} What does $ \binom{w}{3} \cdot \binom{m}{2} + \binom{w}{4} \cdot m + \binom{w}{5} $ count? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Permutations and Binomial Coefficients (3.6.2), The Sum Rule (3.4) \\
+\textbf{Explanation: } \\
+We can break this into 3 cases to see what it counts. \\
+Case 1: 3 women and 2 men \\
+We choose 3 women from $ w $: $ \binom{w}{3} $ \\
+We choose 2 men from $ m $: $ \binom{m}{2} $ \\
+In total, there are $ \binom{w}{3} \cdot \binom{m}{2} $ possibilities. \\
+Case 2: 4 women and 1 man
+We choose 4 women from $ w $: $ \binom{w}{4} $ \\
+We choose 1 man from $ m $: $ \binom{m}{1} $ \\
+In total, there are $ \binom{w}{4} \cdot \binom{m}{1} $ possibilities. \\
+Case 3: 5 women and 0 men
+We choose 5 women from $ w $: $ \binom{w}{5} $ \\
+In total, there are $ \binom{w}{5} $ possibilities. \\
+Adding it all up, we get $ \binom{w}{3} \cdot \binom{m}{2} + \binom{w}{4} \cdot \binom{m}{1} + \binom{w}{5} $
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} Let $ n \geq 2 $ be an integer and let $ S $ be a set of $ m $ integers. \\
+What is the minimum value of $m$ such that we can guarantee that $S$ contains at least two elements whose difference is divisible by $n$? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+To determine the minimum value of $ m $ such that we can guarantee that a set $ S $ of $ m $ integers contains at least two elements whose difference is divisible by $ n $, we can use the Pigeonhole Principle.
+
+\paragraph{Pigeonhole Principle:} Let $ k \geq 1 $ be an integer. If $ k+1 $ or more objects are placed into $ k $ boxes, then there is at least one box containing two or more objects.
+
+\paragraph{Application to the Problem}
+\begin{enumerate}
+	\item \textbf{Residue Classes Modulo $ n $:} \\
+	      Consider the integers modulo $ n $. There are $ n $ possible residue classes: $ 0, 1, 2, \ldots, n-1 $.
+	\item \textbf{Pigeonholes and Pigeons:}
+	      Each integer in the set $ S $ will fall into one of these $ n $ residue classes. If $ m $ integers are placed into these $ n $ residue classes, then by the Pigeonhole Principle, if $ m > n $, at least two integers must fall into the same residue class.
+	\item \textbf{Difference Divisible by $ n $:}
+	      If two integers are in the same residue class, their difference is divisible by $ n $. Therefore, we need $ m $ to be large enough to ensure that at least two integers are guaranteed to fall into the same residue class.
+\end{enumerate}
+
+\paragraph{Calculation:}
+To guarantee that there are at least two elements whose difference is divisible by $ n $, we need at least one more than $ n $ integers. Thus, the minimum value of $ m $ is $ n + 1 $.
+
+\paragraph{Conclusion:}
+The minimum value of $ m $ such that we can guarantee that $ S $ contains at least two elements whose difference is divisible by $ n $ is $ n + 1 $.
+
+\[
+	\boxed{m = n + 1}
+\]
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} What is the coefficient of $ x^{24}y^{26} $ in the expansion of $ {(5x-7y)}^{50} $? \\
+\textbf{Relevant Theorems: } Newton’s Binomial Theorem (3.6.2) \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+$ = \sum^{50}_{k=0} \binom{50}{k} {(5x)}^{50-k} {(-7y)}^k $ \\
+$ = \sum^{50}_{k=0} \binom{50}{26} {(5x)}^{50-26} {(-7y)}^k $ \\
+$ = \binom{50}{24} {(5)}^{24} x^{24} {(-7)}^{26} y^{26} $ \\
+$ = \binom{50}{26} {(5)}^{24} {(-7)}^{26} x^{24}  y^{26} $
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} The function $ f: \mathbb{N} \rightarrow \mathbb{R} $ is defined by \\
+$ f(0) = 7, $ \\
+$ f(n) = {\frac{n}{3}} \cdot f(n-1) \text{for} n \geq 1$. \\
+What is $ f(n) $? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+We can calculate values of $ f(1) $ and $ f(2) $ to see if we can find a pattern. \\
+$ f(1) = \frac{1}{3} \cdot 7 = \frac{7}{3} $ \\
+$ f(2) = \frac{2}{3} \cdot \frac{7}{3} = \frac{14}{9} $
+\begin{enumerate}
+	\item $ f(n) = 7 \cdot \frac{n!}{3^{n}} $ \\
+	      $ f(1) = 7 \cdot \frac{1!}{3^{1}} = 7 \cdot \frac{1}{3} = \frac{7}{3} $
+	      $ f(2) = 7 \cdot \frac{2!}{3^{2}} = 7 \cdot \frac{2}{9} = \frac{14}{9} $
+	\item $ f(n) = 7^{n} \cdot \frac{n!}{3^{n}} $
+	      $ f(1) = 7^{1} \cdot \frac{1!}{3^{1}} = 7 \cdot \frac{1}{3} = \frac{7}{3} $
+	      $ f(2) = 7^{2} \cdot \frac{2!}{3^{2}} = 49 \cdot \frac{2}{9} = \frac{98}{9} $
+	\item $ f(n) = 7 \cdot \frac{(n+1)!}{3^{n}} $
+	      $ f(1) = 7 \cdot \frac{2!}{3^{1}} = 7 \cdot \frac{2}{3} = \frac{14}{3} $
+	\item $ f(n) = 7^{n} \cdot \frac{(n+1)!}{3^{n}} $
+	      $ f(1) = 7^{1} \cdot \frac{2!}{3^{1}} = 7 \cdot \frac{2}{3} = \frac{14}{3} $
+\end{enumerate}
+Thus, we know that $ f(n) = 7 \cdot \frac{n!}{3^{n}} $ is the correct answer.
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} For any integer $ n \geq 1 $, let $ B_n $ be the number of bitstrings of length $ n $ that do not contain the substring 11 and do not contain the substring 101. \\
+Which of the following is true for any $ n \geq 4 $? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length $n$ (3.1.1), Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+We can write down some possibilities first. \\
+$ 1, B_{n-1}$ possibilities left \\
+$ 0, 0, 1, B_{n-3}$ possibilities left \\
+Thus, there are $ B_n = B_{n-1} + B_{n-3}$ possibilities.
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} Let $ n \geq 1 $ be an integer, and let $ S_n $ be the number of ways in which $ n $ can be written as a sum of 3s and 4s, such that the order in which the 3s and 4s occur in the sum matters.
+For example, $ S_5 = 0 $, because 5 cannot be written as a sum of 3s and 4s.
+We have $ S_{11} = 3 $, because $ 11 = 3 + 4 + 4 = 4 + 3 + 4 = 4 + 4 + 3 $
+Which of the following is true for any $ n \geq 5 $? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } A Recursively Defined Set (4.3) \\
+\textbf{Explanation: } \\
+We can write down some possibilities first. \\
+$ 3, S_{n-3} $ possibilities left \\
+$ 4, S_{n-4} $ possibilities left \\
+Thus, there are $ S_n = S_{n-3} + S_{n-4} $ possibilities.
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} Consider the following recursive algorithm FIB, which takes as input an integer $ n \geq 0 $. \\
+When running $\text{FIB}(12) $, how many calls are there to $ \text{FIB}(8) $?
+procedure Fib$ (n) $
+if n=0 or n=1 then
+f = n
+else
+f = $ Fib(n-1) + Fib(n-2) $
+end if
+return f
+end procedure \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Fibonacci Numbers (4.2) \\
+\textbf{Explanation: } \\
+We can draw a recursive tree to see how many calls there are to $ \text{FIB}(8) $. \\
+\begin{forest}
+	[FIB$ (12) $
+		[FIB$ (11) $
+				[FIB$ (10) $
+						[FIB$ (9) $
+								[FIB$ (8) $]
+							]
+							[FIB$ (8) $]
+					]
+					[FIB$ (9) $
+						[FIB$ (8) $]
+							[FIB$ (7) $]
+					]
+			]
+			[FIB$ (10) $
+				[FIB$ (9) $
+						[FIB$ (8) $]
+					]
+					[FIB$ (8) $]
+			]
+	]
+\end{forest} \\
+We can see that there are 5 calls to $ \text{FIB}(8) $.
+
+\subsection{Question 14}
+\textbf{Plaintext Question:} Consider the following recursive algorithm $ ELISADRINKSCIDER $, which takes as input an integer $ n \geq 1 $, which is a power of 2. For $ n $ a power of 2, let $ C(n) $ be the total number of bottles of cider that you drink when running algorithm $ ELISADRINKSCIDER(n) $. Which of the following is true for any $ n \geq 1 $ that is a power of 2? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Euclid's Algorithm (4.5) \\
+\textbf{Explanation: } \\
+procedure ElisaDrinksCider $ (n) $ \\
+if $ n = 1 $ then \\
+order Fibonachos \\
+else \\
+ElisaDrinksCider$ (\frac{n}{2}) $ \\
+drink n bottles of cider \\
+ElisaDrinksCider$ (\frac{n}{2}) $ \\
+end if \\
+end procedure \\
+We can calculate the first couple of values of $ C(n) $ to see if we can find a pattern. \\
+$ C(1) = 0 $ \\
+$ C(2) = 2 $
+\begin{enumerate}
+	\item $ C(n) = n \log{ n } - 1 $ \\
+	      $ C(1) = 1 \log{ 1 } - 1 = 0 $
+	      $ C(2) = 2 \log{ 2 } - 1 = 2 - 1 = 1 $
+	\item $ C(n) = n \log{ n } n + 1 $
+	      $ C(1) = 1 \log{ 1 } 1 + 1 = 1 $
+	\item $ C(n) = n \\log{ n } n $
+	      $ C(1) = 1 \log{ 1 } 1 = 0 $
+	      $ C(2) = 2 \log{ 2 } 2 = 2 $
+	\item $ C(n) = 2n \log{ n } n $
+	      $ C(1) = 2(1) \log{ 1 } 1 = 0 $
+	      $ C(2) = 2(2) \log{ 2 } 2 = 4 $
+\end{enumerate}
+Thus, we know that $ C(n) = n \log{ n } $ is the correct answer.
+
+\subsection{Question 15}
+\textbf{Plaintext Question:} You flip a fair coin 9 times. Define the event $ A $ = \enquote{the result of the first flip is not equal to the result of the second flip}.
+What is $ \Pr(A) $? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Basic Rules of Probability (5.3) \\
+\textbf{Explanation: } \\
+We can write down all the possibilities for the first 2 flips.
+\begin{enumerate}
+	\item HH
+	\item HT
+	\item TH
+	\item TT
+\end{enumerate}
+There are 4 total possibilities. There are 2 possibilities where the first 2 flips are not equal. \\
+Thus, $ \Pr(A) = \frac{2}{4} = \frac{1}{2} $
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} Consider 4 people, each of which has a uniformly random birthday. We ignore leap years; thus, one year has 365 days.
+Define the event $ A= $ \enquote{at least 2 of these 4 people have the same birthday}.
+What is $ \Pr(A) $? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } The Birthday Paradox (5.5) \\
+\textbf{Explanation: } \\
+We can calculate the probability that none of the 4 people have the same birthday. \\
+B = No one has the same birthday. \\
+The first person has 365 choices. \\
+The second person has 364 choices. \\
+The third person has 363 choices. \\
+The fourth person has 362 choices. \\
+$ |B| = 365 \cdot 364 \cdot 363 \cdot 362 $ \\
+$ \Pr(A) = 1 - \frac{|B|}{365^4} $
+$ \Pr(A) = 1 - \frac{365 \cdot 364 \cdot 363 \cdot 362}{365^4} $
+$ \Pr(A) = 1 - \frac{364 \cdot 363 \cdot 362}{365^3} $
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} In the game of Hearthstone, you are given a deck of 18 distinct cards. One of the cards is the Raven Idol. \\
+You choose a uniformly random deck of 3 cards. Define the event \\
+$ A= $ \enquote{the hand of 3 cards contains the Raven Idol}.
+What is $ \Pr(A) $? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Permutations and Binomial Coefficients(3.6), Uniform Probability Spaces (5.4) \\
+\textbf{Explanation: } \\
+Assume we obtain the Raven Idol first. Only once option.
+For the other two cards, we choose 2 cards from the remaining 17 cards. \\
+There are a total of $ \binom{17}{2} $ ways to do have an Idol Raven. \\
+There are a total of $ \binom{18}{3} $ ways to choose 3 cards from 18. \\
+$ \Pr(A) = \frac{\binom{17}{2}}{\binom{18}{3}} $ \\
+$ \Pr(A) = \frac{\frac{17!}{15!2!}}{\frac{18!}{3!15!}} $ \\
+$ \Pr(A) = \frac{17!}{15!2!} \cdot \frac{3!15!}{18!} $ \\
+$ \Pr(A) = \frac{17!}{2!} \cdot \frac{3!}{18!} $ \\
+$ \Pr(A) = \frac{1}{2!} \cdot \frac{3!}{18} $ \\
+$ \Pr(A) = \frac{1}{1} \cdot \frac{3}{18} $ \\
+$ \Pr(A) = \frac{3}{18} $
+
+
+
+
+
+
+
+
+\section{2017 Fall Midterm}
+
+\subsection{Question 1}
+\textbf{Plaintext Question:} Let $ n \geq 8 $ be an even integer and let $ S = {1, 2, 3, \ldots, n} $. \\
+Consider 7-element subsets of $ S $ that consist of 4 even numbers and 3 odd numbers. How many such subsets are there? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Permutations and Binomial Coefficients (3.6.2) \\
+\textbf{Explanation: } \\
+1 is odd, 2 is even, 3 is odd, 4 is even, etc etc \\
+This pattern of odd followed by even shows us that half the elements are even and half are odd. \\
+We need to choose 4 even numbers from $ \frac{n}{2} $ even numbers. \\
+There are $ \binom{\frac{n}{2}}{4} $ ways to do this. \\
+We need to choose 3 odd numbers from $ \frac{n}{2} $ odd numbers. \\
+There are $ \binom{\frac{n}{2}}{3} $ ways to do this. \\
+Thus, there are $ \binom{\frac{n}{2}}{4} \cdot \binom{\frac{n}{2}}{3} $ ways to choose 4 even numbers and 3 odd numbers.
+
+\subsection{Question 2}
+\textbf{Plaintext Question:} Let $ s \geq 1 $, $ t \geq 1 $, and $ k \geq 1$be integers. \\
+The Carleton Computer Science Society is organizing their annual Halloween party. At this party, there are $ s+t+k $
+$ s $ students who are dressed up as Superman,
+$ t $ students who are dressed up as Donald Trump,
+$ k $ students who are dressed up as Kim Jong Un.
+These $ s+t+k $ students are arranged on a line, such that all Supermen are standing next to each other, all Trumps are standing next to each other, all Kims are standing next to each other, and no Trump is standing next to any Kim. How many such arrangements are there? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Placing Books on Shelves (3.1.3) \\
+\textbf{Explanation: } \\
+We know that Trumps can't stand beside Kims, so the Supermans have to be in the middle. \\
+It could look like TTSSKK or KKSSTT \\
+So this doubles the number of possibilities. \\
+We need to arrange the Supermans in their own section. \\
+There are $ s! $ ways to do this. \\
+We need to arrange the Trumps in their own section. \\
+There are $ t! $ ways to do this. \\
+We need to arrange the Kims in their own section. \\
+There are $ k! $ ways to do this. \\
+Thus, there are $ 2 \cdot s! \cdot t! \cdot k! $ ways to arrange the students.
+
+\subsection{Question 3}
+\textbf{Plaintext Question:} Let $n \geq 1 $ be an integer. Consider functions
+$ f:{1,2,3,\ldots,n} \rightarrow {1,2,3,\ldots,7n} $
+such that, for each $ i $ with $ 1 \leq i \leq n $, $ f(i) $ is divisible by 7. How many such functions are there? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Counting Functions (3.1.2)\\
+\textbf{Explanation: } \\
+So the output of the function has to be divisible by 7. \\
+That means we only take into account the multiples of 7: $ 7, 14, 21, \ldots, 7n $. \\
+We only really have n options to choose from. \\
+Because each of the n inputs can only map the values mentioned above, each only has n options. \\
+Thus, there are $ n^n $ possible functions.
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} Let $ m \geq 5 $ and $ n \geq 5 $ be integers. \\
+Let $ P $ be a set consisting of $ $ strictly positive integers, and let $ N $ be a set consisting of $ n $ strictly negative integers. \\
+Consider 5-element subsets $ A $ of $ P \cup N $ such that the product of the elements in $ A $ is strictly positive.
+How many such subsets $ A $ are there? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } The Product Rule(3.1), Permutations and Binomial Coefficients (3.6.2), The Sum Rule (3.4) \\
+\textbf{Explanation: } \\
+If we want the product to be positive, there are only 3 possibilities: \\
+1. 5 positive numbers \\
+We choose 5 positive numbers from $ m $ positive numbers: $ \binom{m}{5} $ \\
+2. 3 positive numbers and 2 negative numbers \\
+We choose 3 positive numbers from $ m $ positive numbers and 2 negative numbers from $ n $ negative numbers: $ \binom{m}{3} \cdot \binom{n}{2} $ \\
+3. 1 positive number and 4 negative numbers \\
+We choose 1 positive number from $ m $ positive numbers and 4 negative numbers from $ n $ negative numbers: $ m \cdot \binom{n}{4} $ \\
+Thus, there are $ \binom{m}{5} + \binom{m}{3} \cdot \binom{n}{2} + m \cdot \binom{n}{4} $ such subsets.
+
+\subsection{Question 5}
+\textbf{Plaintext Question:} Let $ n \geq 2 $ be an even integer and let $ S = {1, 2, 3, \ldots, n} $. Consider subsets of $ S $ that contain at least one even number.
+How many such subsets are there? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } The Bijection Rule (3.2.1), The Complement Rule(3.3) \\
+\textbf{Explanation: } \\
+$ |S| = 2^n $ \\
+B = subsets that contain no even numbers. \\
+Since it's incremental, we know half the values are odd and half are even. \\
+That means there are a total of $ 2^{\frac{n}{2}} $ subsets that contain no even numbers. \\
+$ |B| = 2^{\frac{n}{2}} $ \\
+A = subsets that contain at least one even number. \\
+$ |A| = 2^n - |B| $ \\
+$ |A| = 2^n - 2^{\frac{n}{2}} $
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} Let $ n \geq 7 $ be an integer and consider strings of length $ n $ consisting of the characters $ a, b, c $, and $ d $.
+How many such strings are there that start with $abc$ or end with $ dddd $? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+A = strings that start with $ abc $. \\
+A = first 3 bits are set in stone while other $ n-3 $ bits can be a, b, c, or d. \\
+$ |A| = 1 \cdot 4^{n-3} $ \\
+B = strings that end with $ dddd $. \\
+B = last 4 bits are set in stone while the final bit can be a, b, c, or d. \\
+$ |B| = 1 \cdot 4^{n-4} $ \\
+$ A \cap B $ = strings that start with $ abc $ and end with $ dddd $. \\
+Assuming the string starts with $ abc $ and ends with $ dddd $, there are $ n-7 $ bits left that can be a, b, c, or d. \\
+$ |A \cap B| = 1 \cdot 4^{n-7} $ \\
+$ |A \cup B| = |A| + |B| - |A \cap B| $ \\
+$ |A \cup B| = 1 \cdot 4^{n-3} + 1 \cdot 4^{n-4} - 4^{n-7} $ \\
+$ |A \cup B| = 4^{n-3} + 4^{n-4} - 4^{n-7} $
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} Let $ n \geq 2 $ be an integer. What does $ \sum_{k=2}^{n} \binom{n}{k}\cdot 2^{n-k} $ count? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+$ \binom{n}{k} $ is taking k a's while the rest are b's or c's
+$ 2^{n-k} $ is taking the rest of the bits and making them b's or c's
+Because we increment the value of k, we're saying the following:
+\begin{enumerate}
+	\item 2 a's and the rest are b's or c's
+	\item 3 a's and the rest are b's or c's
+	\item 4 a's and the rest are b's or c's
+	\item etc etc
+\end{enumerate}
+With this, we capture all the possibilities of having k a's and the rest being b's or c's.
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} Consider a square with sides of length 17. This square contains $ n $ points. \\
+What is the minimum value of $ n $ such that we can guarantee that at least two of these points have distance at most $ 16 \sqrt{2} $? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+Placing 4 points furthest from each other creates a square. \\
+The distance between the two points is $ 17 $, which is just the length of side \\
+Now, we place 4 points in each corner of the square. Place the fifth point in the middle of the square. \\
+Now, let's calculate the distance between the middle point and any other point. \\
+$ a^2 + b^2 = c^2 $ \\
+$ {(\frac{1}{2}17)}^2 + {(\frac{1}{2}17)}^2 = c^2 $ \\
+$ \frac{1}{4}17^2 + \frac{1}{4}17^2 = c^2 $ \\
+$ \frac{1}{2}17^2 = c^2 $ \\
+$ \sqrt{\frac{1}{2}17^2} = c $ \\
+$ \sqrt{\frac{1}{2}}17 = c$
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} What is the coefficient of $ x^{20}y^{80} $ in the expansion of $ {(7x-13y)}^{100} $?
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Newton’s Binomial Theorem (3.6.2) \\
+\textbf{Explanation: } \\
+$ = \sum^{100}_{k=0} \binom{100}{k} {(7x)}^{k} {(-13y)}^{100-k} $ \\
+$ = \sum^{100}_{k=0} \binom{100}{20} {(7x)}^{20} {(-13y)}^{100-20} $ \\
+$ = \binom{100}{20} {(7)}^{20} x^{20} {(-13)}^{80} y^{80} $ \\
+$ = \binom{100}{20} {(7)}^{20} {(-13)}^{80} x^{20} y^{80} $
+$ = \binom{100}{20} {(7)}^{20} {(13)}^{80} x^{20} y^{80} $
+Thus, the coefficient is $ \binom{100}{20} {(7)}^{20} {(13)}^{80} $
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} A bitstring is called 01-free if it does not contain 01. Let $ n \geq 2 $ be an integer. \\
+How many 01-free bitstrings of length $ n $ are there? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Counting 00-Free Bitstrings (4.2.1) \\
+\textbf{Explanation: } \\
+Let's use the example where $ n = 4 $ \\
+The first possibility is that it starts with 0 and the rest of the bits are 0 \\
+0000 \\
+This is 1 possibility. \\
+The second possibility is that it starts with a row of 1's and the rest of the bits are 0 \\
+1111 \\
+1110 \\
+1100 \\
+1000 \\
+This is 4 possibilities. \\
+So we have $ 1 + n $ possibilities. \\
+For short bitstrings with simple equations, you can also brute force the possibilities.
+Suppose $ n=2 $ \\
+It can be 00, 10, 11 \\
+There are 3 possibilities. \\
+Since it's more than n by 1, we can say that there are $ n+1 $ possibilities.
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} A bitstring is called 00-free if it does not contain two 0's next to each other. \\
+In class, we have seen that for any $ m \geq 1 $, the number of 00-free bitstrings of length $ m $ is equal to the (m+2)-th Fibonacci number $ f_{m+2} $.
+What is the number of 00-free bitstrings of length 20 that have 0 at position 7?
+The positions are numbered $ 1, 2, \ldots, 20 $
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Counting 00-Free Bitstrings$ (4.2.1) $ \\
+\textbf{Explanation: } \\
+If there is a 0 at position 7, position 6 and 8 must be 1. \\
+It would look something like: XXXXX101XXXXXXXXXXXX \\
+Because the first 5 bits are 00-free bitstrings of length 5, there are $ f_{5+2} $ combinations. \\
+Bitstrings from position 9 to 20 are 00-free bitstrings of length 12, there are $ f_{12+2} $ combinations. \\
+Thus, there are $ f_{7} \cdot f_{14} $ combinations.
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} The functions $ f: {\mathbb{N}}^2 \rightarrow \mathbb{N} $ and $ g: \mathbb{N} \rightarrow \mathbb{N} $ are recursively defined as follows:
+$ f(m,0) = m $
+$ f(m,n) = 1 + f(m,n-1)$
+$ g(0) = 1 $
+$ g(n) = 5 \cdot g(n-1) $
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+Let's take a look at what $ g(n) $ could be. \\
+$ g(0) = 1 $ \\
+$ g(1) = 5 \cdot 1 = 5 $ \\
+$ g(2) = 5 \cdot 5 = 25 $ \\
+$ g(n) = 5^n $ \\
+Now, let's take a look at what $ f(g(n),g(n)) $ could be. \\
+Because $ f(g(n),g(n)) $ decreases n by 1, the call to $ +1 $ will be called $ g(n) $ times. \\
+Once the second argument reaches 0, the function will add $ g(n) $ \\
+So in conclusion, the formula is: \\
+$ [1 + 1 + 1 \ldots + 1] + g(n) $ \\
+$ =[1 \cdot g(n)] + [g(n)] $ \\
+$ =g(n) + g(n) $ \\
+$ =2 g(n) $
+$ =2 \cdot 5^n $
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} Consider strings of characters, where each character is $ a, b $, or $ c $.
+Such a string is called ccc-free if it does not contain $ ccc $.
+For any integer $ n \geq 4 $, let $ B_n $ be the number of ccc-free bitstrings of length $ n $. Which of the following is true? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } A Recursively Defined Set (4.3) \\
+\textbf{Explanation: } \\
+We can write down some possibilities first. \\
+$ a, B_{n-1}$ possibilities left \\
+$ b, B_{n-1}$ possibilities left \\
+$ c,a, B_{n-2}$ possibilities left \\
+$ c,b, B_{n-2}$ possibilities left \\
+$ c,c, a, B_{n-3}$ possibilities left \\
+$ c,c, b, B_{n-3}$ possibilities left \\
+$ B_n = B_{n-1} + B{n-1} + B_{n-2} + B_{n-2} + B_{n-3} + B_{n-3} $ \\
+$ B_n = 2B_{n-1} + 2B_{n-2} + 2B_{n-3} $
+
+\subsection{Question 15}
+\textbf{Plaintext Question:} Consider the recursive algorithm $ HELLO $, which takes as input an integer $ n \geq 0 $
+If you run algorithm $ HELLO(5) $, how many times is the word \enquote{hello} printed?
+procedure Hello$ (n) $ \\
+if $ n = 0 $ then \\
+print \enquote{hello} \\
+else \\
+Hello$ n-1 $ \\
+Hello$ (2) $
+print \enquote{hello}
+Hello$ n-2 $ \\
+end if \\
+end procedure \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Fibonacci Numbers (4.2) \\
+\textbf{Explanation: } \\
+We can draw a recursive tree to see how many times the word \enquote{hello} is printed. \\
+\begin{forest}
+	[Hello$ (5) $
+		[Hello$ (4) $
+				[Hello$ (3) $
+						[Hello$ (1) $
+								[Hello$ ()0 $]
+							]
+							[Hello$ (1) $]
+					]
+					[Hello$ (2) $
+						[Hello$ (1) $]
+							[Hello$ (0) $]
+					]
+			]
+			[Hello$ (3) $
+				[Hello$ (2) $
+						[Hello$ (1) $]
+							[Hello$ (0) $]
+					]
+					[Hello$ (1) $]
+			]
+	]
+\end{forest} \\
+Each time HELLO is called, \enquote{hello} is printed once. We can count the number of times HELLO is called \\
+After counting, we see that \enquote{hello} is printed 15 times.
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} Let $ X = {1, 2, \ldots, 20} $. You choose a uniformly random 7-element subset $ Y $ of $ X $.
+Define the event $ A= $ \enquote{3 is an element of $ Y $ or 13 is an element of $ Y $}.
+What is $\Pr(A)$? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Permutations and Binomial Coefficients (3.6.2), The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+Let's break it down into 2 cases:
+\begin{enumerate}
+	\item B = \enquote{3 is an element of $ Y $} \\
+	      First, we assume that 3 is an element of $ Y $. \\
+	      We choose 6 elements from the remaining 19 elements: $ |B| = \binom{19}{6} $
+	\item C = \enquote{13 is an element of $ Y $} \\
+	      First, we assume that 13 is an element of $ Y $. \\
+	      We choose 6 elements from the remaining 19 elements: $ |C| = \binom{19}{6} $
+	\item $ A = B \cup C $ \\
+	      $ B \cap C = $ \enquote{3 and 13 are elements of $ Y $} \\
+	      First, we assume that 3 and 13 are elements of $ Y $. \\
+	      We choose 5 elements from the remaining 18 elements: $ |B \cap C| = \binom{18}{5} $
+\end{enumerate}
+$ |B \cup C| = |B| + |C| - |B \cap C| $ \\
+$ |B \cup C| = \binom{19}{6} + \binom{19}{6} - \binom{18}{5} $ \\
+$ |B \cup C| = 2 \cdot \binom{19}{6} - \binom{18}{5} $ \\
+There are a total of $ \binom{20}{7} $ ways to choose a 7-element subset of $ X $ of size 20. \\
+$ \Pr(A) = \frac{|B \cup C|}{\binom{20}{7}} $ \\
+$ \Pr(A) = \frac{2 \cdot \binom{19}{6} - \binom{18}{5}}{\binom{20}{7}} $
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} After having proctored the midterm, Alexa, Farah, May, and Shelly decide to go trick-or-treating.
+For any house that the ladies visit, if they do not receive candy, they throw rotten eggs at the house.
+Let  $ m \geq 7 $ and $ n \geq 7 $ be integers.
+There are $ m $ houses whose owners hand out candy and there are $ n $ houses whose owners do not hand out candy.
+The ladies choose a uniformly random subset of 7 houses and visit these 7 houses.
+Define the event $ A = $ \enquote{the ladies throw rotten eggs at exactly 2 of the 7 chosen houses}.
+What is $\Pr(A)$? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Permutations and Binomial Coefficients (3.6.2), \\
+\textbf{Explanation: } \\
+If they throw rotten eggs at exactly 2 of the 7 chosen houses, that means they receive candy from 5 of the 7 chosen houses. \\
+We choose 5 houses from the $ m $ houses that hand out candy: $ \binom{m}{5} $ \\
+We choose 2 houses from the $ n $ houses that do not hand out candy: $ \binom{n}{2} $ \\
+Thus, $ |A| = \binom{m}{5} \cdot \binom{n}{2} $ \\
+There are $ \binom{m+n}{7} $ ways to choose a 7-element subset of the $ m+n $ houses. \\
+Thus, $ \Pr(A) = \frac{|A|}{\binom{m+n}{7}} $ \\
+$ \Pr(A) = \frac{\binom{m}{5} \cdot \binom{n}{2}}{\binom{m+n}{7}} $
+
+
+
+
+
+
+
+
+\section{2017 Winter Midterm}
+
+\subsection{Question 1}
+\textbf{Plaintext Question:} 2017 Midterm Winter Carleton's Computer Science program has $ f $ female students and $ m $ male students, where $ f \geq 1 $ and $ f+m \geq 8 $.
+The Carleton Computer Science Society has a Board of Directors consisting of a President, five Vice-Presidents, and two Cider-Presidents (whose task is to buy cider for the President).
+All members of the Board of Directors are Computer Science students. The President is female, cannot be Vice-President, and cannot be Cider-President.
+A Vice-President cannot be Cider-President. In how many ways can a Board of Directors be chosen? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Permutations and Binomial Coefficients(3.6) \\
+\textbf{Explanation: } \\
+There are $ f $ amount of possibile peeps to choose to be president: $ f $ \\
+Excluding the person we picked to be president, we choose 5 people to be vice presidents from the remaining $ f+m-1 $ people: $ \binom{f+m-1}{5} $ \\
+Excluding the person we picked to be president and the 5 people we picked to be vice presidents, we choose 2 people to be cider presidents from the remaining $ f+m-6 $ people: $ \binom{f+m-6}{2} $ \\
+Thus, there are $ f \cdot \binom{f+m-1}{5} \cdot \binom{f+m-6}{2} $ ways to choose a Board of Directors.
+
+\subsection{Question 2}
+\textbf{Plaintext Question:} Let $ b \geq 1 $ and $ g \geq 1 $ be integers. Consider $ b $ boys and $ g $ girls.
+How many ways are there to arrange these kids on a line such that the leftmost kid is a girl? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Placing Books on Shelves (3.1.3) \\
+\textbf{Explanation: } \\
+There are $ g $ ways to choose the leftmost kid: $ g $ \\
+We can take any of the $ b+g-1 $ kids to be the second kid: $ b+g-1 $ \\
+We can take any of the $ b+g-2 $ kids to be the third kid: $ b+g-2 $ \\
+This decrements until we reach the last kid: $ 1 $ \\
+Thus, there are $ g \cdot (b+g-1)! $ ways to arrange the kids.
+
+\subsection{Question 3}
+\textbf{Plaintext Question:} Let $b \geq 1 $ and $ g \geq 1 $ be integers. Consider $ b $ boys and $ g $ girls.
+How many ways are there to arrange these kids on a line such that the leftmost kid is a girl or the rightmost kid is a boy? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Placing Books on Shelves (3.1.3) \\
+\textbf{Explanation: } \\
+We can break this down into 2 cases: \\
+A = the leftmost kid is a girl \\
+There are $ g $ ways to choose the leftmost kid: $ g $ \\
+There are $ (b+g-1)! $ ways to arrange the remaining kids: \\
+B = the rightmost kid is a boy \\
+There are $ b $ ways to choose the rightmost kid: $ b $ \\
+There are $ (b+g-1)! $ ways to arrange the remaining kids \\
+$ A \cap B = $ the leftmost kid is a girl and the rightmost is a boy
+There are $ g $ girls to choose to be the leftmost kid and $ b $ boys to choose to be the rightmost kid: $ g \cdot b $ \\
+There are $ (b+g-2)! $ ways to arrange the remaining kids \\
+$ |A \cup B| = |A| + |B| - |A \cap B| $ \\
+$ |A \cup B| = g \cdot (b+g-1)! + b \cdot (b+g-1)! - g \cdot b \cdot (b+g-2)! $
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} Let $ n \geq 13 $ be an integer. What is the number of bitstrings of length $ n $ that have exactly seven 0's or exactly five 1's? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Permutations and Binomial Coefficients (3.6.2), The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+We can break this down into 3 cases:
+\begin{enumerate}
+	\item A = bitstrings of length $ n $ that have exactly seven 0's \\
+	      We choose 7 positions from the $ n $ positions to place the 0's: $ \binom{n}{7} $
+	\item B = bitstrings of length $ n $ that have exactly five 1's \\
+	      We choose 5 positions from the $ n $ positions to place the 1's: $ \binom{n}{5} $
+	\item $A \cap B$ \\
+	      There is no intersection because you cannot have seven 0s and give 1's. That's 12 bits. The thirteenth bit needs to be a 1 or 0, which breaks the rule: 0
+\end{enumerate}
+$ |A \cup B| = |A| + |B| - |A \cap B| $ \\
+$ |A \cup B| = \binom{n}{7} + \binom{n}{5} - 0 $ \\
+Thus, the number of bitstrings of length $ n $ that have exactly seven 0's or exactly five 1's is: $ \binom{n}{7} + \binom{n}{5} - 0$
+
+\subsection{Question 5}
+\textbf{Plaintext Question:} Consider strings of length six consisting of the characters $ a,b,c $, and $ d $.
+How many such strings are there that start with $ abc $ or end with $ ccc $? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length n (3.1.1), The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+We can break this down into 2 cases: \\
+A = strings that start with $ abc $ \\
+There is $ 1 $ way to arrange the first 3 bits and $ 4^3 $ ways to choose the last 3 bits: $ 1 \cdot 4^3 $ \\
+B = strings that end with $ ccc $ \\
+There is $ 1 $ way to arrange the last 4 bits and $ 4^2 $ ways to choose the first 2 bits: $ 1 \cdot 4 $ \\
+$ A \cap B = $ strings that start with $ abc $ and end with $ ccc $ \\
+There is $ 1 $ way to arrange the first 3 bits and $ 1 $ way to arrange the last 4 bits: $ 1 \cdot 1 $ \\
+$ |A \cup B| = |A| + |B| - |A \cap B| $ \\
+$ |A \cup B| = 1 \cdot 4^3 + 1 \cdot 4^2 - 1 \cdot 1 $ \\
+$ |A \cup B| = 4^3 + 4^2 - 1 $ \\
+$ |A \cup B| = 64 + 16 - 1 $ \\
+$ |A \cup B| = 79 $
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} Let $ n \geq 4 $ be an integer and consider strings of length $ n $ consisting of the characters $ a,b,c $, and $ d $.
+How many such strings are there that start with $ ab $ or start with $ abc $? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length n (3.1.1), The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+We can break this down into 2 cases: \\
+A = strings that start with $ ab $ \\
+There is $ 1 $ way to arrange the first 2 bits and $ 4^{n-2} $ ways to choose the last $ n-2 $ bits: $ 1 \cdot 4^{n-2} $ \\
+B = strings that start with $ abc $ \\
+There is $ 1 $ way to arrange the first 3 bits and $ 4^{n-3} $ ways to choose the last $ n-3 $ bits: $ 1 \cdot 4^{n-3} $ \\
+$ A \cap B = $ strings that start with $ ab $ and start with $ abc $ \\
+There is $ 1 $ way to arrange the first 3 bits and $ 4^{n-3} $ ways to choose the last $ n-3 $ bits: $ 1 \cdot 4^{n-3} $ \\
+$ |A \cup B| = |A| + |B| - |A \cap B| $ \\
+$ |A \cup B| = 1 \cdot 4^{n-2} + 1 \cdot 4^{n-3} - 1 \cdot 4^{n-3} $ \\
+$ |A \cup B| = 4^{n-2} + 4^{n-3} - 4^{n-3} $ \\
+$ |A \cup B| = 4^{n-2} $
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} Let $ m \geq 2 $ and $ n \geq 2$ be integers. What does $ \binom{m}{2} + \binom{n}{2} + mn $ count? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Permutations and Binomial Coefficients (3.6.2)\\
+\textbf{Explanation: } \\
+It's a little confusing when you know why the correct answer is correct, but you don't know why the incorrect answers are incorrect. \\
+Let's go through all of them
+\begin{enumerate}
+	\item The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women, where $x$ must be a man and $y$ must be a woman. \\
+	      So this one is wrong because the phrase they use only takes into account when we have a man and a women: $m \cdot n$ \\
+	      But the equation given shows that we could have 2 men or 2 women as a unordered pair.
+	\item The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women where $x$ and $y$ cannot both be men. \\
+	      For this one, it says $x$ and $y$ cannot both be men but $ \binom{m}{2} $ gives us unordered pairs of men in the equation \\
+	      Since the phrase doesn't match the equation, this one is wrong.
+	\item The number of ways to choose an unordered pair of people from a group consisting of $m$ men and $n$ women, where at least one man must be chosen. \\
+	      For this one, it says \enquote{at least one man must be chosen} but the equation has $ \binom{m}{2} $ which gives us unordered of women as well \\
+	      Since the phrase doesn't match the equation, this one is wrong.
+	\item The number of ways to choose an unordered pair of people from a group consisting of $m$
+	      men and $n$ women. \\
+	      For this one, the phrase matches the equation. We take into account 2 men, 2 women, and 1 man-1 woman
+\end{enumerate}
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} Each student has a student number which is a string of five digits, in which no digit occurs more than once.
+Thus, 94631 is a valid student number, whereas 94641 is not valid.
+What is the minimum number of students such that we can guarantee that at least two of them have the same student number? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Counting Functions (3.1.1), The Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+We can use the pigeonhole principle. To guarantee that at least two of them have the same student number, we need to have one more student than the number of possible student numbers. \\
+There are $ 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 $ possible student numbers. \\
+We can rewrite this as\ldots \\
+$ \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6} \cdot 1 $ \\
+$ = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} $ \\
+$ = \frac{10!}{5!} $ \\
+With the pigeonhole principle, we need to have $ \frac{10!}{5!} + 1 $ students to guarantee that at least two of them have the same student number.
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} What is the coefficient of $ x^{20}y^{80} $ in the expansion of $ {(7x-13y)}^{100} $? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Newton’s Binomial Theorem (3.6.2) \\
+\textbf{Explanation: } \\
+$ = \sum^{100}_{k=0} \binom{100}{k} {(7x)}^{k} {(-13y)}^{100-k} $ \\
+$ = \sum^{100}_{k=0} \binom{100}{20} {(7x)}^{20} {(-13y)}^{100-20} $ \\
+$ = \binom{100}{20} {(7)}^{20} x^{20} {(-13)}^{80} y^{80} $ \\
+$ = \binom{100}{20} {(7)}^{20} {(-13)}^{80} x^{20} y^{80} $ \\
+$ = \binom{100}{20} {(7)}^{20} {(-13)}^{80} x^{20} y^{80} $ \\
+$ = \binom{100}{20} {(7)}^{20} {(13)}^{80} x^{20} y^{80} $ \\
+Thus, the coefficient is $ \binom{100}{20} {(7)}^{20} {(13)}^{80} $
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} How many strings can be obtained by rearranging the letters of the word \enquote{POOPERSCOOPER}? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Reordering the Letters of a Word (3.9.1) \\
+\textbf{Explanation: } \\
+Let's count the number of times each letter appears in the word:
+\begin{enumerate}
+	\item 3 P's
+	\item 4 O's
+	\item 2 E's
+	\item 2 R's
+	\item 1 C
+	\item 1 S
+\end{enumerate}
+We choose 4 of the 13 positions to place the O's: $ \binom{13}{4} $: $ \binom{13}{4} $ \\
+We choose 3 of the remaining 9 positions to place the P's: $ \binom{9}{3} $: $ \binom{9}{3} $ \\
+We choose 2 of the remaining 6 positions to place the E's: $ \binom{6}{2} $: $ \binom{6}{2} $ \\
+We choose 2 of the remaining 4 positions to place the R's: $ \binom{4}{2} $: $ \binom{4}{2} $ \\
+We choose 1 of the remaining 2 positions to place the C's: $ \binom{2}{1} $: $ \binom{2}{1} $ \\
+We choose the last position to place the single $S$: $ 1 $ \\
+Thus, there are $ \binom{13}{4} \cdot \binom{9}{3} \cdot \binom{6}{2} \cdot \binom{4}{2} \cdot \binom{2}{1} \cdot 1 $ strings
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} A bitstring is called 00-free if it does not contain two 0's next to each other. \\
+In class, we have seen that for any $ m \geq 1 $, the number of 00-free bitstrings of length $ m $ is equal to the $ (m+2) $-th Fibonacci number $ f_{m+2} $. \\
+Let $ n \geq 3 $ be an integer. \\
+What is the number of 00-free bitstrings of length $ 3n-1 $ that have 0 at position $ n $ and 1 at position $ 2n $? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting 00-Free Bitstrings (4.2.1) \\
+\textbf{Explanation: } \\
+(The positions are numbered $ 1, 2, \ldots, 3n-1) $. \\
+Since the $ n^{th} $ position is 0, the $ {n-1}^{th} $ and $ {n+1}^{th} $ positions must be 1. \\
+It would look something like: X,X,\ldots,1,0,1,\ldots,1,\ldots,X,X
+\begin{enumerate}
+	\item To the left of the first fixed 1, there are $ n - 2 $ bits that can be a, b, or c: $ f_{(n-2)+2} $ valid combinations
+	\item Between the second fixed 1 and third fixed 1, there are $ n - 2 $ bits that can be a, b, or c: $ f_{(n-2)+2} $ valid combinations
+	\item To the right of the third fixed 1, there are $ n - 1 $ bits that can be a, b, or c: $ f_{(n-1)+2} $ valid combinations
+\end{enumerate}
+$ f_{n} \cdot f_{n} \cdot f_{n+1} $ \\
+$ {(f_{n})}^2 \cdot f_{n+1} $ \\
+Thus, the number of 00-free bitstrings of length $ 3n-1 $ that have 0 at position $ n $ and 1 at position $ 2n $ is $ {(f_{n})}^2 \cdot f_{n+1} $.
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} The function $ f: {1, 2, 3, \ldots} \rightarrow \mathbb{R} $ is defined by$ f(1) = 2 $,
+$ f(n) = 2 {(\frac{n-1}{n})}^{2} \cdot f(n-1) $ for $ n \geq 2 $.
+What is $ f(n)$? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+Let's find the first few values of $ f(n) $ \\
+$ f(2) = 2 {(\frac{1}{2})}^{2} \cdot 2 = 1 $ \\
+$ f(3) = 2 {(\frac{2}{3})}^{2} \cdot 1 = \frac{8}{9} $
+\begin{enumerate}
+	\item $ \frac{2^{n}}{{(n-1)}^{2}} $ \\
+	      $f(2) = \frac{2^{2}}{{(2-1)}^{2}} = 4 $
+	\item $ \frac{2^{n-1}}{n^{2}} $ \\
+	      $f(2) = \frac{2^{1}}{2^{2}} = \frac{1}{2} $
+	\item $ \frac{2^{n}}{n^{2}} $
+	      $f(2) = \frac{2^{2}}{2^{2}} = 1 $ \\
+	      $f(3) = \frac{2^{3}}{3^{2}} = \frac{8}{9} $
+	\item $ \frac{n^{2}}{2^{n}} $
+	      $f(2) = \frac{2^{2}}{2^{2}} = 1 $ \\
+	      $f(3) = \frac{3^{2}}{2^{3}} = \frac{9}{8} $
+\end{enumerate}
+Thus, $ \frac{2^{n}}{n^{2}} $ is the correct answer.
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} For any integer $ n \geq 1 $, let $ B_n $ be the number of bitstrings of length $ n $ that do not contain the substring 10.
+Which of the following is true for any$ n \geq 4 $? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+If we start with a 1, then all other bits need to be 1 to not contain the substring 10. \\
+The other possibilties are a set of 0's followed by a set of 1's. \\
+If n=4, then the possibilities are: \\
+0000
+0001
+0011
+0111
+These are 4 possibilities. \\
+Thus, there are $ n+1 $ possibilities.
+
+\subsection{Question 15}
+\textbf{Plaintext Question:} Consider the recursive algorithm $ HELLO$, which takes as input an integer $ n \geq 0 $. \\
+If you run algorithm $ HELLO(7)$, how many times is the word \enquote{hello} printed?
+procedure Hello$ (n) $ \\
+if $ n = 0 $ or $ n = 1 $ then \\
+print \enquote{hello} \\
+else if $ n $ is even then
+Hello$ n/2 $ \\
+else
+Hello$ (n-1)$ \\
+hello$ (n-2) $ \\
+end if \\
+end procedure \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Fibonacci Numbers (4.2) \\
+\textbf{Explanation: } \\
+\enquote{hello} is printed when HELLO is called with an argument of 0 or 1. \\
+We can draw a recursive tree to see how many times the HELLO$(1)$ is called. \\
+\begin{forest}
+	[HELLO $ (7) $
+		[HELLO $ (6) $
+				[HELLO $ (3) $
+						[HELLO $ (2) $
+								[HELLO $ (1) $]
+							]
+							[HELLO $ (1) $]
+					]
+			]
+			[HELLO $ (5) $
+				[HELLO $ (4) $
+						[HELLO $ (2) $
+								[HELLO $ (1) $]
+							]
+					]
+					[HELLO $ (3) $
+						[HELLO $ (2) $
+								[HELLO $ (1) $]
+							]
+							[HELLO $ (1) $]
+					]
+			]
+	]
+\end{forest} \\
+HELLO$ (1) $ is called 5 times. Thus, \enquote{hello} is printed 5 times.
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} You flip a fair coin 15 times. Define the event $ A=$ \enquote{the result of the first three flips are equal}.
+What is $\Pr(A)$? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Basic Rules of Probability (5.3) \\
+\textbf{Explanation: } \\
+Let's see all possible 3 flip combinations: \\
+HHH \\
+HHT \\
+HTH \\
+HTT \\
+THH \\
+THT \\
+TTH \\
+TTT \\
+Out of 8 possibilities, 2 of them have the first 3 flips equal. \\
+Thus, Pr$ (A) = \frac{2}{8} = \frac{1}{4} $
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} Let $ n \geq 1 $ be an integer. A bag contains $ n $ red balls and $ n $ blue balls.
+We choose a uniformly random subset of two balls.
+Define the event $ A = $ \enquote{this subset consists of one red ball and one blue ball}.
+What is $\Pr(A)$? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Permutations and Binomial Coefficients (3.6.2), Uniform Probability Spaces (4.4) \\
+\textbf{Explanation: } \\
+First, we have n red balls to choose from and n blue balls to choose from. \\
+Thus, there are $ n \cdot n $ ways to choose a subset of two balls. \\
+There are a total of $ \binom{2n}{2} $ ways to choose a subset of two balls. \\
+Pr$ (A) = \frac{n \cdot n}{\binom{2n}{2}} $ \\
+Pr$ (A) = \frac{n^2}{\binom{2n}{2}} $
+
+
+
+
+
+
+
+
+\section{2018 Fall Midterm}
+
+\subsection{Question 1}
+\textbf{Plaintext Question:} Let $ n \geq 3 $ be an integer and let $ S $ be a set consisting of $ n $ elements.
+How many ordered triples $ (A, B, C) $are there for which $ A \subseteq S, B \subseteq S, C \subseteq S $, and $ A, B $, and $ C $ are pairwise disjoint? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } The Product Rule (3.1) \\
+\textbf{Explanation: } \\
+To determine the number of ordered triples $ (A, B, C) $ such that $ A \subseteq S $, $ B \subseteq S $, $ C \subseteq S $, and $ A $, $ B $, and $ C $ are pairwise disjoint, we start by analyzing the choices available for each element in the set $ S $.
+Given $ S $ is a set with $ n $ elements, each element $ x \in S $ must belong to one of the sets $ A $, $ B $, $ C $, or to none of these sets. These four choices for each element are:
+\begin{enumerate}
+	\item $ x \in A $
+	\item $ x \in B $
+	\item $ x \in C $
+	\item $ x \notin A \cup B \cup C $
+\end{enumerate}
+Since the elements of $ S $ are independently distributed among these four choices, each element has 4 options. Therefore, for each of the $ n $ elements, there are 4 independent choices. \\
+$ 4 \cdot 4 \cdot 4 \cdot \ldots \cdot 4$ \\
+Hence, the total number of ways to assign each of the $ n $ elements to either $ A $, $ B $, $ C $, or none of them is $ 4^n $. \\
+Thus, the total number of ordered triples $ (A, B, C) $ where $ A $, $ B $, and $ C $ are pairwise disjoint subsets of $ S $ is: \[ 4^n \] \\
+So, the number of such ordered triples is $\boxed{4^n}$.
+
+\subsection{Question 2}
+\textbf{Plaintext Question:} Consider bitstrings of length 9. The positions in these strings are numbered as $1, 2, 3, \ldots, 9 $.
+How many such bitstrings have the property that the bit at each even position is 0, or the bitstring starts with 1010? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length n (3.1.1), The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+Let's break this down into 2 cases:
+A = the bit at each even position is 0 \\
+The even position bits are fixed as 0. The odd position bits can be either 0 or 1.
+Thus, there are $ 2^5 $ ways to choose the odd position bits. \\
+B = the bitstring starts with 1010 \\
+The first 4 bits are fixed as 1010. The remaining 5 bits can be either 0 or 1.
+Thus, there are $ 2^5 $ ways to choose the remaining 5 bits. \\
+$ A \cap B = $ the bit at each even position is 0 and the bitstring starts with 1010: 1,0,1,0,X,0,X,0,X \\
+The even position bits are fixed as 0. The first 4 bits are fixed as 1010. The remaining bit can be either 0 or 1.
+Thus, there are $ 2^3 $ ways to choose the remaining bit. \\
+$ |A \cup B| = |A| + |B| - |A \cap B| $ \\
+$ |A \cup B| = 2^5 + 2^5 - 2^3 $ \\
+$ |A \cup B| = 32 + 32 - 8 $ \\
+$ |A \cup B| = 56 $
+
+\subsection{Question 3}
+\textbf{Plaintext Question:} Consider strings of length 15, where each character is a lowercase letter or an uppercase letter. \\
+How many such strings contain at least two lowercase letters? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), The Complement Rule (3.3) \\
+\textbf{Explanation: } \\
+The size of the set of all strings of length 15 is $ 52^{15} $. \\
+Let's break this down into 2 cases:
+A = the string contains no lowercase letters \\
+There are $ 26^{15} $ ways to choose the characters in the string. \\
+B = the string contains exactly one lowercase letter \\
+There are $ 15 $ ways to choose the position of the lowercase letter. \\
+There are $ 26 $ ways to choose the lowercase letter. \\
+There are $ 26^{14} $ ways to choose the remaining characters. \\
+C = The string contains at least two lowercase letters \\
+$ |C| = |U| - |A| - |B| $ \\
+$ |C| = 52^{15} - 26^{15} - 15 \cdot 26 \cdot 26^{14} $ \\
+$ |C| = 52^{15} - 26^{15} - 15 \cdot 26^{15} $
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} Elisa Kazan's neighborhood pub serves 8 different types of cider \\
+They denote these types by $ C_1, C_2, \ldots, C_8 $.
+Elisa invites 7 friends to this pub and orders one cider for each friend. Different friends may get the same type of cider.
+(Elisa came by car and, therefore, orders a glass of water for herself.)
+In how many ways can Elisa place these orders of cider, such that exactly 4 of her friends get a cider of type $ C_3 $? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } the Product Rule (3.1), Permutations and Binomial Coefficients (3.6.2) \\
+\textbf{Explanation: } \\
+We choose 4 friends to get cider of type $ C_3 $ from the 7 friends: $ \binom{7}{4} $ \\
+The remaining friends can get cider of any of the other 7 types: $ 7^3 $ \\
+Thus, there are $ \binom{7}{4} \cdot 7^3 $ ways to place these orders.
+
+\subsection{Question 5}
+\textbf{Plaintext Question:} Consider the equation $ x_1 + x_2 + x_3 + x_4 + x_5 = 17. $
+How many solutions $ (x_1, x_2, x_3, x_4, x_5)$ does this equation have, where $ x_1 \geq 0, x_2 \geq 0, x_3 \geq 0, x_4 \geq 0 $, and $ x_5 \geq 0$ are all integers? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Counting Solutions of Linear Equations (3.9.2) \\
+\textbf{Explanation: } \\
+We can use the dividers method to solve this problem. \\
+We have 17 blocks (representing the sum of the 5 variables) and 4 dividers (representing the 4 partitions between the 5 variables). \\
+We can place the 4 dividers into any of the 21 positions.
+Everything before the first divider is $ x_1 $, everything between the first and second dividers is $ x_2 $, and so on. \\
+Thus, there are $ \binom{21}{4} $ solutions to the equation.
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} Let $ S $ be a subset of the set $ {1, 2, 3, \ldots , 50} $. \\
+What is the minimum size of this subset $ S $, such that there must be at least two elements in $ S $ whose sum is equal to 51? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+To find the minimum size of a subset $ S $ of the set $ \{1, 2, 3, \ldots, 50 \} $ \\
+such that there must be at least two elements in $ S $ whose sum is equal to 51, we can use the pigeonhole principle. \\
+Consider the pairs of numbers that sum to 51: \[ (1, 50), (2, 49), (3, 48), \ldots, (25, 26) \] \\
+There are 25 such pairs. \\
+If we select more than 25 elements from the set $ \{1, 2, 3, \ldots, 50 \} $, by the pigeonhole principle, at least one pair will be chosen. \\
+This is because we have only 25 pairs and choosing 26 elements will necessarily include both elements from at least one of these pairs. \\
+Therefore, the minimum size of the subset $ S $ that ensures at least two elements sum to 51 is:
+\[ \boxed{26} \]
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} Consider 5-element subsets $ {x_1, x_2, x_3, x_4, x_5} $ of the set $ {1, 2, 3, \ldots, 17} $, where $ x_1 < x_2 < x_3 < x_4 < x_5 $.
+How many such subsets have the property that $ x_3 = 7 $? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Permutations and Binomial Coefficients (3.6.2) \\
+\textbf{Explanation: } \\
+If $ x_3 = 7 $, then we need to choose 2 elements from the set $ {1, 2, 3, 4, 5, 6} $ for $ x_1 $ and $ x_2 $ \\
+There are $ \binom{6}{2} $ ways to choose 2 elements from the set $ {1, 2, 3, 4, 5, 6} $ \\
+We need to choose 2 elements from the set $ {8, 9, 10, 11, 12, 13, 14, 15, 16, 17} $ for $ x_4 $ and $ x_5 $ \\
+There are $ \binom{10}{2} $ ways to choose 2 elements from the set $ {8, 9, 10, 11, 12, 13, 14, 15, 16, 17} $ \\
+Thus, there are $ \binom{6}{2} \cdot \binom{10}{2} $ such subsets.
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} Consider a set $ \mathcal{B} = {B_1, B_2, \ldots, B_{13}} $ of 13 beer bottles and a set $ \mathcal{C} = {C_1, C_2, \ldots, C_{12}} $ of 12 cider bottles.
+Consider subsets $ X $ of $ B \cup C $, such that $ X $ consists of exactly 5 beer bottles and all cider bottles in $ X $ have an even index.
+How many such subsets $ X $ are there? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Permutations and Binomial Coefficients (3.6.2), The Bijection Rule (3.2.1) \\
+\textbf{Explanation: } \\
+We need to choose 5 beer bottles from the set $ {B_1, B_2, \ldots, B_{13}} $ \\
+There are $ \binom{13}{5} $ ways to choose 5 beer bottles from the set $ {B_1, B_2, \ldots, B_{13}} $ \\
+We can have 0 to 6 cider bottles in the subset $ X $ \\
+We take into account all possible numbers of cider bottles in $ X $ using the size of sets method: $2^6$ \\
+Thus, there are $ \binom{13}{5} \cdot 2^6 $ such subsets.
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} A bitstring $ s_1s_2 \ldots s_{n-1}s_n = s_n s_{n-1} \ldots s_2s_1$, is called a palindrome, if... \\
+$ s_1s_2 \ldots s_{n-1}s_n = s_n s_{n-1} \ldots s_2 s_1 $ \\
+i.e., reading the string from left to right gives the same string as when reading from right to left.
+For any integer $ n \geq 1 $, let $ P_n $ be the number of bitstrings of length $ n $ that are palindromes.
+Which of the following is true for any integer $ n \geq 3 $? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length $n$ (3.1.1), Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+We can check all possibilities and sum them up. \\
+The current left and right bits are fixed, so the possibilities on the {n-2} bits will be called on $ P_{n-2} $ \\
+$ 0, P_{n-2}, 0 $ \\
+$ 1, P_{n-2}, 1 $ \\
+$ P_n = P_{n-2} + P_{n-2} $ \\
+$ P_n = 2P_{n-2} $
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} Let $ n \geq 1 $ be an integer and consider a set $ \mathcal{B} = {B_1, B_2, \ldots, B_n} $ of $ n $ beer bottles and a set $ \mathcal{C} = {C_1, C_2, \ldots, C_n} $ of $ n $ cider bottles.
+For any integer $ k $ with $ 0 \leq k \leq n $, consider subsets $ X $ of $ B \cup C$, such that $ X $ consists of exactly $ k $ bottles and no two bottles in $ X$ have the same index.
+(For example, if $ B_n \in X $, then $ C_n \notin X $.) Let $ F(n,k) $ be the number of such subsets X.
+Which of the following is true for all integers $ n \geq 2 $ and $ k $ with $ 1 \leq k \leq n - 1 $?
+Let $ n \geq 1 $ be an integer and consider a set $ \mathcal{B} = \{B_1, B_2, \ldots, B_n\} $ of $ n $ beer bottles and a set $ \mathcal{C} = \{C_1, C_2, \ldots, C_n\} $ of $ n $ cider bottles.
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+To derive the recurrence relation for $ F(n,k) $, we consider two cases:
+\begin{enumerate}
+	\item $ X $ does not contain $ B_n $ or $ C_n $:\\
+	      In this case, $ X $ is a subset of the first $ n-1 $ pairs, so there are $ F(n-1, k) $ such subsets.
+	\item $ X $ contains either $ B_n $ or $ C_n $ (but not both):\\
+	      If $ X $ contains $ B_n $, then the remaining $ k-1 $ elements must be chosen from the first $ n-1 $ pairs, which can be done in $ F(n-1, k-1) $ ways.
+	      Similarly, if $ X $ contains $ C_n $, then the remaining $ k-1 $ elements must be chosen from the first $ n-1 $ pairs, which can also be done in $ F(n-1, k-1) $ ways.
+	      Since $ B_n $ and $ C_n $ are mutually exclusive, we get $ 2 \cdot F(n-1, k-1) $ ways in total.
+\end{enumerate}
+Adding these two cases together, we obtain the recurrence relation:
+\[
+	F(n,k) = F(n-1,k) + 2 \cdot F(n-1,k-1)
+\]
+This holds for all integers $ n \geq 2 $ and $ k $ with $ 1 \leq k \leq n - 1 $.
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} A bitstring is called 00-free, if it does not contain two 0's next to each other.
+In class, we have seen that for any $ m \geq 1 $, the number of 00-free bitstrings of length $ m $ is equal to the $ (m+2) $-th Fibonacci number.
+What is the number of 00-free bitstrings of length 55 that have 0 at position 9, and 1 at position 40? (The positions are numbered $ 1, 2, \ldots, 55 $.) \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Counting 00-Free Bitstrings (4.2.1) \\
+\textbf{Explanation: } \\
+Because there is a 0 at position 9, there must be a 1 at position 8 and 10 to avoid a 00. \\
+It looks something like this: \ldots, 1, 0, 1, \ldots, 1, \ldots \\
+The number of 00-free bitstrings made from the first 8 bits $ \text{bit positions 1 to 7} $ is $ f_{7+2} $. \\
+The number of 00-free bitstrings made from the 29 bits $ \text{bit positions 11 to 39} $ between the second and third fixed 1's is $ f_{29+2} $. \\
+The number of 00-free bitstrings made from the last 15 bits $ \text{bit positions 41 to 55} $ is $ f_{15+2} $. \\
+Thus, the number of 00-free bitstrings with the above conditions is $ f_{9} \cdot f_{31} \cdot f_{17} $.
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} The functions $ f: \mathbb{N} \rightarrow \mathbb{N} $
+and $ g: \mathbb{N} \rightarrow \mathbb{N} $ are recursively defined as follows: \\
+$ f(0) = 3 $ \\
+$ f(n) = 5 + f(n-1) $ \\
+$ g(0) = 1 $ \\
+$ g(n) = 2 \cdot g(n-1) $
+For any integer $ n \geq 0 $, what is $ f(g(n))$? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+Let's find the first few values of $ g(n) $ to find a pattern: \\
+$ g(0) = 1 $ \\
+$ g(1) = 2 \cdot g(0) = 2 $ \\
+$ g(2) = 2 \cdot g(1) = 4 $ \\
+$ g(n) = 2^n $ \\
+Now let's find the formula for $ f(n) $: \\
+$ f(0) = 3 $ \\
+$ f(1) = 5 + f(0) = 8 $ \\
+$ f(2) = 5 + f(1) = 13 $ \\
+$ f(n) = 5n + 3 $ \\
+Thus, $ f(g(n)) = 5 \cdot 2^n + 3 $.
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} Consider strings of characters. Each character is one of the 26 lowercase letters: $ a, b, c, \ldots , z $. \\
+Such a string is called qq-free, if it does not contain two $ q $'s next to each other. \\
+For any integer $ n \geq 1$, let $ Q $be the number of $ qq $-free strings of length $ n $. \\
+Which of the following is true for any integer $ n \geq 3 $? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } A Recursively Defined Set (4.3) \\
+\textbf{Explanation: } \\
+Let's write down some possibilities \\
+$ \text{any of the 26 letters excluding q=25 possible letters}, Q_{n-1} $ \\
+$ q, \text{any of the 26 letters excluding q=25 possible letters}, Q_{n-2} $ \\
+$ Q_n = 25 \cdot Q_{n-1} + 25 \cdot Q_{n-2} $
+
+\subsection{Question 14}
+\textbf{Plaintext Question:} Consider the recursive algorithm $ FART $, which takes as input an integer $ n \geq 0 $.
+If you run algorithm $ FART(9) $, how many times do you fart?
+procedure FART$ (n) $
+if $ n = 0 $ or $ n = 1 $ then
+eat one can of beans
+else if $ n $ is even
+fart once
+FART$ n/2 $
+else
+Fart$n+1$
+fart once
+Fart$ (n-1) $
+end if
+end procedure
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Fibonacci Numbers (4.2) \\
+\textbf{Explanation: } \\
+Every call other than Fart$(1)$ and Fart$(0)$ results in a fart. \\
+Let's draw a recursive tree to see how many times the fart procedure is called. \\
+\begin{forest}
+	[FART$ (9) $
+		[FART$ (8) $
+				[FART$ (4) $
+						[FART$ (2) $
+								[FART$ (1) $]
+							]
+					]
+			]
+			[FART$ (10) $
+				[FART$ (5) $
+						[FART$ (4) $
+								[FART$ (2) $
+										[FART$ (1) $]
+									]
+							]
+							[FART$ (6) $
+								[FART$ (3) $
+										[FART$ (2) $
+												[FART$ (1) $]
+											]
+											[FART$ (4) $
+												[FART$ (2) $
+														[FART$ (1) $]
+													]
+											]
+									]
+							]
+					]
+			]
+	]
+\end{forest} \\
+Calls above Fart$(1)$ and Fart$(0)$ result in a total of 13 farts.
+
+\subsection{Question 15}
+\textbf{Plaintext Question:} The Carleton Computer Science Society is organizing their annual Halloween party. At this party,
+\begin{enumerate}
+	\item one student is dressed up as Donald Trump
+	\item one student is dressed up as Kim Jong Un
+	\item the remaining 57 students are dressed up as Kim Kardashian
+\end{enumerate}
+These students are arranged, uniformly at random, on a line.
+Define the event, $ A= $\enquote{Donald Trump is standing next to Kim Jong Un.}
+What is $\Pr(A)$? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Placing Books on Shelves (3.1.3) \\
+\textbf{Explanation: } \\
+When looking for possible combinations of Trump and Kim standing together, we can treat them as a single entity in terms of position. \\
+There are 2 possible ways to arrange Trump and Kim together. \\
+Trump on left and Kim on right OR Kim on left and Trump on right: 2 \\
+When we do view them as a single entity together, we are left with 58 entities. \\
+The third person has 57 possible positions to stand. \\
+The fourth person has 56 possible positions to stand. \\
+So on and so forth until the 59th person has 1 possible position to stand. \\
+Thus, there are $ 2 \cdot 58 \cdot 57! $ ways to arrange the students.
+There are a total of $ 59! $ ways to arrange the students if we didn't care about combination restrictions. \\
+Thus, Pr$ (A) = \frac{2 \cdot 58 \cdot 57!}{59!} = \frac{2}{59} $
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} Alexa, Tri, and Zoltan each have a uniformly random birthday. (We ignore leap years, so that one year has 365 days.)
+Define the event $ A= $\enquote{Alexa, Tri, and Zoltan have different birthdays}.
+What is $\Pr(A)$? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+Alexa has 365 possible birthdays. \\
+Tri has 364 possible birthdays since Tri can't have the same birthday as Alexa. \\
+Zoltan has 363 possible birthdays since Zoltan can't have the same birthday as Alexa or Tri. \\
+Thus, there are $ 365 \cdot 364 \cdot 363 $ ways for Alexa, Tri, and Zoltan to have different birthdays. \\
+There are $ 365^3 $ ways for Alexa, Tri, and Zoltan to have birthdays. \\
+Thus, Pr$ (A) = \frac{365 \cdot 364 \cdot 363}{365^3} = \frac{364 \cdot 363}{365^2} $
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} A midterm has 17 questions. For each question, four options are given. Assume that you answer each question by choosing one of the four options uniformly at random.
+Define the event $ A = $\enquote{you answer exactly 7 questions correctly}.
+What $\Pr(A)$? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Permutations and Binomial Coefficients (3.6.2), Uniform Probability Spaces (4.4) \\
+\textbf{Explanation: } \\
+There are two options to doing this
+\begin{enumerate}
+	\item First, we need to choose 7 questions to answer correctly from the 17 questions: $ \binom{17}{7} $ \\
+	      For each of the 7 questions, there is a $ \frac{1}{4} $ chance of answering correctly: $ {(\frac{1}{4})}^7 $ \\
+	      For each of the 10 questions, there is a $ \frac{3}{4} $ chance of answering incorrectly: $ {(\frac{3}{4})}^{10} $ \\
+	      Pr$(A) = \binom{17}{7} \cdot {(\frac{1}{4})}^7 \cdot {(\frac{3}{4})}^{10} $ \\
+	      Pr$(A) = \binom{17}{7} \cdot {(\frac{1}{4})}^{17} \cdot 3^{10} $ \\
+	      Pr$(A) = \frac{ \binom{17}{7} \cdot 3^{10}}{4^{17}} $
+	\item Let A be the event that you answer exactly 7 questions correctly. \\
+	      Choose 7 questions to answer correctly from the 17 questions: $ \binom{17}{7} $ \\
+	      For each of the 7 questions that you get correct, there is only 1 proper choice: $1 \cdot 1 \cdot \ldots \cdot 1 = 1^7$ \\
+	      For each of the 10 questions that you get wrong, there are 3 proper choices: $3 \cdot 3 \cdot \ldots \cdot 3 = 3^{10}$ \\
+	      $|A| = \binom{17}{7} \cdot 1^7 \cdot 3^{10}$ \\
+	      The entire set of all possible combinations is just $|S|=4^{17}$ \\
+	      $ \Pr(A) = \frac{|A|}{|S|}$ \\
+	      $ \Pr(A) = \frac{ \binom{17}{7} \cdot 1^7 \cdot 3^{10}}{4^{17}} $
+\end{enumerate}
+
+
+
+
+
+
+
+
+\section{2018 Winter Midterm}
+
+\subsection{Question 1}
+\textbf{Plaintext Question:} Consider strings consisting of 12 characters, where each character is an element of the set $ {a, b, c, d, e} $.
+The positions in such strings are numbered as $ 1, 2, 3, \ldots, 12 $.
+How many such strings have the property that
+\begin{enumerate}
+	\item each even position contains an element of $ a,b,c$ and
+	\item each odd position contains an element of $ d,e$
+\end{enumerate}
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Counting Bitstrings of Length n (3.1.1) \\
+\textbf{Explanation: } \\
+Let's break this down into 2 cases:
+A = Each even position has 3 choices: $ a, b, c $ \\
+There are 6 even positions, so there are $ 3^6 $ ways to choose the characters for the even positions. \\
+$ |A| = 3^6 $ \\
+B = Each odd position has 2 choices: $ d, e $ \\
+There are 6 odd positions, so there are $ 2^6 $ ways to choose the characters for the odd positions. \\
+$ |B| = 2^6 $ \\
+$ |A \cap B| = 3^6 \cdot 2^6 $ \\
+$ |A \cap B| = 3^{12} $ \\
+$ |A \cap B| = 6^6 $
+
+\subsection{Question 2}
+\textbf{Plaintext Question:} Consider strings consisting of 12 characters, where each character is an element of the set $ {a, b, c, d, e} $.
+The positions in such strings are numbered as $ 1, 2, 3, \ldots, 12 $.
+How many such strings have the property that
+\begin{enumerate}
+	\item each even position contains an element of $ a,b,c$ or
+	\item each odd position contains an element of $ d,e$
+\end{enumerate}
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } The Principle of Inclusion and Exclusion (3.5) \\
+\textbf{Explanation: } \\
+Let's break this down into 2 cases:
+A = Each even position has 3 choices: $ a, b, c $ \\
+There are 6 even positions, so there are $ 3^6 $ ways to choose the characters for the even positions. \\
+The other 6 odd positions can be any of the 5 characters: $ a, b, c, d, e $ \\
+$ |A| = 3^6 \cdot 5^6 $ \\
+B = Each odd position has 2 choices: $ d, e $ \\
+There are 6 odd positions, so there are $ 2^6 $ ways to choose the characters for the odd positions. \\
+The other 6 even positions can be any of the 5 characters: $ a, b, c, d, e $ \\
+$ |B| = 2^6 \cdot 5^6 $ \\
+$ |A \cup B| = |A| + |B| - |A \cap B| $ \\
+$ |A \cup B| = 3^6 \cdot 5^6 + 2^6 \cdot 5^6 - 3^6 \cdot 2^6 $
+
+\subsection{Question 3}
+\textbf{Plaintext Question:} Consider strings consisting of 12 characters, where each character is an element of the set $ {a, b, c, d, e} $.
+The positions in such strings are numbered as $ 1, 2, 3, \ldots, 12 $.
+How many such strings contain at least two $ a $'s? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length n (3.1.1), The Complement Rule (3.3) \\
+\textbf{Explanation: } \\
+A = At least two $ a $'s \\
+B = No $ a $'s \\
+Each position has 4 choices: $ b, c, d, e $ \\
+There are 12 positions, so there are $ 4^{12} $ ways to choose the characters. \\
+C = Exactly 1 $ a $ \\
+There are 12 positions to choose from, and 1 of them must be $ a $. \\
+The other 11 positions can be any of the 4 characters: $ b, c, d, e $ \\
+$ |C| = 12 \cdot 4^{11} $ \\
+$ |A| = \text{All Possible Strings} - \text{No $ a $'s} - \text{Exactly 1 $ a $} $ \\
+$ |A| = 5^{12} - 4^{12} - 12 \cdot 4^{11} $
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} Let $ b \geq 1 $ and $ c \geq 1 $ be integers.
+Elisa Kazan's neighborhood pub serves $ b $ different types of beer and $ c $ different types of cider.
+Elisa invites 6 friends to this pub and orders 7 drinks, one drink (beer or cider) for each friend, and one cider for herself.
+Different people may get the same type of beer or cider.
+In how many ways can Elisa place these orders, such that exactly 4 people get a beer? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length n (3.1.1), Permutations and Binomial Coefficients (3.6.2) \\
+\textbf{Explanation: } \\
+We choose 4 friends to get beer from the 6 friends: $ \binom{6}{4} $ \\
+We give each of the 4 friends a beer of b types: $ b^4 $ \\
+We give the 3 remaining friends a cider of c types: $ c^3 $ \\
+Thus, there are $ \binom{6}{4} \cdot b^4 \cdot c^3 $ ways to place these orders.
+
+\subsection{Question 5}
+\textbf{Plaintext Question:} In a group of 100 people,
+\begin{enumerate}
+	\item 60 do not like Donald Trump and do not like Kim Jong Un, and
+	\item 25 like Kim Jong Un.
+\end{enumerate}
+How many people in this group like Donald Trump and do not like Kim Jong Un? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Principle of Inclusion and Exclusion (3.5), De Morgan's Law (no corresponding chapter) \\
+\textbf{Explanation: } \\
+A = Like Donald Trump
+B = Like Kim Jong Un
+$ |\overline{A \cap B}| = 60 $ \\
+$ |B| = 25 $ \\
+$ |A \cap B| = |S| - |\overline{A \cap B}| - |B| $ \\
+$ |A \cap B| = 100 - 60 - 25 $
+$ |A \cap B| = 15 $
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} In the city of ShortLastName, every person has a last name consisting of one uppercase letter, followed by two lowercase letters. No two letters in a last name can be equal. Thus, Lin is a valid last name, whereas Xax is not a valid last name.
+What is the minimum size of the population of ShortLastName, such that there must be at least two people who have the same last name? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+We can use pigeonhole principle to solve this problem. \\
+We need to have 1 more than the maximum number of possible last names.
+That way, we can guarantee that if all people have different last names, the last person will have a duplicate. \\
+There are $ 26 $ possible uppercase letters for the first letter of the last name. \\
+There are $ 25 $ possible lowercase letters for the second letter of the last name. \\
+There are $ 24 $ possible lowercase letters for the third letter of the last name. \\
+Thus, the minimum size of the population of ShortLastName is $ 26 \cdot 25 \cdot 24 + 1 $.
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} Let $ n \geq 2 $ be an even integer. What does $ \sum_{k=0}^{(n-2)/2} \binom{n}{2k+1} $ count? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } The Bijection Rule (3.2.1), Permutations and Binomial Coefficients (3.6.2) \\
+\textbf{Explanation: } \\
+Let's explain why some are wrong and one is right
+\begin{enumerate}
+	\item The number of bitstrings of length $n$ \\
+	      Pretty sure this is wrong because the equation for the number of bitstrings of length $n$ is $2^n$
+	\item The number of bitstrings of length $\frac{n-2}{2}$ \\
+	      Pretty sure this is wrong because the equation for the number of bitstrings of length $n$ is $2^n$
+	\item The number of bitstrings of length $n$ having an odd number of 0's. \\
+	      Let's write out the first few values of $ \binom{n}{2k+1} $
+	      \begin{enumerate}
+		      \item $ \binom{n}{1} $
+		      \item $ \binom{n}{3} $
+		      \item $ \binom{n}{5} $
+	      \end{enumerate}
+	      As can be seen, the number of 0's is odd. \\
+	      So that's great. The reason why $k$ only reaches a total of $ \frac{n-2}{2} $ is because in the actual equation, $k$ is multiplied by 2. \\
+	      If we were to have $k$ possibly be $n$, then it would be $ \binom{n}{2n+1} $, which is not possible.
+	\item The number of bitstrings of length $n$ in which the number of 0's plus the number of 1's is at most $ \frac{n-1}{2} $
+	      I'm not sure why this would be correct
+\end{enumerate}
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} Let $ m \geq 34 $ be an even integer, let $ n \geq 1 $ be an integer, and consider the two sets $ A = {1, 2, \ldots, m} $ and $ B = {m+1, m+2, \ldots, m+n} $.
+Let $ k $ be an integer with $ 17 \leq k \leq n+17 $.
+Consider subsets $ X $ of $ A \cup B $, such that $ |X| = k, |X \cap A| = 17 $, and all elements of $ X \cap A $ are even.
+How many such subsets $ X$ are there? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+There are no elements that are in both $ A $ and $ B $. \\
+Because $ | X \cap A | = 17 $, we know 17 elements are from $ A $. \\
+Because all elements of $ X \cap A $ are even, we know 17 of the elements from $ A $ are all even. \\
+Because of this, we can only use half of the elements from $ A $ to fill the 17 even elements: $ \frac{m}{2} $ \\
+We choose 17 elements from half of $ A $: $ \binom{m/2}{17} $ \\
+The remaining $ k-17 $ elements must come from $ B $: $ \binom{n}{k-17} $ \\
+Thus, there are $ \binom{m/2}{17} \cdot \binom{n}{k-17} $ such subsets.
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} Consider the equation $ x_1 + x_2 + x_3 + x_4 = 33 $, where $ x_1 \geq 0, x_2 \geq 0, x_3 \geq 0, x_4 \geq 0 $ are integers.
+How many solutions does this equation have?
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting Solutions of Linear Equations (3.9.2) \\
+\textbf{Explanation: } \\
+We can use the dividers method to solve this problem. \\
+We have 33 blocks (representing the sum of the 4 variables) and 3 dividers (representing the 3 partitions between the 4 variables). \\
+We can place the 3 dividers into any of the 36 positions. \\
+Everything before the first divider is $ x_1 $, everything between the first and second dividers is $ x_2 $, and so on. \\
+Thus, there are $ \binom{36}{3} $ solutions to the equation.
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} Nick has been dreaming to be like Spiderman.
+Spiderman can climb up the outside of a building; if he is at a particular floor, then, in one step, Spiderman can move up several floors.
+In one step, Nick can move up either two floors or three floors.
+Let $ n \geq 2 $ be an integer and consider a building with $ n $ floors, numbered $ 1, 2, \ldots, n $.
+(The first floor has number 1; this is not the ground floor.) Nick is standing in front of this building, at the ground level.
+Let $ N_n $ be the number of different ways in which Nick can climb to the $ n $-th floor.
+Which of the following is true for any $ n \geq 5 $? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } A Recursively Defined Set (4.3) \\
+\textbf{Explanation: } \\
+We can check all possibilities and sum them up. \\
+From floor x, he goes up 2 floors: $ N_{n-2} $ \\
+From floor x, he goes up 3 floors: $ N_{n-3} $ \\
+Thus $ N_n = N_{n-2} + N_{n-3} $
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} A bitstring is called 00-free, if it does not contain two 0's next to each other. \\
+In class, we have seen that for any $ m \geq 1 $, the number of 00-free bitstrings of length $ $ is equal to the $ (m+2) $-th Fibonacci number.
+What is the number of 00-free bitstrings of length 55 that have 0 at position 9, and 1 at position 40? (The positions are numbered $ f_{m+2} $.)
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Counting 00-Free Bitstrings (4.2.1) \\
+\textbf{Explanation: } \\
+Because there is a 0 at position 9, there must be a 1 at position 8 and 10 to avoid a 00. \\
+It looks something like this: \ldots, 1, 0, 1, \ldots, 1, \ldots \\
+The number of 00-free bitstrings made from the first 8 bits $ \text{bit positions 1 to 7} $ is $ f_{7+2} $. \\
+The number of 00-free bitstrings made from the 29 bits $ \text{bit positions 11 to 39} $ between the second and third fixed 1's is $ f_{29+2} $. \\
+The number of 00-free bitstrings made from the last 15 bits $ \text{bit positions 41 to 55} $ is $ f_{15+2} $. \\
+Thus, the number of 00-free bitstrings with the above conditions is $ f_{9} \cdot f_{31} \cdot f_{17} $.
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} The functions $ f: \mathbb{N} \rightarrow \mathbb{N} $ and $ g: \mathbb{N} \rightarrow \mathbb{N} $ are recursively defined as follows:
+$ f(0) = 0 $
+$ f(n) = 2 + f(n-1) $ if $ n \geq 1 $
+$ g(0) = 1 $
+$ g(n) = 7 \cdot g(n-1) $ if $ n \geq 1 $
+For any integer $ n \geq 0 $, what is $ g(f(n)) $? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+Let's find the first few values of $ f(n) $ and $ g(n) $ to find a pattern: \\
+$ f(0) = 0 $ \\
+$ f(1) = 2 + f(0) = 2 $ \\
+$ f(2) = 2 + f(1) = 4 $ \\
+$ f(n) = 2n $ \\
+$ g(0) = 1 $ \\
+$ g(1) = 7 \cdot g(0) = 7 $ \\
+$ g(2) = 7 \cdot g(1) = 49 $ \\
+$ g(n) = 7^n $ \\
+Thus, $ g(f(n)) = 7^{2n} $.
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} You are given a fair die and roll it 12 times. Define the event $ A=$
+\enquote{there are exactly two 6's in the sequence of 12 rolls}.
+What is $\Pr(A)$? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Independent Events (5.11) \\
+\textbf{Explanation: } \\
+We need to choose 2 rolls to be 6's from the 12 rolls: $ \binom{12}{2} $ \\
+For each of the 2 rolls, there is a $ \frac{1}{6} $ chance of rolling a 6: $ {(\frac{1}{6})}^2 $ \\
+For each of the 10 remaining rolls, there is a $ \frac{5}{6} $ chance of not rolling a 6: $ {(\frac{5}{6})}^{10} $ \\
+Pr$ (A) = \binom{12}{2} \cdot {(\frac{1}{6})}^2 \cdot {(\frac{5}{6})}^{10} $ \\
+Pr$ (A) = \frac{ \binom{12}{2} \cdot 5^{10}}{6^{12}} $
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} In the fall term of 2015, Nick took COMP 2804. Nick was always sitting in the back of the classroom and spent most of his time eating bananas.
+Nick buys 25 bananas at Alexa's Banana Emporium (ABE) and 30 bananas at Shelly's Fruit Market (SFM). Nick chooses, uniformly at random, a 15-element subset of these bananas.
+Define the event $A=$ \enquote{the subset chosen by Nick contains exactly 7 bananas from ABE}.
+What is $\Pr(A)$? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Permutations and Binomial Coefficients (3.6.2), Uniform Probability Spaces (4.4) \\
+\textbf{Explanation: } \\
+We need to choose 7 bananas from ABE from the 25 bananas: $ \binom{25}{7} $ \\
+We need to choose 8 bananas from SFM from the 30 bananas: $ \binom{30}{8} $ \\
+All 15 bananas can be chosen from the 55 bananas: $ \binom{55}{15} $ \\
+Pr$ (A) = \frac{ \binom{25}{7} \cdot \binom{30}{8}}{\binom{55}{15}} $
+
+
+
+
+
+
+
+
+Warning: There is no actual answer sheet for this so uh. Here we go
+\section{2019 Fall Midterm A}
+
+\subsection{Question 1}
+\textbf{Plaintext Question:} Let $n\ge 8$ be an even integer and let $S = \{1, 2, 3, \ldots , n\} $. Consider 7-element subsets of $S$ that consist of 4 even numbers and 3 odd numbers. How many such subsets are there? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+Well, half of the numbers in $S$ are even and half are odd.
+We choose 4 even numbers from the even half of $S$: $\binom{n/2}{4}$.
+We choose 3 odd numbers from the odd half of $S$: $\binom{n/2}{3}$.
+Thus, there are $\binom{n/2}{4} \cdot \binom{n/2}{3}$ such subsets.
+
+\subsection{Question 2}
+\textbf{Plaintext Question:} Let $s \ge 1$, $t \ge 1$, and $k \ge 1$ be integers. The Carleton Computer Science Society is organizing their annual Halloween party. At this party, there are
+\begin{itemize}
+	\item $s$ students who are dressed up as Superman,
+	\item $t$ students who are dressed up as Donald Trump,
+	\item $k$ students who are dressed up as Kim Jong Un.
+\end{itemize}
+These $s + t + k$ students are arranged on a line, such that all Supermen are standing next to each other, all Trumps are standing next to each other, all Kims are standing next to each other, and no Trump is standing next to any Kim. How many such arrangements are there? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } Product Rule (3.1), Placing Books on Shelves (3.1.3) \\
+\textbf{Explanation: } \\
+Well, everyone is standing next to those of the same costume AND no trumps and kims stand next to each other
+This means Supermen need to stand between Trumps and Kims. It could look either like
+DDDDDSSSSSKKKK or KKKKKSSSSSDDDD
+This means that on a high level, there are 2 ways to arrange the groups
+We haven't discussed how to arrange within each group though \\
+Within the Supermen group, there are $s!$ ways to arrange the Supermen
+Within the Trumps group, there are $t!$ ways to arrange the Trumps
+Within the Kims group, there are $k!$ ways to arrange the Kims
+Thus, there are $2 \cdot s! \cdot t! \cdot k!$ ways to arrange the students.
+
+\subsection{Question 3}
+\textbf{Plaintext Question:} Let $n \ge 1$ be an integer. Consider functions $f : \{1, 2, 3, \ldots , n\} \to \{1, 2, 3, \ldots , 7n\} $ such that, for each $i \in \{1,\ldots,n\} $, $f(i)$ is divisible by $7$ (in other words, $f(i)/7$ is an integer). How many such functions are there? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } Counting Functions (3.1.2) \\
+\textbf{Explanation: } \\
+By making the largest element in the output set 7 times larger than the largest element in the input set
+We pretty much know that there are 7 values that are divisible by 7. The first is n, the second is 2n, the third is 3n, and so on until the seventh is 7n.
+Since each element in the input set can be mapped to any of the 7 values divisible by 7, there are $7^n$ such functions.
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} Let $m \ge 5$ and $n \ge 5$ be integers. Let $M$ be a set consisting of $m$ strictly positive integers, and let $N$ be a set consisting of $n$ strictly negative integers. Consider 5-element subsets $A$ of $M \cup N$ such that the product of the elements in $A$ is strictly positive. How many such subsets $A$ are there? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } The Product Rule(3.1), Permutations and Binomial Coefficients (3.6.2), The Sum Rule (3.4) \\
+\textbf{Explanation: } \\
+Well, we know that to have a positive number, we need to multiply with an even number of negative numbers(since 2 negative numbers multiplied create a positive number)
+\begin{enumerate}
+	\item Let A be a 5-element subset with 5 positive numbers and 0 negative numbers.
+	      $|A| = \binom{m}{5}$
+	\item Let B be a 5 element subset with 3 positive numbers and 2 negative numbers.
+	      We choose 3 positive numbers from M: $\binom{m}{3}$
+	      We choose 2 negative numbers from N: $\binom{n}{2}$
+	      $|B| = \binom{m}{3} \cdot \binom{n}{2}$
+	\item Let C be a 5 element subset with 1 positive number and 4 negative numbers.
+	      We choose 1 positive number from M: $\binom{m}{1}$
+	      We choose 4 negative numbers from N: $\binom{n}{4}$
+	      $|C| = \binom{m}{1} \cdot \binom{n}{4}$
+\end{enumerate}
+Thus, there are $\binom{m}{5} + \binom{m}{3} \cdot \binom{n}{2} + \binom{m}{1} \cdot \binom{n}{4}$ such subsets.
+
+\subsection{Question 5}
+\textbf{Plaintext Question:} Let $n \ge 2$ be an even integer and let $S = \{1, 2, 3 \ldots , n\} $. Consider subsets of $S$ that contain at least one even number. How many such subsets are there? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: }
+\begin{enumerate}
+	\item Let A be the set of all subsets of $S$.
+	      $|A| = 2^n$
+	\item Let B be the set of all subsets of $S$ that contain no even numbers.
+	      There are $\frac{n}{2}$ odd numbers in $S$.
+	      $|B| = 2^{\frac{n}{2}}$
+\end{enumerate}
+Let C be the set of all subsets of $S$ that contain at least one even number.
+$|C| = |A| - |B|$
+$|C| = 2^n - 2^{\frac{n}{2}}$
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} Let $n \ge 7$ be an integer and consider strings of length $n$ over the alphabet $ \{a,b,c,d\} $. How many such strings are there that start with $abc$ or end with $dddd$? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: }
+\begin{enumerate}
+	\item Let A be the set of all strings of length $n$ over the alphabet $ \{a,b,c,d\} $ that start with $abc$.
+	      the first 3 bits are fixed
+	      There are $n-3$ remaining characters in the string.
+	      $|A| = 4^{n-3}$
+	\item Let B be the set of all strings of length $n$ over the alphabet $ \{a,b,c,d\} $ that end with $dddd$.
+	      the last 4 bits are fixed
+	      There are $n-4$ remaining characters in the string.
+	      $|B| = 4^{n-4}$
+	\item Let's determine $ |A \cap B| $.
+	      The first 3 bits are fixed and the last 4 bits are fixed.
+	      There are $n-7$ remaining characters in the string.
+	      $|A \cap B| = 4^{n-7}$
+\end{enumerate}
+Let's determine $ |A \cup B| $.
+$|A \cup B| = |A| + |B| - |A \cap B|$
+$|A \cup B| = 4^{n-3} + 4^{n-4} - 4^{n-7}$
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} Let $n \ge 2$ be an integer. What does
+\[ \sum_{k=2}^n \binom{n}{k}\cdot 2^{n-k} \]
+count? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+Warning: I've been listening to HandClap. It's garbage but also addictive. Wth
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} Consider a square with sides of length $17$. This square contains $n$ points. What is the minimum value of $n$ such that we can guarantee that at least two of these points have distance at most $17/\sqrt{2}$? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+Placing 4 points furthest from each other creates a square. \\
+The distance between the two points is $ 17 $, which is just the length of side \\
+Now, we place 4 points in each corner of the square. Place the fifth point in the middle of the square. \\
+Now, let's calculate the distance between the middle point and any other point. \\
+$ a^2 + b^2 = c^2 $ \\
+$ {(\frac{1}{2}17)}^2 + {(\frac{1}{2}17)}^2 = c^2 $ \\
+$ \frac{1}{4}17^2 + \frac{1}{4}17^2 = c^2 $ \\
+$ \frac{1}{2}17^2 = c^2 $ \\
+$ \sqrt{\frac{1}{2}17^2} = c $ \\
+$ \sqrt{\frac{1}{2}}17 = c$
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} What is the coefficient of $x^{20}y^{80}$ in the expansion of $ {(7x-13y)}^{100}$? \\
+\textbf{Relevant Theorems: } Newton’s Binomial Theorem (3.6.2) \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+$ \sum_{k=20}^{100} \binom{100}{k} \cdot (7x)^{k} \cdot (-13y)^{100-k} $ \\
+$ = \binom{100}{20} \cdot (7x)^{20} \cdot (-13y)^{80} $ \\
+$ = \binom{100}{20} \cdot 7^{20} \cdot x^{20} \cdot (-13)^{80} \cdot y^{80} $
+$ = \binom{100}{20} \cdot 7^{20} \cdot (13)^{80} \cdot x^{20} \cdot y^{80} $
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} A bitstring is called \emph{$01$-free} if it does not contain $01$. Let $n \ge 2$ be an integer. How many $01$-free bitstrings of length $n$ are there? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+It's pretty much asking for all combos where there is no 0 that comes before a 1. \\
+So we can pretty much just have all 1s on the left and all 0s on the right. \\
+It could be 10...0, 110...0, 1110...0, and so on. \\
+Each of these is a valid string, and thee are $n$ of them. \\
+We also need to take into account the string with all 0s, which is also a valid string. \\
+Thus, there are $n+1$ $01$-free bitstrings of length $n$.
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} A bitstring is called $00$-free if it does not contain two $0$’s next to each other. In class, we have seen that for any $m \ge 1$, the number of $00$-free bitstrings of length $m$ is equal to the $(m + 2)$-th Fibonacci number $f_{m+2}$.
+What is the number of $00$-free bitstrings of length $20$ that have $0$ at position $7$? (The positions are numbered $1, 2, \ldots , 20$.)
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+Given that there's a $0$ at position $7$, we know that there must be a $1$ at position $6$ and $8$ to avoid a $00$. \\
+So it looks something like $XXXXX101XXXXXXXXXXX$ \\
+The number of $00$-free bitstrings made from the first $5$ bits (bit positions $1$ to $5$) is $f_{5+2}$. \\
+The number of $00$-free bitstrings made from the $12$ bits (bit positions $9$ to $20$) between the second and third fixed $1$'s is $f_{12+2}$. \\
+Thus, the number of $00$-free bitstrings with the above conditions is $f_7 \cdot f_{14}$.
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} The functions $f : \mathbb{Z}_{\ge 0}^2 \to \mathbb{Z}_{\ge 0}$ and $g : \mathbb{Z}_\ge \to \mathbb{Z}_{\ge 0}$ are recursively defined as follows:
+\[ f(m,n) = \begin{cases}
+		m            & \text{if $n = 0$}  \\
+		1 + f(m,n-1) & \text{if $n\ge 1$}
+	\end{cases}
+\]
+\[  g(n) = \begin{cases}
+		1             & \text{if $n=0$}    \\
+		5\cdot g(n-1) & \text{if $n\ge 1$}
+	\end{cases}
+\]
+For any integer $n\ge 0$, what if $f(g(n),g(n))$? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+Let's find a formula for $g(n)$ first by identifying any patterns. \\
+$g(0) = 1$ \\
+$g(1) = 5 \cdot g(0) = 5$ \\
+$g(2) = 5 \cdot g(1) = 25$ \\
+$g(3) = 5 \cdot g(2) = 125$ \\
+$g(n) = 5^n$ \\
+Now, let's find a formula for $f(m,n)$ by identifying any patterns. \\
+$f(0,n) = n$ \\
+$f(1,n) = 1 + f(1,n-1) = 1 + n$ \\
+$f(2,n) = 1 + f(2,n-1) = 1 + 1 + f(2,n-2) = 1 + 1 + 1 + f(2,n-3) = \ldots = n + 2$ \\
+$f(m,n) = m + n$ \\
+Thus, $f(g(n),g(n)) = g(n) + g(n) = 5^n + 5^n = 2 \cdot 5^n$.
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} Consider strings of characters over the alphabet $ \{a,b,c\} $. Such a string is called \emph{$ccc$-free} if it does not contain $ccc$.
+For any integer $n\ge 0$, let $B_n$ be the number of $ccc$-free bitstrings of length $n$. Which of the following is true, for every integer $n \ge 4$? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+We can check all possibilities and sum them up. \\
+$a, B_{n-1}$
+$b, B_{n-1}$
+$c, a, B_{n-2}$
+$c, b, B_{n-2}$
+$c, c, a, B_{n-3}$
+$c, c, b, B_{n-3}$
+Thus, $B_n = 2 \cdot B_{n-1} + 2 \cdot B_{n-2} + 2 \cdot B_{n-3}$.
+
+\subsection{Question 14}
+\textbf{Plaintext Question:} Let $n \ge 1$ be an integer and consider a $2 \times n$ \emph{board} $B_n$ consisting of a total of $2n$ square cells. The top part of the figure below shows $ B_{13} $.
+A \emph{brick} is a horizontal or vertical board consisting of 2 square cells; see the bottom part of the figure above. A \emph{tiling} of the board $B_n$ is a placement of bricks on the board such that
+\begin{enumerate}
+	\item the bricks exactly cover $B_n$ and
+	\item no two bricks overlap.
+\end{enumerate}
+The figure below shows a tiling of $B_{13}$.
+Let $T_n$ be the number of different tilings of the board $B_n$. Which of the following is true for any $n \ge 3$? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+I get the feeling that n is the length from left to right
+\begin{enumerate}
+	\item The moment we put down a horizontal brick, we need to put down the other horizontal brick above or below it. \\
+	      This removes 2 spots when measured from left ro right
+	\item The moment we put down a vertical brick, that's all we can do on a recursive level. \\
+	      This removes 1 spot when measured from left to right
+\end{enumerate}
+Thus, $T_n = T_{n-2} + T_{n-1}$.
+
+\subsection{Question 15}
+\textbf{Plaintext Question:} Consider the recursive algorithm \text{Hello}, which takes as input an integer $n \ge 0$: \\
+If you run algorithm $\textsc{Hello}(5)$, how many times is the word \enquote{hello} printed?
+Hello(n)
+if n = 0 or n = 1 then
+print \enquote{hello}
+else
+Hello(n-1)
+print \enquote{hello}
+Hello(n-2)
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+So \enquote{hello} is printed on every call \\
+Let's draw out the recursion tree for Hello(5) \\
+\begin{forest}
+	[Hello(5)
+		[Hello(4)
+				[Hello(3)
+						[Hello(2)
+								[Hello(1)]
+									[Hello(0)]
+							]
+							[Hello(1)]
+					]
+					[Hello(2)
+						[Hello(1)]
+							[Hello(0)]
+					]
+			]
+			[Hello(3)
+				[Hello(2)
+						[Hello(1)]
+							[Hello(0)]
+					]
+					[Hello(1)]
+			]
+	]
+\end{forest}
+Thus, \enquote{hello} is printed 15 times.
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} Let $X = \{1, 2, \ldots , 20\} $. You choose a uniformly random 7-element subset $Y$ of $X$. Define the event $A = \text{``3 is an element of $Y$ or 13 is an element of $Y$''}$.  What is $ \Pr(A) $? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+Let's break it down
+\begin{enumerate}
+	\item Let S be the set of all 7-element subsets of $X$.
+	      $|S| = \binom{20}{7}$
+	\item Let A be the set of all 7-element subsets of $X$ that contain 3.
+	      3 is in the subset, so we need to choose 6 more elements from the remaining 19 elements: $\binom{19}{6}$
+	      $|A| = \binom{19}{6}$
+	      $ \Pr(A) = \frac{\binom{19}{6}}{\binom{20}{7}} $
+	\item Let B be the set of all 7-element subsets of $X$ that contain 13.
+	      13 is in the subset, so we need to choose 6 more elements from the remaining 19 elements: $\binom{19}{6}$
+	      $|B| = \binom{19}{6}$
+	      $ \Pr(B) = \frac{\binom{19}{6}}{\binom{20}{7}} $
+	\item Let's determine $|A \cap B|$.
+	      3 and 13 are in the subset, so we need to choose 5 more elements from the remaining 18 elements: $\binom{18}{5}$
+	      $|A \cap B| = \binom{18}{5}$
+	      $ \Pr(A \cap B) = \frac{\binom{18}{5}}{\binom{20}{7}} $
+\end{enumerate}
+Now, let's determine $|A \cup B|$.
+$|A \cup B| = |A| + |B| - |A \cap B|$
+$|A \cup B| = \binom{19}{6} + \binom{19}{6} - \binom{18}{5}$
+$|A \cup B| = 2 \cdot \binom{19}{6} - \binom{18}{5}$
+$ \Pr(A \cup B) = \frac{2 \cdot \binom{19}{6} - \binom{18}{5}}{\binom{20}{7}} $
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} After having proctored the midterm, Alexa, Farah, May, and Shelly decide to go trick-or-treating. For any house that the ladies visit, if they do not receive candy, they throw rotten eggs at the house.
+
+Let $m \ge 7$ and $n \ge 7$ be integers. There are $m$ houses whose owners hand out candy and there are $n$ houses whose owners do not hand out candy.
+
+The ladies choose a uniformly random subset of 7 houses and visit these 7 houses. Define the event $A =\text{``the ladies throw rotten eggs at exactly 2 of the 7 chosen houses''}$. What is $\Pr(A)$? \\
+\textbf{Correct Answer: } \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+You've broken me down already
+\begin{enumerate}
+	\item Let S be the set of all 7-element subsets of the $m+n$ houses.
+	      $|S| = \binom{m+n}{7}$
+	\item Let A be the set of all 7-element subsets of the $m+n$ houses that contain 2 houses that do not hand out candy.
+	      There are $n$ houses that do not hand out candy.
+	      The ladies choose 2 houses that do not hand out candy: $\binom{n}{2}$
+	      The ladies choose 5 houses that hand out candy: $\binom{m}{5}$
+	      $|A| = \binom{n}{2} \cdot \binom{m}{5}$
+	      $\Pr(A) = \frac{\binom{n}{2} \cdot \binom{m}{5}}{\binom{m+n}{7}}$
+\end{enumerate}
+
+
+
+
+
+
+
+
+\section{2019 Winter Midterm}
+
+\subsection{Question 1}
+\textbf{Plaintext Question:} Consider bitstrings of length 13. \\
+The positions in these strings are numbered as $ 1, 2, 3, \ldots, 13 $. \\
+How many such bitstrings have the property that all bits at the odd positions are equal? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length n (3.1.1)\\
+\textbf{Explanation: } \\
+There are 2 choices for the odd positions: 0 or 1. \\
+There are 6 even positions that can each be 0 or 1, so there are $ 2^6 $ ways to choose the characters for the even positions. \\
+Thus, there are $ 2 \cdot 2^6 =2 \cdot 64 = 128 $ such bitstrings.
+
+\subsection{Question 2}
+\textbf{Plaintext Question:} Consider permutations of the set $ {a, b, c, d, e, f, g} $ that do not contain $ bge $ in that order \\
+How many such permutations are there? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } The Complement Rule (3.3) \\
+\textbf{Explanation: } \\
+A = Permutations that contain $ bge $ \\
+We can treat $ bge $ as a single entity. \\
+B = Permutations that do not contain $ bge $ \\
+So there's $ bge, a,c,d,f $ which is 5 entities. \\
+$ |B| = 5! $ \\
+$ |S| = $ Total permutations without restrictions \\
+$ |S| = 7! $ \\
+$ |\text{Number of permutations that do not contain} bge| = |S| - |B| $ \\
+$ |\text{Number of permutations that do not contain} bge| = 7! - 5! $
+
+\subsection{Question 3}
+\textbf{Plaintext Question:} Consider strings of length 15, where each character is a lowercase letter or an uppercase letter.
+How many such strings contain at least one lowercase letter and at least one uppercase letter? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Counting Bitstrings of Length n (3.1.1), The Complement Rule (3.3) \\
+\textbf{Explanation: } \\
+A = Strings that contain at least one lowercase letter \\
+$ \overline{A} = $ Strings that contain no lowercase letters\\
+$ |\overline{A}| = 26^{15} $ \\
+B = Strings that contain at least one uppercase letter \\
+$ \overline{B} = $ Strings that contain no uppercase letters \\
+$ |\overline{B}| = 26^{15} $ \\
+$ |A \cap B| = \text{All Possibilities} - |\overline{A}| - |\overline{B}| $ \\
+$ |A \cap B| = 52^{15} - 26^{15} - 26^{15} $ \\
+$ |A \cap B| = 52^{15} - 2 \cdot 26^{15} $
+
+\subsection{Question 4}
+\textbf{Plaintext Question:} Let $ n \geq 8 $
+be an even integer and let $ k $
+be an integer with $ 2 \leq k \leq n/2 $.
+Consider $ S = {1, 2, \ldots, n} $-element subsets of the set $ $.
+How many such subsets contain at least two even numbers? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } Permutations and Binomial Coefficients (3.6.2), The Complement Rule (3.3) \\
+\textbf{Explanation: } \\
+$ \text{All Possibilities} - \text{0 even numbers} - \text{1 even number} $ \\
+$ \binom{n}{k} - \binom{n/2}{k} - \binom{n/2}{k-1} $
+
+\subsection{Question 5}
+\textbf{Plaintext Question:} In a group of 100 students
+\begin{enumerate}
+	\item 37 students like beer,
+	\item 18 students like cider,
+	\item 55 students do not like beer and do not like cider.
+\end{enumerate}
+How many students like beer and cider? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Principle of Inclusion and Exclusion (3.5), De Morgan's Law (no corresponding chapter) \\
+\textbf{Explanation: } \\
+A = Like beer \\
+$ |A| = 37 $ \\
+B = Like cider \\
+$ |B| = 18 $ \\
+$ |\overline{A \cup B}| = 55 $ \\
+$ |A \cup B| = 100-55 $ \\
+$ |A \cup B| = 45 $ \\
+$ |A \cap B| = |A| + |B| - |A \cup B| $ \\
+$ |A \cap B| = 37 + 18 - 45 $ \\
+$ |A \cap B| = 10 $
+
+\subsection{Question 6}
+\textbf{Plaintext Question:} Let $ n \geq 1 $ be an integer. A group of $ n $ students write an exam.
+Each student receives a grade, which is an element of the set $ {A, B, C, D, F} $.
+What is the minimum value for $ n $, such that there must be at least four students who receive the same grade? \\
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Pigeonhole Principle (3.10) \\
+\textbf{Explanation: } \\
+We can use the pigeonhole principle to solve this problem. \\
+We need to have 1 more than the maximum number of possible grades. \\
+That way, we can guarantee that if all students receive different grades, the last student will receive a duplicate grade. \\
+There are 5 possible grades: $ A, B, C, D, F $ \\
+Thus, the minimum value for $ n $ is $ 5 \cdot 3 + 1 $ \\
+Thus, the minimum value for $ n $ is 16.
+
+\subsection{Question 7}
+\textbf{Plaintext Question:} Consider 17-element subsets of the set $ {1, 2, 3, \ldots, 45} $.
+How many such subsets have the property that the largest element in the subset is equal to 30? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } Permutations and Binomial Coefficients (3.6.2) \\
+\textbf{Explanation: } \\
+We can treat the largest element as a fixed element. \\
+We need to choose 16 other elements from the remaining 29 elements that are smaller than 30: $ \binom{29}{16} $
+
+\subsection{Question 8}
+\textbf{Plaintext Question:} Let $ n \geq 4 $ be an integer. What does$ 3 \cdot \binom{n}{3} + 6n \cdot \binom{n}{2} + n^{3} $ count? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+Warning: Later
+
+\subsection{Question 9}
+\textbf{Plaintext Question:} Let $ n \geq 4 $
+be an even integer and let $ k $
+be an integer with $ 1 \leq k \leq n/2 $.
+Consider strings consisting of $ n $ characters, such that each character is an element of $ {a, b, c} $ the number of $ a$'s is equal to $ k $, and each $ a $ is at an even position.
+How many such strings are there? \\
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Permutations and Binomial Coefficients (3.6.2) \\
+\textbf{Explanation: } \\
+There are $ n/2 $ even positions. \\
+We need to choose $ k $ of these positions to be $ a $'s: $ \binom{n/2}{k} $ \\
+The remaining $ n - k $ positions must be $ b $'s or $ c $'s: $ 2^{n-k} $ \\
+Thus, there are $ \binom{n/2}{k} \cdot 2^{n-k} $ such strings.
+
+\subsection{Question 10}
+\textbf{Plaintext Question:} A bitstring is called 00-free, if it does not contain two 0's next to each other.
+In class, we have seen that for any $ m \geq 1 $, the number of 00-free bitstrings of length $ $ is equal to the $ (m+2) $-th Fibonacci number $ f_{m+2} $.
+What is the number of 00-free bitstrings of length 77 that have 0 at position 59? (The positions are numbered $ 1, 2, \ldots, 77 $.)
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Coutning 00-Free Bitstrings (4.2.1)\\
+\textbf{Explanation: } \\
+Because there is a 0 at position 59, there must be a 1 at position 58 and 60 to avoid a 00. \\
+It looks something like this: \ldots, 1, 0, 1, \ldots, 1, \ldots \\
+The number of 00-free bitstrings made from the first 57 bits $ \text{bit positions 1 to 57} $ is $ f_{57+2} $. \\
+The number of 00-free bitstrings made from the 17 bits $ \text{bit positions 61 to 77} $ is $ f_{17+2} $. \\
+Thus, the number of 00-free bitstrings with the above conditions is $ f_{59} \cdot f_{19} $.
+
+\subsection{Question 11}
+\textbf{Plaintext Question:} The function $ f: \mathbb{N} \rightarrow \mathbb{N} $
+is recursively defined as follows:
+$ f(0) = 6, $ \\
+$ f(n) = 4 \cdot f(n-1) + 2^{n} \text{ if } n \geq 1. $ \\
+Which of the following is true for all integers $ n \geq 0 $? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Recursive Functions (4.1) \\
+\textbf{Explanation: } \\
+We can find the first few values of $ f(n) $ to find a pattern: \\
+$ f(1) = 4 \cdot f(0) + 2^1 = 4 \cdot 6 + 2 = 26 $ \\
+$ f(2) = 4 \cdot f(1) + 2^2 = 4 \cdot 26 + 4 = 108 $
+\begin{enumerate}
+	\item $ f(n) = 6 \cdot 4^{n} - 2^{n} $ \\
+	      $ f(1) = 6 \cdot 4^{1} - 2^{1} = 24 - 2 = 22 $
+	\item $ f(n) = 7 \cdot 4^{n} - 2^{n} $
+	      $ f(1) = 7 \cdot 4^{1} - 2^{1} = 28 - 2 = 26 $
+	\item $ f(n) = 8 \cdot 4^{n} - 2^{n+1} $ \\
+	      $ f(1) = 8 \cdot 4^{1} - 2^{2} = 32 - 4 = 28 $
+\end{enumerate}
+Thus, the correct answer is $ f(n) = 7 \cdot 4^{n} - 2^{n} $.
+
+\subsection{Question 12}
+\textbf{Plaintext Question:} Consider strings of characters, where each character is an element of the set $ {a, b, c} $.
+Such a string is called awesome, if it does not contain $ aa $, and does not contain $ aba $, and does not contain $ abb $.
+For any integer $ n \geq 1 $, let $ A_n $ be the number of awesome strings of length $ n $.
+Which of the following is true for any integer $ n \geq 4 $? \\
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+We can check all possibilities and sum them up. \\
+Warning: Later
+
+\subsection{Question 13}
+\textbf{Plaintext Question:} We consider binary $ 2 \times n $ matrices, i.e., matrices with 2 rows and $ n $ columns, in which each entry is 0 or 1.
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+A column in the matrix is called a $ \stackrel{1}{1}-column $, if both bits in the column are 1.
+For any integer $ n \geq 1 $ and integer $ k $ with $ 0 \leq k \leq n$, let $ M(n,k) $ be the number of binary $ 2 \times n $ matrices that do not contain any $ \stackrel{1}{1} $-column, and contain exactly $ k $ many 1's.
+Which of the following is true for all integers $ n \geq 2 $ and $ k $ with $ 1 \leq k \leq n-1 $?
+Warning: Later
+
+\subsection{Question 14}
+\textbf{Plaintext Question:} Consider the recursive algorithm $ HELLOWORLD $, which takes as input an integer $ n \geq 0 $. Which of the following is correct? \\
+\textbf{Correct Answer: } B \\
+\textbf{Relevant Theorems: } Recursive Functions(4.1) \\
+\textbf{Explanation: } \\
+If $ (a) $ is true, then it would not be recursive \\
+$ (b) $ is pretty much what a recurisve function is
+
+\subsection{Question 15}
+\textbf{Plaintext Question:} The Carleton Computer Science Society (CCSS) is organizing their annual Saint Patrick's Day party. The CCSS has bought three types of drinks:
+\textbf{Correct Answer: } A \\
+\textbf{Relevant Theorems: } The Product Rule (3.1), Uniform Probability Spaces (4.4) \\
+\textbf{Explanation: }
+\begin{enumerate}
+	\item Porterhouse Brewing Co. Oyster Stout,
+	\item Guinness Extra Stout,
+	\item Magners Original Irish Cider.
+\end{enumerate}
+There is an unlimited supply for each of these types. \\
+There are 75 students at the party, and each of them gets one drink, which is chosen uniformly at random from these three types. \\
+Let be the event $ A = \text{\enquote{exactly 50 students get Magners Original Irish Cider}.} $
+What is Pr $ (A) $?
+We need to choose 50 students to get Magners Original Irish Cider from the 75 students: $ \binom{75}{50} $ \\
+For each of the 50 students, there is a $ \frac{1}{3} $ chance of getting Magners Original Irish Cider: $ {(\frac{1}{3})}^{50} $ \\
+For each of the 25 students, there is a $ \frac{2}{3} $ chance of not getting Magners Original Irish Cider: $ {(\frac{2}{3})}^{25} $ \\
+Pr $ (A) = \binom{75}{50} \cdot {(\frac{1}{3})}^{50} \cdot {(\frac{2}{3})}^{25} $ \\
+Pr $ (A) = \frac{ \binom{75}{50} \cdot 2^{25}}{3^{75}} $
+
+\subsection{Question 16}
+\textbf{Plaintext Question:} Consider a standard 6-sided fair die. We roll this die 8 times. \\
+Let $ A = $ \enquote{there are at least two 5's in the sequence of 8 rolls.} \\
+What is Pr $ (A) $?
+\textbf{Correct Answer: } C \\
+\textbf{Relevant Theorems: } Independent Events (5.11) \\
+\textbf{Explanation: } \\
+Warning: No Answer here
+
+\subsection{Question 17}
+\textbf{Plaintext Question:} This midterm has 17 questions. For each question, four options are given, exactly one of which is correct.
+Assume that you answer each question, by choosing one of the four options uniformly at random.
+Let A be the event $ A=$ \enquote{you answer at least 16 questions correctly}.
+What is $ (A) $?
+\textbf{Correct Answer: } D \\
+\textbf{Relevant Theorems: } \\
+\textbf{Explanation: } \\
+Warning: Later
+\end{document}

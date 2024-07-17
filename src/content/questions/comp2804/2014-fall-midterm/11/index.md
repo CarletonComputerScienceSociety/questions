@@ -9,6 +9,8 @@ tags:
   - comp2804
   - comp2804-midterm
   - comp2804-recursion
+  - Counting Bitstrings of Length $n$ (3.1.1)
+  - Recursive Functions (4.1)
 ---
 
 Let $B_n$ be the number of bitstrings of length $n$ that do not contain 1111. Which of the following is true?

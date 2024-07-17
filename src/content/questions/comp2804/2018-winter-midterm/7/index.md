@@ -8,4 +8,6 @@ solution: comp2804/2018-winter-midterm/7/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - The Bijection Rule (3.2.1)
+  - Permutations and Binomial Coefficients (3.6.2)
 ---
