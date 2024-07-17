@@ -8,4 +8,7 @@ solution: comp2804/2018-fall-final/4/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Counting Bitstrings of Length $n$ (3.1.1)
+  - Permutations and Binomial Coefficients (3.6.1)
+  - The Complement Rule ()
 ---

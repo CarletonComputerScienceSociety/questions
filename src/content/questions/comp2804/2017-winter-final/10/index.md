@@ -8,4 +8,7 @@ solution: comp2804/2017-winter-final/10/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - The Product Rule (3.1)
+  - The Complement Rule (3.3)
+  - Uniform Probability Spaces (4.4)
 ---

@@ -8,4 +8,6 @@ solution: comp2804/2014-fall-final/2/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Complement Rule (3.3)
+  - Sum Rule (3.4)
 ---

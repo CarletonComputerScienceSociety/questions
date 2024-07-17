@@ -8,4 +8,6 @@ solution: comp2804/2017-winter-final/12/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Permutations and Binomial Coefficients (3.6.1)
+  - Conditional Probability (5.8)
 ---

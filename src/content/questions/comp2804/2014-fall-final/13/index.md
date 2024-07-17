@@ -8,4 +8,6 @@ solution: comp2804/2014-fall-final/13/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - the Complement Rule (3.3)
+  - Expected Values (6.4)
 ---

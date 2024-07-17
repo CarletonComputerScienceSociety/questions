@@ -8,4 +8,5 @@ solution: comp2804/2016-fall-final/12/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Conditional Probability (5.8)
 ---

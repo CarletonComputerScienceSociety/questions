@@ -8,4 +8,6 @@ solution: comp2804/2018-fall-final/13/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Rolling Two Dice (5.11.1)
+  - Conditional Probability (5.8)
 ---

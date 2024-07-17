@@ -8,4 +8,6 @@ solution: comp2804/2015-winter-final/3/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Counting Bitstrings of Length $n$ (3.1.1)
+  - Principle of Inclusion and Exclusion (3.5)
 ---

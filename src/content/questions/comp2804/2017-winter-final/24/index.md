@@ -8,4 +8,5 @@ solution: comp2804/2017-winter-final/24/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Expected Values (6.4)
 ---

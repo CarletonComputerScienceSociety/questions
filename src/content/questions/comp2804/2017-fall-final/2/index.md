@@ -8,4 +8,5 @@ solution: comp2804/2017-fall-final/2/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - The Product Rule (3.1)
 ---

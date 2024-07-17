@@ -8,4 +8,6 @@ solution: comp2804/2016-fall-final/1/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Product Rule (3.1)
+  - Counting Functions (3.1.2)
 ---

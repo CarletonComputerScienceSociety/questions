@@ -8,4 +8,5 @@ solution: comp2804/2019-fall-final/7/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Counting Solutions of Linear Equations (3.9.2)
 ---

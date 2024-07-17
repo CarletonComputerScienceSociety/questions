@@ -8,4 +8,5 @@ solution: comp2804/2014-winter-final/20/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Independent Events (5.11)
 ---

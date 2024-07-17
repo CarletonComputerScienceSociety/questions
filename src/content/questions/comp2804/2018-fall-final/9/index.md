@@ -8,4 +8,5 @@ solution: comp2804/2018-fall-final/9/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - A Recursively Defined Set (4.3)
 ---

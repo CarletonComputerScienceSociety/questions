@@ -8,4 +8,5 @@ solution: comp2804/2018-fall-final/23/solution.md
 tags:
   - comp2804
   - comp2804-exam
+  - Linearity of Expectation (6.5)
 ---
