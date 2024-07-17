@@ -1,9 +1,9 @@
 ---
 title: TBD
-path: comp2804/midterm-fall-2013/1
+path: comp2804/2019-winter-final/1
 author: Pat Morin
-solution: comp2804/midterm-fall-2013/1/solution.md
-generator: comp2804/midterm-fall-2013/1/generator.ts
+solution: comp2804/2019-winter-final/1/solution.md
+generator: comp2804/2019-winter-final/1/generator.ts
 tags:
   - comp2804
 ---

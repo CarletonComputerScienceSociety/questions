@@ -42,7 +42,7 @@ def add_tag_to_questions_in_test(root_dir, test_name, new_tag):
 
 # Define the root directory, test name, and the new tag
 root_directory = '../content/questions'
-test_name = 'midterm-winter-2014'
+test_name = '2014-winter-midterm'
 new_tag = 'comp2804-midterm'
 
 # Run the function
