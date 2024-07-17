@@ -1,4 +1,4 @@
-We can draw a recursive tree to see how many calls there are to $ text{FIB}(8) $. 
+We can draw a recursive tree to see how many calls there are to $ \text{FIB}(8) $. 
 begin{forest}
 	[FIB$ (12) $
 		[FIB$ (11) $
@@ -21,4 +21,4 @@ begin{forest}
 ]
 ]
 end{forest}
-We can see that there are 5 calls to $ text{FIB}(8) $.
+We can see that there are 5 calls to $ \text{FIB}(8) $.

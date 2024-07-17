@@ -12,10 +12,10 @@ Assuming you put the 10th point in that box, then you'll put it in the bottom le
 
 The length of the right of the box is ${sqrt{1}}$. Distance from the points is hypotenuse.
 
-$text{Hypotenuse}^2 = {sqrt{1}}^2 + {sqrt{1}}^2$
+$\text{Hypotenuse}^2 = {sqrt{1}}^2 + {sqrt{1}}^2$
 
-$text{Hypotenuse}^2 = 2 {sqrt{1}}^2$
+$\text{Hypotenuse}^2 = 2 {sqrt{1}}^2$
 
-$text{Hypotenuse}^2 = 2$
+$\text{Hypotenuse}^2 = 2$
 
-$text{Hypotenuse} = sqrt{2}$
+$\text{Hypotenuse} = sqrt{2}$

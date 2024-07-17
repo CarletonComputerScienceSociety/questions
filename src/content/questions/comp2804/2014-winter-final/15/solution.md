@@ -1,6 +1,6 @@
 <ul>
 <li> Let S be the set of all outcomes when rolling two dice. 
-The size of S is the number of outcomes when rolling two dice: $ |S| = 6 times 6 = 36 $
+The size of S is the number of outcomes when rolling two dice: $ |S| = 6 \times 6 = 36 $
 	<li> Let's find the size of the set of outcomes for event $A$. 
 The set of A is $ { (3,1), (3,2), (3,3), (3,4), (3,5), (3,6), (1,3), (2,3), (4,3), (5,3), (6,3) } $ 
 $ |A| = 11 $ 
@@ -17,5 +17,5 @@ $ Pr(B)= \frac{|B|}{|S|} = \frac{4}{36} = \frac{1}{9} $
 Let's check whether the solution is correct 
 $ Pr(A|B) = \frac{Pr(A \cap B)}{Pr(B)} $ 
 $ Pr(A|B) = \frac{ \frac{1}{18}}{ \frac{1}{9}} $ 
-$ Pr(A|B) = \frac{1}{18} times \frac{9}{1} $ 
+$ Pr(A|B) = \frac{1}{18} \times \frac{9}{1} $ 
 $ Pr(A|B) = \frac{1}{2} $

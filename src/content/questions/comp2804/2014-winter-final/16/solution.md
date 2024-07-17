@@ -17,5 +17,5 @@ $ Pr(A \cap B) = \frac{|A \cap B|}{|S|} = \frac{2}{4} = \frac{1}{2} $
 </ul>
 $ Pr(A|B) = \frac{Pr(A \cap B)}{Pr(B)} $ 
 $ Pr(A|B) = \frac{ \frac{1}{2}}{ \frac{3}{4}} $ 
-$ Pr(A|B) = \frac{1}{2} times \frac{4}{3} $ 
+$ Pr(A|B) = \frac{1}{2} \times \frac{4}{3} $ 
 $ Pr(A|B) = \frac{2}{3} $

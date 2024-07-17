@@ -51,9 +51,9 @@ We choose 5 positions out of the 5 for the heads: $ \binom{5}{5} $
 The remaining 0 positions are for the tails: 1 
 $ |C| = \binom{5}{5} $
 </ul>
-$ Pr(text{odd number of heads}) = Pr(A) + Pr(B) + Pr(C) $ 
-$ Pr(text{odd number of heads}) = \frac{ \binom{5}{1} + \binom{5}{3} + \binom{5}{5} }{32} $ 
-$ Pr(text{odd number of heads}) = \frac{5 + 10 + 1}{32} $ 
-$ Pr(text{odd number of heads}) = \frac{16}{32} $ 
-$ Pr(text{odd number of heads}) = \frac{1}{2} $
+$ Pr(\text{odd number of heads}) = Pr(A) + Pr(B) + Pr(C) $ 
+$ Pr(\text{odd number of heads}) = \frac{ \binom{5}{1} + \binom{5}{3} + \binom{5}{5} }{32} $ 
+$ Pr(\text{odd number of heads}) = \frac{5 + 10 + 1}{32} $ 
+$ Pr(\text{odd number of heads}) = \frac{16}{32} $ 
+$ Pr(\text{odd number of heads}) = \frac{1}{2} $
 </ul>

@@ -3,7 +3,7 @@
 The size of S is the number of bitstrings of length 5: $ |S| = 2^{5} = 32 $
 	<li> In the instance of A, the first 3 bits can be fixed as 101 or 110: 2 ways. 
 	      The last 2 bits can be any combination of 0s and 1s: $2^{2}$. 
-$ |A| = 2 times 2^{2} = 8 $ 
+$ |A| = 2 \times 2^{2} = 8 $ 
 $ Pr(A) = \frac{8}{32} = \frac{1}{4} $
 	<li> In the instance of B, the first 2 bits can be any combination of 0s and 1s: $2^{2}$. 
 The last 3 bits are fixed as 111: 1 way. 

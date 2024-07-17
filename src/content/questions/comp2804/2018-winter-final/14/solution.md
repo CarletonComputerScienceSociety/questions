@@ -5,5 +5,5 @@ $ Pr(X_i = 1) = \frac{3}{16} + \frac{3}{16} $
 $ Pr(X_i = 1) = \frac{6}{16} $
 $ Pr(X_i = 1) = \frac{3}{8} $
 The probability that each element in the string is non-zero is the probability that each element is different
-$ \frac{3}{8} \cdot \frac{3}{8} \cdot text{ldots} \cdot \frac{3}{8} $
+$ \frac{3}{8} \cdot \frac{3}{8} \cdot \text{ldots} \cdot \frac{3}{8} $
 $ = {( \frac{3}{8})}^{77} $

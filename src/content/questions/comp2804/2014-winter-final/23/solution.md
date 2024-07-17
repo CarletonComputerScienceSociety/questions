@@ -1,6 +1,6 @@
 <ul>
 <li> Let S be the set of all pairs of dice rolls. 
-The size of S is the number of outcomes when rolling a pair of dice: $ |S| = 6 times 6 = 36 $
+The size of S is the number of outcomes when rolling a pair of dice: $ |S| = 6 \times 6 = 36 $
 	<li> Let A be the set of all pairs of dice rolls that sum to 7. 
 	      The set of A is $ { (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) } $ 
 	      The size of A is the number of outcomes in $A$: $ |A| = 6 $

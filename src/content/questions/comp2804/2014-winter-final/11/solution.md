@@ -15,7 +15,7 @@ $ FIB(6) $ calls $ FIB(5) $ and $ FIB(4) $.
 $ FIB(7) $ calls $ FIB(6) $ and $ FIB(5) $.
 
 4. **Recursive Counting:**
-   Let $ a*n $ be the number of times $ FIB(4) $ is called in $ FIB(n) $.
+   Let $ a*n $ be the number of \times $ FIB(4) $ is called in $ FIB(n) $.
    Observe that $ a_n $ satisfies the recurrence relation similar to the Fibonacci sequence:
    [
    a_n = a*{n-1} + a\_{n-2}

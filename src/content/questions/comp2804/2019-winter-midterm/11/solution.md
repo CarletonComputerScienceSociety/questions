@@ -1,7 +1,7 @@
-textbf{Plaintext Question:} The function $ f: mathbb{N} rightarrow mathbb{N} $
+textbf{Plaintext Question:} The function $ f: \mathbb{N} rightarrow \mathbb{N} $
 is recursively defined as follows:
 $ f(0) = 6, $
-$ f(n) = 4 \cdot f(n-1) + 2^{n} text{ if } n geq 1. $
+$ f(n) = 4 \cdot f(n-1) + 2^{n} \text{ if } n geq 1. $
 Which of the following is true for all integers $ n geq 0 $? 
 textbf{Correct Answer: } B 
 textbf{Relevant Theorems: } Recursive Functions (4.1) 
