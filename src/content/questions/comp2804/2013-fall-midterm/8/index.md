@@ -7,4 +7,5 @@ question: comp2804/2013-fall-midterm/8/question.ts
 solution: comp2804/2013-fall-midterm/8/solution.md
 tags:
   - comp2804
+  - Newton’s Binomial Theorem (3.6.2)
 ---
