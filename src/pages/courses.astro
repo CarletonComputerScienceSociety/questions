@@ -5,8 +5,8 @@ import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
 const evaluations = await getCollection("evaluations");
 const comp2804Evaluations = evaluations
-.filter((evaluation) => evaluation.data.course === "comp2804",)
-.sort((a, b) => Number(b.data.created_at) - Number(a.data.created_at));
+  .filter((evaluation) => evaluation.data.course === "comp2804")
+  .sort((a, b) => Number(b.data.created_at) - Number(a.data.created_at));
 
 const courseCodes = {
   comp2804: "COMP 2804",
