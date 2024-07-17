@@ -4,6 +4,7 @@ path: comp2804/midterm-fall-2013/2
 type: multiple-choice
 author: Pat Morin
 question: comp2804/midterm-fall-2013/2/question.ts
+solution: comp2804/midterm-fall-2013/2/solution.md
 tags:
   - comp2804
 ---
