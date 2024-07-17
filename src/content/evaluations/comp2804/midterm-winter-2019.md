@@ -1,5 +1,5 @@
 ---
-title: Midterm Winter 2019
+title: 2019 Winter Midterm
 path: comp2804/midterm-winter-2019
 author: Michiel Smid
 course: comp2804

@@ -1,5 +1,5 @@
 ---
-title: Exam Winter 2019
+title: 2019 Winter Final
 path: comp2804/exam-winter-2019
 author: Michiel Smid
 course: comp2804

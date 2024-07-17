@@ -1,5 +1,5 @@
 ---
-title: Midterm Fall 2013
+title: 2013 Fall Midterm
 path: comp2804/midterm-fall-2013
 author: Pat Morin
 course: comp2804

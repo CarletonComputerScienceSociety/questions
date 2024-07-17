@@ -1,5 +1,5 @@
 ---
-title: Exam Fall 2018
+title: 2018 Fall Final
 path: comp2804/exam-fall-2018
 author: Michiel Smid
 course: comp2804

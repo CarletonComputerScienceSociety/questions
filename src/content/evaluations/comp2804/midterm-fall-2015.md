@@ -1,5 +1,5 @@
 ---
-title: Midterm Fall 2015
+title: 2015 Fall Midterm
 path: comp2804/midterm-fall-2015
 author: Michiel Smid
 course: comp2804
