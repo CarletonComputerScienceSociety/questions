@@ -1,4 +1,5 @@
 We can write down all the possibilities for the first 2 flips.
+
 <ul>
 <li> HH
 <li> HT

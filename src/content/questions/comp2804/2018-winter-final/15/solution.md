@@ -1,4 +1,5 @@
 We'll take a slow and systematic approach to this question
+
 <ul>
 <li> Let S be the set of all possible outcomes 
 $ |S| = 2^4 = 16$

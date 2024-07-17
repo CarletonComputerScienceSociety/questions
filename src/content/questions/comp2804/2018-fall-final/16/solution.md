@@ -18,4 +18,4 @@ $ Pr(A) = frac{1}{2} $
 Now, let's check whether they're independent 
 $ Pr(A cap B) = Pr(A) cdot Pr(B) $ 
 $ frac{3}{8} = frac{1}{2} cdot frac{1}{2} $ 
-$ frac{3}{8} = frac{1}{4} $ 
+$ frac{3}{8} = frac{1}{4} $

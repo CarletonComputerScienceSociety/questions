@@ -1,4 +1,4 @@
-subsection*{Step-by-Step Solution}
+subsection\*{Step-by-Step Solution}
 
 1. **Probability of Getting $ HTH $:**
    The probability of getting a head followed by a tail followed by a head in three consecutive flips is:

@@ -1,4 +1,5 @@
 Let's explain why some are wrong and one is right
+
 <ul>
 <li> ${sum_{k=1}^{100}} k cdot frac{k^{2}}{100^{2}}$ 
 This equation says, enquote{The probability that k is the max value and each value has 1 to k values to be} 

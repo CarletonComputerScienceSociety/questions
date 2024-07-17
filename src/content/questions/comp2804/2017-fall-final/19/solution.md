@@ -1,4 +1,5 @@
 All this to say that the current bit is different from the next bit
+
 <ul>
 <li> Let S be the set of all pairs of bits of length n 
 $ S = { (0,0), (0,1), (1,0), (1,1) } $ 

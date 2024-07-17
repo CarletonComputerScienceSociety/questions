@@ -1,5 +1,6 @@
-Calculate $ f(1) $ 
+Calculate $ f(1) $
 $ f(1) = f(0) + 6 cdot 1 - 3 = 7 + 6 - 3 = 10 $
+
 <ul>
 <li> $ f(n) = 2n^{2} + 7 $ 
 $ f(1) = 2 cdot 1^{2} + 7 = 2 + 7 = 9 $

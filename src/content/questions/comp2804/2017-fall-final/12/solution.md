@@ -1,4 +1,5 @@
 Well, let's break it down
+
 <ul>
 <li> Let A be the event that a string of length n is a palindrome 
 The leftmost bit can be 1 or 0: 2 possibilities 

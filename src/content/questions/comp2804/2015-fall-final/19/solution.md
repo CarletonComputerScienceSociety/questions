@@ -1,4 +1,5 @@
 Okay. This is a loaded question, so let's break it down
+
 <ul>
 <li> Let's find the expected value of $Y$ 
 The first student has a $ frac{1}{n} $ chance of receiving a gift of $v_1$ 

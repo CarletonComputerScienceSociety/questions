@@ -1,4 +1,5 @@
 Let's have a look, I guess
+
 <ul>
 <li> To determine $ mathbb{E}(L) $, we need to determine the probability that Lindsay wins 
 $ Pr(L=100) = frac{1}{2} $ 

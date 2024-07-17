@@ -1,4 +1,5 @@
 Let's just check some $ Pr(X=x cap Y=y) = Pr(X=x) cdot Pr(Y=y) $
+
 <ul>
 	<li> Let S be the set of all bitstrings of length 5. 
 	      $ |S| = 2^5 $

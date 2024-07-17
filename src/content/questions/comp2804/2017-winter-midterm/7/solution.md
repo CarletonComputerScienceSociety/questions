@@ -1,5 +1,6 @@
-It's a little confusing when you know why the correct answer is correct, but you don't know why the incorrect answers are incorrect. 
+It's a little confusing when you know why the correct answer is correct, but you don't know why the incorrect answers are incorrect.
 Let's go through all of them
+
 <ul>
 <li> The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women, where $x$ must be a man and $y$ must be a woman. 
 So this one is wrong because the phrase they use only takes into account when we have a man and a women: $m cdot n$ 

@@ -1,4 +1,4 @@
-Let's draw a recursive tree to find out how many calls there are to $FIB(73)$ when we run $FIB(77)$. 
+Let's draw a recursive tree to find out how many calls there are to $FIB(73)$ when we run $FIB(77)$.
 begin{forest}
 [FIB$ (77) $
 		[FIB$ (76) $

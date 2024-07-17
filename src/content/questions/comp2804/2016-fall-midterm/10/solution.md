@@ -1,6 +1,7 @@
-We can calculate values of $ f(1) $ and $ f(2) $ to see if we can find a pattern. 
-$ f(1) = frac{1}{3} cdot 7 = frac{7}{3} $ 
+We can calculate values of $ f(1) $ and $ f(2) $ to see if we can find a pattern.
+$ f(1) = frac{1}{3} cdot 7 = frac{7}{3} $
 $ f(2) = frac{2}{3} cdot frac{7}{3} = frac{14}{9} $
+
 <ul>
 <li> $ f(n) = 7 cdot frac{n!}{3^{n}} $ 
 $ f(1) = 7 cdot frac{1!}{3^{1}} = 7 cdot frac{1}{3} = frac{7}{3} $

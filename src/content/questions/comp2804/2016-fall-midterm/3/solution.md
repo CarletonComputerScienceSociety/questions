@@ -1,4 +1,5 @@
 Let's break it down I guess
+
 <ul>
 <li> Let T be the set of all $k$-element subsets of $S$. 
 $ |T| = binom{n}{k} $

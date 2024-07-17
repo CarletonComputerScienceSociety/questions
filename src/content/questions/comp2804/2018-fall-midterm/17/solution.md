@@ -1,4 +1,5 @@
 There are two options to doing this
+
 <ul>
 <li> First, we need to choose 7 questions to answer correctly from the 17 questions: $ binom{17}{7} $ 
 For each of the 7 questions, there is a $ frac{1}{4} $ chance of answering correctly: $ {(frac{1}{4})}^7 $ 

@@ -1,4 +1,5 @@
 We don't need to calculate all possibilities. Since this is independence, we're looking for $ Pr(X=x cap Y=y) = Pr(X=x) cdot Pr(Y=y) $
+
 <ul>
 	<li> Let's try $X=5$ 
 The only rolls that satisfy this are $ (1,6), (6,1) $ 

@@ -1,6 +1,7 @@
-Let's calculate $f(1)$ and $f(2)$ 
-$ f(1) = frac{5}{1} cdot f(0) = 5 cdot 1 = 5 $ 
+Let's calculate $f(1)$ and $f(2)$
+$ f(1) = frac{5}{1} cdot f(0) = 5 cdot 1 = 5 $
 $ f(2) = frac{5}{2} cdot f(1) = frac{5}{2} cdot 5 = frac{25}{2} $
+
 <ul>
 <li> $ f(n) = frac{5}{n!} $ 
 $ f(1) = frac{5}{1!} = 5 $ 

@@ -1,4 +1,5 @@
 We need to determine the number of different seating arrangements.
+
 <ul>
 <li> We choose $ k $ people from $ n $ people: $ binom{n}{k} $
 	<li> We also need to find the number of circular arrangements/permutations 

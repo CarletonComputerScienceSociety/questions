@@ -1,4 +1,4 @@
-We can draw a recursive tree to see how many calls there are to $FIB(95)$. 
+We can draw a recursive tree to see how many calls there are to $FIB(95)$.
 begin{forest}
 [FIB$(99)$
 [FIB$(98)$
@@ -20,5 +20,5 @@ begin{forest}
 [FIB$(95)$]
 ]
 ]
-end{forest} 
+end{forest}
 We can see that there are 5 calls to $FIB(95)$.

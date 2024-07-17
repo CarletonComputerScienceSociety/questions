@@ -1,4 +1,5 @@
 So there are 13 (spades $ spadesuit $ cards, 13 hearts $ heartsuit $ cards, 13 clubs $ clubsuit $ cards, and 13 diamonds $ diamondsuit $) cards
+
 <ul>
 <li> Let S be all possible hands of 5 cards: $ |S| = binom{52}{5} $
 <li> Let A be the event that the 5 cards are all of the same suit 

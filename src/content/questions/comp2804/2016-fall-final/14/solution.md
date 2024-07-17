@@ -1,4 +1,4 @@
-For anything less than 5 flips, I honestly just draw a tree diagram to find the answer 
+For anything less than 5 flips, I honestly just draw a tree diagram to find the answer
 begin{forest}
 [
 [H
@@ -23,6 +23,7 @@ begin{forest}
 ]
 ]
 end{forest}
+
 <ul>
 <li> Let's determine S 
 S is the set of all possible outcomes of the 3 coin flips 

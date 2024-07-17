@@ -1,4 +1,5 @@
 Let's break me down
+
 <ul>
 <li> Let A be the set of all strings that have exactly 15 letters a 
 We choose 15 of the 85 positions to be a: $ binom{85}{15} $ 

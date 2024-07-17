@@ -1,6 +1,7 @@
-First, we can calculate values of f$(1)$ and f$(2)$ to see if we can find a pattern. 
-$f(1) = f(0) + 10(0) - 6 = 7 + 10 - 6 = 11$ 
+First, we can calculate values of f$(1)$ and f$(2)$ to see if we can find a pattern.
+$f(1) = f(0) + 10(0) - 6 = 7 + 10 - 6 = 11$
 $f(2) = f(1) + 10(1) - 6 = 11 + 10 - 6 = 15$
+
 <ul>
 <li> $f(n) = 4n^{2} - 2n + $
 	      $f(1) = 4{(1)}^{2} - 2(1) + 7 = 4 - 2 + 7 = 9$

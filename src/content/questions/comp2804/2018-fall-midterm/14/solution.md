@@ -1,5 +1,5 @@
-Every call other than Fart$(1)$ and Fart$(0)$ results in a fart. 
-Let's draw a recursive tree to see how many times the fart procedure is called. 
+Every call other than Fart$(1)$ and Fart$(0)$ results in a fart.
+Let's draw a recursive tree to see how many times the fart procedure is called.
 begin{forest}
 [FART$ (9) $
 		[FART$ (8) $

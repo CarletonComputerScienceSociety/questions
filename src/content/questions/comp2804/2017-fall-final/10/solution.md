@@ -1,5 +1,5 @@
-Let's draw out the tree 
-To fit the tree on the page, IFLS = IFeelLikeSinging 
+Let's draw out the tree
+To fit the tree on the page, IFLS = IFeelLikeSinging
 begin{forest}
 [IFLS$(9)$
 [IFLS$(10)$
@@ -27,5 +27,5 @@ begin{forest}
 [IFLS$(1)$]
 ]
 ]
-end{forest} 
+end{forest}
 In total, O Canada is sung 8 times.

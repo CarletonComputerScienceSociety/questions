@@ -3,6 +3,7 @@ To determine the minimum value of $ m $ such that we can guarantee that a set $ 
 paragraph{Pigeonhole Principle:} Let $ k geq 1 $ be an integer. If $ k+1 $ or more objects are placed into $ k $ boxes, then there is at least one box containing two or more objects.
 
 paragraph{Application to the Problem}
+
 <ul>
 <li> textbf{Residue Classes Modulo $ n $:} 
 Consider the integers modulo $ n $. There are $ n $ possible residue classes: $ 0, 1, 2, ldots, n-1 $.

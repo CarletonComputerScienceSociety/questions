@@ -1,4 +1,4 @@
-Draw the treeeeeee 
+Draw the treeeeeee
 begin{forest}
 [Hello$ (7) $
 		[Hello$ (6) $
@@ -31,5 +31,5 @@ begin{forest}
 ]
 ]
 ]
-end{forest} 
+end{forest}
 The word enquote{hello} is printed 11 times

@@ -1,4 +1,5 @@
 Let's write out the possibilities I guess
+
 <ul>
 <li> $ b, S*(n-1) $
 <li> $ c, S*(n-1) $

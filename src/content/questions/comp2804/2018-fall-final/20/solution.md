@@ -1,4 +1,5 @@
 Let $X_i$ be 2 if there are 2 cider bottles in the subset, 1 if there is 1 cider bottle in the subset, and 0 if there are no cider bottles in the subset
+
 <ul>
 <li> $X_i = 0 $ if there are no cider bottles 
 	      First we choose 3 beer bottles: $ binom{n}{3} $ 

@@ -1,4 +1,5 @@
 There are 6 possibilities for the first 3 bits.
+
 <ul>
 <li> 000
 <li> 001

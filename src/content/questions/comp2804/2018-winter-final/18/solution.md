@@ -1,5 +1,6 @@
-We can brute force the answer: 
+We can brute force the answer:
 $ { (0, 0), (0, 1), (1, 0), (1, 1) } $
+
 <ul>
 	<li> For $ (0,0) $, the minimum value is 0 
 	      There is a $ frac{1}{4} $ chance of this happening

@@ -1,6 +1,7 @@
-We can calculate the first couple of values of $S(n)$ to see if we can find a pattern. 
-$S(1) = 1$ 
+We can calculate the first couple of values of $S(n)$ to see if we can find a pattern.
+$S(1) = 1$
 $S(2) = 3$
+
 <ul>
 <li> $S(n)=1+logn$ 
 $S(2) = 1+log{2} = 1+1 = 2$

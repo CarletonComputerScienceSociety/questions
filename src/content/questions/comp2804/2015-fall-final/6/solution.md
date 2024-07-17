@@ -1,4 +1,5 @@
 We're basically looking for the total number of strings of length $n$ excluding those that have no $a$s.
+
 <ul>
 <li> Let S be the set of all strings 
 The first character can be any of the 3 characters: 3 

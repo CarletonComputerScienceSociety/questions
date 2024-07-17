@@ -1,4 +1,5 @@
 Let's do this uwu
+
 <ul>
 <li> Let A be the set of all subsets that contain exactly 12 beer bottles 
 We choose 12 of the 20 beer bottles: $ binom{20}{12} $ 

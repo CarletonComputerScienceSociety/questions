@@ -30,5 +30,5 @@ begin{forest}
 ]
 ]
 ]
-end{forest} 
+end{forest}
 There are 3=5 calls to $FIB(16)$

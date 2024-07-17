@@ -1,4 +1,5 @@
 Let's see some products
+
 <ul>
 <li> $ 0 cdot 0 = 0 $
 	<li> $ 1 cdot 0 = 0 $

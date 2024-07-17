@@ -1,4 +1,5 @@
 Oh, we just need to find out something like $ Pr(G = 1, B = 1) = Pr(G = 1) cdot Pr(B = 1) $
+
 <ul>
 	<li> Let S be the set of all subsets 
 	      $ S = { (BB), (GG), (BGB), (BGG), (GBG), (GBB) } $ 

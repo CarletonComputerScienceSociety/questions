@@ -1,4 +1,5 @@
 We need to determine if events $ A $ and $ B $ are independent.
+
 <ul>
 <li> $ Pr(A) = frac{1}{2} $
 	<li> If they have at least 3 kids and the third child is a boy, let's calculate what's needed to get there 

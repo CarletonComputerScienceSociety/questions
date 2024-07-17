@@ -1,4 +1,5 @@
 Let's count the number of times each letter appears in the word:
+
 <ul>
 <li> 3 P's
 <li> 4 O's

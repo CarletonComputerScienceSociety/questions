@@ -1,4 +1,5 @@
 Let's break down which ones are right and which ones are wrong
+
 <ul>
 <li> The number of subsets of $S$ that are non-empty. 
 This phrase takes into account subsets of size 1 but the equation starts at 2. This is wrong.

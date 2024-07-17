@@ -1,4 +1,5 @@
 Let's explain why some are wrong and some are right
+
 <ul>
 <li> The number of bitstrings of length $n$ that have at leats two 1's 
 If this was the case, it would subtract the set with all 0's and the set with a single 1 in any of the $n$ positions: $ 2^{n} - 1 - n $

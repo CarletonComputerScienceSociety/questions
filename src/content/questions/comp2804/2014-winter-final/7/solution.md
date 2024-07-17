@@ -1,4 +1,5 @@
 Let's break it down
+
 <ul>
 <li> Let A = 3 blue balls 
 We choose 3 of the 4 blue balls $ binom{4}{3} $ 

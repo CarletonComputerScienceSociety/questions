@@ -1,4 +1,4 @@
-subsection*{Step-by-Step Solution}
+subsection\*{Step-by-Step Solution}
 
 1. **Base Case Analysis:**
    For $ n = 0 $ or $ n = 1 $, $ FIB(n) $ is called directly and returns $ n $.
@@ -18,7 +18,7 @@ $ FIB(7) $ calls $ FIB(6) $ and $ FIB(5) $.
    Let $ a*n $ be the number of times $ FIB(4) $ is called in $ FIB(n) $.
    Observe that $ a_n $ satisfies the recurrence relation similar to the Fibonacci sequence:
    [
-   a_n = a*{n-1} + a_{n-2}
+   a_n = a*{n-1} + a\_{n-2}
    ]
    Initial conditions are crucial:
    $ FIB(4) $ is called 1 time in $ FIB(4) $.

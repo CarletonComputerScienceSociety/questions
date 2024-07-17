@@ -1,4 +1,4 @@
-We can write down some valid possibilities first. 
+We can write down some valid possibilities first.
 $b, B_{n-1}$ possibilities left
 $c, B_{n-1}$ possibilities left
 $a,b, B_{n-2}$ possibilities left

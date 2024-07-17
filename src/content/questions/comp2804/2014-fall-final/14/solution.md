@@ -1,4 +1,5 @@
 Let's go through each option and explain
+
 <ul>
 <li> $1 - (1/2)^{7}$ 
 This is just the complement rule, which usually works but they're subtracting the probability that we get 6 tails followed by a head 

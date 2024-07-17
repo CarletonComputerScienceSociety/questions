@@ -1,4 +1,5 @@
 Okay, there are two ways to go about this
+
 <ul>
 <li> The first is to realize that the chance the coin comes up a certain face an odd or even number of times is straight up $ frac{1}{2} $ 
 Screw drawing out the whole 5-level deep recursive tree. We can just draw out a 3-level deep tree 

@@ -1,4 +1,5 @@
 I've been playing an MMO RPG called Orna recently. It uses GPS and forces me to touch grass
+
 <ul>
 <li> Let S be the set of all possibilities 
 $ |S| = 2^5 = 32 $

@@ -1,4 +1,5 @@
 We can break this down into 3 cases:
+
 <ul>
 <li> A = bitstrings of length $ n $ that have exactly seven 0's 
 We choose 7 positions from the $ n $ positions to place the 0's: $ binom{n}{7} $

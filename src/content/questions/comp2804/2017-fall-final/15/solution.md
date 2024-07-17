@@ -1,4 +1,4 @@
-Draw out a tree 
+Draw out a tree
 begin{forest}
 [XXX
 [HXX
@@ -23,6 +23,7 @@ begin{forest}
 ]
 ]
 end{forest}
+
 <ul>
 <li> Let's determine A 
 $ { (HHH), (HHT) } $ 

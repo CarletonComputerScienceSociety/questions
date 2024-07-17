@@ -1,4 +1,5 @@
 Let's break it down.
+
 <ul>
 <li> Let $A$ be the set of all subsets of $S$ that contain $x$ and $y$ 
 We take for granted that one of the element has a fixed possibility of being $x$: 1 

@@ -1,4 +1,5 @@
 Let's explain why some are incorrect while one is correct
+
 <ul>
 <li> The number of bitstrings of length $n$ in which the first bit is 0 or the last bit is 1. 
 Surprisingly, it makes sense

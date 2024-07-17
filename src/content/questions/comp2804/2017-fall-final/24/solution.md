@@ -1,4 +1,5 @@
 Let $X_i$ be 1 if the students at positions $i$ and $2i$ are politically correct
+
 <ul>
 <li> Let S be all possible combinations 
 We choose k positions for the politically correct students: $ binom{n}{k} $ 

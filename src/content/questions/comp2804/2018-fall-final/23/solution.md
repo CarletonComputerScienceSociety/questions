@@ -1,5 +1,6 @@
-Alright. So let's just linear algebra the hell outta this question 
+Alright. So let's just linear algebra the hell outta this question
 Let $X_i$ be 1 if the student gets the question right and -z if the student gets the question wrong
+
 <ul>
 <li> $X_i = 1$ if the student gets the question right 
 $ Pr(X*i = 1) = frac{1}{4} $

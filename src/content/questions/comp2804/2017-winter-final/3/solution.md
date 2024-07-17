@@ -1,5 +1,6 @@
-Holy moly, that's a lot of words 
+Holy moly, that's a lot of words
 Let's do this anyway$ ( $cries internally $ ) $
+
 <ul>
 	<li> Let B be the event that we have exactly 5 beer bottles and zero or more cider bottles 
 	      First, we choose 5 beer bottles out of the 17 beer bottles: $ binom{17}{5} $ 

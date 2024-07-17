@@ -1,4 +1,5 @@
 Let's write out the possibilities and sum them:
+
 <ul>
 <li> $ 1, S*{n-1} $ is not allowed since this would mean the recursive call's next value could also be 1, which leads to 11
 <li> $ 0, S*{n-1} $

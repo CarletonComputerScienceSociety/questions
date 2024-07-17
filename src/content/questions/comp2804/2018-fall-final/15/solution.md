@@ -1,4 +1,5 @@
 I have a gut feeling that they're independent, but let's check
+
 <ul>
 <li> Let S be all possible permutations of the set ${1, 2, 3, 4}$: $ |S| = 4! = 24 $
 	<li> Let's determine A 

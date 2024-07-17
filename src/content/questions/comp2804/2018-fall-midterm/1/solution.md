@@ -1,5 +1,6 @@
 To determine the number of ordered triples $ (A, B, C) $ such that $ A subseteq S $, $ B subseteq S $, $ C subseteq S $, and $ A $, $ B $, and $ C $ are pairwise disjoint, we start by analyzing the choices available for each element in the set $ S $.
 Given $ S $ is a set with $ n $ elements, each element $ x in S $ must belong to one of the sets $ A $, $ B $, $ C $, or to none of these sets. These four choices for each element are:
+
 <ul>
 	<li> $ x in A $
 	<li> $ x in B $

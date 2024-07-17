@@ -1,4 +1,5 @@
 To derive the recurrence relation for $ F(n,k) $, we consider two cases:
+
 <ul>
 <li> $ X $ does not contain $ B_n $ or $ C_n $:
 In this case, $ X $ is a subset of the first $ n-1 $ pairs, so there are $ F(n-1, k) $ such subsets.

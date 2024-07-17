@@ -1,4 +1,5 @@
 Let's break it down into 2 cases:
+
 <ul>
 <li> B = enquote{3 is an element of $ Y $} 
 	      First, we assume that 3 is an element of $ Y $. 

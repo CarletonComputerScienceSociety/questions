@@ -1,4 +1,5 @@
 For questions like these, we can answer by checking for a value $i$ if the following is true: $ Pr(X=i cap Y=i) = Pr(X=i) cdot Pr(Y=i) $
+
 <ul>
 	<li> Let's determine $ Pr(X=1) $ 
 	      The coin that's heads has a probability of $ frac{1}{2} $ 

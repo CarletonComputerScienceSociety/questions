@@ -1,4 +1,5 @@
 I guess we can just think, "total possibilities minus possibilities where both O's are together"
+
 <ul>
 <li> Let S be the set of all possibilities 
 We choose 1 position out of the 5 positions for the B: 5 

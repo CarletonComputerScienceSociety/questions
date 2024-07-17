@@ -20,5 +20,5 @@ begin{forest}
 					[FIB$ (8) $]
 ]
 ]
-end{forest} 
+end{forest}
 We can see that there are 5 calls to $ text{FIB}(8) $.

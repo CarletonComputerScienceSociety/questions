@@ -1,4 +1,4 @@
-I kind of brute forced a tree 
+I kind of brute forced a tree
 begin{forest}
 [X
 [1
@@ -53,8 +53,9 @@ begin{forest}
 ]
 ]
 ]
-end{forest} 
+end{forest}
 Now, let's determine some variables
+
 <ul>
 <li> Let's determine A 
 $ { (1,1), (1,2), (1,3), (3,1), (3,2), (3,3) } $ 

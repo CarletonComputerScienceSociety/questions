@@ -1,4 +1,5 @@
 There are 4 possible total outcomes for the first and last flip:
+
 <ul>
 <li> HH
 <li> HT

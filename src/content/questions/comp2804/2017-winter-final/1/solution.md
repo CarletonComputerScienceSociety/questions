@@ -1,4 +1,5 @@
 Well, let's break it down
+
 <ul>
 <li> We can place the first odd number in any of the 5 odd positions: 5 
 We can place the second odd number in any of the 4 remaining odd positions: 4 

@@ -1,4 +1,5 @@
 Let's find the values
+
 <ul>
 <li> Let S be the set of all subsets of X 
 $ |S| = 2^{10} $

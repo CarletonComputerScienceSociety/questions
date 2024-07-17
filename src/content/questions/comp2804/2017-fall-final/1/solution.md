@@ -1,4 +1,5 @@
 Okay, so let's break it down
+
 <ul>
 <li> First, there are 10 beer bottles on the leftmost side: 1
 <li> This means we need to choose 10 beer bottles out of the 20 beer bottles: $ binom{20}{10} $

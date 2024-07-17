@@ -1,4 +1,5 @@
 Let's explain why some are wrong and one is right
+
 <ul>
 <li> The number of bitstrings of length $n$ 
 Pretty sure this is wrong because the equation for the number of bitstrings of length $n$ is $2^n$

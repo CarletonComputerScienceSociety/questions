@@ -1,4 +1,5 @@
 Let's just write out the first couple I guess
+
 <ul>
 <li> We choose 1 element from m elements = $binom{m}{1}$
 <li> We choose 2 elements from m elements = $binom{m}{2}$

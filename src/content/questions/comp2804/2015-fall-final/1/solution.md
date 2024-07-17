@@ -1,4 +1,5 @@
 There are 2 cases to consider:
+
 <ul>
 <li> Let A be the event that the subset contains 3 negative integers. 
 We choose 3 of the 15 negative integers: $ binom{15}{3} $ 

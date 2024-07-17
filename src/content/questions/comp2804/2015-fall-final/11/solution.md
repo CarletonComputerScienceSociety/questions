@@ -1,5 +1,6 @@
-Let's use dividers to separate the bananas eaten per day. 
+Let's use dividers to separate the bananas eaten per day.
 We have 75 bananas and 4 dividers.
+
 <ul>
 <li> $x_1$ represents the number of bananas to the left of the first divider
 <li> $x_2$ represents the number of bananas between the first and second dividers

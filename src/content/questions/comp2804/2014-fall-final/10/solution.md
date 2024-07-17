@@ -1,7 +1,8 @@
-Let's calculate $f(1)$ first 
+Let's calculate $f(1)$ first
 $f(1) = f(0) + 8 cdot 1 - 2 $ 
-$f(1) = -17 + 8 - 2 $ 
+$f(1) = -17 + 8 - 2 $
 $f(1) = -11 $
+
 <ul>
 <li> $ f(n) = 3n^{2} - n - 17 $ 
 $ f(1) = 3 cdot 1^2 - 1 - 17 $ 

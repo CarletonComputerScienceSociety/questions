@@ -1,5 +1,6 @@
 Calculate $ f(1) $
 $ f(1) = 2 cdot f(0) + 1 = 2 cdot 7 + 1 = 15 $
+
 <ul>
 	<li> $ f(n) = 8n + 7 $ 
 	      $ f(1) = 8 cdot 1 + 7 = 15 $

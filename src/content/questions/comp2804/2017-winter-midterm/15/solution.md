@@ -1,5 +1,5 @@
-enquote{hello} is printed when HELLO is called with an argument of 0 or 1. 
-We can draw a recursive tree to see how many times the HELLO$(1)$ is called. 
+enquote{hello} is printed when HELLO is called with an argument of 0 or 1.
+We can draw a recursive tree to see how many times the HELLO$(1)$ is called.
 begin{forest}
 [HELLO $ (7) $
 		[HELLO $ (6) $
