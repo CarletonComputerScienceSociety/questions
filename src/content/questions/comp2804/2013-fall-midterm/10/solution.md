@@ -13,5 +13,4 @@ We can break down how many letters of each there are:
     <li> We choose 1 spot for the C out of the 1 spot: $ \binom{1}{1} $
 </ul>
 
-
 Thus, there are $ \binom{13}{4} \cdot \binom{9}{3} \cdot \binom{6}{2} \cdot \binom{4}{2} \cdot \binom{2}{1} \cdot \binom{1}{1} $ = $ \binom{13}{4} \cdot \binom{9}{3} \cdot \binom{6}{2} \cdot \binom{4}{2} \cdot \binom{2}{1} $ strings
