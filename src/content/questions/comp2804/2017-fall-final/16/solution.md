@@ -57,17 +57,17 @@ end{forest}
 Now, let's determine some variables
 
 <ul>
-<li> Let's determine A 
-$ { (1,1), (1,2), (1,3), (3,1), (3,2), (3,3) } $ 
-$ |A| = 6 $ 
+<li> Let's determine A <br/> 
+$ { (1,1), (1,2), (1,3), (3,1), (3,2), (3,3) } $ <br/> 
+$ |A| = 6 $ <br/> 
 $ Pr(A) = \frac{6}{9} $
-	<li> Let's determine B 
-	      $ { (1,2), (2,1), (2,3), (3,2) } $ 
-	      $ |B| = 4 $ 
+	<li> Let's determine B <br/> 
+	      $ { (1,2), (2,1), (2,3), (3,2) } $ <br/> 
+	      $ |B| = 4 $ <br/> 
 	      $ Pr(B) = \frac{4}{9} $
-	<li> Let's determine $ A \cap B $ 
-	      $ { (1,2), (3,2) } $ 
-	      $ |A \cap B| = 2 $ 
+	<li> Let's determine $ A \cap B $ <br/> 
+	      $ { (1,2), (3,2) } $ <br/> 
+	      $ |A \cap B| = 2 $ <br/> 
 	      $ Pr(A \cap B) = \frac{2}{9} $
 </ul>
 Now, let's check if A and B are independent 

@@ -25,17 +25,17 @@ begin{forest}
 end{forest}
 
 <ul>
-<li> Let's determine A 
-$ { (HHH), (HHT) } $ 
-$ |A| = 2 $ 
+<li> Let's determine A <br/> 
+$ { (HHH), (HHT) } $ <br/> 
+$ |A| = 2 $ <br/> 
 $ Pr(A) = \frac{2}{8} $
-	<li> Let's determine B 
-	      $ { (HHH), (HHT), (HTH), (THH) } $ 
-	      $ |B| = 4 $ 
+	<li> Let's determine B <br/> 
+	      $ { (HHH), (HHT), (HTH), (THH) } $ <br/> 
+	      $ |B| = 4 $ <br/> 
 	      $ Pr(B) = \frac{4}{8} $
-	<li> Let's determine $ A \cap B $ 
-	      $ { (HHH), (HHT) } $ 
-	      $ |A \cap B| = 2 $ 
+	<li> Let's determine $ A \cap B $ <br/> 
+	      $ { (HHH), (HHT) } $ <br/> 
+	      $ |A \cap B| = 2 $ <br/> 
 	      $ Pr(A \cap B) = \frac{2}{8} $
 </ul>
 Now, let's check if A and B are independent 

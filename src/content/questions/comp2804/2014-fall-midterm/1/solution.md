@@ -17,5 +17,3 @@ Let A be the set of all bitstrings with zero 1's: $|A|=$ n choose zero 1's $= \b
 Let B be the set of all bitstrings a single 1: $|B|=$ n choose a single 1 $= \binom{n}{1}$
 
 $|U| - |A| - |B| = 2^n - \binom{n}{0} - \binom{n}{1} = 2^n - \frac{n!}{n!0!} - \frac{n!}{(n-1)!1!} = 2^n - 1 - n$
-
-$<ul> <li> hello </ul>$

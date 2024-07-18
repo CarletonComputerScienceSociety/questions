@@ -1,9 +1,9 @@
 <ul>
-<li> Let B be the event that someone is blond 
+<li> Let B be the event that someone is blond <br/> 
 $ |B| = 6 $
-	<li> Let G be the event that someone has green eyes 
+	<li> Let G be the event that someone has green eyes <br/> 
 	      $ |G| = 7 $
-	<li> Let $ overline{B} \cap overline{G} $ be the event that someone is not blond and not green-eyed
+	<li> Let $ overline{B} \cap overline{G} $ be the event that someone is not blond and not green-eyed <br/> 
 	      $ | overline{B} \cap overline{G} | = 11 $
 </ul>
 $ |B \cup G| = 20 - 11 = 9 $ 

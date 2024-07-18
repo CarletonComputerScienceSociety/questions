@@ -1,15 +1,15 @@
 Let's break it down into 2 cases:
 
 <ul>
-<li> B = \enquote{3 is an element of $ Y $} 
-	      First, we assume that 3 is an element of $ Y $. 
+<li> B = \enquote{3 is an element of $ Y $} <br/> 
+	      First, we assume that 3 is an element of $ Y $. <br/> 
 	      We choose 6 elements from the remaining 19 elements: $ |B| = \binom{19}{6} $
-	<li> C = \enquote{13 is an element of $ Y $} 
-	      First, we assume that 13 is an element of $ Y $. 
+	<li> C = \enquote{13 is an element of $ Y $} <br/> 
+	      First, we assume that 13 is an element of $ Y $. <br/> 
 	      We choose 6 elements from the remaining 19 elements: $ |C| = \binom{19}{6} $
-	<li> $ A = B \cup C $ 
-	      $ B \cap C = $ \enquote{3 and 13 are elements of $ Y $} 
-	      First, we assume that 3 and 13 are elements of $ Y $. 
+	<li> $ A = B \cup C $ <br/> 
+	      $ B \cap C = $ \enquote{3 and 13 are elements of $ Y $} <br/> 
+	      First, we assume that 3 and 13 are elements of $ Y $. <br/> 
 	      We choose 5 elements from the remaining 18 elements: $ |B \cap C| = \binom{18}{5} $
 </ul>
 $ |B \cup C| = |B| + |C| - |B \cap C| $ 

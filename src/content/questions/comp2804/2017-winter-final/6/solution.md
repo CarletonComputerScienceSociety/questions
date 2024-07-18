@@ -1,9 +1,9 @@
 <ul>
-<li> Let B be the event that a student likes beer 
+<li> Let B be the event that a student likes beer <br/> 
 $ |B| = 63 $
-	<li> Let C be the event that a student likes cider 
+	<li> Let C be the event that a student likes cider <br/> 
 	      $ |C| = 71 $
-	<li> Let's determine $ overline{B} \cap overline{C} $ 
+	<li> Let's determine $ overline{B} \cap overline{C} $ <br/> 
 	      $ | overline{B} \cap overline{C} | = 25 $
 </ul>
 Now, let's determine $ B \cup C $ 

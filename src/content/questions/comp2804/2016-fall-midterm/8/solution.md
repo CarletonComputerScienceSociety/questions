@@ -5,11 +5,11 @@ paragraph{Pigeonhole Principle:} Let $ k geq 1 $ be an integer. If $ k+1 $ or mo
 paragraph{Application to the Problem}
 
 <ul>
-<li> textbf{Residue Classes Modulo $ n $:} 
+<li> textbf{Residue Classes Modulo $ n $:} <br/> 
 Consider the integers modulo $ n $. There are $ n $ possible residue classes: $ 0, 1, 2, ..., n-1 $.
-<li> textbf{Pigeonholes and Pigeons:}
+<li> textbf{Pigeonholes and Pigeons:} <br/> 
 Each integer in the set $ S $ will fall into one of these $ n $ residue classes. If $ m $ integers are placed into these $ n $ residue classes, then by the Pigeonhole Principle, if $ m > n $, at least two integers must fall into the same residue class.
-<li> textbf{Difference Divisible by $ n $:}
+<li> textbf{Difference Divisible by $ n $:} <br/> 
 If two integers are in the same residue class, their difference is divisible by $ n $. Therefore, we need $ m $ to be large enough to ensure that at least two integers are guaranteed to fall into the same residue class.
 </ul>
 
