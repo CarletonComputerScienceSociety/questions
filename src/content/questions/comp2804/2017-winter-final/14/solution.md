@@ -21,8 +21,13 @@
     $ |A \cap B| = \frac{(n-1)!}{2!} $ <br/> 
     $ Pr(A \cap B) = \frac{(n-1)!}{2 \cdot n!} = \frac{1}{2n} $
 </ul>
-Now, let's check for independence 
-$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
-$ \frac{1}{2n} = \frac{1}{n} \cdot \frac{1}{2} $ 
-$ \frac{1}{2n} = \frac{1}{2n} $ 
+
+Now, let's check for independence
+
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $
+
+$ \frac{1}{2n} = \frac{1}{n} \cdot \frac{1}{2} $
+
+$ \frac{1}{2n} = \frac{1}{2n} $
+
 Since the equation is true, A and B are independent

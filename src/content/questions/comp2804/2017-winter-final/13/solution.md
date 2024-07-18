@@ -10,7 +10,11 @@
     $ | B \cap A | = 4 $ <br/> 
     $ Pr(A \cap B) = \frac{4}{32} = \frac{1}{8} $
 </ul>
-$ Pr(A|B) = \frac{ Pr(A \cap B) }{ Pr(B) } $ 
-$ Pr(A|B) = \frac{ \frac{1}{8} }{ \frac{1}{2} } $ 
-$ Pr(A|B) = \frac{1}{8} \cdot \frac{2}{1} $ 
+
+$ Pr(A|B) = \frac{ Pr(A \cap B) }{ Pr(B) } $
+
+$ Pr(A|B) = \frac{ \frac{1}{8} }{ \frac{1}{2} } $
+
+$ Pr(A|B) = \frac{1}{8} \cdot \frac{2}{1} $
+
 $ Pr(A|B) = \frac{1}{4} $

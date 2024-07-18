@@ -1,4 +1,5 @@
 Holy moly, that's a lot of words
+
 Let's do this anyway$ ( $cries internally $ ) $
 
 <ul>
@@ -16,5 +17,7 @@ Let's do this anyway$ ( $cries internally $ ) $
     We have exactly 5 beer bottles and 5 cider bottles <br/> 
     $ | B \cap C | = \binom{17}{5} \cdot \binom{28}{5} $
 </ul>
-$ B \cup C = |B| + |C| - |B \cap C| $ 
+
+$ B \cup C = |B| + |C| - |B \cap C| $
+
 $ B \cup C = \binom{17}{5} \cdot 2^{28} + \binom{28}{5} \cdot 2^{17} - \binom{17}{5} \cdot \binom{28}{5} $

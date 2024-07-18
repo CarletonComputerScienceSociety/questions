@@ -17,7 +17,11 @@
     $ |A \cap B| = \binom{8}{3} $ <br/> 
     $ Pr(A \cap B) = \frac{ \binom{8}{3} }{ \binom{10}{5} } = \frac{8!}{5!3!} div \frac{10!}{5!5!} = \frac{8!}{5!3!} \cdot \frac{5!5!}{10!} = \frac{8!}{3!} \cdot \frac{5!}{10!} = \frac{1}{3!} \cdot \frac{5!}{10 \cdot 9} = \frac{1}{1} \cdot \frac{5 \cdot 4}{10 \cdot 9} = \frac{5 \cdot 2}{5 \cdot 9} = \frac{2}{9} $
 </ul>
-$ Pr(A|B) = \frac{ Pr(A \cap B) }{ Pr(B) } $ 
-$ Pr(A|B) = \frac{ \frac{2}{9} }{ \frac{1}{2} } $ 
-$ Pr(A|B) = \frac{2}{9} \cdot \frac{2}{1} $ 
+
+$ Pr(A|B) = \frac{ Pr(A \cap B) }{ Pr(B) } $
+
+$ Pr(A|B) = \frac{ \frac{2}{9} }{ \frac{1}{2} } $
+
+$ Pr(A|B) = \frac{2}{9} \cdot \frac{2}{1} $
+
 $ Pr(A|B) = \frac{4}{9} $

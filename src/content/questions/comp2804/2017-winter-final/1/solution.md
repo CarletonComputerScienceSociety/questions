@@ -12,4 +12,5 @@ Well, let's break it down
     We can place the last even number in the last remaining even position: 1 <br/> 
     This creates $ 5! $ permutations
 </ul>
+
 Multiplying the two permutations, we get $ 5! \cdot 5! $

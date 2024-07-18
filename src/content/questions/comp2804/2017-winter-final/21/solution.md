@@ -11,8 +11,13 @@ We don't need to calculate all possibilities. Since this is independence, we're 
     If the only rolls that satisfy condition 1 are $ (1,6), (6,1) $ and the only rolls that satisfy condition 2 are $ (1,1) $, then there are no rolls that satisfy both conditions <br/> 
     $ Pr(X=5 \cap Y=1) = 0 $
 </ul>
-Now, check time 
-$ Pr(X=5 \cap Y=1) = Pr(X=5) \cdot Pr(Y=1) $ 
-$ 0 = \frac{1}{18} \cdot \frac{1}{36} $ 
-$ 0 = \frac{1}{648} $ 
+
+Now, check time
+
+$ Pr(X=5 \cap Y=1) = Pr(X=5) \cdot Pr(Y=1) $
+
+$ 0 = \frac{1}{18} \cdot \frac{1}{36} $
+
+$ 0 = \frac{1}{648} $
+
 Since the equation is false, there are dependent
