@@ -14,4 +14,4 @@ $ |A| = 2 \cdot 1 \cdot 2 \cdot 1 \cdot ... \cdot 2 \cdot 1 = 2^{n/2} $
 	      $ |S| = 2^n $
 </ul>
 $ Pr(A) = \frac{|A|}{|S|} $ 
-$ Pr(A) = {left( \frac{1}{2} right)}^{n/2} $
+$ Pr(A) = {\left( \frac{1}{2} \right)}^{n/2} $

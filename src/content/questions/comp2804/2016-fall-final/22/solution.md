@@ -4,12 +4,12 @@ For questions like these, we can answer by checking for a value $i$ if the follo
 	<li> Let's determine $ Pr(X=1) $ <br/> 
 	      The coin that's heads has a probability of $ \frac{1}{2} $ <br/> 
 	      The other 6 coins have a probability of $ \frac{1}{2} $ <br/> 
-	      $ Pr(X=1) = { left( \frac{1}{2} right)}^1 {left( \frac{1}{2} right) }^6 $ <br/> 
+	      $ Pr(X=1) = { left( \frac{1}{2} \right)}^1 {\left( \frac{1}{2} \right) }^6 $ <br/> 
 	      $ Pr(X=1) = \frac{1}{2^7} $
 	<li> Let's determine $ Pr(Y=1) $ <br/> 
 	      The coin that's tails has a probability of $ \frac{1}{2} $ <br/> 
 	      The other 6 coins have a probability of $ \frac{1}{2} $ <br/> 
-	      $ Pr(Y=1) = { left( \frac{1}{2} right) }^1 { left( \frac{1}{2} right) }^6 $ <br/> 
+	      $ Pr(Y=1) = { left( \frac{1}{2} \right) }^1 { left( \frac{1}{2} \right) }^6 $ <br/> 
 	      $ Pr(Y=1) = \frac{1}{2^7} $
 	<li> Let's determine $ Pr(X=1 \cap Y=1) $ <br/> 
 	      If we get exactly 1 heads, then the remaining 6 coins must be tails <br/> 

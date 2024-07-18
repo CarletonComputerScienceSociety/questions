@@ -6,7 +6,7 @@ Then we choose 1 of the remaining 3 positions to place the $G$: $ \binom{3}{1} =
 Then we choose 1 of the remaining 2 positions to place the $E$: $ \binom{2}{1} = 2$ <br/> 
 Then we choose 1 of the remaining 1 positions to place the $R$: $ \binom{1}{1} = 1$ <br/> 
 $ |S| = 6 \cdot \binom{5}{2} \cdot 3 \cdot 2 \cdot 1$
-	<li> Let $ overline{A} $ represent the set of all strings where the substring $OO$ is present <br/> 
+	<li> Let $ \overline{A} $ represent the set of all strings where the substring $OO$ is present <br/> 
 First, we group the O's together and treat them as one entity, meaning we have 5 entities to arrange <br/> 
 We choose 1 of the 5 positions to place the $B$: $ \binom{5}{1} = 5 $ <br/> 
 Then we choose 1 of the remaining 4 positions to place the $G$: $ \binom{4}{1} = 4 $ <br/> 
