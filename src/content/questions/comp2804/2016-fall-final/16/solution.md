@@ -7,7 +7,7 @@ $ Pr(S) = \frac{365^n}{365^n} = 1 $
 	      B is the set of all outcomes where no students have their birthday on December 14 
 	      The first student has 364 possible birthdays 
 	      The second student has 364 possible birthdays 
-	      ldots 
+	      ... 
 	      The nth student has 364 possible birthdays 
 	      $ |B| = 364^n $ 
 	      $ Pr(B) = \frac{364^n}{365^n} $

@@ -1,6 +1,6 @@
-(The positions are numbered $ 1, 2, ldots, 3n-1) $.
+(The positions are numbered $ 1, 2, ..., 3n-1) $.
 Since the $ n^{th} $ position is 0, the $ {n-1}^{th} $ and $ {n+1}^{th} $ positions must be 1.
-It would look something like: X,X,ldots,1,0,1,ldots,1,ldots,X,X
+It would look something like: X,X,...,1,0,1,...,1,...,X,X
 
 <ul>
 	<li> To the left of the first fixed 1, there are $ n - 2 $ bits that can be a, b, or c: $ f_{(n-2)+2} $ valid combinations

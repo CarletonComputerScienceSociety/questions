@@ -8,7 +8,7 @@ Then, the probability that the third question we do is wrong is $(3/4)$
 
 We can write this as:
 
-$100 \cdot \frac{1}{4} \cdot \frac{3}{4} \cdot \frac{3}{4} \cdot ldots \cdot \frac{3}{4}$
+$100 \cdot \frac{1}{4} \cdot \frac{3}{4} \cdot \frac{3}{4} \cdot ... \cdot \frac{3}{4}$
 
 $=100 \cdot \frac{1}{4} \cdot \frac{3^{99}}{4^{99}}$
 

@@ -6,7 +6,7 @@ Let's just check some $ Pr(X=x \cap Y=y) = Pr(X=x) \cdot Pr(Y=y) $
 	<li> Let's find $ X = 5 $ 
 	      The first bit is 0: 1 
 	      The second bit is 0: 1 
-	      ldots 
+	      ... 
 	      The fifth bit is 0: 1 
 	      $ |X=5| = 1 $ 
 	      $ Pr(X=5) = \frac{1}{2^5} $

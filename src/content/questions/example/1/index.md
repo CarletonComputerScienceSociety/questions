@@ -58,7 +58,7 @@ $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$
 <p>\[
     \frac{1}{(\sqrt{\phi \sqrt{5}}-\phi) e^{\frac25 \pi}} =
       1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
-      {1+\frac{e^{-8\pi}} {1+\ldots} } } }
+      {1+\frac{e^{-8\pi}} {1+\...} } } }
 \]</p>
 
 <h2>A Rogers-Ramanujan Identity</h2>

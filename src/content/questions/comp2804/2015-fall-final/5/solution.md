@@ -6,8 +6,8 @@ The size of S is the number of people in the group: $ |S| = 30 $
 	<li> Let B be the event that a person has green eyes. 
 	      $ |B| = 20 $
 	<li> Let $ overline{A \cup B} $ be the event that a person is not blond and does not have green eyes. 
-	      $ |overline{A \cap B}| = 9 $ 
-	      $ |A \cup B| = |S| - |overline{A \cap B}| $ 
+	      $ |\overline{A \cap B}| = 9 $ 
+	      $ |A \cup B| = |S| - |\overline{A \cap B}| $ 
 	      $ |A \cup B| = 30 - 9 $ 
 	      $ |A \cup B| = 21 $
 	<li> Let $A \cap B$ be the event that a person is blond and has green eyes. 

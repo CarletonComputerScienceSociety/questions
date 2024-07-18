@@ -6,7 +6,7 @@ paragraph{Application to the Problem}
 
 <ul>
 <li> textbf{Residue Classes Modulo $ n $:} 
-Consider the integers modulo $ n $. There are $ n $ possible residue classes: $ 0, 1, 2, ldots, n-1 $.
+Consider the integers modulo $ n $. There are $ n $ possible residue classes: $ 0, 1, 2, ..., n-1 $.
 <li> textbf{Pigeonholes and Pigeons:}
 Each integer in the set $ S $ will fall into one of these $ n $ residue classes. If $ m $ integers are placed into these $ n $ residue classes, then by the Pigeonhole Principle, if $ m > n $, at least two integers must fall into the same residue class.
 <li> textbf{Difference Divisible by $ n $:}

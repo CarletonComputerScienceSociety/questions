@@ -8,4 +8,4 @@ When we rephrase this statement, we're saying half of the values from n to 2 are
 We can take the integer and its double and place it at the front
 This means there are possibly $ \frac{n}{2} $ pairs
 The remaining $n-2$ integers can be arranged in $ (n-2)! $ ways
-In total, there are $ \frac{n}{2} \cdot (n-2)! $ awesome permutations of the set ${1, 2, ldots, n}$.
+In total, there are $ \frac{n}{2} \cdot (n-2)! $ awesome permutations of the set ${1, 2, ..., n}$.
