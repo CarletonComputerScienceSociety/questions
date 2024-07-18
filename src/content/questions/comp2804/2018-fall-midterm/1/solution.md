@@ -2,10 +2,10 @@ To determine the number of ordered triples $ (A, B, C) $ such that $ A subseteq 
 Given $ S $ is a set with $ n $ elements, each element $ x in S $ must belong to one of the sets $ A $, $ B $, $ C $, or to none of these sets. These four choices for each element are:
 
 <ul>
-	<li> $ x in A $
-	<li> $ x in B $
-	<li> $ x in C $
-	<li> $ x notin A \cup B \cup C $
+    <li> $ x in A $
+    <li> $ x in B $
+    <li> $ x in C $
+    <li> $ x notin A \cup B \cup C $
 </ul>
 Since the elements of $ S $ are independently distributed among these four choices, each element has 4 options. Therefore, for each of the $ n $ elements, there are 4 independent choices. 
 $ 4 \cdot 4 \cdot 4 \cdot ... \cdot 4$ 

@@ -1,10 +1,10 @@
 Let's see some products
 
 <ul>
-<li> $ 0 \cdot 0 = 0 $
-	<li> $ 1 \cdot 0 = 0 $
-	<li> $ 0 \cdot 1 = 0 $
-	<li> $ 1 \cdot 1 = 1 $
+    <li> $ 0 \cdot 0 = 0 $
+    <li> $ 1 \cdot 0 = 0 $
+    <li> $ 0 \cdot 1 = 0 $
+    <li> $ 1 \cdot 1 = 1 $
 </ul>
 Let $k$ be the number of 1s in this bitstring. 
 There are n positions and the probability of getting a 1 is $ \frac{1}{4} $ 

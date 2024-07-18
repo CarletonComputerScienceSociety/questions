@@ -1,17 +1,17 @@
 <ul>
-	<li> A = set of subsets that contain x but not z <br/>
-	We can take for granted that one of the element has a fixed possibility of being x: 1 <br/>
-	Since $z$ can't be in this subset and $x$ is in this subset, we can create subsets from the remaining 35 elements. <br/>
-	$|A| = 2^{35} $
-	<li> B = set of subsets that contain y but not z <br/>
-	We can take for granted that one of the element has a fixed possibility of being y: 1 <br/>
-	Since $z$ can't be in this subset and $y$ is in this subset, we can create subsets from the remaining 35 elements. <br/>
-	$|B| = 2^{35} $
-	<li> Now, let's try to determine $ A \cap B $, which is, \enquote{subsets that have x and don't have z and have y and don't have z} <br/>
-	We can take for granted that one of the element has a fixed possibility of being x: 1 <br/>
-	We can take for granted that one of the element has a fixed possibility of being y: 1 <br/>
-	Since $z$ can't be in this subset and $x$ and $y$ are in this subset already, we can create subsets from the remaining 34 elements. <br/>
-	$|A \cap B| = 2^{34} $
+    <li> A = set of subsets that contain x but not z <br/>
+    We can take for granted that one of the element has a fixed possibility of being x: 1 <br/>
+    Since $z$ can't be in this subset and $x$ is in this subset, we can create subsets from the remaining 35 elements. <br/>
+    $|A| = 2^{35} $
+    <li> B = set of subsets that contain y but not z <br/>
+    We can take for granted that one of the element has a fixed possibility of being y: 1 <br/>
+    Since $z$ can't be in this subset and $y$ is in this subset, we can create subsets from the remaining 35 elements. <br/>
+    $|B| = 2^{35} $
+    <li> Now, let's try to determine $ A \cap B $, which is, \enquote{subsets that have x and don't have z and have y and don't have z} <br/>
+    We can take for granted that one of the element has a fixed possibility of being x: 1 <br/>
+    We can take for granted that one of the element has a fixed possibility of being y: 1 <br/>
+    Since $z$ can't be in this subset and $x$ and $y$ are in this subset already, we can create subsets from the remaining 34 elements. <br/>
+    $|A \cap B| = 2^{34} $
 </ul>
 $|A \cup B| = |A| + |B| - |A \cap B|$
 

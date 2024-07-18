@@ -1,12 +1,12 @@
 Let's count the number of times each letter appears in the word:
 
 <ul>
-<li> 3 P's
-<li> 4 O's
-<li> 2 E's
-<li> 2 R's
-<li> 1 C
-<li> 1 S
+    <li> 3 P's
+    <li> 4 O's
+    <li> 2 E's
+    <li> 2 R's
+    <li> 1 C
+    <li> 1 S
 </ul>
 We choose 4 of the 13 positions to place the O's: $ \binom{13}{4} $: $ \binom{13}{4} $ 
 We choose 3 of the remaining 9 positions to place the P's: $ \binom{9}{3} $: $ \binom{9}{3} $ 

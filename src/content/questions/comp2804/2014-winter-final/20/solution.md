@@ -1,8 +1,8 @@
 <ul>
-	<li> Let A be the event that the first coin comes up heads and you win \$1. <br/>
-	$ Pr(A) = \frac{1}{2} $
-	<li> Let B be the event that the second coin comes up heads and you win \$2. <br/>
-	$ Pr(B) = \frac{1}{2} $
+    <li> Let A be the event that the first coin comes up heads and you win \$1. <br/>
+    $ Pr(A) = \frac{1}{2} $
+    <li> Let B be the event that the second coin comes up heads and you win \$2. <br/>
+    $ Pr(B) = \frac{1}{2} $
 </ul>
 
 $ \mathbb{E}(X) = 1 \cdot Pr(A) + 2 \cdot Pr(B) $

@@ -1,8 +1,8 @@
 <ul>
-	<li> Let A be the event that we flip a head <br/>
-	$ Pr(A) = \frac{1}{2} $
-	<li> Let B be the event that we flip a tail <br/>
-	$ Pr(B) = \frac{1}{2} $
+    <li> Let A be the event that we flip a head <br/>
+    $ Pr(A) = \frac{1}{2} $
+    <li> Let B be the event that we flip a tail <br/>
+    $ Pr(B) = \frac{1}{2} $
 </ul>
 
 $ \mathbb{E}(X) = 2 \cdot \mathbb{E}(\text{number of heads}) - 3 \cdot \mathbb{E}(\text{number of tails}) $

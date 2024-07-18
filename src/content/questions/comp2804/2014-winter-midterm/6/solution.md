@@ -1,12 +1,12 @@
 <ul>
-	<li> Let A be the set of all bitstrings of length k that contain at least 1 <br/>
-	To do this question, we can think of it as \enquote{All bitstrings minus bitstrings that have exactly 0 1's} <br/>
-	The only way to have exactly 0 1's is to have all 0's <br/>
-	Thus, the number of bitstrings that have exactly 0 1's is 1 <br/>
-	$ |A| = 2^{k} - 1 $
-	<li> Let B be the set of all bitstrings of length n that contain exactly seven 0s <br/>
-	We choose 7 spots out of the n spots to place the 0s <br/>
-	$ |B| = \binom{n}{7} $
+    <li> Let A be the set of all bitstrings of length k that contain at least 1 <br/>
+    To do this question, we can think of it as \enquote{All bitstrings minus bitstrings that have exactly 0 1's} <br/>
+    The only way to have exactly 0 1's is to have all 0's <br/>
+    Thus, the number of bitstrings that have exactly 0 1's is 1 <br/>
+    $ |A| = 2^{k} - 1 $
+    <li> Let B be the set of all bitstrings of length n that contain exactly seven 0s <br/>
+    We choose 7 spots out of the n spots to place the 0s <br/>
+    $ |B| = \binom{n}{7} $
 </ul>
 
 Let's just see what happens when $n = 7$

@@ -1,7 +1,7 @@
 <ul>
-<li> Porterhouse Brewing Co. Oyster Stout,
-<li> Guinness Extra Stout,
-<li> Magners Original Irish Cider.
+    <li> Porterhouse Brewing Co. Oyster Stout,
+    <li> Guinness Extra Stout,
+    <li> Magners Original Irish Cider.
 </ul>
 There is an unlimited supply for each of these types. 
 There are 75 students at the party, and each of them gets one drink, which is chosen uniformly at random from these three types. 

@@ -25,18 +25,18 @@ begin{forest}
 end{forest}
 
 <ul>
-<li> Let's determine A <br/> 
-$ { (HHH), (HHT) } $ <br/> 
-$ |A| = 2 $ <br/> 
-$ Pr(A) = \frac{2}{8} $
-	<li> Let's determine B <br/> 
-	      $ { (HHH), (HHT), (HTH), (THH) } $ <br/> 
-	      $ |B| = 4 $ <br/> 
-	      $ Pr(B) = \frac{4}{8} $
-	<li> Let's determine $ A \cap B $ <br/> 
-	      $ { (HHH), (HHT) } $ <br/> 
-	      $ |A \cap B| = 2 $ <br/> 
-	      $ Pr(A \cap B) = \frac{2}{8} $
+    <li> Let's determine A <br/> 
+    $ { (HHH), (HHT) } $ <br/> 
+    $ |A| = 2 $ <br/> 
+    $ Pr(A) = \frac{2}{8} $
+    <li> Let's determine B <br/> 
+    $ { (HHH), (HHT), (HTH), (THH) } $ <br/> 
+    $ |B| = 4 $ <br/> 
+    $ Pr(B) = \frac{4}{8} $
+    <li> Let's determine $ A \cap B $ <br/> 
+    $ { (HHH), (HHT) } $ <br/> 
+    $ |A \cap B| = 2 $ <br/> 
+    $ Pr(A \cap B) = \frac{2}{8} $
 </ul>
 Now, let's check if A and B are independent 
 $ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
