@@ -21,16 +21,10 @@ const { path } = Astro.params;
 const { page } = Astro.props;
 const { Content } = await page.render();
 
-// load markdown solution
-// const isWindows = process.platform === "win32";
-// const isUnix = !isWindows;
-// let solutionString;
-// if (isUnix) {
-//   solutionString = `../../../content/questions/${page.data.solution}`;
-// } else {
-//   solutionString = `content/questions/${page.data.solution}`;
-// }
-let solutionString = decodeURIComponent(new URL(`../../../content/questions/${page.data.solution}`, import.meta.url).pathname);
+let solutionString = decodeURIComponent(
+  new URL(`../../../content/questions/${page.data.solution}`, import.meta.url)
+    .pathname,
+);
 const solutionFile = await import(solutionString);
 const SolutionComponent = solutionFile.default;
 ---
