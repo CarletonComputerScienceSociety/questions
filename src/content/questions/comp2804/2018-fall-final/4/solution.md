@@ -12,5 +12,7 @@
     Then, we choose the positions of the letters $a$ and $b$ for the remaining 68 positions: $ 2^{68} $ <br/> 
     $ |C| = \binom{70}{2} \cdot 2^{68} $
 </ul>
-$ |A \cup B \cup C| = |S| - |A| - |B| - |C| $ 
+
+$ |A \cup B \cup C| = |S| - |A| - |B| - |C| $
+
 $ |A \cup B \cup C| = 3^{70} - 2^{70} - 70 \cdot 2^{69} - \binom{70}{2} \cdot 2^{68} $

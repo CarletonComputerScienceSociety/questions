@@ -13,5 +13,7 @@
     The remaining 28 positions are for the letter $a$: 1 <br/> 
     $ |B \cap C| = \binom{70}{12} \cdot \binom{58}{30} $
 </ul>
-$ |B \cup C| = |B| + |C| - |B \cap C| $ 
+
+$ |B \cup C| = |B| + |C| - |B \cap C| $
+
 $ |B \cup C| = \binom{70}{30} \cdot 2^{40} + \binom{70}{12} \cdot 2^{58} - \binom{70}{12} \cdot \binom{58}{30} $
