@@ -6,6 +6,9 @@
     The remaining 8 each have 3 possible incorrect answers: $ 3^{8} $ <br/> 
     $ |A| = \binom{25}{17} \cdot 3^{8} $
 </ul>
-$ Pr(A) = \frac{|A|}{|S|} $ 
+
+$ Pr(A) = \frac{|A|}{|S|} $
+
 $ Pr(A) = \frac{\binom{25}{17} \cdot 3^{8}}{4^{25}} $
+
 $ Pr(A) = \binom{25}{17} \cdot {( \frac{3}{4})}^8 \cdot {( \frac{1}{4})}^{17} $

@@ -14,9 +14,15 @@
     $ |A \cap B| = 2 $ <br/> 
     $ Pr(A \cap B) = \frac{2}{10} = \frac{1}{5} $
 </ul>
-Avatar: The Last Airbender is pretty high tier 
-Let's check for independence 
-$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
-$ \frac{1}{5} = \frac{1}{2} \cdot \frac{1}{2} $ 
-$ \frac{1}{5} = \frac{1}{4} $ 
+
+Avatar: The Last Airbender is pretty high tier
+
+Let's check for independence
+
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $
+
+$ \frac{1}{5} = \frac{1}{2} \cdot \frac{1}{2} $
+
+$ \frac{1}{5} = \frac{1}{4} $
+
 The equation is not false; therefore, they're dependent

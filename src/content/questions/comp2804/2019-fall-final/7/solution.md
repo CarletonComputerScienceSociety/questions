@@ -1,6 +1,9 @@
 Yeah, so this is the dividers method. Let's define some stuff I guess
+
 Let $x_1, x_2, x_3, x_4, x_5, x_6, x_7$ be the number of bananas Nick eats on each day
+
 Now, $x_1 + x_2 + x_3 + x_4 + x_5 + x_6 + x_7 = 25$
+
 Assuming you have a sea of bananas, let's put dividers to split them off into different days
 
 <ul>

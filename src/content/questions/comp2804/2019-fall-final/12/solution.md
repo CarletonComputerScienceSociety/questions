@@ -19,8 +19,13 @@ I've been playing an MMO RPG called Orna recently. It uses GPS and forces me to 
     $ |A \cap B| = 1 $ <br/> 
     $ Pr(A \cap B) = \frac{1}{32} $
 </ul>
-Now, let's check whether it's independent 
-$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
-$ \frac{1}{32} = \frac{1}{4} \cdot \frac{1}{8} $ 
-$ \frac{1}{32} = \frac{1}{32} $ 
+
+Now, let's check whether it's independent
+
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $
+
+$ \frac{1}{32} = \frac{1}{4} \cdot \frac{1}{8} $
+
+$ \frac{1}{32} = \frac{1}{32} $
+
 BOOM. THE RESULTS SPEAK FOR THEMSELVES. HAPPY INDEPENDENCE DAY. MURICAAAA

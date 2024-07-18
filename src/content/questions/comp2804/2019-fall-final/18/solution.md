@@ -14,9 +14,15 @@
     $ |A \cap B| = 3 $ <br/> 
     $ Pr(A \cap B) = \frac{3}{10} $
 </ul>
-Caedrel is the best rat 
-Let's check for independence 
-$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
-$ \frac{3}{10} = \frac{1}{2} \cdot \frac{3}{5} $ 
-$ \frac{3}{10} = \frac{3}{10} $ 
+
+Caedrel is the best rat
+
+Let's check for independence
+
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $
+
+$ \frac{3}{10} = \frac{1}{2} \cdot \frac{3}{5} $
+
+$ \frac{3}{10} = \frac{3}{10} $
+
 Therefore, it is independent

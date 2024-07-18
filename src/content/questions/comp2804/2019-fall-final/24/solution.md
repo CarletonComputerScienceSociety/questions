@@ -19,11 +19,19 @@ Let $X_i$ be 1 if the students at positions $i$ and $2i$ are politically correct
     $ Pr (X_i=1 ) = \frac{ 1 }{ 1 } \cdot \frac{k \cdot (k-1) \cdot 1 }{n \cdot (n-1) } $ <br/> 
     $ Pr (X_i=1 ) = \frac{k \cdot (k-1) }{n \cdot (n-1) } $
 </ul>
-Well, $S_n$ corresponds to $S*{ \frac{n}{2} }$ 
-$S_{n-2}$ corresponds to $S_{ \frac{n}{2}-1}$ 
-$S_{n-4}$ corresponds to $S_{ \frac{n}{2}-2}$ 
-Half of everyone has a corresponding junior 
-$ E(X) = \sum*{i=1}^{n/2} Pr(X_i=1) $ 
-$ E(X) = \sum*{i=1}^{n/2} \frac{k \cdot (k-1) }{n \cdot (n-1) } $ 
-$ E(X) = \frac{k (k-1) }{n (n-1) } \cdot \frac{n}{2} $ 
+
+Well, $S_n$ corresponds to $S*{ \frac{n}{2} }$
+
+$S_{n-2}$ corresponds to $S_{ \frac{n}{2}-1}$
+
+$S_{n-4}$ corresponds to $S_{ \frac{n}{2}-2}$
+
+Half of everyone has a corresponding junior
+
+$ E(X) = \sum\*{i=1}^{n/2} Pr(X_i=1) $
+
+$ E(X) = \sum\*{i=1}^{n/2} \frac{k \cdot (k-1) }{n \cdot (n-1) } $
+
+$ E(X) = \frac{k (k-1) }{n (n-1) } \cdot \frac{n}{2} $
+
 IT'S OVER. THE PAIN. THE SUFFERING. THE NIGHTMARES.
