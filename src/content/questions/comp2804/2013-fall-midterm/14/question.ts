@@ -1,11 +1,11 @@
 import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGenerator";
 
 export const question: MultipleChoiceQuestion = {
-  body: "What does the summation $ sum_{k=7}^{n} \binom{k-1}{6} $ count?",
+  body: "What does the summation $ \\sum_{k=7}^{n} \\binom{k-1}{6} $ count?",
   options: [
-    { label: "${1, 2, 3, ..., n}$", correct: false },
-    { label: "${1, 2, 3, ..., n}$", correct: true },
-    { label: "${1, 2, 3, ..., n}$", correct: false },
+    { label: "The numbre of subsets of ${1, 2, 3, ..., n}$ having size 5", correct: false },
+    { label: "The numbre of subsets of ${1, 2, 3, ..., n}$ having size 6", correct: false },
+    { label: "The numbre of subsets of ${1, 2, 3, ..., n}$ having size 7", correct: true },
     { label: "None of the above.", correct: false },
   ],
 };

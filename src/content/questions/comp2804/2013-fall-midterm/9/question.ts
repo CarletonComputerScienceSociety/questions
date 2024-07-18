@@ -5,11 +5,11 @@ export const question: MultipleChoiceQuestion = {
   options: [
     {
       label: "$\\sum_{k=0}^{n} 5^{k}{{n}\\choose{k}} = 6^{n}$",
-      correct: false,
+      correct: true,
     },
     {
       label: "$\\sum_{k=0}^{n} 4^{n-k}5^{k}{{n}\\choose{k}} = 8^{n}$",
-      correct: true,
+      correct: false,
     },
     {
       label: "$\\sum_{k=0}^{n} 5^{k}{{n}\\choose{k}} = 5^{n}$",

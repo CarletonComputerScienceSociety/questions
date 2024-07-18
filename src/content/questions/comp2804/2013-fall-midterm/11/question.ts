@@ -11,8 +11,8 @@ export const question: MultipleChoiceQuestion = {
   body: body,
   options: [
     { label: "$f(n) = 2n^{2} + 6n + 14$", correct: false },
-    { label: "$f(n) = 2n^{2} - 6n + 14$", correct: true },
+    { label: "$f(n) = 2n^{2} - 6n + 14$", correct: false },
     { label: "$f(n) = 2n^{2} + 7n + 14$", correct: false },
-    { label: "$f(n) = 2n^{2} - 7n + 14$", correct: false },
+    { label: "$f(n) = 2n^{2} - 7n + 14$", correct: true },
   ],
 };
