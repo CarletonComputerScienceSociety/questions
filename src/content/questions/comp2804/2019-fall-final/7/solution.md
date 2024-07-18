@@ -12,6 +12,9 @@ Assuming you have a sea of bananas, let's put dividers to split them off into di
     <li> $x_6$ is the number of bananas between the fifth and sixth divider
     <li> $x_7$ is the number of bananas to the right of the sixth divider
 </ul>
-Now, we have 6 dividers and 25 bananas, so we have 31 objects in total 
+
+Now, we have 6 dividers and 25 bananas, so we have 31 objects in total
+
 Since each object has a position, we can just move the dividers around to change any x.
+
 We choose 6 spots out of the 31 to be dividers: $ \binom{31}{6} $

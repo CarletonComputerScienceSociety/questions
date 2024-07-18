@@ -14,6 +14,9 @@
     We choose any subset of the 50 cider bottles: $ 2^{50} $ <br/> 
     $ |C| = \binom{20}{2} \cdot 2^{50} = 190 \cdot 2^{50} $
 </ul>
-Now, we can determine the number of subsets that contain at least 3 beer bottles 
-$ |S| - |A| - |B| - |C| $ 
+
+Now, we can determine the number of subsets that contain at least 3 beer bottles
+
+$ |S| - |A| - |B| - |C| $
+
 $ = 2^{70} - 2^{50} - 20 \cdot 2^{50} -\binom{20}{2} \cdot 2^{50} $
