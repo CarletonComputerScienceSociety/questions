@@ -24,4 +24,5 @@ Okay, so let's break it down
     The thirtieth remaining bottle can be placed in the last remaining position: 1 <br/> 
     $ 30 \cdot 29 \cdot 28 \cdot 27 \cdot 26 \cdot 25 \cdot 24 \cdot 23 \cdot 22 \cdot 21 \cdot 20 \cdot 19 \cdot 18 \cdot 17 \cdot 16 \cdot 15 \cdot 14 \cdot 13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 30! $
 </ul>
+
 In total, there are $ \binom{20}{10} \cdot 10! \cdot \binom{30}{10} \cdot 10! \cdot 30! $ ways to arrange the bottles.

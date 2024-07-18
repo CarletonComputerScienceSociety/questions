@@ -18,8 +18,13 @@ Let's find the values
     $ Pr(A \cap B) = \frac{6}{2^{10}} $ <br/> 
     $ Pr(A \cap B) = \frac{3}{2^9} $
 </ul>
-Now, let's find $ Pr(A|B) $ 
-$ Pr(A|B) = \frac{Pr(A \cap B)}{Pr(B)} $ 
-$ Pr(A|B) = \frac{ \frac{3}{2^9}}{ \frac{1}{2^5}} $ 
-$ Pr(A|B) = \frac{3}{2^4} $ 
+
+Now, let's find $ Pr(A|B) $
+
+$ Pr(A|B) = \frac{Pr(A \cap B)}{Pr(B)} $
+
+$ Pr(A|B) = \frac{ \frac{3}{2^9}}{ \frac{1}{2^5}} $
+
+$ Pr(A|B) = \frac{3}{2^4} $
+
 $ Pr(A|B) = \frac{3}{16} $

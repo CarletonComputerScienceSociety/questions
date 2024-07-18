@@ -12,4 +12,5 @@
     Within those 15 positions, we choose 8 of them to be $a$'s: $ \binom{15}{8} $ <br/> 
     $ |A \cap B| = \binom{40}{15} \cdot \binom{15}{8} $
 </ul>
+
 In total, there are $ \binom{40}{8} \cdot 2^{32} + \binom{40}{7} \cdot 2^{33} - \binom{40}{15} \cdot \binom{15}{8} $ cool strings.

@@ -13,5 +13,7 @@ Well, let's break it down
     <li> Let S be the set of all bitstrings of length n <br/> 
     $ |S| = 2^n $
 </ul>
-$ Pr(A) = \frac{|A|}{|S|} $ 
+
+$ Pr(A) = \frac{|A|}{|S|} $
+
 $ Pr(A) = {\left( \frac{1}{2} \right)}^{n/2} $

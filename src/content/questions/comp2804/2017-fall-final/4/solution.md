@@ -13,6 +13,9 @@
     The remaining 38 positions can be filled with either $b$ or $c$: $ 2^{38} $ <br/> 
     $ |C| = \binom{40}{2} \cdot 2^{38} $
 </ul>
-Let D be the set of strings that contain at least three $a$'s 
-$ |D| = |S| - |A| - |B| - |C| $ 
+
+Let D be the set of strings that contain at least three $a$'s
+
+$ |D| = |S| - |A| - |B| - |C| $
+
 $ |D| = 3^{40} - 2^{40} - \binom{40}{1} \cdot 2^{39} - \binom{40}{2} \cdot 2^{38} $
