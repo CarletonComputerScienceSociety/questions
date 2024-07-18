@@ -15,6 +15,6 @@ $ 4 \cdot 4 \cdot 4 \cdot ... \cdot 4$
 
 Hence, the total number of ways to assign each of the $ n $ elements to either $ A $, $ B $, $ C $, or none of them is $ 4^n $.
 
-Thus, the total number of ordered triples $ (A, B, C) $ where $ A $, $ B $, and $ C $ are pairwise disjoint subsets of $ S $ is: [ 4^n ]
+Thus, the total number of ordered triples $ (A, B, C) $ where $ A $, $ B $, and $ C $ are pairwise disjoint subsets of $ S $ is: $ 4^n $
 
 So, the number of such ordered triples is $boxed{4^n}$.

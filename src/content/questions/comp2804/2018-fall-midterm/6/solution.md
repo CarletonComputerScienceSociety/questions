@@ -12,4 +12,4 @@ This is because we have only 25 pairs and choosing 26 elements will necessarily 
 
 Therefore, the minimum size of the subset $ S $ that ensures at least two elements sum to 51 is:
 
-[ boxed{26} ]
+$ boxed{26} $
