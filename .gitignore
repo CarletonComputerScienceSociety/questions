@@ -24,3 +24,5 @@ pnpm-debug.log*
 .idea/
 
 src/scripts/path
+
+public/images/comp2804

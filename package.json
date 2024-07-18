@@ -10,7 +10,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "check": "prettier --check '**/*.{css,scss,html,js,md,ts,tsx,astro,svelte}'",
-    "format": "prettier --write '**/*.{css,scss,html,js,md,ts,tsx,astro,svelte}'"
+    "format": "prettier --write '**/*.{css,scss,html,js,md,ts,tsx,astro,svelte}'",
+    "move-images": "node build/move-images.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
