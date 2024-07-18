@@ -1,6 +1,6 @@
 To determine the minimum value of $ m $ such that we can guarantee that a set $ S $ of $ m $ integers contains at least two elements whose difference is divisible by $ n $, we can use the Pigeonhole Principle.
 
-Let $ k geq 1 $ be an integer. If $ k+1 $ or more objects are placed into $ k $ boxes, then there is at least one box containing two or more objects.
+Let $ k \geq 1 $ be an integer. If $ k+1 $ or more objects are placed into $ k $ boxes, then there is at least one box containing two or more objects.
 
 <ul>
     <li> textbf{Residue Classes Modulo $ n $:} <br/> 

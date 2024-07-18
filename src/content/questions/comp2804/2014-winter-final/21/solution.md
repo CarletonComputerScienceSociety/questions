@@ -26,6 +26,6 @@ $ 0 = \frac{1}{3} \cdot \frac{1}{3} $
 
 $ 0 = \frac{1}{9} $
 
-$ 0 neq \frac{1}{9} $
+$ 0 \neq \frac{1}{9} $
 
 Therefore, $ G $ and $ B $ are not independent random variables.

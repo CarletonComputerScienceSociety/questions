@@ -15,4 +15,4 @@ $ |A| = 2^{7} - 1 = 127 $
 
 $ |B| = \binom{7}{7} = 1 $
 
-Now, we can say for certain that $2^{n} - 1 geq \binom{n}{7} $
+Now, we can say for certain that $2^{n} - 1 \geq \binom{n}{7} $

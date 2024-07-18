@@ -13,4 +13,4 @@ Adding these two cases together, we obtain the recurrence relation:
 
 $F(n,k) = F(n-1,k) + 2 \cdot F(n-1,k-1)$
 
-This holds for all integers $ n geq 2 $ and $ k $ with $ 1 leq k leq n - 1 $.
+This holds for all integers $ n \geq 2 $ and $ k $ with $ 1 \leq k \leq n - 1 $.

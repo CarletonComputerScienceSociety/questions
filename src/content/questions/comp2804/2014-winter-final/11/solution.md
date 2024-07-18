@@ -1,6 +1,6 @@
 1. **Base Case Analysis:** <br/>
    For $ n = 0 $ or $ n = 1 $, $ FIB(n) $ is called directly and returns $ n $. <br/>
-   For $ n geq 2 $, the algorithm makes recursive calls to $ FIB(n-1) $ and $ FIB(n-2) $.
+   For $ n \geq 2 $, the algorithm makes recursive calls to $ FIB(n-1) $ and $ FIB(n-2) $.
 
 2. **Recursive Call Analysis:**<br/>
    To find the number of times $ FIB(4) $ is called in $ FIB(n) $, we analyze the recursive structure of $ FIB $.<br/>

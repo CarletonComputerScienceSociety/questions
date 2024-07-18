@@ -1,4 +1,4 @@
-The difference in string $a-b$ is non-zero at each position only if $a_i$ is 1 and $b_i$ is 0 or $a_i$ is 0 and $b_i$ is 1, for all $1 leq i leq 77$
+The difference in string $a-b$ is non-zero at each position only if $a_i$ is 1 and $b_i$ is 0 or $a_i$ is 0 and $b_i$ is 1, for all $1 \leq i \leq 77$
 
 Let $X_i$ be 1 if $a_i$ and $b_i$ are different and 0 otherwise
 
