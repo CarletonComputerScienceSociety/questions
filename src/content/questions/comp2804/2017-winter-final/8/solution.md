@@ -4,10 +4,10 @@ That means we can just calculate the remaining possible bitstring combinations s
 
 $ 2^{n-3} $
 
-$ 1, S\*{n-1} $
+$ 1, S\_{n-1} $
 
-$ 0, 1, S\*{n-2} $
+$ 0, 1, S\_{n-2} $
 
-$ 0, 0, 1, S\*{n-3} $
+$ 0, 0, 1, S\_{n-3} $
 
-Adding them up, we get $ S_n = S*{n-1} + S*{n-2} + S\*{n-3} + 2^{n-3} $
+Adding them up, we get $ S_n = S\_{n-1} + S\_{n-2} + S\_{n-3} + 2^{n-3} $

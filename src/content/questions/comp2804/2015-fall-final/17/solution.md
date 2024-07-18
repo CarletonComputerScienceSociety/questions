@@ -10,7 +10,7 @@ The chances of getting 1 or 0 heads is $ \frac{3}{4} $
 
 $E(Z_i=1) = \frac{3}{4} $
 
-$ X = \sum*{i=1}^{365} 3 \cdot E(Y_i) + \sum*{i=1}^{365} 5 \cdot E(Z_i) $
+$ X = \sum\_{i=1}^{365} 3 \cdot E(Y_i) + \sum\_{i=1}^{365} 5 \cdot E(Z_i) $
 
 $ X = 3 \cdot 365 \cdot \frac{1}{4} + 5 \cdot 365 \cdot \frac{3}{4} $
 

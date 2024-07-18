@@ -6,9 +6,9 @@ $ Pr(X_i=1) = \frac{1}{4} $
 
 Now, we need to check how many edges in $E$ are in $E'$ based on the vertices in $V'$
 
-$ \mathbb{E}(X) = \sum\_{i=1}^{m} \mathbb{E}(X\*i) $
+$ \mathbb{E}(X) = \sum\_{i=1}^{m} \mathbb{E}(X_i) $
 
-$ \mathbb{E}(X) = \sum\_{i=1}^{m} Pr(X\*i=1) $
+$ \mathbb{E}(X) = \sum\_{i=1}^{m} Pr(X_i=1) $
 
 $ \mathbb{E}(X) = \sum\_{i=1}^{m} \frac{1}{4} $
 

@@ -1,6 +1,6 @@
-We need to choose 5 beer bottles from the set $ {B*1, B_2, ..., B*{13}} $
+We need to choose 5 beer bottles from the set $ {B_1, B_2, ..., B\_{13}} $
 
-There are $ \binom{13}{5} $ ways to choose 5 beer bottles from the set $ {B*1, B_2, ..., B*{13}} $
+There are $ \binom{13}{5} $ ways to choose 5 beer bottles from the set $ {B_1, B_2, ..., B\_{13}} $
 
 We can have 0 to 6 cider bottles in the subset $ X $
 

@@ -26,11 +26,11 @@ $ 1 \text{ if a student gets exactly 2 ciders} $
 
 $ 0 \text{ otherwise} $
 
-$ Pr(X\*i = 1) = Pr(A) = \frac{3^2 \cdot 5^2}{8^3}$
+$ Pr(X_i = 1) = Pr(A) = \frac{3^2 \cdot 5^2}{8^3}$
 
-$ \mathbb{E}(X) = \sum*{k=1}^{16} 1 \cdot Pr(X*i = 1) $
+$ \mathbb{E}(X) = \sum\_{k=1}^{16} 1 \cdot Pr(X_i = 1) $
 
-$ \mathbb{E}(X) = \sum\*{k=1}^{16} \frac{3^2 \cdot 5^2}{8^3} $
+$ \mathbb{E}(X) = \sum\_{k=1}^{16} \frac{3^2 \cdot 5^2}{8^3} $
 
 $ \mathbb{E}(X) = 16 \cdot \frac{3^2 \cdot 5^2}{8^3} $
 

@@ -7,7 +7,7 @@
 
 $ \mathbb{E}(X) = 2 \cdot \mathbb{E}(\text{number of heads}) - 3 \cdot \mathbb{E}(\text{number of tails}) $
 
-$ \mathbb{E}(X) = 2 \cdot \sum*{i=0}^{n} Pr(A) - 3 \cdot \sum*{i=0}^{n} Pr(B) $
+$ \mathbb{E}(X) = 2 \cdot \sum\_{i=0}^{n} Pr(A) - 3 \cdot \sum\_{i=0}^{n} Pr(B) $
 
 $ \mathbb{E}(X) = 2 \cdot n \cdot \frac{1}{2} - 3 \cdot n \cdot \frac{1}{2} $
 

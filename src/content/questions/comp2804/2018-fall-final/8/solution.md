@@ -10,4 +10,4 @@ We can choose to put 2 balls in the 2-ball basket or in the 4-ball basket
 
 Every time we use one of the baskets, we subtract by that number of balls
 
-$ S*n = S*{n-2} + S\_{n-4} $
+$ S_n = S\_{n-2} + S\_{n-4} $

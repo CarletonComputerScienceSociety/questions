@@ -10,8 +10,8 @@ It would look something like: X,X,...,1,0,1,...,1,...,X,X
     <li> To the right of the third fixed 1, there are $ n - 1 $ bits that can be a, b, or c: $ f_{(n-1)+2} $ valid combinations
 </ul>
 
-$ f*{n} \cdot f*{n} \cdot f\*{n+1} $
+$ f\_{n} \cdot f\_{n} \cdot f\_{n+1} $
 
-$ {(f*{n})}^2 \cdot f*{n+1} $
+$ {(f\_{n})}^2 \cdot f\_{n+1} $
 
-Thus, the number of 00-free bitstrings of length $ 3n-1 $ that have 0 at position $ n $ and 1 at position $ 2n $ is $ {(f\*{n})}^2 \cdot f\_{n+1} $.
+Thus, the number of 00-free bitstrings of length $ 3n-1 $ that have 0 at position $ n $ and 1 at position $ 2n $ is $ {(f\_{n})}^2 \cdot f\_{n+1} $.
