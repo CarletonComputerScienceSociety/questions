@@ -22,8 +22,13 @@ We'll take a slow and systematic approach to this question
     $ |A \cap B| = 1 $ <br/> 
     $ Pr(A \cap B) = \frac{1}{32} $
 </ul>
-Now, let's check whether it's independent 
-$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
-$ \frac{1}{32} = \frac{1}{8} \cdot \frac{13}{16} $ 
-$ \frac{1}{32} = \frac{13}{128} $ 
+
+Now, let's check whether it's independent
+
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $
+
+$ \frac{1}{32} = \frac{1}{8} \cdot \frac{13}{16} $
+
+$ \frac{1}{32} = \frac{13}{128} $
+
 Since the two sides are not equal, the events are not independent

@@ -17,7 +17,11 @@
     $ |A \cap B| = 15 $ <br/> 
     $ Pr(A \cap B) = \frac{15}{32} $
 </ul>
-$ Pr(A|B) = \frac{Pr(A \cap B)}{Pr(B)} $ 
-$ Pr(A|B) = \frac{ \frac{15}{32}}{ \frac{1}{2}} $ 
-$ Pr(A|B) = \frac{15}{32} \cdot 2 $ 
+
+$ Pr(A|B) = \frac{Pr(A \cap B)}{Pr(B)} $
+
+$ Pr(A|B) = \frac{ \frac{15}{32}}{ \frac{1}{2}} $
+
+$ Pr(A|B) = \frac{15}{32} \cdot 2 $
+
 $ Pr(A|B) = \frac{15}{16} $

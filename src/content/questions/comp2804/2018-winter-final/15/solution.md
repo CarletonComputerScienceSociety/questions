@@ -20,8 +20,13 @@ We'll take a slow and systematic approach to this question
     $ |A \cap B| = 1 \cdot 2 = 2 $ <br/> 
     $ Pr(A \cap B) = \frac{2}{16} = \frac{1}{8} $
 </ul>
-Now, let's check whether it's independent 
-$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
-$ \frac{1}{8} = \frac{1}{4} \cdot \frac{1}{4} $ 
-$ \frac{1}{8} = \frac{1}{16} $ 
+
+Now, let's check whether it's independent
+
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $
+
+$ \frac{1}{8} = \frac{1}{4} \cdot \frac{1}{4} $
+
+$ \frac{1}{8} = \frac{1}{16} $
+
 Since the two sides are not equal, the events are not independent

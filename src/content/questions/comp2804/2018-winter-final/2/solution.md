@@ -13,6 +13,9 @@
     First, choose 12 cider bottles out of the 50: $ \binom{50}{12} $ <br/> 
     $ |B \cap C| = \binom{20}{12} \cdot \binom{50}{12} $
 </ul>
-Now, we can find $ B \cup C $ 
-$ |B \cup C| = |B| + |C| - |B \cap C| $ 
+
+Now, we can find $ B \cup C $
+
+$ |B \cup C| = |B| + |C| - |B \cap C| $
+
 $ |B \cup C| = \binom{20}{12} \cdot 2^{50} + \binom{50}{12} \cdot 2^{20} - \binom{20}{12} \cdot \binom{50}{12} $

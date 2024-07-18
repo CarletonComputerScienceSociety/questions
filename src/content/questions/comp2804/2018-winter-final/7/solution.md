@@ -15,7 +15,11 @@
     Then we choose 1 of the remaining 1 positions to place the $OO$: $ \binom{1}{1} = 1 $ <br/> 
     $ |\overline{A}| = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 5! $
 </ul>
-Now, we can find the number of awesome strings 
-$|A| = |S| - |\overline{A}| $ 
-$|A| = (6 \cdot \binom{5}{2} \cdot 3 \cdot 2 \cdot 1) - 5!$ 
+
+Now, we can find the number of awesome strings
+
+$|A| = |S| - |\overline{A}| $
+
+$|A| = (6 \cdot \binom{5}{2} \cdot 3 \cdot 2 \cdot 1) - 5!$
+
 $|A| = (6 \cdot \binom{5}{2} \cdot 3 \cdot 2) - 5!$
