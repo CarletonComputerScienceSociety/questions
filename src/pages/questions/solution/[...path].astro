@@ -21,7 +21,7 @@ const { path } = Astro.params;
 const { page } = Astro.props;
 const { Content } = await page.render();
 
-let solutionString = decodeURIComponent(
+const solutionString = decodeURIComponent(
   new URL(`../../../content/questions/${page.data.solution}`, import.meta.url)
     .pathname,
 );
