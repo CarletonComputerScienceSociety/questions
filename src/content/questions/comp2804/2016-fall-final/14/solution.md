@@ -1,28 +1,6 @@
 For anything less than 5 flips, I honestly just draw a tree diagram to find the answer
-begin{forest}
-[
-[H
-[H
-[H]
-[T]
-]
-[T
-[H]
-[T]
-]
-]
-[T
-[H
-[H]
-[T]
-]
-[T
-[H]
-[T]
-]
-]
-]
-end{forest}
+
+![alt text](image.png)
 
 <ul>
     <li> Let's determine S <br/> 
@@ -40,8 +18,13 @@ end{forest}
     $ |A \cap B| = 2 $ <br/> 
     $ Pr(A \cap B) = \frac{2}{8} = \frac{1}{4} $
 </ul>
-Now, let's check if A and B are independent 
-$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $ 
-$ \frac{1}{4} = \frac{1}{2} \cdot \frac{3}{8} $ 
-$ \frac{1}{4} = \frac{3}{16} $ 
+
+Now, let's check if A and B are independent
+
+$ Pr(A \cap B) = Pr(A) \cdot Pr(B) $
+
+$ \frac{1}{4} = \frac{1}{2} \cdot \frac{3}{8} $
+
+$ \frac{1}{4} = \frac{3}{16} $
+
 Since the equation is false, A and B are not independent.

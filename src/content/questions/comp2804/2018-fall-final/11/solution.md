@@ -3,30 +3,7 @@ Okay, there are two ways to go about this
 <ul>
     <li> The first is to realize that the chance the coin comes up a certain face an odd or even number of times is straight up $ \frac{1}{2} $ <br/> 
     Screw drawing out the whole 5-level deep recursive tree. We can just draw out a 3-level deep tree <br/> 
-    begin{forest} <br/> 
-    [ <br/> 
-    [H <br/> 
-    [H <br/> 
-    [H] <br/> 
-    [T] <br/> 
-    ] <br/> 
-    [T <br/> 
-    [H] <br/> 
-    [T] <br/> 
-    ] <br/> 
-    ] <br/> 
-    [T <br/> 
-    [H <br/> 
-    [H] <br/> 
-    [T] <br/> 
-    ] <br/> 
-    [T[ <br/> 
-    H] <br/> 
-    [T] <br/> 
-    ] <br/> 
-    ] <br/> 
-    ] <br/> 
-    end{forest} <br/> 
+    ![alt text](image.png) <br/> 
     If you notice, our first flip gets us a head or a tail, which is a 50/50 chance. <br/> 
     The first flip doubles the possibilities <br/> 
     If after flipping a heads we flip a heads again, this creates an even number of tails BUT the probability is kept the same by the fact that another possibility is HT <br/> 
@@ -51,9 +28,9 @@ Okay, there are two ways to go about this
         The remaining 0 positions are for the tails: 1 <br/> 
         $ |C| = \binom{5}{5} $
     </ul>
-    $ Pr(\text{odd number of heads}) = Pr(A) + Pr(B) + Pr(C) $ 
-    $ Pr(\text{odd number of heads}) = \frac{ \binom{5}{1} + \binom{5}{3} + \binom{5}{5} }{32} $ 
-    $ Pr(\text{odd number of heads}) = \frac{5 + 10 + 1}{32} $ 
-    $ Pr(\text{odd number of heads}) = \frac{16}{32} $ 
+    $ Pr(\text{odd number of heads}) = Pr(A) + Pr(B) + Pr(C) $<br/>  
+    $ Pr(\text{odd number of heads}) = \frac{ \binom{5}{1} + \binom{5}{3} + \binom{5}{5} }{32} $ <br/> 
+    $ Pr(\text{odd number of heads}) = \frac{5 + 10 + 1}{32} $ <br/> 
+    $ Pr(\text{odd number of heads}) = \frac{16}{32} $ <br/> 
     $ Pr(\text{odd number of heads}) = \frac{1}{2} $
 </ul>
