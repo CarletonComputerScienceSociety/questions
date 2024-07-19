@@ -1,21 +1,33 @@
 Let's break this down into two cases.
 
-A = divisible by 4
+1. Determine A
 
-$ |A| = 25 $
+   A = divisible by 4
 
-B = divisible by 5
+   $A = \{ 4,8,12,...,96,100 \}$
 
-$ |B| = 20 $
+   $ |A| = 25 $
 
-$ |A \cap B| = 5 $
+2. Determine B
 
-$ |A \cup B| = |A| + |B| - |A \cap B| $
+   B = divisible by 5
 
-$ |A \cup B| = 25 + 20 - 5 $
+   $B = \{ 5,10,15,...,95,100 \}$
 
-$ |A \cup B| = 40 $
+   $ |B| = 20 $
 
-Pr($A \cup B$) = $ \frac{40}{100} $
+3. Determine the Intersection
 
-Pr($A \cup B$) = $ \frac{2}{5} $
+   $ |A \cap B| = 5 $
+
+4. Profit
+
+   $ |A \cup B| = |A| + |B| - |A \cap B| $
+
+   $ |A \cup B| = 25 + 20 - 5 $
+
+   $ |A \cup B| = 40 $
+
+   Pr($A \cup B$) = $ \frac{40}{100} $
+
+   Pr($A \cup B$) = $ \frac{2}{5} $

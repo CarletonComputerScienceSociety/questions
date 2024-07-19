@@ -1,4 +1,5 @@
 Let's calculate $ f(1) $
+
 $ f(1) = 14 + 4(0) - 5 = 9 $
 
 <ul>
@@ -12,4 +13,4 @@ $ f(1) = 14 + 4(0) - 5 = 9 $
     $ f(1) = 2(1)^2 - 7(1) + 14 = 9 $
 </ul>
 
-Thus, (d) is the most appropriate response
+Since only d) gives us the same output as the original function, we chilling with it fr fr
