@@ -1,9 +1,7 @@
 ---
 import Back from "@components/Back/Back.astro";
-import Button from "@components/Button/Button.astro";
 import Evaluation from "@components/Evaluation/Evaluation.astro";
 import MathJax from "@components/MathJax.svelte";
-import { question } from "@content/questions/comp2804/2013-winter-final/1/question";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
 
@@ -36,14 +34,6 @@ const generatedQuestion = klass.generateQuestion();
   </div>
 
   <Evaluation questions={[path]} generate={true} />
-
-  <!-- <div>
-    <Button onclick="window.location.reload()" label="Refresh" />
-    <a
-      href={`https://github.com/CarletonComputerScienceSociety/questions/blob/main/src/content/questions/${path}/generator.ts`}
-      ><Button label="Contribute" /></a
-    >
-  </div> -->
 
   <script>
     function handleClick() {
