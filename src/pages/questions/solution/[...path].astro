@@ -1,6 +1,7 @@
 ---
 import Back from "@components/Back/Back.astro";
 import Button from "@components/Button/Button.astro";
+import MultipleChoiceQuestion from "@components/MultipleChoiceQuestion/MultipleChoiceQuestion.astro";
 import MathJax from "@components/MathJax.svelte";
 import { dynamicImport } from "@utilities/index";
 import { getCollection } from "astro:content";
@@ -26,6 +27,19 @@ const solutionFile = await dynamicImport(
   import.meta.url,
 );
 const SolutionComponent = solutionFile.default;
+
+const loadQuestion = async () => {
+  // HACK: everything is multiple choice right now so this is ok...
+  if (page.data.type === "multiple-choice") {
+    const data = await dynamicImport(
+      `../../../content/questions/${page.data.path}/question.ts`,
+      import.meta.url,
+    );
+    return data.question;
+  }
+};
+
+const question = await loadQuestion();
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,6 +47,10 @@ const SolutionComponent = solutionFile.default;
     <div><Back href={`/questions/${path}`} label="Back" /></div>
   </div>
   <Content />
+  <div>
+    <h1>Solution</h1>
+    <MultipleChoiceQuestion question={question} interactive={false} />
+  </div>
   <br />
   <div class="Solution">
     <SolutionComponent />
