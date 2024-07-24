@@ -4,6 +4,7 @@ import { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGenerator"
 import { default as Question } from "@components/MultipleChoiceQuestion/MultipleChoiceQuestion.astro";
 import "./Evaluation.scss";
 import Button from "@components/Button/Button.astro";
+import { dynamicImport } from "@utilities/index";
 
 interface QuestionData {
   question: MultipleChoiceQuestion;
@@ -17,7 +18,7 @@ interface QuestionData {
 const loadedQuestions = await Promise.all(
   questions.map(async (question: any) => {
     const importString = `../../content/questions/${question}/index.md`;
-    const data = await import(importString);
+    const data = await dynamicImport(importString, import.meta.url);
     return data;
   }),
 );
@@ -45,7 +46,7 @@ await Promise.all(
     // if generate is true and a generator is present on the question, generate the question
     if (generate && question.frontmatter.generator) {
       const importString = `../../content/questions/${question.frontmatter.path}/generator`;
-      const module = await import(importString);
+      const module = await dynamicImport(importString, import.meta.url);
       const klass = new module.default();
       const generatedQuestion = klass.generateQuestion();
       const questionData: QuestionData = {
@@ -64,7 +65,7 @@ await Promise.all(
       multipleChoiceQuestionData.push(questionData);
     } else {
       const importString = `../../content/questions/${question.frontmatter.path}/question`;
-      const data = await import(importString);
+      const data = await dynamicImport(importString, import.meta.url);
 
       // shuffle since this is the hardcoded question
       const shuffledQuestion = {
