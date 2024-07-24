@@ -1,6 +1,6 @@
 For this question, we can draw a table to see the possible outcomes.
 
-![alt text](image.png)
+![image](/images/comp2804/2015-fall-midterm/16/image.png)
 
 A total of 7 can be obtained by 6 combinations: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)
 

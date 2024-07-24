@@ -1,6 +1,6 @@
 Let's draw a summation table, dear
 
-![alt text](image.png)
+![image](/images/comp2804/2019-fall-final/22/image.png)
 
 As can be seen, there are 6 ways to get a sum of 7: $ { (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) } $
 

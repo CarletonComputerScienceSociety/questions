@@ -1,6 +1,6 @@
 For anything less than 5 flips, I honestly just draw a tree diagram to find the answer
 
-![alt text](image.png)
+![image](/images/comp2804/2016-fall-final/14/image.png)
 
 <ul>
     <li> Let's determine S <br/> 

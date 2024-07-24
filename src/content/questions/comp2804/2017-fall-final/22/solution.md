@@ -4,7 +4,7 @@ $k$ increments when the dice rolls are the same(no die is greater than the other
 
 No die is greater than the other when the dice rolls are the same
 
-![alt text](image.png)
+![image](/images/comp2804/2017-fall-final/22/image.png)
 
 The probability of returning k or having 2 different rolls is $ \frac{30}{36} $
 

@@ -1,6 +1,6 @@
 Draw out a tree
 
-![alt text](image.png)
+![image](/images/comp2804/2017-fall-final/15/image.png)
 
 <ul>
     <li> Let's determine A <br/> 

@@ -1,6 +1,6 @@
 I kind of brute forced a tree
 
-![alt text](image.png)
+![image](/images/comp2804/2017-fall-final/16/image.png)
 
 Now, let's determine some variables
 

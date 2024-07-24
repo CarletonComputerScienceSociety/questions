@@ -1,6 +1,6 @@
 Let's draw out a sum table
 
-![alt text](image.png)
+![image](/images/comp2804/2019-winter-final/23/image.png)
 
 We can see that sum of 7 occurs 6 times out of the 36 possible outcomes.
 

@@ -1,6 +1,6 @@
 1. Let's determine A
 
-   ![alt text](image.png)
+   ![image](/images/comp2804/2019-winter-final/16/image.png)
 
    As can be seen, A occurs 4 out of the 36 possible outcomes.
 

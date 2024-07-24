@@ -1,7 +1,7 @@
 <ul>
     <li> Let's determine $ B $ <br/> 
     What we care about is when we get an $a$ so let's map that out with a table <br/> 
-    ![alt text](image.png) <br/> 
+    <img src="/images/comp2804/2018-fall-final/13/image.png"/> <br/> 
     $ |B| = 11 $ <br/> 
     $ Pr(B) = \frac{11}{36} $
     <li> Let's determine $ A \cap B $ <br/> 

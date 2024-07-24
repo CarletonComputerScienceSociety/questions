@@ -4,7 +4,7 @@ Let A be the event that the product $c_i \cdot c_{i+1}$ is odd
 
 Let's draw a multiplication table, baby
 
-![alt text](image.png)
+![image](/images/comp2804/2019-fall-final/21/image.png)
 
 There are 3 odd products: 3, 6, 9
 

@@ -3,7 +3,7 @@ Okay, there are two ways to go about this
 <ul>
     <li> The first is to realize that the chance the coin comes up a certain face an odd or even number of times is straight up $ \frac{1}{2} $ <br/> 
     Screw drawing out the whole 5-level deep recursive tree. We can just draw out a 3-level deep tree <br/> 
-    ![alt text](image.png) <br/> 
+    <img src="/images/comp2804/2018-fall-final/11/image.png"/> <br/> 
     If you notice, our first flip gets us a head or a tail, which is a 50/50 chance. <br/> 
     The first flip doubles the possibilities <br/> 
     If after flipping a heads we flip a heads again, this creates an even number of tails BUT the probability is kept the same by the fact that another possibility is HT <br/> 
