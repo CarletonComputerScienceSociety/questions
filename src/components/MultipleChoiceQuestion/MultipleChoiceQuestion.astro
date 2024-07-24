@@ -2,11 +2,13 @@
 const { index, question, interactive } = Astro.props;
 import MultipleChoiceQuestionOption from "./MultipleChoiceQuestionOption.astro";
 import "./MultipleChoiceQuestion.scss";
+const numberString =
+  index !== null && index !== undefined ? `${(index + 1).toString()} .` : "";
 ---
 
 <div id={`MultipleChoiceQuestion-${index}`} class="MultipleChoiceQuestion">
   <div class="MultipleChoiceQuestion__body">
-    <div set:html={`${index + 1}. ${question.body}`} />
+    <div set:html={`${numberString} ${question.body}`} />
   </div>
   <div>
     {
