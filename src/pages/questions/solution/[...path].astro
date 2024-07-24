@@ -35,7 +35,9 @@ const SolutionComponent = solutionFile.default;
   </div>
   <Content />
   <br />
-  <SolutionComponent />
+  <div class="Solution">
+    <SolutionComponent />
+  </div>
   <br />
   <a
     style="margin-left: -0.4rem"
@@ -44,3 +46,19 @@ const SolutionComponent = solutionFile.default;
   >
   <MathJax client:load />
 </Layout>
+
+<style>
+  .Solution {
+    img {
+      max-width: 20rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .Solution {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+</style>
