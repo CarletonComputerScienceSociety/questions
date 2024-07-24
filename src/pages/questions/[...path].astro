@@ -2,9 +2,10 @@
 import MathJax from "@components/MathJax.svelte";
 import Back from "@components/Back/Back.astro";
 import Button from "@components/Button/Button.astro";
-
+import MultipleChoiceQuestion from "@components/MultipleChoiceQuestion/MultipleChoiceQuestion.astro";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
+import { dynamicImport } from "@utilities/index";
 
 export async function getStaticPaths() {
   const questions = await getCollection("questions");
@@ -34,6 +35,18 @@ function formatString(input: string) {
   return `${mainPart} - ${numberPart}`;
 }
 
+const loadQuestion = async () => {
+  // HACK: everything is multiple choice right now so this is ok...
+  if (page.data.type === "multiple-choice") {
+    const data = await dynamicImport(
+      `../../content/questions/${page.data.path}/question.ts`,
+      import.meta.url,
+    );
+    return data.question;
+  }
+};
+
+const question = await loadQuestion();
 const title = formatString(path);
 ---
 
@@ -43,6 +56,7 @@ const title = formatString(path);
   </div>
   <h1>{title}</h1>
   <Content />
+  <MultipleChoiceQuestion question={question} interactive={false} />
   <div class="Question__buttons">
     <a href={`/questions/solution/${path}`}
       ><Button
