@@ -20,12 +20,6 @@ export async function getStaticPaths() {
 
 const { path } = Astro.params;
 const { page } = Astro.props;
-
-const module = await import(
-  `../../../content/questions/${page.data.generator}`
-);
-const klass = new module.default();
-const generatedQuestion = klass.generateQuestion();
 ---
 
 <Layout title="Welcome to Astro.">
