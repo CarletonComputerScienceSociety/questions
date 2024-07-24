@@ -2,6 +2,7 @@
 import Back from "@components/Back/Back.astro";
 import Button from "@components/Button/Button.astro";
 import MathJax from "@components/MathJax.svelte";
+import { dynamicImport } from "../../../utilities";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
 
@@ -20,12 +21,10 @@ export async function getStaticPaths() {
 const { path } = Astro.params;
 const { page } = Astro.props;
 const { Content } = await page.render();
-
-const solutionString = decodeURIComponent(
-  new URL(`../../../content/questions/${page.data.solution}`, import.meta.url)
-    .pathname,
+const solutionFile = await dynamicImport(
+  `../../../content/questions/${page.data.solution}`,
+  import.meta.url,
 );
-const solutionFile = await import(solutionString);
 const SolutionComponent = solutionFile.default;
 ---
 
