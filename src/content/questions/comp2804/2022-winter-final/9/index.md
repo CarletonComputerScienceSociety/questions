@@ -8,4 +8,6 @@ solution: comp2804/2022-winter-final/9/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - Recursive Functions (4.1)
+  - Counting 00-Free Bitstrings (4.2.1)
 ---

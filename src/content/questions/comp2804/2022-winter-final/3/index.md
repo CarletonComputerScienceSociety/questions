@@ -8,4 +8,6 @@ solution: comp2804/2022-winter-final/3/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - Product Rule (3.1)
+  - Principle of Inclusion and Exclusion (3.5)
 ---

@@ -8,4 +8,5 @@ solution: comp2804/2022-winter-final/1/solution.md
 tags:
   - comp2804
   - comp2804-midterm
+  - Product Rule (3.1)
 ---
