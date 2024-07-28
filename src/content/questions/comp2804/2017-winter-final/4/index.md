@@ -7,7 +7,7 @@ question: comp2804/2017-winter-final/4/question.ts
 solution: comp2804/2017-winter-final/4/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - The Product Rule (3.1)
   - Counting Bitstrings of Length n (3.1.1)
 ---

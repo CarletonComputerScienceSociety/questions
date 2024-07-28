@@ -7,6 +7,6 @@ question: comp2804/2014-winter-final/13/question.ts
 solution: comp2804/2014-winter-final/13/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - The Birthday Paradox (5.5)
 ---

@@ -1,0 +1,50 @@
+De Morgan's Law (no corresponding chapter)
+comp2804
+comp2804-bitstrings
+comp2804-exam
+comp2804-midterm
+comp2804-newton-binomial-coefficients
+comp2804-permutations
+comp2804-pigeonhole-principle
+comp2804-probability
+comp2804-recursion
+The Product Rule (3.1)
+Counting Bitstrings of Length n (3.1.1)
+Counting Functions (3.1.2)
+Placing Books on Shelves (3.1.3)
+The Bijection Rule (3.2.1)
+The Complement Rule (3.3)
+The Sum Rule (3.4)
+The Principle of Inclusion and Exclusion (3.5)
+Permutations and Binomial Coefficients (3.6)
+Permutations and Binomial Coefficients (3.6.1)
+Newton's Binomial Theorem (3.6.2)
+Permutations and Binomial Coefficients (3.6.2)
+Combinatorial Proof (3.7)
+Reordering the Letters of a Word (3.9.1)
+Counting Solutions of Linear Equations (3.9.2)
+The Pigeonhole Principle (3.10)
+Recursive Functions (4.1)
+Fibonacci Numbers (4.2)
+Counting 00-Free Bitstrings (4.2.1)
+A Recursively Defined Set (4.3)
+Uniform Probability Spaces (4.4)
+Euclid's Algorithm (4.5)
+Discrete Probability (5)
+Basic Rules of Probability (5.3)
+The Probability of Getting a Full House (5.4.1)
+The Birthday Paradox (5.5)
+Conditional Probability (5.8)
+The Law of Total Probability (5.9)
+Independent Events (5.11)
+Rolling Two Dice (5.11.1)
+A Basic Property of Independent Events (5.11.2)
+Question (5.73)
+Random Variables and Expectation (6)
+Random Variables (6.1)
+Independent Random Variables (6.2)
+Expected Values (6.4)
+Linearity of Expectations (6.5)
+Determining the Expected Value (6.6.1)
+Determining the Expected Value (6.7.1)
+Indicator Random Variables (6.8)

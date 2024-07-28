@@ -7,7 +7,7 @@ question: comp2804/2017-fall-final/19/question.ts
 solution: comp2804/2017-fall-final/19/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - Uniform Probability Spaces (4.4)
   - Expected Values (6.4)
 ---

@@ -7,7 +7,7 @@ question: comp2804/2014-winter-final/18/question.ts
 solution: comp2804/2014-winter-final/18/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - The Product Rule (3.1)
   - The Complement Rule (3.3)
 ---

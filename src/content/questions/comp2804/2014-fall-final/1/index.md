@@ -7,7 +7,7 @@ question: comp2804/2014-fall-final/1/question.ts
 solution: comp2804/2014-fall-final/1/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - The Complement Rule (3.3)
   - The Sum Rule (3.4)
 ---

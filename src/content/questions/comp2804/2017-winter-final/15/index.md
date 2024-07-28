@@ -7,7 +7,7 @@ question: comp2804/2017-winter-final/15/question.ts
 solution: comp2804/2017-winter-final/15/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - Basic Rules of Probability (5.3)
   - The Principle of Inclusion and Exclusion (3.5)
 ---

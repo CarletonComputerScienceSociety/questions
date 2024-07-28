@@ -7,6 +7,6 @@ question: comp2804/2018-fall-final/5/question.ts
 solution: comp2804/2018-fall-final/5/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - Permutations and Binomial Coefficients (3.6.1)
 ---

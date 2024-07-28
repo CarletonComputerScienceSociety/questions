@@ -6,6 +6,6 @@ author: Michiel Smid
 question: comp2804/2015-winter-final/23/question.ts
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - Determining the Expected Value (6.6.1)
 ---

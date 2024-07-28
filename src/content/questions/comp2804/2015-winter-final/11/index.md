@@ -7,6 +7,6 @@ question: comp2804/2015-winter-final/11/question.ts
 solution: comp2804/2015-winter-final/11/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - Counting Solutions of Linear Equations (3.9.2)
 ---

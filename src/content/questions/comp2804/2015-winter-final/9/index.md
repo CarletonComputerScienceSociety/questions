@@ -7,6 +7,6 @@ question: comp2804/2015-winter-final/9/question.ts
 solution: comp2804/2015-winter-final/9/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - Recursive Functions (4.1)
 ---

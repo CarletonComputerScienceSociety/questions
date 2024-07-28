@@ -7,5 +7,5 @@ question: comp2804/2019-fall-final/5/question.ts
 solution: comp2804/2019-fall-final/5/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
 ---

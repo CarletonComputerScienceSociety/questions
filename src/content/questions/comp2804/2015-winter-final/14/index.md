@@ -7,7 +7,7 @@ question: comp2804/2015-winter-final/14/question.ts
 solution: comp2804/2015-winter-final/14/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - Permutations and Binomial Coefficients (3.6.1)
   - The Complement Rule (3.3)
 ---

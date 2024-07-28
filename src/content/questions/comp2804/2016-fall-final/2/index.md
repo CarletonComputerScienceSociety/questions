@@ -7,7 +7,7 @@ question: comp2804/2016-fall-final/2/question.ts
 solution: comp2804/2016-fall-final/2/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - The Product Rule (3.1)
   - Counting Functions (3.1.2)
 ---

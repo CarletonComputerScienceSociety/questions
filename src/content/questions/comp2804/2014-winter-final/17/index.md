@@ -7,7 +7,7 @@ question: comp2804/2014-winter-final/17/question.ts
 solution: comp2804/2014-winter-final/17/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - Independent Events (5.11)
   - Conditional Probability (5.8)
 ---

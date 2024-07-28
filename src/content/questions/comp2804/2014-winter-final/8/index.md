@@ -7,7 +7,7 @@ question: comp2804/2014-winter-final/8/question.ts
 solution: comp2804/2014-winter-final/8/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - Permutations and Binomial Coefficients (3.6.1)
   - The Product Rule (3.1)
 ---

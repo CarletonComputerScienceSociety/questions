@@ -7,7 +7,7 @@ question: comp2804/2018-fall-final/13/question.ts
 solution: comp2804/2018-fall-final/13/solution.md
 tags:
   - comp2804
-  - comp2804-exam
+  - comp2804-final
   - Rolling Two Dice (5.11.1)
   - Conditional Probability (5.8)
 ---
