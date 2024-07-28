@@ -4,10 +4,10 @@ const body = String.raw`
 Let $C_1$ be a fair coin that has $H$ on one side and $T$ on the other side. Let $C_2$ be a coin
 		that has $H$ on both sides. We choose one of $C_1$ and $C_2$ uniformly at random and flip it. Define
 		the events
-		[defs]
-		  A = "we choose $C_2$",
-		  B = "the flip resulted in $H$".
-		[/defs]
+		<ul>
+  <li> A = "we choose $C_2$",</li>
+  <li> B = "the flip resulted in $H$".</li>
+		</ul>
 		What is the conditional probability $\Pr(A|B)$?
 `;
 

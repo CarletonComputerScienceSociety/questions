@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 We flip a fair coin independently $n$ times. Define the random variable
-		[defs]
-		  X = the number of heads minus the number of tails in the sequence of $n$ flips.
-		[/defs]
+		<ul>
+  <li> X = the number of heads minus the number of tails in the sequence of $n$ flips.</li>
+		</ul>
 		What is the expected value of $X$?
 `;
 

@@ -16,9 +16,9 @@ The Carleton Computer Science Society is organizing their annual Halloween party
 		These students are arranged, uniformly at random, on a line.
 		<br/>
 		Define the event,
-		[defs]
-		  A = "Donald Trump is standing next to Kim Jong Un".
-		[/defs]
+		<ul>
+  <li> A = "Donald Trump is standing next to Kim Jong Un".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

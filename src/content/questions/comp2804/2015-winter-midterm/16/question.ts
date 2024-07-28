@@ -2,13 +2,13 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You flip a fair coin 11 times. Define the events
-		[defs]
-		  A = "the number of heads is odd"
-		[/defs]
+		<ul>
+  <li> A = "the number of heads is odd"</li>
+		</ul>
 		and
-		[defs]
-		  B = "the number of tails is even".
-		[/defs]
+		<ul>
+  <li> B = "the number of tails is even".</li>
+		</ul>
 		Which of the following is true?
 `;
 

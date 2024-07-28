@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 A bowl contains 5 red balls and 7 blue balls. We choose a uniformly random subset of 3 balls. Define the event
-		[defs]
-		  A = "exactly 2 of the chosen balls are red".
-		[/defs]
+		<ul>
+  <li> A = "exactly 2 of the chosen balls are red".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

@@ -3,13 +3,13 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 One of Lindsay and Simon is chosen uniformly at random. The person that is chosen wins \$100.
 		Define the random variables $L$ and $S$ as follows:
-		[defs]
-		  L = the amount that Lindsay wins
-		[/defs]
+		<ul>
+  <li> L = the amount that Lindsay wins</li>
+		</ul>
 		and
-		[defs]
-		  S = the amount that Simon wins.
-		[/defs]
+		<ul>
+  <li> S = the amount that Simon wins.</li>
+		</ul>
 		Which of the following is true?
 `;
 

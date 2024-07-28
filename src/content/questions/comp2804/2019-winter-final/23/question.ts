@@ -6,9 +6,9 @@ You are given a fair red die and a fair blue die. Consider the following experim
 		You repeat this experiment until the sum of the two rolls is equal to 7. <br>
 		Consider the random variable
 		
-		[defs]
-			X = the number of times you do the experiment.
-		[/defs]
+		<ul>
+  <li> X = the number of times you do the experiment.</li>
+		</ul>
 		
 		(This value $X$ includes the experiment in which the sum is 7 for the first time.) <br>
 		What is the expected value $\mathbb{E}(X)$ of the random variable $X$?

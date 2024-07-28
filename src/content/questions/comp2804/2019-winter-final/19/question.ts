@@ -19,11 +19,11 @@ A red box contains the numbers 0, 1, and 2; a blue box contains the numbers 0 an
 		</ul>
 		Consider the random variables
 		
-		[defs]
-		  X = the number $x$ you choose in Step 1,
-		  Y = the number $y$ you choose in Step 2,
-		  Z = $\max(X,Y).$
-		[/defs]
+		<ul>
+  <li> X = the number $x$ you choose in Step 1,</li>
+  <li> Y = the number $y$ you choose in Step 2,</li>
+  <li> Z = $\max(X,Y).$</li>
+		</ul>
 		
 		What is the expected value $\mathbb{E}(Z)$ of the random variable $Z$?
 `;

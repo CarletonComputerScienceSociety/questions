@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 Consider the following recursive function:
-		[defs]
-		  f(0) = $1$,
-		  f(n) = $\frac{5}{n} \cdot f(n - 1)\; \ \text{for all}$ $\mathrm{integers}\ n \geq 1$.
-		[/defs]
+		<ul>
+  <li> f(0) = $1$,</li>
+  <li> f(n) = $\frac{5}{n} \cdot f(n - 1)\; \ \text{for all}$ $\mathrm{integers}\ n \geq 1$.</li>
+		</ul>
 		Which of the following is true for all $n \geq 0$?
 `;
 

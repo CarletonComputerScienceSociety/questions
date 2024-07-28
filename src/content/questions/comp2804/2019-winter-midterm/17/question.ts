@@ -4,9 +4,9 @@ const body = String.raw`
 This midterm has 17 questions. For each question, four options are given, exactly one of which is
 		correct. Assume that you answer each question, by choosing one of the four options uniformly at random. <br>
 		Let A be the event
-		[defs]
-		  A = "you answer at least 16 questions correctly".
-		[/defs]
+		<ul>
+  <li> A = "you answer at least 16 questions correctly".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

@@ -9,9 +9,9 @@ After having proctored the midterm, Alexa, Farah, May, and Shelly decide to go t
 		there are $n$ houses whose owners do not hand out candy. <br>
 		
 		The ladies choose a uniformly random subset of 7 houses and visit these 7 houses. Define the event
-		[defs]
-		  A = "the ladies throw rotten eggs at exactly 2 of the 7 chosen houses".
-		[/defs]
+		<ul>
+  <li> A = "the ladies throw rotten eggs at exactly 2 of the 7 chosen houses".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

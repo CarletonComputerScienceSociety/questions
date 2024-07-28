@@ -29,9 +29,9 @@ You flip a fair red coin once, and you flip a fair blue coin once, independently
 		</table>
 		
 		and
-		[defs]
-		  Z = $\max(X,Y).$
-		[/defs]
+		<ul>
+  <li> Z = $\max(X,Y).$</li>
+		</ul>
 		What is the expected value $\mathbb{E}(Z)$ of the random variable $Z$?
 `;
 

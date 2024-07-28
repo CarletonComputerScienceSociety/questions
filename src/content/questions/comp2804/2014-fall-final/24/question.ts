@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 We flip a fair coin independently $n$ times. Define the random variable
-		[defs]
-		  X = twice the number of heads minus three times the number of tails.
-		[/defs]
+		<ul>
+  <li> X = twice the number of heads minus three times the number of tails.</li>
+		</ul>
 		What is the expected value of $X$?
 `;
 

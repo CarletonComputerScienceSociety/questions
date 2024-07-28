@@ -3,10 +3,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 You roll a fair red die and a fair blue die, independently of each other. Let $r$ be the result of
 		the red die and let $b$ be the result of the blue die. Define the events
-		[defs]
-		  A = "$r + b = 6$",
-		  B = "$b = 4$".
-		[/defs]
+		<ul>
+  <li> A = "$r + b = 6$",</li>
+  <li> B = "$b = 4$".</li>
+		</ul>
 		What is $\Pr(B|A)$?
 `;
 

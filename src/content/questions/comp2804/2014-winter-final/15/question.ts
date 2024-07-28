@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 We roll two fair and independent dice. Define the events
-		[defs]
-		  A = "at least one of the dice shows a 3",
-		  B = "the sum of the dice is 5".
-		[/defs]
+		<ul>
+  <li> A = "at least one of the dice shows a 3",</li>
+  <li> B = "the sum of the dice is 5".</li>
+		</ul>
 		What is the conditional probability $\Pr(A|B)$?
 `;
 

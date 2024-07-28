@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You are given a fair die and roll it 12 times. Define the event
-		[defs]
-		  A = "there are exactly two 6's in the sequence of 12 rolls".
-		[/defs]
+		<ul>
+  <li> A = "there are exactly two 6's in the sequence of 12 rolls".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

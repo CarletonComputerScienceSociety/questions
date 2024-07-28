@@ -4,13 +4,13 @@ const body = String.raw`
 Consider a bitstring of length 5, in which each bit is 0 with probability 1/2 (and, thus, 1 with
 		probability 1/2), independently of the other bits. Define the random variables $X$ and $Y$ as
 		follows:
-		[defs]
-		  X = the number of 0s in this bitstring
-		[/defs]
+		<ul>
+  <li> X = the number of 0s in this bitstring</li>
+		</ul>
 		and
-		[defs]
-		  Y = the value of the first bit in this bitstring.
-		[/defs]
+		<ul>
+  <li> Y = the value of the first bit in this bitstring.</li>
+		</ul>
 		Which of the following is true?
 `;
 

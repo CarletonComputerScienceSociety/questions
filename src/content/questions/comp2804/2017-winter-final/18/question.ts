@@ -3,11 +3,11 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 You roll a fair red die and a fair blue die, independently of each other. Define the random
 		variables
-		[defs]
-		  X = "the result of the red die",
-		  Y = "the result of the blue die",
-		  Z = $\min(X,Y)$.
-		[/defs]
+		<ul>
+  <li> X = "the result of the red die",</li>
+  <li> Y = "the result of the blue die",</li>
+  <li> Z = $\min(X,Y)$.</li>
+		</ul>
 		What is $\Pr(Z = 2)$?
 `;
 

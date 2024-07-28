@@ -3,10 +3,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 Let $n \geq 3$ be an integer. Consider a uniformly random permutation $a_1a_2 \dots a_n$ of the set
 		$\{1,2,\dots,n\}$. Define the events
-		[defs]
-		  A = "$a_n = n$",
-		  B = "$a_2 > a_1$".
-		[/defs]
+		<ul>
+  <li> A = "$a_n = n$",</li>
+  <li> B = "$a_2 > a_1$".</li>
+		</ul>
 		Which of the following is true?
 `;
 

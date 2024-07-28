@@ -4,10 +4,10 @@ const body = String.raw`
 We flip a fair coin three times; these flips are independent of each other. These three coin flips
 		give us a sequence of length three, where each symbol is $H$ or $T$. Define the events (recall that
 		0 is even):
-		[defs]
-		  A = "the number of $H$ in the sequence is even",
-		  B = "the sequence contains at least two consecutive $H$'s".
-		[/defs]
+		<ul>
+  <li> A = "the number of $H$ in the sequence is even",</li>
+  <li> B = "the sequence contains at least two consecutive $H$'s".</li>
+		</ul>
 		Which of the following is true?
 `;
 

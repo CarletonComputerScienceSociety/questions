@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You are given a uniformly random bitstring of length five. Define the events
-		[defs]
-		  A = "the bitstring contains at most four 1's",
-		  B = "the bitstring contians an odd number of 1's".
-		[/defs]
+		<ul>
+  <li> A = "the bitstring contains at most four 1's",</li>
+  <li> B = "the bitstring contians an odd number of 1's".</li>
+		</ul>
 		What is $\Pr(A|B)$?
 `;
 

@@ -4,13 +4,13 @@ const body = String.raw`
 When a couple has a child, this child is a boy with probability 1/2 and a girl with probability
 		1/2, independent of the gender of previous children. A couple stops having children as soon as
 		they have a child that has the same gender as their first child. Define the events
-		[defs]
-		  A = "the second child is a boy"
-		[/defs]
+		<ul>
+  <li> A = "the second child is a boy"</li>
+		</ul>
 		and
-		[defs]
-		  B = "the couple has at least three children and the third child is a boy".
-		[/defs]
+		<ul>
+  <li> B = "the couple has at least three children and the third child is a boy".</li>
+		</ul>
 		Which of the following is true?
 `;
 

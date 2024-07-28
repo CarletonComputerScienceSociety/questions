@@ -9,9 +9,9 @@ Let $n \geq 2$ be an integer. There are $n$ students $S_1,S_2,\dots,S_n$ writing
 		and, for each $i = 1, 2, ..., n$, gives backpack $b_i$ to student $S_i$. <br>
 		
 		Define the following random variable $X$:
-		[defs]
-		  X = the number of students who get their own backpack.
-		[/defs]
+		<ul>
+  <li> X = the number of students who get their own backpack.</li>
+		</ul>
 		What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
 		<em>Hint:</em> Use indicator random variables.
 `;

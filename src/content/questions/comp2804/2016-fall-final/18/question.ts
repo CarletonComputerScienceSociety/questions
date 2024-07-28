@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 Consider a uniformly random permutation of the set $\{1,2,\dots,77\}$. Define the event
-		[defs]
-		  A = "in the permutation, both 8 and 4 are to the left of 3".
-		[/defs]
+		<ul>
+  <li> A = "in the permutation, both 8 and 4 are to the left of 3".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

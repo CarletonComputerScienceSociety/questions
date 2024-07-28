@@ -3,9 +3,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 Let $V$ be a set consisting of 12 even integers and 8 odd integers. We choose a uniformly random
 		subset $W$ of $V$ having size 7. Define the event
-		[defs]
-		  A = "exactly 4 of the elements of $W$ are even".
-		[/defs]
+		<ul>
+  <li> A = "exactly 4 of the elements of $W$ are even".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

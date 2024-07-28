@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 Consider a standard 6-sided fair die. We roll this die 8 times. Let $A$ be the event
-		[defs]
-		  A = "there are at least two 5's in the sequence of 8 rolls".
-		[/defs]
+		<ul>
+  <li> A = "there are at least two 5's in the sequence of 8 rolls".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

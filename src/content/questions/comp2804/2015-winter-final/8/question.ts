@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 Consider the following recursive function:
-		[defs]
-		  f(0) = $7$,
-		  f(n) = $f(n - 1) + 6n - 3\; \ \text{for all}$ $\mathrm{integers}\ n \geq 1$.
-		[/defs]
+		<ul>
+  <li> f(0) = $7$,</li>
+  <li> f(n) = $f(n - 1) + 6n - 3\; \ \text{for all}$ $\mathrm{integers}\ n \geq 1$.</li>
+		</ul>
 		Which of the following is true??
 `;
 

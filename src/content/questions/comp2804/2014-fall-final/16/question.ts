@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 We choose an element $x$ uniformly at random from the set $\{1,2,3,\dots,10\}$. Define the events
-		[defs]
-		  A = "$x$ is even",
-		  B = "$x$ is divisible by 3".
-		[/defs]
+		<ul>
+  <li> A = "$x$ is even",</li>
+  <li> B = "$x$ is divisible by 3".</li>
+		</ul>
 		What is the conditional probability $\Pr(A|B)$?
 `;
 

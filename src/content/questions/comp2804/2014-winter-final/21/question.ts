@@ -4,13 +4,13 @@ const body = String.raw`
 When a couple has a child, this child is a boy with probability 1/2 and a girl with probability
 		1/2, independent of the gender of previous children. A couple stops having children as soon as
 		they have 2 girls or 2 boys. Define the random variables
-		[defs]
-		  G = the number of girls the couple has
-		[/defs]
+		<ul>
+  <li> G = the number of girls the couple has</li>
+		</ul>
 		and
-		[defs]
-		  B = the number of boys the couple has.
-		[/defs]
+		<ul>
+  <li> B = the number of boys the couple has.</li>
+		</ul>
 		Are $G$ and $B$ independent random variables?
 `;
 

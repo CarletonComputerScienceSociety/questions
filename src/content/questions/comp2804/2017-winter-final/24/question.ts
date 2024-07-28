@@ -9,9 +9,9 @@ Elisa Kazan has successfully completed her first term as President of the Carlet
 		
 		Elisa orders 7 ciders, one cider at a time. Let $(D_1,D_2,\dots,D_7)$ be the sequence of drinks
 		that Tan serves. Define the following random variable $X$:
-		[defs]
-		  X = the number of indices $i$ such that $D_i$ is a cider and $D_{i+1}$ is not a cider.
-		[/defs]
+		<ul>
+  <li> X = the number of indices $i$ such that $D_i$ is a cider and $D_{i+1}$ is not a cider.</li>
+		</ul>
 		What is the expected value $\mathbb{E}(X)$ of $X$?
 `;
 

@@ -19,9 +19,9 @@ You are given that:
 		</ul>
 		
 		Determine $\Pr(A)$, where $A$ is the event
-		[defs]
-		  A = "There is a quiz on Dania's birthday and there is a quiz on Nick's birthday".
-		[/defs]
+		<ul>
+  <li> A = "There is a quiz on Dania's birthday and there is a quiz on Nick's birthday".</li>
+		</ul>
 `;
 
 const label1 = String.raw`$1 - \left. {363 \choose 20} \middle/ {365 \choose 20} \right.$`;

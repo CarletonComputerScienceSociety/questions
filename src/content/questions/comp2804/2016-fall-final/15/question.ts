@@ -3,10 +3,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 We flip a fair coin three times; these flips are independent of each other. These three coin flips
 		give us a sequence of length three, where each symbol is $H$ or $T$. Define the events
-		[defs]
-		  A = "the sequence contains at most one $T$",
-		  B = "the symbols in the sequence are not all equal".
-		[/defs]
+		<ul>
+  <li> A = "the sequence contains at most one $T$",</li>
+  <li> B = "the symbols in the sequence are not all equal".</li>
+		</ul>
 		Which of the following is true?
 `;
 

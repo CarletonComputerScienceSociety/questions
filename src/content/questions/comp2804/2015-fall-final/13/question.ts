@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 Consider a uniformly random bitstring of length 5. Define the events
-		[defs]
-		  A = "the first three bits are 101 or 110",
-		  B = "the last three bits are 111".
-		[/defs]
+		<ul>
+  <li> A = "the first three bits are 101 or 110",</li>
+  <li> B = "the last three bits are 111".</li>
+		</ul>
 		Which of the following is true?
 `;
 

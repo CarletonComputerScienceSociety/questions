@@ -5,13 +5,13 @@ When a couple has a child, this child is a boy with probability 1/2 and a girl w
 		independent of the gender of the other children. A couple stops having children as soon as they have
 		2 girls or 2 boys. Consider the random variables
 		
-		[defs]
-		  G = the number of girls the couple has,
-		[/defs]
+		<ul>
+  <li> G = the number of girls the couple has,</li>
+		</ul>
 		and
-		[defs]
-		  B = the number of boys the couple has.
-		[/defs]
+		<ul>
+  <li> B = the number of boys the couple has.</li>
+		</ul>
 		
 		Which of the following is correct?
 `;

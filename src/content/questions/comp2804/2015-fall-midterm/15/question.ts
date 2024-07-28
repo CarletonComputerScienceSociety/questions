@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You flip a fair coin 7 times. Define the event
-		[defs]
-		  A = "the result of the first flip is equal to the result of the 7-th flip".
-		[/defs]
+		<ul>
+  <li> A = "the result of the first flip is equal to the result of the 7-th flip".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 
