@@ -17,11 +17,9 @@ Consider strings consisting of 40 characters, where each character is one of the
 		How many cool strings are there?
 `;
 
-const label1 = "${{40 choose 8} cdot 2^{32} + {40 choose 7} cdot 2^{33}}$";
-const label2 =
-  "${{40 choose 8} cdot 2^{32} + {40 choose 7} cdot 2^{33} - {40 choose 15} cdot {15 choose 8} cdot 2^{25}}$";
-const label3 =
-  "${{40 choose 8} cdot 2^{32} + {40 choose 7} cdot 2^{33} - {40 choose 15} cdot {15 choose 8}}$";
+const label1 = String.raw`$ {{40 \choose 8} \cdot 2^{32} + {40 \choose 7} \cdot 2^{33}}$ `;
+const label2 = String.raw`$ {{40 \choose 8} \cdot 2^{32} + {40 \choose 7} \cdot 2^{33} - {40 \choose 15} \cdot {15 \choose 8} \cdot 2^{25}} $`;
+const label3 = String.raw`$ {{40 \choose 8} \cdot 2^{32} + {40 \choose 7} \cdot 2^{33} - {40 \choose 15} \cdot {15 \choose 8}} $`;
 const label4 = "None of the above.";
 
 export const question: MultipleChoiceQuestion = {
