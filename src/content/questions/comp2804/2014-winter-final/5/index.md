@@ -8,5 +8,5 @@ solution: comp2804/2014-winter-final/5/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - A Recursively Defined Set (4.3)
+  - comp2804-a-recursively-defined-set-(4.3)
 ---

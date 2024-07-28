@@ -8,7 +8,7 @@ solution: comp2804/2018-winter-final/24/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Random Variables and Expectation (6)
-  - Expected Values (6.4)
-  - Indicator Random Variables (6.8)
+  - comp2804-random-variables-and-expectation-(6)
+  - comp2804-expected-values-(6.4)
+  - comp2804-indicator-random-variables-(6.8)
 ---

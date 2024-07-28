@@ -9,7 +9,7 @@ tags:
   - comp2804
   - comp2804-midterm
   - comp2804-pigeonhole-principle
-  - The Pigeonhole Principle (3.10)
+  - comp2804-the-pigeonhole-principle-(3.10)
 ---
 
 Consider a square with sides of length 3. Assume this square contains 10 points. Which of the following is true?

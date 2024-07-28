@@ -8,6 +8,6 @@ solution: comp2804/2017-winter-midterm/16/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Permutations and Binomial Coefficients (3.6.2)
-  - Uniform Probability Spaces (4.4)
+  - comp2804-permutations-and-binomial-coefficients-(3.6.2)
+  - comp2804-uniform-probability-spaces-(4.4)
 ---

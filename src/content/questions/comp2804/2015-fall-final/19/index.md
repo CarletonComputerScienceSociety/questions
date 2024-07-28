@@ -8,5 +8,5 @@ solution: comp2804/2015-fall-final/19/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Expected Values (6.4)
+  - comp2804-expected-values-(6.4)
 ---

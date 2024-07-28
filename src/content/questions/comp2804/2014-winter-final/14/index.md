@@ -8,6 +8,6 @@ solution: comp2804/2014-winter-final/14/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Basic Rules of Probability (5.3)
-  - The Sum Rule (3.4)
+  - comp2804-basic-rules-of-probability-(5.3)
+  - comp2804-the-sum-rule-(3.4)
 ---

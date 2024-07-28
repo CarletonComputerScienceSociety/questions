@@ -8,7 +8,7 @@ solution: comp2804/2022-winter-final/5/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - The Product Rule (3.1)
-  - The Sum Rule (3.4)
-  - Combinatorial Proof (3.7)
+  - comp2804-the-product-rule-(3.1)
+  - comp2804-the-sum-rule-(3.4)
+  - comp2804-combinatorial-proof-(3.7)
 ---

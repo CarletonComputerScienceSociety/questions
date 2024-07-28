@@ -8,5 +8,5 @@ solution: comp2804/2019-winter-midterm/2/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - The Complement Rule (3.3)
+  - comp2804-the-complement-rule-(3.3)
 ---

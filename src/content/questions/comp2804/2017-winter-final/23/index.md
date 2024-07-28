@@ -8,5 +8,5 @@ solution: comp2804/2017-winter-final/23/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Linearity of Expectations (6.5)
+  - comp2804-linearity-of-expectations-(6.5)
 ---

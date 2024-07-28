@@ -8,5 +8,5 @@ solution: comp2804/2016-fall-midterm/4/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Counting Bitstrings of Length n (3.1.1)
+  - comp2804-counting-bitstrings-of-length-n-(3.1.1)
 ---

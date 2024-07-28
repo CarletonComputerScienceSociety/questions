@@ -7,5 +7,5 @@ question: comp2804/2013-fall-midterm/10/question.ts
 solution: comp2804/2013-fall-midterm/10/solution.md
 tags:
   - comp2804
-  - Reordering the Letters of a Word (3.9.1)
+  - comp2804-reordering-the-letters-of-a-word-(3.9.1)
 ---

@@ -8,5 +8,5 @@ solution: comp2804/2018-fall-midterm/11/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Counting 00-Free Bitstrings (4.2.1)
+  - comp2804-counting-00-free-bitstrings-(4.2.1)
 ---

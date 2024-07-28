@@ -8,5 +8,5 @@ solution: comp2804/2014-winter-midterm/8/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Counting Solutions of Linear Equations (3.9.2)
+  - comp2804-counting-solutions-of-linear-equations-(3.9.2)
 ---

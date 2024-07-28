@@ -8,6 +8,6 @@ solution: comp2804/2014-fall-final/5/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - The Principle of Inclusion and Exclusion (3.5)
-  - De Morgan's Law (no corresponding chapter)
+  - comp2804-the-principle-of-inclusion-and-exclusion-(3.5)
+  - comp2804-de-morgan's-law-(no-corresponding-chapter)
 ---

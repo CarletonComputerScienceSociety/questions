@@ -8,6 +8,6 @@ solution: comp2804/2018-fall-final/13/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Rolling Two Dice (5.11.1)
-  - Conditional Probability (5.8)
+  - comp2804-rolling-two-dice-(5.11.1)
+  - comp2804-conditional-probability-(5.8)
 ---

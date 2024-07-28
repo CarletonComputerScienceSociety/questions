@@ -8,6 +8,6 @@ solution: comp2804/2022-winter-final/24/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Random Variables and Expectation (6)
-  - Indicator Random Variables (6.8)
+  - comp2804-random-variables-and-expectation-(6)
+  - comp2804-indicator-random-variables-(6.8)
 ---

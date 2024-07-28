@@ -8,6 +8,6 @@ solution: comp2804/2014-fall-final/12/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - The Birthday Paradox (5.5)
-  - The Law of Total Probability (5.9)
+  - comp2804-the-birthday-paradox-(5.5)
+  - comp2804-the-law-of-total-probability-(5.9)
 ---

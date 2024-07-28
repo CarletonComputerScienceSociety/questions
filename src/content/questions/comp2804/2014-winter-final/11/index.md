@@ -8,5 +8,5 @@ solution: comp2804/2014-winter-final/11/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Fibonacci Numbers (4.2)
+  - comp2804-fibonacci-numbers-(4.2)
 ---

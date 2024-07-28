@@ -8,6 +8,6 @@ solution: comp2804/2017-fall-final/16/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Uniform Probability Spaces (4.4)
-  - Independent Events (5.11)
+  - comp2804-uniform-probability-spaces-(4.4)
+  - comp2804-independent-events-(5.11)
 ---

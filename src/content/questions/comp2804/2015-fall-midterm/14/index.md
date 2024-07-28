@@ -8,5 +8,5 @@ solution: comp2804/2015-fall-midterm/14/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Basic Rules of Probability (5.3)
+  - comp2804-basic-rules-of-probability-(5.3)
 ---

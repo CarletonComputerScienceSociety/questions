@@ -8,7 +8,7 @@ solution: comp2804/2018-fall-final/1/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Permutations and Binomial Coefficients (3.6.1)
-  - Counting Bitstrings of Length n (3.1.1)
-  - The Product Rule (3.1)
+  - comp2804-permutations-and-binomial-coefficients-(3.6.1)
+  - comp2804-counting-bitstrings-of-length-n-(3.1.1)
+  - comp2804-the-product-rule-(3.1)
 ---

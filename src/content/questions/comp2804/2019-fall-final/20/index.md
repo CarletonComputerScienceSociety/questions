@@ -8,6 +8,6 @@ solution: comp2804/2019-fall-final/20/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Basic Rules of Probability (5.3)
-  - Expected Values (6.4)
+  - comp2804-basic-rules-of-probability-(5.3)
+  - comp2804-expected-values-(6.4)
 ---

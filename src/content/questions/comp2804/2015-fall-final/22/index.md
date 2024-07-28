@@ -8,5 +8,5 @@ solution: comp2804/2015-fall-final/22/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Indicator Random Variables (6.8)
+  - comp2804-indicator-random-variables-(6.8)
 ---

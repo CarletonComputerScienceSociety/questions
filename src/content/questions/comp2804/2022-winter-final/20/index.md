@@ -8,8 +8,8 @@ solution: comp2804/2022-winter-final/20/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Random Variables and Expectation (6)
-  - Random Variables (6.1)
-  - Expected Values (6.4)
-  - Linearity of Expectations (6.5)
+  - comp2804-random-variables-and-expectation-(6)
+  - comp2804-random-variables-(6.1)
+  - comp2804-expected-values-(6.4)
+  - comp2804-linearity-of-expectations-(6.5)
 ---

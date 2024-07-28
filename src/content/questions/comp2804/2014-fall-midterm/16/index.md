@@ -9,7 +9,7 @@ tags:
   - comp2804
   - comp2804-midterm
   - comp2804-probability
-  - Basic Rules of Probability (5.3)
+  - comp2804-basic-rules-of-probability-(5.3)
 ---
 
 Consider 10 boxes and 10 balls. We throw each ball, uniformly, in a random box. What is the probability that, after we have thrown all 10 balls, none of the 10 boxes is empty?

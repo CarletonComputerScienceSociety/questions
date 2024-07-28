@@ -8,6 +8,6 @@ solution: comp2804/2019-winter-midterm/15/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - The Product Rule (3.1)
-  - Uniform Probability Spaces (4.4)
+  - comp2804-the-product-rule-(3.1)
+  - comp2804-uniform-probability-spaces-(4.4)
 ---

@@ -8,7 +8,7 @@ solution: comp2804/2017-fall-final/3/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Permutations and Binomial Coefficients (3.6.1)
-  - The Product Rule (3.1)
-  - The Principle of Inclusion and Exclusion (3.5)
+  - comp2804-permutations-and-binomial-coefficients-(3.6.1)
+  - comp2804-the-product-rule-(3.1)
+  - comp2804-the-principle-of-inclusion-and-exclusion-(3.5)
 ---

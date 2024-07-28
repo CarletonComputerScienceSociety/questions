@@ -8,5 +8,5 @@ solution: comp2804/2017-winter-midterm/10/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Reordering the Letters of a Word (3.9.1)
+  - comp2804-reordering-the-letters-of-a-word-(3.9.1)
 ---

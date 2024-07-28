@@ -8,6 +8,6 @@ solution: comp2804/2015-fall-final/1/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Permutations and Binomial Coefficients (3.6.1)
-  - The Sum Rule (3.4)
+  - comp2804-permutations-and-binomial-coefficients-(3.6.1)
+  - comp2804-the-sum-rule-(3.4)
 ---

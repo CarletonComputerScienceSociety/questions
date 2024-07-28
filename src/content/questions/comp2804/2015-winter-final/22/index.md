@@ -8,5 +8,5 @@ solution: comp2804/2015-winter-final/22/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Expected Values (6.4)
+  - comp2804-expected-values-(6.4)
 ---

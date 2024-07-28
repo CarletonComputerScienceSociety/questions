@@ -9,7 +9,7 @@ tags:
   - comp2804
   - comp2804-midterm
   - comp2804-recursion
-  - Recursive Functions (4.1)
+  - comp2804-recursive-functions-(4.1)
 ---
 
 Let $m \geq 1$ and $n \geq 1$ be integers. Consider a rectangle whose horizontal side has length $m$ and whose vertical side has length $n$. A path from the bottom-left corner to the top-right corner is called <em>valid</em>, if in each step, it either goes one unit to the right or one unit upwards. <br>

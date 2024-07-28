@@ -8,5 +8,5 @@ solution: comp2804/2017-fall-midterm/3/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Counting Functions (3.1.2)
+  - comp2804-counting-functions-(3.1.2)
 ---

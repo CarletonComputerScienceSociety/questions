@@ -9,8 +9,8 @@ tags:
   - comp2804
   - comp2804-midterm
   - comp2804-permutations
-  - The Product Rule (3.1)
-  - Placing Books on Shelves (3.1.3)
+  - comp2804-the-product-rule-(3.1)
+  - comp2804-placing-books-on-shelves-(3.1.3)
 ---
 
 Consider 12 boys, 17 girls, and 25 dogs. How many ways are there to arrange them on a line if

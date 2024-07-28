@@ -8,5 +8,5 @@ solution: comp2804/2019-fall-final/16/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Conditional Probability (5.8)
+  - comp2804-conditional-probability-(5.8)
 ---

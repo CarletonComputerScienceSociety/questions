@@ -8,6 +8,6 @@ solution: comp2804/2022-winter-final/23/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Random Variables and Expectation (6)
-  - Expected Values (6.4)
+  - comp2804-random-variables-and-expectation-(6)
+  - comp2804-expected-values-(6.4)
 ---

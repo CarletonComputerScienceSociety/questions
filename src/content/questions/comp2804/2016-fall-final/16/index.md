@@ -8,5 +8,5 @@ solution: comp2804/2016-fall-final/16/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - The Birthday Paradox (5.5)
+  - comp2804-the-birthday-paradox-(5.5)
 ---

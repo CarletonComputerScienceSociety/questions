@@ -8,6 +8,6 @@ solution: comp2804/2017-winter-final/17/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Discrete Probability (5)
-  - Question (5.73)
+  - comp2804-discrete-probability-(5)
+  - comp2804-question-(5.73)
 ---

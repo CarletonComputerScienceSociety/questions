@@ -8,5 +8,5 @@ solution: comp2804/2014-fall-final/18/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Independent Events (5.11)
+  - comp2804-independent-events-(5.11)
 ---

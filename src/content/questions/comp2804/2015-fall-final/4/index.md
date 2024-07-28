@@ -8,5 +8,5 @@ solution: comp2804/2015-fall-final/4/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - Newton's Binomial Theorem (3.6.2)
+  - comp2804-newton's-binomial-theorem-(3.6.2)
 ---
