@@ -4,14 +4,12 @@ const body = String.raw`
 In the game of <em>Hearthstone</em>, you are given a deck of 18 distinct cards. One of the cards is the <em>Raven Idol</em>.
 		You choose a uniformly random hand of 3 cards. Define the event
 		
-    (see document for missing code)
+    <ul>
+      <li> A = the hand of 3 cards contains the Raven Idol $</li>
+    </ul>
 		
 		What is $\Pr(A)$?
 `;
-
-// <ul>
-  <li> //   A = $\text{``}$the hand of 3 cards contains the <em>Raven Idol</em>$\,\text{''}.$</li>
-// </ul>
 
 const label1 = String.raw`3/17`;
 const label2 = String.raw`3/18`;
