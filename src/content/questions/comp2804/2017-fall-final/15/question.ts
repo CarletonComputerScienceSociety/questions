@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You flip a fair coin three times; these three flips are independent. Define the events
-		[defs]
-		  A = "the first two flips both result in heads",
-		  B = "there are at least two heads in the sequence of three flips".
-		[/defs]
+		<ul>
+  <li> A = "the first two flips both result in heads",</li>
+  <li> B = "there are at least two heads in the sequence of three flips".</li>
+		</ul>
 		Which of the following is true?
 `;
 

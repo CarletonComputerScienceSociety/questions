@@ -5,9 +5,9 @@ Alexa, Tri, and Zoltan each have a uniformly random birthday. (We ignore leap ye
 		year has 365 days.) <br>
 		
 		Define the event
-		[defs]
-		  A = "Alexa, Tri, and Zoltan have different birthdays".
-		[/defs]
+		<ul>
+  <li> A = "Alexa, Tri, and Zoltan have different birthdays".</li>
+		</ul>
 		What is $\text{Pr}(A)$?
 `;
 

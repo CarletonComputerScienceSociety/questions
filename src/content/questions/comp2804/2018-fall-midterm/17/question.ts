@@ -5,9 +5,9 @@ This midterm has 17 questions. For each question, four options are given. Assume
 		question, by choosing one of the four options uniformly at random. <br>
 		
 		Define the event
-		[defs]
-		  A = "you answer exactly 7 questions correctly".
-		[/defs]
+		<ul>
+  <li> A = "you answer exactly 7 questions correctly".</li>
+		</ul>
 		What $\Pr(A)$?
 `;
 

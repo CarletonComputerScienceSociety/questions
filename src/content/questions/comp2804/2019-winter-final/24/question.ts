@@ -14,9 +14,9 @@ Let $n \geq 2$ be an integer, and let $p$ and $q$ be real numbers with $0 < p < 
 		</ul>
 		Consider the random variable
 		
-		[defs]
-		  X = the number of assignments that are marked by both Alexa and Zoltan.
-		[/defs]
+		<ul>
+  <li> X = the number of assignments that are marked by both Alexa and Zoltan.</li>
+		</ul>
 		
 		What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
 		<em>Hint:</em> Use indicator random variables.

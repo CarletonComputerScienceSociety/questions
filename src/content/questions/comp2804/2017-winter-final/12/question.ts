@@ -3,10 +3,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 Let $X = \{1,2,3,\dots,10\}$. We choose, uniformly at random, a subset $Y$ of $X$, where $Y$ has
 		size 5. Define the events
-		[defs]
-		  A = "1 is an element of $Y$",
-		  B = "7 is an element of $Y$".
-		[/defs]
+		<ul>
+  <li> A = "1 is an element of $Y$",</li>
+  <li> B = "7 is an element of $Y$".</li>
+		</ul>
 		What is $\Pr(A|B)$?
 `;
 

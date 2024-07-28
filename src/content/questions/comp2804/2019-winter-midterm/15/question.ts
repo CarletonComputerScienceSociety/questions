@@ -17,9 +17,9 @@ The Carleton Computer Science Society (CCSS) is organizing their annual Saint Pa
 		There is an unlimited supply for each of these types. <br>
 		There are 75 students at the party, and each of them gets one drink, which is chosen uniformly at random from these three types. <br>
 		Let $A$ be the event
-		[defs]
-		  A = "exactly 50 students get Magners Original Irish Cider".
-		[/defs]
+		<ul>
+  <li> A = "exactly 50 students get Magners Original Irish Cider".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

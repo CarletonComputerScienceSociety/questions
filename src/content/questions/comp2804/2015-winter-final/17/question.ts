@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 Consider a uniformly random bitstring of length 5. Define the events
-		[defs]
-		  A = "the bitstring contains exactly two 0s",
-		  B = "the bitstring contains an even number of 0s".
-		[/defs]
+		<ul>
+  <li> A = "the bitstring contains exactly two 0s",</li>
+  <li> B = "the bitstring contains an even number of 0s".</li>
+		</ul>
 		(Note that zero is even.) What is the conditional probability $\Pr(A|B)$?
 `;
 

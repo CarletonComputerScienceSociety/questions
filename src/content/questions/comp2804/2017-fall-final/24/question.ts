@@ -29,9 +29,9 @@ Let $n$ and $k$ be integers such that $n$ is even, $n \geq 2$, and $1 \leq k \le
 		as $1,2,...,n$. <br>
 		
 		Define the following random variable $X$:
-		[defs]
-		  X = the number of positions $i$ with $1 \leq i \leq \left. n \middle/ 2 \right.$ such that both students at positions $i$ and $2i$ are politically correct.
-		[/defs]
+		<ul>
+  <li> X = the number of positions $i$ with $1 \leq i \leq \left. n \middle/ 2 \right.$ such that both students at positions $i$ and $2i$ are politically correct.</li>
+		</ul>
 		
 		What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
 		<em>Hint:</em> Use indicator random variables.

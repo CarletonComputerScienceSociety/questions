@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You flip a fair coin four times; these four flips are independent. Define the events
-		[defs]
-		  A = "the first two flips result (in this order) in $HT$",
-		  B = "the second and third flips result in $TT$".
-		[/defs]
+		<ul>
+  <li> A = "the first two flips result (in this order) in $HT$",</li>
+  <li> B = "the second and third flips result in $TT$".</li>
+		</ul>
 		Which of the following is correct?
 `;
 

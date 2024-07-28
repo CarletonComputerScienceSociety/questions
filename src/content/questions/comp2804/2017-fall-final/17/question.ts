@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 Let $X = \{1,2,\dots,100\}$. Let $Y$ be a uniformly random 7-element subset of $X$. Define the event
-		[defs]
-		  A = "the set $Y$ contains at least one even number".
-		[/defs]
+		<ul>
+  <li> A = "the set $Y$ contains at least one even number".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

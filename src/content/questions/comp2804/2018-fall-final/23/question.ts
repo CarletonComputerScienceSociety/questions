@@ -10,9 +10,9 @@ The final exam for COMP 2804 has 25 multiple-choice questions. For each question
 		each question; the choices are independent of each other. <br>
 		
 		Define the random variable
-		[defs]
-		  X = the number of marks that Jim recevies.
-		[/defs]
+		<ul>
+  <li> X = the number of marks that Jim recevies.</li>
+		</ul>
 		For what value of $z$ is the expected value $\mathbb{E}(X)$ equal to 0? <br>
 		
 		<em>Hint:</em> Use the Linearity of Expectation.

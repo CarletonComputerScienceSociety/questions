@@ -3,10 +3,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 A bowl contains 5 blue balls and 4 red balls. We choose 2 balls uniformly at random. Define the events
 		
-		[defs]
-		  A = "both balls are red",
-		  B = "both balls have the same color".
-		[/defs]
+		<ul>
+  <li> A = "both balls are red",</li>
+  <li> B = "both balls have the same color".</li>
+		</ul>
 		
 		What is the conditional probability $\Pr(A|B)$?
 `;

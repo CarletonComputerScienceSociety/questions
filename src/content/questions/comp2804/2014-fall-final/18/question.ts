@@ -2,13 +2,13 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 We choose an element $x$ uniformly at random from the set $\{1,2,3,\dots,10\}$. Define the events
-		[defs]
-		  A = "$x$ is even"
-		[/defs]
+		<ul>
+  <li> A = "$x$ is even"</li>
+		</ul>
 		and
-		[defs]
-		  B = "$1 \leq x \leq 6$".
-		[/defs]
+		<ul>
+  <li> B = "$1 \leq x \leq 6$".</li>
+		</ul>
 		Which of the following is true?
 `;
 

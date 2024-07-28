@@ -5,9 +5,9 @@ Let $n \geq 2$ be an integer. You are given $n$ beer bottles $B_1,B_2,...,B_n$ a
 		Consider a uniformly random permutation of these $n + 2$ bottles. The positions in this permutation are
 		numbered $1,2,...,n + 2$. Consider the random variable
 		
-		[defs]
-		  X = the position of the leftmost beer bottle.
-		[/defs]
+		<ul>
+  <li> X = the position of the leftmost beer bottle.</li>
+		</ul>
 		
 		What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
 `;

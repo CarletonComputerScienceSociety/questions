@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 Let $X = \{1,2,\dots,100\}$. We choose a uniformly random subset $Y$ of $X$ having size 17. Define the event
-		[defs]
-		  A = "$4 \in Y$ or $7 \in Y$".
-		[/defs]
+		<ul>
+  <li> A = "$4 \in Y$ or $7 \in Y$".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

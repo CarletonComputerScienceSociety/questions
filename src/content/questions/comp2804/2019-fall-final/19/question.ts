@@ -5,10 +5,10 @@ When a couple has a child, this child is a boy with probability 1/2 and a girl w
 		independent of the sex of previous children. A couple stops having children as soon as they have a child
 		that has the same sex as their first child. Define the events
 		
-		[defs]
-		  A = "the second child is a boy",
-		  B = "the couple has at least three children and the third child is a boy".
-		[/defs]
+		<ul>
+  <li> A = "the second child is a boy",</li>
+  <li> B = "the couple has at least three children and the third child is a boy".</li>
+		</ul>
 		
 		Which of the following is true?
 `;

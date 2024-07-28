@@ -3,9 +3,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 Let $n \geq 1$ be an integer.
 		Consider a uniformly random permutation of the set $\{1,2,3,\dots,2n\}$. Define the event
-		[defs]
-		  A = "both the first element and the last element in the permutation are even integers".
-		[/defs]
+		<ul>
+  <li> A = "both the first element and the last element in the permutation are even integers".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

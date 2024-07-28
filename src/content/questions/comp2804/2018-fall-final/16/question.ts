@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You flip a fair coin three times; these three flips are independent. Define the events
-		[defs]
-		  A = "the number of heads in these three flips is even",
-		  B = "the number of tails in these three flips is at most one".
-		[/defs]
+		<ul>
+  <li> A = "the number of heads in these three flips is even",</li>
+  <li> B = "the number of tails in these three flips is at most one".</li>
+		</ul>
 		(Remember that 0 is even.) Which of the following is correct?
 `;
 

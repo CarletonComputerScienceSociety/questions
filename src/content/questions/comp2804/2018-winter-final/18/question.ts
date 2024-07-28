@@ -29,9 +29,9 @@ You flip a fair red coin once, and you flip a fair blue coin once, independently
 		</table>
 		
 		and
-		[defs]
-		  Z = $\min(X,Y).$
-		[/defs]
+		<ul>
+  <li> Z = $\min(X,Y).$</li>
+		</ul>
 		What is the expected value $\mathbb{E}(Z)$ of the random variable $Z$?
 `;
 

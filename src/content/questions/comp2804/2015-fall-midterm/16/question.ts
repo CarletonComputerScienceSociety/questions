@@ -2,13 +2,13 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You roll a fair 6-sided die twice. Define the events
-		[defs]
-		  A = "the sum of the results of the two rolls is 7"
-		[/defs]
+		<ul>
+  <li> A = "the sum of the results of the two rolls is 7"</li>
+		</ul>
 		and
-		[defs]
-		  B = "the result of the first roll is 3".
-		[/defs]
+		<ul>
+  <li> B = "the result of the first roll is 3".</li>
+		</ul>
 		Which of the following is true?
 `;
 

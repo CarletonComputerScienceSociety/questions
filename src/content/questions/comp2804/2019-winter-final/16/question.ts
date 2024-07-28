@@ -4,10 +4,10 @@ const body = String.raw`
 You roll a fair red die once and you roll a fair blue die once. These two rolls are independent.
 		Consider the events
 		
-		[defs]
-		  A = "the sum of the red die and the blue die is 5",
-		  B = "the result of the red die is even".
-		[/defs]
+		<ul>
+  <li> A = "the sum of the red die and the blue die is 5",</li>
+  <li> B = "the result of the red die is even".</li>
+		</ul>
 		
 		Which of the following is correct?
 `;

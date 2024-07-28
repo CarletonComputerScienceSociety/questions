@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 We flip a fair coin, independently, five times. Define the events
-		[defs]
-		  A = "the coin comes up heads exactly four times",
-		  B = "the fifth coin flip results in heads".
-		[/defs]
+		<ul>
+  <li> A = "the coin comes up heads exactly four times",</li>
+  <li> B = "the fifth coin flip results in heads".</li>
+		</ul>
 		What is $\Pr(A|B)$?
 `;
 

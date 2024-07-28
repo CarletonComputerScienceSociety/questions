@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 Let $X = \{1,2,3,\dots,10\}$. Let $Y$ be a uniformly random subset of $X$. Define the events
-		[defs]
-		  A = "$Y$ contains at least 4 elements",
-		  B = "all elements of $Y$ are even".
-		[/defs]
+		<ul>
+  <li> A = "$Y$ contains at least 4 elements",</li>
+  <li> B = "all elements of $Y$ are even".</li>
+		</ul>
 		What is $\Pr(A|B)$?
 `;
 

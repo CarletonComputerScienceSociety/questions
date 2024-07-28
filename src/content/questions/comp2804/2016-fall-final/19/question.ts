@@ -3,9 +3,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 Let $n \geq 2$ be an integer and let $a_1a_2 \dots a_n$ be a uniformly random permutation of the set
 		$\{1,2,\dots,n\}$. Let $X$ be the random variable with the value
-		[defs]
-		  X = the number of indices $i$ with $1 \leq i \leq n - 1$ and $a_i < a_{i + 1}$.
-		[/defs]
+		<ul>
+  <li> X = the number of indices $i$ with $1 \leq i \leq n - 1$ and $a_i < a_{i + 1}$.</li>
+		</ul>
 		For example, if $n = 6$ and the permutation is 3, 5, 4, 1, 6, 2, then $X = 2$. <br>
 		
 		What is the expected value $\mathbb{E}(X)$ of $X$? <br>

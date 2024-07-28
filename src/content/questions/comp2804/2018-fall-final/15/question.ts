@@ -3,10 +3,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 Consider a uniformly random permutation $a_1,a_2,a_3,a_4$ of the set $\{1,2,3,4\}$.
 		Define the events
-		[defs]
-		  A = "$a_1 > a_2$",
-		  B = "$a_4 > a_3$".
-		[/defs]
+		<ul>
+  <li> A = "$a_1 > a_2$",</li>
+  <li> B = "$a_4 > a_3$".</li>
+		</ul>
 		Which of the following is correct?
 `;
 

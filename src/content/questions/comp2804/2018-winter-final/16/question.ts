@@ -2,10 +2,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You flip a fair coin five times; these five flips are independent. Define the events
-		[defs]
-		  A = "the first three flips result in $HHH$",
-		  B = "the number of $T$ in these five flips is at least two".
-		[/defs]
+		<ul>
+  <li> A = "the first three flips result in $HHH$",</li>
+  <li> B = "the number of $T$ in these five flips is at least two".</li>
+		</ul>
 		Which of the following is correct?
 `;
 

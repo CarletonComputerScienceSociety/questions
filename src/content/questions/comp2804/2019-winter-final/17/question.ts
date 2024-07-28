@@ -4,10 +4,10 @@ const body = String.raw`
 Let $n \geq 8$ be an integer. Consider a uniformly random permutation $a_1,a_2,...,a_n$ of
 		the set $\{1,2,...,n\}$. Consider the events
 		
-		[defs]
-		  A = "$a_7$ is the minimum of $a_1,a_2,...,a_7$",
-		  B = "$a_6$ is the minimum of $a_1,a_2,...,a_6$".
-		[/defs]
+		<ul>
+  <li> A = "$a_7$ is the minimum of $a_1,a_2,...,a_7$",</li>
+  <li> B = "$a_6$ is the minimum of $a_1,a_2,...,a_6$".</li>
+		</ul>
 		
 		Which of the following is correct?
 `;

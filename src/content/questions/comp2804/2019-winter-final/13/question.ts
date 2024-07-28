@@ -3,10 +3,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 You flip a fair coin 6 times; the flips are independent of each other. Consider the events
 		
-		[defs]
-		  A = "exactly 3 flips result in heads",
-		  B = "at least 2 flips result in heads".
-		[/defs]
+		<ul>
+  <li> A = "exactly 3 flips result in heads",</li>
+  <li> B = "at least 2 flips result in heads".</li>
+		</ul>
 		
 		What is $\Pr(A|B)$?
 `;

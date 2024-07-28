@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You flip a fair coin 15 times. Define the event
-		[defs]
-		  A = "the result of the first three flips are equal".
-		[/defs]
+		<ul>
+  <li> A = "the result of the first three flips are equal".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

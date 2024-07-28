@@ -8,9 +8,9 @@ You are given a fair 6-sided red die and a fair 6-sided blue die. Consider the f
 			the sum of the two rolls is equal to 7. Consider the random variable
 		</p>
 		
-		[defs]
-		  X = the number of times you do the experiment.
-		[/defs]
+		<ul>
+  <li> X = the number of times you do the experiment.</li>
+		</ul>
 		
 		(This value $X$ includes the experiment in which the sum is 7 for the first time.) <br>
 		What is the expected value $\mathbb{E}(X)$ of the random variable $X$?

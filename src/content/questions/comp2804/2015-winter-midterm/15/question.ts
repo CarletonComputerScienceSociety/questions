@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You flip a fair coin 5 times. Define the event
-		[defs]
-		  A = "the number of heads is odd".
-		[/defs]
+		<ul>
+  <li> A = "the number of heads is odd".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

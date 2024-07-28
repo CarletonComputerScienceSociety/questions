@@ -3,10 +3,10 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 Let $n \geq 5$ be an integer. Consider a uniformly random permutation $a_1a_2 \dots a_n$ of the set
 		$\{1,2,\dots,n\}$. Define the events
-		[defs]
-		  A = "$a_1 = 1$",
-		  B = "$a_n = 5$".
-		[/defs]
+		<ul>
+  <li> A = "$a_1 = 1$",</li>
+  <li> B = "$a_n = 5$".</li>
+		</ul>
 		What is $\Pr(A \cup B)$?
 `;
 

@@ -3,9 +3,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 We choose, uniformly at random, a string consisting of 14 characters, where each character is a
 		lowercase letter. Let $A$ be the event
-		[defs]
-		  A = "the string contains at least one vowel".
-		[/defs]
+		<ul>
+  <li> A = "the string contains at least one vowel".</li>
+		</ul>
 		(A vowel is one of the letters $a$, $e$, $i$, $o$, and $u$.) What is $\Pr(A)$?
 `;
 

@@ -3,9 +3,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 Let $n \geq 1$ be an integer. A bag contains $n$ red balls and $n$ blue balls. We choose a uniformly
 		random subset of two balls. Define the event
-		[defs]
-		  A = "this subset consists of one red ball and one blue ball".
-		[/defs]
+		<ul>
+  <li> A = "this subset consists of one red ball and one blue ball".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

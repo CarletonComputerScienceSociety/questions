@@ -2,9 +2,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 You flip a fair coin 9 times. Define the event
-		[defs]
-		  A = "the result of the first flip is not equal to the result of the second flip".
-		[/defs]
+		<ul>
+  <li> A = "the result of the first flip is not equal to the result of the second flip".</li>
+		</ul>
 		
 		What is $\Pr(A)$?
 `;

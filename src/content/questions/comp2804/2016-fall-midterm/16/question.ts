@@ -4,9 +4,9 @@ const body = String.raw`
 Consider 4 people, each of which has a uniformly random birthday. We ignore leap years; thus, one year
 		has 365 days. Define the event
 		
-		[defs]
-		  A = "at least 2 of these 4 people have the same birthday".
-		[/defs]
+		<ul>
+  <li> A = "at least 2 of these 4 people have the same birthday".</li>
+		</ul>
 		
 		What is $\Pr(A)$?
 `;

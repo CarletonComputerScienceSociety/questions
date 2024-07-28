@@ -4,9 +4,9 @@ const body = String.raw`
 Let $n$ be the number of students who are writing this exam. Each of these students has a uniformly
 		random birthday, which is independent of the birthdays of the other students. We ignore leap years;
 		thus, the year has 365 days. Define the event
-		[defs]
-		  A = "at least one student's birthday is on December 21".
-		[/defs]
+		<ul>
+  <li> A = "at least one student's birthday is on December 21".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

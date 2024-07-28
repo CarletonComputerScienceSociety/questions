@@ -19,10 +19,10 @@ You are given that:
 		</ul>
 		
 		Determine the conditional probability $\Pr(B|C)$, where $B$ and $C$ are the events
-		[defs]
-		  B = "there is a quiz on Nick's birthday",
-		  C = "there are exactly 5 quizzes in December".
-		[/defs]
+		<ul>
+  <li> B = "there is a quiz on Nick's birthday",</li>
+  <li> C = "there are exactly 5 quizzes in December".</li>
+		</ul>
 `;
 
 const label1 = String.raw`4/31`;

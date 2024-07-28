@@ -2,13 +2,13 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 
 const body = String.raw`
 Consider a uniformly random bitstring of length 5. Define the events
-		[defs]
-		  A = "the bitstring contains an odd number of 0s"
-		[/defs]
+		<ul>
+  <li> A = "the bitstring contains an odd number of 0s"</li>
+		</ul>
 		and
-		[defs]
-		  B = "the first three bits in the bitstring are 111".
-		[/defs]
+		<ul>
+  <li> B = "the first three bits in the bitstring are 111".</li>
+		</ul>
 		Which of the following is true?
 `;
 

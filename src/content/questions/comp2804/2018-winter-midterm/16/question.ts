@@ -6,9 +6,9 @@ In the fall term of 2015, Nick took COMP 2804. Nick was always sitting in the ba
 		
 		Nick buys 25 bananas at Alexa's Banana Emporium (ABE) and 30 bananas at Shelly's Fruit Market (SFM).
 		Nick chooses, uniformly at random, a 15-element subset of these bananas. Define the event
-		[defs]
-		  A = "the subset chosen by Nick contains exactly 7 bananas from ABE".
-		[/defs]
+		<ul>
+  <li> A = "the subset chosen by Nick contains exactly 7 bananas from ABE".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

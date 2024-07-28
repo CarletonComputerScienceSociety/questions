@@ -3,9 +3,9 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 Let $X = \{1,2,...,20\}$. You choose a uniformly random 7-element subset $Y$ of $X$. Define the
 		event
-		[defs]
-		  A = "3 is an element of $Y$ or 13 is an element of $Y$".
-		[/defs]
+		<ul>
+  <li> A = "3 is an element of $Y$ or 13 is an element of $Y$".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

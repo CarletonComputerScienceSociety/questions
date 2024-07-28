@@ -3,13 +3,13 @@ import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGener
 const body = String.raw`
 You flip a fair coin 7 times; these coin flips are independent of each other. Define the random
 		variables
-		[defs]
-		  X = the number of heads in these 7 coin flips,
-		[/defs]
+		<ul>
+  <li> X = the number of heads in these 7 coin flips,</li>
+		</ul>
 		and
-		[defs]
-		  Y = the number of tails in these 7 coin flips.
-		[/defs]
+		<ul>
+  <li> Y = the number of tails in these 7 coin flips.</li>
+		</ul>
 		Which of the following is true?
 `;
 

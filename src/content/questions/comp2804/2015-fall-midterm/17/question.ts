@@ -4,9 +4,9 @@ const body = String.raw`
 Let $S = \{1,2,3,4,5,6,7\}$. You choose a uniformly random 3-element subset $X$ of $S$. Thus,
 		each 3-element subset of $S$ has a probability of $\left. 1 \middle/ {7 \choose 3} \right.$ of being $X$.
 		Define the event
-		[defs]
-		  A = "4 is an element of $X$".
-		[/defs]
+		<ul>
+  <li> A = "4 is an element of $X$".</li>
+		</ul>
 		What is $\Pr(A)$?
 `;
 

@@ -4,10 +4,10 @@ const body = String.raw`
 Consider a uniformly random permutation $a_1,a_2,a_3,a_4,a_5$ of the set $\{1,2,3,4,5\}$.
 		Consider the events
 		
-		[defs]
-		  A = "$a_1$ is odd",
-		  B = "$a_5$ is even".
-		[/defs]
+		<ul>
+  <li> A = "$a_1$ is odd",</li>
+  <li> B = "$a_5$ is even".</li>
+		</ul>
 		
 		Which of the following is correct?
 `;

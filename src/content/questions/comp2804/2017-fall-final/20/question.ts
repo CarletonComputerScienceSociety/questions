@@ -4,9 +4,9 @@ const body = String.raw`
 You choose a uniformly random element, say $a$, from the set $\{1,2,\dots,100\}$, and you choose a
 		uniformly random element, say $b$, from the same set $\{1,2,\dots,100\}$. ($a$ and $b$ are chosen
 		independently of each other.) Define the random variable $X$ to be
-		[defs]
-		X = $\max(a,b)$.
-		[/defs]
+		<ul>
+  <li> X = $\max(a,b)$.</li>
+		</ul>
 		What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
 `;
 

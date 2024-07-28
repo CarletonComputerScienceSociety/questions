@@ -7,9 +7,9 @@ Elisa Kazan has successfully completed her second year as President of the Carle
 		of cider and 3 types $B_1,B_2,B_3$ of beer. Each of the 16 students gets 3 drinks; each of these drinks is
 		uniformly, and independently, chosen from the 8 types of drinks. <br>
 		Define the following random variable $X$:
-		[defs]
-		  X = the number of students who get exactly 2 ciders.
-		[/defs]
+		<ul>
+  <li> X = the number of students who get exactly 2 ciders.</li>
+		</ul>
 		What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
 		<em>Hint:</em> Use indicator random variables.
 `;
