@@ -24,6 +24,8 @@ Every multiple choice question directory should have the following structure
 - `generator.ts` (optional): A script that generates a question alike to the one in the director
 - `generator.test.ts` (optional): The unit tests for `generator.ts`
 
+# Tags
+
 For the Discrete Math tests, here are all the tags that can be used:
 
 - comp2804-de-morgan's-law-(no-corresponding-chapter)
