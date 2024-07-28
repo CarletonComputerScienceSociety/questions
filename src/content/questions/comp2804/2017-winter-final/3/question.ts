@@ -17,11 +17,10 @@ Let $B$ be a set consisting of 45 bottles. Out of these, 17 are beer bottles, an
 		How many such subsets are there?
 `;
 
-const label1 = "${17 choose 5} cdot 2^{28} + 2^{17} cdot {28 choose 5}$";
-const label2 =
-  "${17 choose 5} cdot 2^{28} + 2^{17} cdot {28 choose 5} - {17 choose 5} cdot {28 choose 5}$";
-const label3 = "$2^{45} - {17 choose 5} - {28 choose 5}$";
-const label4 = "$2^{45} - {17 choose 5} cdot {28 choose 5}$";
+const label1 = String.raw`$ {17 \choose 5} \cdot 2^{28} + 2^{17} \cdot {28 \choose 5} $`;
+const label2 = String.raw`$ {17 \choose 5} \cdot 2^{28} + 2^{17} \cdot {28 \choose 5} - {17 \choose 5} \cdot {28 \choose 5} $`;
+const label3 = String.raw`$ 2^{45} - {17 \choose 5} - {28 \choose 5} $`;
+const label4 = String.raw`$ 2^{45} - {17 \choose 5} \cdot {28 \choose 5} $`;
 
 export const question: MultipleChoiceQuestion = {
   body: body,
