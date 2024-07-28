@@ -9,7 +9,7 @@ tags:
   - comp2804
   - comp2804-midterm
   - comp2804-recursion
-  - Counting Bitstrings of Length $n$ (3.1.1)
+  - Counting Bitstrings of Length n (3.1.1)
   - Recursive Functions (4.1)
 ---
 

@@ -8,6 +8,6 @@ solution: comp2804/2015-fall-final/5/solution.md
 tags:
   - comp2804
   - comp2804-exam
-  - Principle of Inclusion and Exclusion (3.5)
+  - The Principle of Inclusion and Exclusion (3.5)
   - De Morgan's Law (no corresponding chapter)
 ---

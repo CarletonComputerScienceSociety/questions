@@ -8,6 +8,6 @@ solution: comp2804/2017-fall-final/1/solution.md
 tags:
   - comp2804
   - comp2804-exam
-  - The Product Rule(3.1)
-  - Permutations and \binomial Coefficients (3.6.1)
+  - The Product Rule (3.1)
+  - Permutations and Binomial Coefficients (3.6.1)
 ---

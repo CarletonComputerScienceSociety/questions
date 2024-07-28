@@ -9,5 +9,5 @@ tags:
   - comp2804
   - comp2804-midterm
   - The Bijection Rule (3.2.1)
-  - The Complement Rule(3.3)
+  - The Complement Rule (3.3)
 ---

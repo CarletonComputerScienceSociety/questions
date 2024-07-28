@@ -8,6 +8,6 @@ solution: comp2804/2016-fall-final/4/solution.md
 tags:
   - comp2804
   - comp2804-exam
-  - Permutations and \binomial Coefficients (3.1.1)
+  - Permutations and Binomial Coefficients (3.6.1)
   - The Complement Rule (3.3)
 ---

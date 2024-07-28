@@ -8,5 +8,5 @@ solution: comp2804/2018-fall-final/16/solution.md
 tags:
   - comp2804
   - comp2804-exam
-  - Independent Evening (5.11)
+  - Independent Events (5.11)
 ---

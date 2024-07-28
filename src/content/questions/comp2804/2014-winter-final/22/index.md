@@ -8,5 +8,5 @@ solution: comp2804/2014-winter-final/22/solution.md
 tags:
   - comp2804
   - comp2804-exam
-  - Determining The Expected Value(6.6.1)
+  - Determining the Expected Value (6.6.1)
 ---

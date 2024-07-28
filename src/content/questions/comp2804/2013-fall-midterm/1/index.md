@@ -8,6 +8,6 @@ solution: comp2804/2013-fall-midterm/1/solution.md
 generator: comp2804/2013-fall-midterm/1/generator.ts
 tags:
   - comp2804
-  - Product Rule (3.1)
+  - The Product Rule (3.1)
   - Counting Functions (3.1.2)
 ---

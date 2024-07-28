@@ -7,6 +7,6 @@ question: comp2804/2014-winter-midterm/12/question.ts
 tags:
   - comp2804
   - comp2804-midterm
-  - Counting Bitstrings of Length $n$ (3.1.1)
+  - Counting Bitstrings of Length n (3.1.1)
   - Recursive Functions (4.1)
 ---

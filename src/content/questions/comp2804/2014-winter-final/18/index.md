@@ -9,5 +9,5 @@ tags:
   - comp2804
   - comp2804-exam
   - The Product Rule (3.1)
-  - The Complement Rules (3.3)
+  - The Complement Rule (3.3)
 ---

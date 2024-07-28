@@ -9,5 +9,5 @@ tags:
   - comp2804
   - comp2804-midterm
   - Counting Bitstrings of Length n (3.1.1)
-  - Permutations and \binomial Coefficients (3.6.2)
+  - Permutations and Binomial Coefficients (3.6.2)
 ---

@@ -7,6 +7,6 @@ question: comp2804/2018-winter-midterm/14/question.ts
 tags:
   - comp2804
   - comp2804-midterm
-  - Permutations and \binomial Coefficients (3.6.2)
+  - Permutations and Binomial Coefficients (3.6.2)
   - Uniform Probability Spaces (4.4)
 ---

@@ -9,7 +9,7 @@ tags:
   - comp2804
   - comp2804-midterm
   - comp2804-permutations
-  - Product Rule (3.1)
+  - The Product Rule (3.1)
   - Placing Books on Shelves (3.1.3)
 ---
 

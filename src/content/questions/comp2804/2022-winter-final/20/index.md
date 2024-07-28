@@ -11,5 +11,5 @@ tags:
   - Random Variables and Expectation (6)
   - Random Variables (6.1)
   - Expected Values (6.4)
-  - Linearity of Expectation (6.5)
+  - Linearity of Expectations (6.5)
 ---

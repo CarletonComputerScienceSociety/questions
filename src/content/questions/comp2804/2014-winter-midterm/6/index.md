@@ -10,5 +10,5 @@ tags:
   - comp2804-midterm
   - Counting Functions (3.1.2)
   - The Complement Rule (3.3)
-  - Permutations and \binomial Coefficients (3.6.2)
+  - Permutations and Binomial Coefficients (3.6.2)
 ---

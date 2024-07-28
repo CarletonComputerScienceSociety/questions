@@ -7,5 +7,5 @@ question: comp2804/2015-winter-final/23/question.ts
 tags:
   - comp2804
   - comp2804-exam
-  - Determining the Expectated Value (6.6.1)
+  - Determining the Expected Value (6.6.1)
 ---

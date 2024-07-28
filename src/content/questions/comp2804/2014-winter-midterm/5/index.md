@@ -8,6 +8,6 @@ solution: comp2804/2014-winter-midterm/5/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Complement Rule (3.3)
-  - Sum Rule (3.4)
+  - The Complement Rule (3.3)
+  - The Sum Rule (3.4)
 ---

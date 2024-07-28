@@ -9,5 +9,5 @@ tags:
   - comp2804
   - comp2804-exam
   - The Product Rule (3.1)
-  - Counting Bitstrings of Length $n$ (3.1.1)
+  - Counting Bitstrings of Length n (3.1.1)
 ---

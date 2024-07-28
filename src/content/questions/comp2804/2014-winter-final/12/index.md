@@ -8,7 +8,7 @@ solution: comp2804/2014-winter-final/12/solution.md
 tags:
   - comp2804
   - comp2804-exam
-  - Permutations and \binomial Coefficients (3.6.1)
+  - Permutations and Binomial Coefficients (3.6.1)
   - The Bijection Rule (3.2.1)
   - Basic Rules of Probability (5.3)
 ---

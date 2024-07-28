@@ -8,5 +8,5 @@ solution: comp2804/2019-winter-midterm/10/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - Coutning 00-Free Bitstrings (4.2.1)
+  - Counting 00-Free Bitstrings (4.2.1)
 ---
