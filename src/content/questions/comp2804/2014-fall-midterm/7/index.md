@@ -8,7 +8,6 @@ solution: comp2804/2014-fall-midterm/7/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-newton-binomial-coefficients
   - comp2804-newton's-binomial-theorem-(3.6.2)
 ---
 

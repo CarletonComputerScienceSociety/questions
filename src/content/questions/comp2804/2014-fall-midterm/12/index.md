@@ -8,7 +8,7 @@ solution: comp2804/2014-fall-midterm/12/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-recursion
+  - recursive-functions-(4.1)
 ---
 
 <div hidden>

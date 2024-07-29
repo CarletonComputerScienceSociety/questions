@@ -8,7 +8,6 @@ solution: comp2804/2014-fall-midterm/3/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-permutations
   - comp2804-the-product-rule-(3.1)
   - comp2804-placing-books-on-shelves-(3.1.3)
 ---

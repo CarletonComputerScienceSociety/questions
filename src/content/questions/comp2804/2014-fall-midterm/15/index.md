@@ -8,7 +8,6 @@ solution: comp2804/2014-fall-midterm/15/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-probability
   - comp2804-basic-rules-of-probability-(5.3)
 ---
 

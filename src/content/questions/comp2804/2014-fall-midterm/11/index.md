@@ -8,7 +8,6 @@ solution: comp2804/2014-fall-midterm/11/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-recursion
   - comp2804-counting-bitstrings-of-length-n-(3.1.1)
   - comp2804-recursive-functions-(4.1)
 ---
