@@ -1,16 +1,19 @@
 ---
-const { questionIndex, optionIndex, option, interactive } = Astro.props;
+const { questionIndex, optionIndex, option, interactive, revealAnswers } =
+  Astro.props;
 import "./MultipleChoiceQuestionOption.scss";
 
 const letterOptions = ["a", "b", "c", "d", "e"];
+const isCorrect = option.correct ? "true" : "false";
+const revealed = interactive ? "false" : revealAnswers ? isCorrect : "false"; // Handle revealAnswers prop
 ---
 
 <div
   id={`MultipleChoiceQuestion-${questionIndex}-option-${optionIndex}`}
-  class={`MultipleChoiceQuestionOption`}
-  data-correct={option.correct ? "true" : "false"}
+  class={`MultipleChoiceQuestionOption ${revealed === "true" ? "highlight" : ""}`}
+  data-correct={isCorrect}
   data-selected="false"
-  data-revealed="false"
+  data-revealed={revealed}
 >
   <div class="MultipleChoiceQuestionOption__letter">
     ({letterOptions[optionIndex]})
