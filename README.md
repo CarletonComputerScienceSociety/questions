@@ -30,14 +30,8 @@ For the Discrete Math tests, here are all the tags that can be used:
 
 - comp2804-de-morgan's-law-(no-corresponding-chapter)
 - comp2804
-- comp2804-bitstrings
 - comp2804-final
 - comp2804-midterm
-- comp2804-newton-binomial-coefficients
-- comp2804-permutations
-- comp2804-pigeonhole-principle
-- comp2804-probability
-- comp2804-recursion
 - comp2804-the-product-rule-(3.1)
 - comp2804-counting-bitstrings-of-length-n-(3.1.1)
 - comp2804-counting-functions-(3.1.2)

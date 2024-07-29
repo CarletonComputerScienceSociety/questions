@@ -8,7 +8,6 @@ solution: comp2804/2014-fall-midterm/17/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-probability
   - comp2804-independent-events-(5.11)
 ---
 
