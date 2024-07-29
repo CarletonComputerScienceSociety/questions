@@ -50,7 +50,7 @@ const question = await loadQuestion();
 const title = formatString(path);
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={title + " Question"}>
   <div class="Question__bar">
     <div><Back href={`/evaluations`} label="Evaluations" /></div>
   </div>
