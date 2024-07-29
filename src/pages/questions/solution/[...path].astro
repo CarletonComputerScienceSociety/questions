@@ -49,7 +49,11 @@ const question = await loadQuestion();
   <Content />
   <div>
     <h1>Solution</h1>
-    <MultipleChoiceQuestion question={question} interactive={false} />
+    <MultipleChoiceQuestion
+      question={question}
+      interactive={false}
+      revealAnswers={true}
+    />
   </div>
   <br />
   <div class="Solution">

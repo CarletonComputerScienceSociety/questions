@@ -103,7 +103,11 @@ const sortedQuestionData = multipleChoiceQuestionData.sort(
   {
     sortedQuestionData.map((data: QuestionData, index: number) => (
       <div class="Evaluation__question">
-        <Question question={data.question} index={index} />
+        <Question
+          question={data.question}
+          index={index}
+          revealAnswers={false}
+        />
         {includeLinks && (
           <div class="Evaluation__questionLinks">
             <a href={`/questions/${data.links.question}`}>
