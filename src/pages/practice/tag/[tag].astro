@@ -102,9 +102,14 @@ function formatString(input: string) {
 }
 
 const title = formatString(randomQuestion.data.path);
+
+const tabTitle = tag
+  .slice(9)
+  .replace(/-/g, " ")
+  .replace(/\b\w/g, (c) => c.toUpperCase());
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={tabTitle}>
   <div class="Question__bar">
     <div>
       <Back href={`/questions/${randomQuestion.data.path}`} label="Back" />
