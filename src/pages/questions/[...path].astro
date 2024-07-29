@@ -2,6 +2,7 @@
 import MathJax from "@components/MathJax.svelte";
 import Back from "@components/Back/Back.astro";
 import Button from "@components/Button/Button.astro";
+import Pill from "@components/Pill/Pill.astro";
 import MultipleChoiceQuestion from "@components/MultipleChoiceQuestion/MultipleChoiceQuestion.astro";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
@@ -56,7 +57,16 @@ const title = formatString(path);
   </div>
   <h1>{title}</h1>
   <Content />
-  <MultipleChoiceQuestion question={question} interactive={true} />
+  <MultipleChoiceQuestion question={question} interactive={false} />
+  <div>
+    {
+      page.data.tags
+        ? page.data.tags.map((tag: string) => (
+            <Pill label={tag} highlight={true} tag={tag} />
+          ))
+        : ""
+    }
+  </div>
   <div class="Question__buttons">
     <a href={`/questions/solution/${path}`}
       ><Button

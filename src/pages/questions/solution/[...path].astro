@@ -1,6 +1,7 @@
 ---
 import Back from "@components/Back/Back.astro";
 import Button from "@components/Button/Button.astro";
+import Pill from "@components/Pill/Pill.astro";
 import MultipleChoiceQuestion from "@components/MultipleChoiceQuestion/MultipleChoiceQuestion.astro";
 import MathJax from "@components/MathJax.svelte";
 import { dynamicImport } from "@utilities/index";
@@ -50,6 +51,15 @@ const question = await loadQuestion();
   <div>
     <h1>Solution</h1>
     <MultipleChoiceQuestion question={question} interactive={false} />
+  </div>
+  <div>
+    {
+      page.data.tags
+        ? page.data.tags.map((tag: string) => (
+            <Pill label={tag} highlight={true} tag={tag} />
+          ))
+        : ""
+    }
   </div>
   <br />
   <div class="Solution">
