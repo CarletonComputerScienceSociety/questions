@@ -1,7 +1,7 @@
 import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGenerator";
 
 const body = String.raw`Is the following statement true or false?
-For any random variable $X$, $\E(X^2) = \E(X)\cdot \E(X)$.`;
+For any random variable $X$, $\mathbb{E}(X^2) = \mathbb{E}(X)\cdot \mathbb{E}(X)$.`;
 
 const label1 = String.raw`The statement is true`;
 const label2 = String.raw`The statement is false`;

@@ -1,6 +1,6 @@
 import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGenerator";
 
-const body = String.raw`A group of $n\ge 3$ friends stand around in a circle and each friend tosses a coin.  If the result of a friend's coin toss is the different from the result of the coin tossed by their left neighbour and different from result of the coin tossed by their right neighbour, then the friend shouts \enquote{Huzzah!}  Let $X$ be the number of friends who shout \enquote{Huzzah!}.  What is $ E(X)$? `;
+const body = String.raw`A group of $n\ge 3$ friends stand around in a circle and each friend tosses a coin.  If the result of a friend's coin toss is the different from the result of the coin tossed by their left neighbour and different from result of the coin tossed by their right neighbour, then the friend shouts Huzzah!  Let $X$ be the number of friends who shout Huzzah!.  What is $ E(X)$? `;
 
 const label1 = String.raw`$n/8$`;
 const label2 = String.raw`$n/4$`;

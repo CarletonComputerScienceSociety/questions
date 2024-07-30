@@ -8,15 +8,16 @@ const body = String.raw`
 		
 		Consider the following recursive algorithm $\ElisaDrinksCider$, which takes as input an integer
 		$n \geq 1$, which is a power of 2:
-		
+
 		<p>
-			$\mathbf{Algorithm}\ \ElisaDrinksCider(n)\mathrm{:}$ <br>
-			$\mathbf{if}\ n = 1$ <br>
-			$\mathbf{then}\ \text{order Fibonachos}$ <br>
-			$\mathbf{else}\ \ElisaDrinksCider(n / 2);$ <br>
-			$\elsesp \text{drink \(n\) bottles of cider};$ <br>
-			$\elsesp \ElisaDrinksCider(n / 2)$ <br>
-			$\mathbf{endif}$
+			$\mathbf{Algorithm} \text{ ElisaDrinksCider}(n):$ <br>
+			$\quad \mathbf{if}\ n = 1\ \mathbf{then}$ <br>
+			$\quad \quad \text{order Fibonachos}$ <br>
+			$\quad \mathbf{else}$ <br>
+			$\quad \quad \ElisaDrinksCider(n / 2);$ <br>
+			$\quad \quad \text{drink n bottles of cider};$ <br>
+			$\quad \quad \ElisaDrinksCider(n / 2)$ <br>
+			$\quad \mathbf{endif}$
 		</p>
 		
 		For $n$ a power of 2, let $C(n)$ be the total number of bottles of cider that you drink when running algorithm
