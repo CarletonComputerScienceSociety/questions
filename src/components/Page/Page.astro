@@ -1,7 +1,43 @@
 ---
 import "./Page.scss";
+import ThemeIcon from "../ThemeIcon/ThemeIcon.astro";
 ---
 
 <div class="Page">
+  <ThemeIcon />
   <slot />
 </div>
+
+<script type="module">
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("theme-toggle");
+
+    // Check if dark mode is already set in localStorage
+    const isDarkMode = localStorage.getItem("theme") === "dark";
+    if (isDarkMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.add("light-mode");
+    }
+
+    // Update icon based on the theme
+    const updateIcon = () => {
+      const isDarkMode = document.body.classList.contains("dark-mode");
+      document.querySelector(".sun").style.fill = isDarkMode
+        ? "transparent"
+        : "black";
+      document.querySelector(".moon").style.fill = isDarkMode
+        ? "white"
+        : "transparent";
+    };
+
+    updateIcon();
+
+    toggleButton.addEventListener("click", () => {
+      const isDarkMode = document.body.classList.toggle("dark-mode");
+      document.body.classList.toggle("light-mode", !isDarkMode);
+      localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+      updateIcon();
+    });
+  });
+</script>

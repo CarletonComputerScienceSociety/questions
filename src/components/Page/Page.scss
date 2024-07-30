@@ -10,3 +10,21 @@ $layout-width-inner-spacing-base: 1rem;
       $layout-width-inner-spacing-base
   );
 }
+
+#themeToggle {
+  border: 0;
+  background: none;
+}
+.sun {
+  fill: black;
+}
+.moon {
+  fill: transparent;
+}
+
+:global(.dark) .sun {
+  fill: transparent;
+}
+:global(.dark) .moon {
+  fill: white;
+}

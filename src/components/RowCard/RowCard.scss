@@ -3,10 +3,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  color: black;
+  color: inherit;
   border-radius: 0.6rem;
   border-width: 0.1rem;
-  border-color: #f1f1f1;
+  border-color: inherit;
   border-style: solid;
   padding: 0.2rem 0.6rem;
   transition: all 0.2s;
@@ -15,7 +15,7 @@
   cursor: grab;
 
   &:hover {
-    background-color: rgba(248, 248, 248, 0.753);
+    background-color: rgba(107, 107, 107, 0.753);
     .RowCard__icon {
       color: #e30614;
     }
@@ -28,7 +28,7 @@
   }
 
   &__icon {
-    background-color: #f2f2f2;
+    background-color: inherit;
     padding: 0.3rem 0.6rem;
     border-radius: 0.5rem;
     font-size: 1.4rem;

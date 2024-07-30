@@ -4,7 +4,7 @@
   width: 14rem;
   height: 100vh;
   overflow: hidden;
-  background-color: #fafafa;
+  background-color: inherit;
   border-right: 0.1rem solid #f3f3f3;
   display: flex;
   padding: 0.5rem;
@@ -26,7 +26,7 @@
     padding-top: -0.3rem;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #000000;
+    color: inherit;
   }
 
   &__sections {
@@ -48,7 +48,7 @@
     &--enabled {
       cursor: pointer;
       &:hover {
-        background-color: #f0f0f0;
+        background-color: inherit;
         .Sidebar__item__icon {
           color: #e30614;
         }
@@ -61,19 +61,19 @@
     }
 
     &--active {
-      background-color: #f3f3f3;
+      background-color: inherit;
     }
 
     &__icon {
       font-size: 1.5rem;
-      color: #000000;
+      color: inherit;
     }
 
     &__title {
       padding-left: 0.75rem;
       font-size: 1rem;
       font-weight: 500;
-      color: #000000;
+      color: inherit;
     }
   }
 
@@ -97,38 +97,9 @@
   width: 100vw;
   z-index: 1;
   position: fixed;
-  background-color: #ffffff;
+  background-color: inherit;
   bottom: 0;
   justify-content: center;
   border-top-width: 0.1rem;
   border-color: #f1f1f1;
-  border-style: solid;
-  @media (max-width: 768px) {
-    display: flex;
-  }
-
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    min-width: 14rem;
-    padding: 0.5rem;
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .Sidebar__item {
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.3rem;
-    min-width: 3rem;
-  }
-  .Sidebar__item__icon {
-    font-size: 2rem;
-  }
-  .Sidebar__item__title {
-    font-size: 0.6rem;
-    padding-left: 0rem;
-    text-align: center;
-  }
 }
