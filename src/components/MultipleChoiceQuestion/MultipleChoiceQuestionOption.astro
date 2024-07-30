@@ -10,7 +10,7 @@ const letterOptions = ["a", "b", "c", "d", "e"];
   class={`MultipleChoiceQuestionOption`}
   data-correct={option.correct ? "true" : "false"}
   data-selected="false"
-  data-revealed="false"
+  data-revealed={interactive ? "false" : "true"}
 >
   <div class="MultipleChoiceQuestionOption__letter">
     ({letterOptions[optionIndex]})
