@@ -4,7 +4,7 @@ const body = String.raw`
 Consider the following statement: For any three random variables $X$, $Y$, and $Z$,
 		
 		<ul>
-  <li> \mathbb{E}(\min(X,Y,Z)) = $\min(\mathbb{E}(X), \mathbb{E}(Y),$ $\mathbb{E}(Z)).$</li>
+  <li> $\mathbb{E}(\min(X,Y,Z)) = \min(\mathbb{E}(X), \mathbb{E}(Y), \mathbb{E}(Z))$</li>
 		</ul>
 		
 		Which of the following is correct?

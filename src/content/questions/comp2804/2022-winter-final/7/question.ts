@@ -4,7 +4,7 @@ const body = String.raw`A string that is obtained by rearranging the letters of 
 \[
 	\mathrm{ARABICA}
 \]
-is \emph{stupendous} if it contains the substring $\mathrm{CAB}$. For example $\mathrm{ARA\underline{CAB}I}$ and $\mathrm{I\underline{CAB}AAR}$ are both stupendous, but $\mathrm{ARABICA}$ is not.  How many stupendous strings are there?`;
+is stupendous if it contains the substring $\mathrm{CAB}$. For example $\mathrm{ARA\underline{CAB}I}$ and $\mathrm{I\underline{CAB}AAR}$ are both stupendous, but $\mathrm{ARABICA}$ is not.  How many stupendous strings are there?`;
 
 const label1 = String.raw`$70$`;
 const label2 = String.raw`$60$`;

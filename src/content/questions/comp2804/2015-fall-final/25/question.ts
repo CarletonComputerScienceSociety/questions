@@ -1,10 +1,10 @@
 import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGenerator";
 
 const body = String.raw`
-Who discovered Newton's \binomial Theorem?
+Who discovered Newton's Binomial Theorem?
 `;
 
-const label1 = String.raw`Professor \binomial.`;
+const label1 = String.raw`Professor Binomial.`;
 const label2 = String.raw`Justin Bieber.`;
 const label3 = String.raw`Isaac Newton.`;
 const label4 = String.raw`Professor G. Ruesome (the guy teaching COMP 9999).`;

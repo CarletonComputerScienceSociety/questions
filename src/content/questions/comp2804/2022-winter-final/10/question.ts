@@ -1,6 +1,6 @@
 import type { MultipleChoiceQuestion } from "@common/MultipleChoiceQuestionGenerator";
 
-const body = String.raw`The function $T:\N\to\N$ is defined recursively as follows:
+const body = String.raw`The function $ T: \mathbb{N} \rightarrow \mathbb{N} $ is defined recursively as follows:
       \[
         T(n) =
           \begin{cases}
