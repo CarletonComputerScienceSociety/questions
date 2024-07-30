@@ -15,8 +15,9 @@
   }
 
   &:hover {
-    background-color: #ededed;
-
+    &[data-interactive="true"] {
+      background-color: #ededed;
+    }
     &[data-selected="false"] {
       cursor: pointer;
     }
