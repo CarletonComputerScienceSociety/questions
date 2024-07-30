@@ -1,8 +1,25 @@
 ---
-const { href, label } = Astro.props;
+const { href = "", label = "Back" } = Astro.props;
 import "./Back.scss";
 ---
 
-<a class="Back" href={href}
-  ><i class="mdi mdi-keyboard-backspace"></i> {label}</a
->
+<div class="Back" onclick={`handleBackClick('${href}')`}>
+  <i class="mdi mdi-keyboard-backspace"></i>
+  {label}
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function handleBackClick(href: string) {
+      const isSameOrigin = document.referrer.includes(window.origin);
+      if (!isSameOrigin) {
+        window.location.href = "/";
+      } else if (href !== "") {
+        window.location.href = href;
+      } else {
+        window.history.back();
+      }
+    }
+    window.handleBackClick = handleBackClick;
+  });
+</script>
