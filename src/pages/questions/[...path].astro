@@ -49,6 +49,12 @@ const loadQuestion = async () => {
 
 const question = await loadQuestion();
 const title = formatString(path);
+
+const tags = await getCollection("tags");
+const tagMap = tags.reduce((map, tag) => {
+  map[tag.data.tag] = tag.data.title;
+  return map;
+}, {});
 ---
 
 <Layout title={title + " Question"}>
@@ -62,7 +68,7 @@ const title = formatString(path);
     {
       page.data.tags
         ? page.data.tags.map((tag: string) => (
-            <Pill label={tag} highlight={true} tag={tag} />
+            <Pill label={tagMap[tag]} highlight={true} tag={tag} />
           ))
         : ""
     }
