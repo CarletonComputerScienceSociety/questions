@@ -34,22 +34,25 @@ function formatString(input: string) {
 }
 
 const title = formatString(randomQuestion.data.path);
-
-const tabTitle = tag
-  .slice(9)
-  .replace(/-/g, " ")
-  .replace(/\b\w/g, (c) => c.toUpperCase());
+const tags = await getCollection("tags");
+const tagResource = tags.find((t) => t.data.tag === tag);
 ---
 
-<Layout title={tabTitle}>
+<Layout title={`Practice By Tag: ${tag}`}>
   <div class="Question__bar">
     <div>
       <Back />
     </div>
   </div>
 
-  <h1>{title}</h1>
-
+  <h1>
+    Practice By Tag: <span class="Question__title__span"
+      >{tagResource?.data.title}</span
+    >
+  </h1>
+  <div style="margin-bottom:1.9rem"></div>
+  <i>Question: {title}</i>
+  <div style="margin-bottom:2rem"></div>
   <Evaluation
     questions={[randomQuestion.data.path]}
     generate={true}

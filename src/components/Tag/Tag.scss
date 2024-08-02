@@ -1,0 +1,26 @@
+.Tag {
+  border-radius: 0.7rem;
+  border-width: 0px;
+  background-color: #efefef;
+  color: #3a3a3a;
+  transition: all 0.15s;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.3rem 0.95rem;
+  height: 1.9rem;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+
+  &:hover {
+    color: white;
+    background-color: #ff4d4d;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+}

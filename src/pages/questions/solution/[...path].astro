@@ -1,7 +1,6 @@
 ---
 import Back from "@components/Back/Back.astro";
 import Button from "@components/Button/Button.astro";
-import Pill from "@components/Pill/Pill.astro";
 import MultipleChoiceQuestion from "@components/MultipleChoiceQuestion/MultipleChoiceQuestion.astro";
 import MathJax from "@components/MathJax.svelte";
 import { dynamicImport } from "@utilities/index";
@@ -42,11 +41,19 @@ const loadQuestion = async () => {
 
 const question = await loadQuestion();
 
-const tags = await getCollection("tags");
-const tagMap = tags.reduce((map, tag) => {
-  map[tag.data.tag] = tag.data.title;
-  return map;
-}, {});
+// TODO: should not be generating the title of the path
+function formatString(input: string) {
+  let [_course, mainPart, numberPart] = input.split("/");
+
+  mainPart = mainPart
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+  return `${mainPart} - ${numberPart}`;
+}
+
+const title = formatString(path);
 ---
 
 <Layout title="Solution">
@@ -55,19 +62,21 @@ const tagMap = tags.reduce((map, tag) => {
   </div>
   <Content />
   <div>
-    <h1>Solution</h1>
-    <MultipleChoiceQuestion question={question} interactive={false} />
+    <h1>
+      Solution: <span class="Question__title__span">{title}</span>
+    </h1>
+    <i>Author: {page.data.author}</i>
+    <br />
+    <br />
+    <h2>Question</h2>
+    <MultipleChoiceQuestion
+      question={question}
+      interactive={false}
+      displaySolution={true}
+    />
   </div>
-  <div>
-    {
-      page.data.tags
-        ? page.data.tags.map((tag: string) => (
-            <Pill label={tagMap[tag]} highlight={true} tag={tag} />
-          ))
-        : ""
-    }
-  </div>
-  <br />
+  <div style="margin-top:2.5rem"></div>
+  <h2>Solution</h2>
   <div class="Solution">
     <SolutionComponent />
   </div>

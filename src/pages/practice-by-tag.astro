@@ -22,10 +22,7 @@ const tags = await getCollection("tags");
       tags.map((tag) => (
         <div>
           <a href={`/practice/tag/${tag.data.tag}`}>
-            <RowCard
-              title={`${tag.data.title}} Questions`}
-              icon="mdi mdi-tag"
-            />
+            <RowCard title={`${tag.data.title} Questions`} icon="mdi mdi-tag" />
           </a>
         </div>
       ))

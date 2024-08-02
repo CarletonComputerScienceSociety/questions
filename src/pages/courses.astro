@@ -13,21 +13,13 @@ const courseCodes = {
 };
 
 const tags = await getCollection("tags");
-const comp2804Tags = tags
-  .filter((tag) => tag.data.course === "comp2804")
-  .sort((a, b) => a.data.number_of_questions - b.data.number_of_questions);
+const comp2804Tags = tags.filter((tag) => tag.data.course === "comp2804");
 ---
 
 <Layout title="Courses">
   <div class="Question__bar">
     <div><Back href={`/`} label="Home" /></div>
   </div>
-  <!-- <h1>Courses</h1>
-  <p>
-    Practice previous evaluations from Carleton University's Computer Science
-    courses.
-  </p> -->
-  <!-- <div style="margin-top:2.5rem"></div> -->
   <h1>COMP 2804: Discrete Structures II</h1>
   <p>
     Topics include: counting, sequences and sums, discrete probability, basic
@@ -62,7 +54,7 @@ const comp2804Tags = tags
       comp2804Tags.map((tag) => (
         <div>
           <a href={`/practice/tag/${tag.data.tag}`}>
-            <RowCard title={`${tag.data.tag} Questions`} icon="mdi mdi-tag" />
+            <RowCard title={`${tag.data.title} Questions`} icon="mdi mdi-tag" />
           </a>
         </div>
       ))
@@ -74,7 +66,7 @@ const comp2804Tags = tags
     {
       comp2804Evaluations.map((evaluation) => (
         <div>
-          <a href={`/evaluations/${evaluation.tag}`}>
+          <a href={`/evaluations/${evaluation.slug}`}>
             <RowCard
               title={`${evaluation.data.title}`}
               icon="mdi mdi-book-open-variant"

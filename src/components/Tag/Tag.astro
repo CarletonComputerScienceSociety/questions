@@ -1,0 +1,11 @@
+---
+const { id, label } = Astro.props;
+import "./Tag.scss";
+// const tagLabel = `#${label.toLowerCase().replace(/\s+/g, "-")}`;
+---
+
+<a href={`/practice/tag/${id}`}>
+  <button class="Tag">
+    <div class="Tag__label">{label}</div>
+  </button>
+</a>
