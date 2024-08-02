@@ -24,7 +24,17 @@ const evaluationCollection = defineCollection({
   }),
 });
 
+const tagCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    course: z.string(),
+    tag: z.string(),
+    title: z.string(),
+  }),
+});
+
 export const collections = {
   questions: questionCollection,
   evaluations: evaluationCollection,
+  tags: tagCollection,
 };

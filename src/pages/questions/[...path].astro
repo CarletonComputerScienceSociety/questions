@@ -2,6 +2,7 @@
 import MathJax from "@components/MathJax.svelte";
 import Back from "@components/Back/Back.astro";
 import Button from "@components/Button/Button.astro";
+import Tag from "@components/Tag/Tag.astro";
 import MultipleChoiceQuestion from "@components/MultipleChoiceQuestion/MultipleChoiceQuestion.astro";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
@@ -48,33 +49,55 @@ const loadQuestion = async () => {
 
 const question = await loadQuestion();
 const title = formatString(path);
+
+const tags = await getCollection("tags");
+const tagMap: { [key: string]: string } = tags.reduce(
+  (map, tag) => {
+    map[tag.data.tag] = tag.data.title;
+    return map;
+  },
+  {} as { [key: string]: string },
+);
 ---
 
 <Layout title={title + " Question"}>
   <div class="Question__bar">
     <div><Back /></div>
   </div>
-  <h1>{title}</h1>
+
+  <h1>
+    Question: <span class="Question__title__span">{title}</span>
+  </h1>
+  <div class="Question__author">
+    <i>Author: {page.data.author}</i>
+    <div>
+      <a href={`/questions/solution/${path}`}
+        ><Button
+          icon="mdi mdi-check-bold"
+          disabled={page.data.solution ? false : true}
+        /></a
+      >
+      <a href={`/questions/generator/${path}`}
+        ><Button
+          icon="mdi mdi-creation"
+          disabled={page.data.generator ? false : true}
+        /></a
+      >
+      <a
+        class="Question__contribute"
+        href={`https://github.com/CarletonComputerScienceSociety/questions/blob/main/src/content/questions/${path}/index.md`}
+        ><Button icon="mdi mdi-github" /></a
+      >
+    </div>
+  </div>
   <Content />
-  <MultipleChoiceQuestion question={question} interactive={true} />
-  <div class="Question__buttons">
-    <a href={`/questions/solution/${path}`}
-      ><Button
-        label="Solution"
-        disabled={page.data.solution ? false : true}
-      /></a
-    >
-    <a href={`/questions/generator/${path}`}
-      ><Button
-        icon="mdi mdi-creation"
-        label="Practice"
-        disabled={page.data.generator ? false : true}
-      /></a
-    >
-    <a
-      href={`https://github.com/CarletonComputerScienceSociety/questions/blob/main/src/content/questions/${path}/index.md`}
-      ><Button label="Contribute" /></a
-    >
+  <MultipleChoiceQuestion
+    question={question}
+    interactive={false}
+    displaySolution={false}
+  />
+  <div class="Question__tags">
+    {page.data.tags.map((tag: string) => <Tag id={tag} label={tagMap[tag]} />)}
   </div>
   <MathJax client:load />
 </Layout>

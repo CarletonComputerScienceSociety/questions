@@ -1,5 +1,5 @@
 ---
-const { index, question, interactive } = Astro.props;
+const { index, question, interactive, displaySolution } = Astro.props;
 import MultipleChoiceQuestionOption from "./MultipleChoiceQuestionOption.astro";
 import "./MultipleChoiceQuestion.scss";
 const numberString =
@@ -16,6 +16,7 @@ const numberString =
         <MultipleChoiceQuestionOption
           option={option}
           interactive={interactive}
+          displaySolution={displaySolution}
           questionIndex={index}
           optionIndex={optionIndex}
         />
