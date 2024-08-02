@@ -1,16 +1,18 @@
 ---
-const { questionIndex, optionIndex, option, interactive } = Astro.props;
+const { questionIndex, optionIndex, option, interactive, displaySolution } =
+  Astro.props;
 import "./MultipleChoiceQuestionOption.scss";
 
 const letterOptions = ["a", "b", "c", "d", "e"];
+const initiallyDisplaySelectedSolution = displaySolution && option.correct;
 ---
 
 <div
-  id={`MultipleChoiceQuestion-${questionIndex}-option-${optionIndex}`}
+  id={`MultipleChoiceQuestion-${questionIndex}-option-${optionIndex}}`}
   class={`MultipleChoiceQuestionOption`}
   data-correct={option.correct ? "true" : "false"}
-  data-selected="false"
-  data-revealed={interactive ? "false" : "true"}
+  data-selected={initiallyDisplaySelectedSolution ? "true" : "false"}
+  data-revealed={displaySolution ? "true" : "false"}
   data-interactive={interactive ? "true" : "false"}
 >
   <div class="MultipleChoiceQuestionOption__letter">

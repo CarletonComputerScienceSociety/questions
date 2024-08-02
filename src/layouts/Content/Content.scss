@@ -15,7 +15,27 @@
 }
 
 .Question__bar {
+  display: flex;
   margin-bottom: 1.5rem;
+}
+
+.Question__author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.Question__tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.Question__title__span {
+  font-weight: 600 !important;
+  margin-left: 0.25rem;
 }
 
 .Question__buttons {
