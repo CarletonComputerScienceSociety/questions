@@ -8,4 +8,6 @@ solution: comp2804/2019-fall-final/24/solution.md
 tags:
   - comp2804
   - comp2804-final
+  - comp2804-permutations-and-binomial-coefficients-(3.6.2)
+  - comp2804-indicator-random-variables-(6.8)
 ---
