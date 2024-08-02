@@ -54,7 +54,10 @@ const comp2804Tags = tags.filter((tag) => tag.data.course === "comp2804");
       comp2804Tags.map((tag) => (
         <div>
           <a href={`/practice/tag/${tag.data.tag}`}>
-            <RowCard title={`${tag.data.title} Questions`} icon="mdi mdi-tag" />
+            <RowCard
+              title={`${tag.data.title} ${tag.data.section ? "(" + tag.data.section + ")" : ""} Questions`}
+              icon="mdi mdi-tag"
+            />
           </a>
         </div>
       ))

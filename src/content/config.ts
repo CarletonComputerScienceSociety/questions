@@ -30,6 +30,7 @@ const tagCollection = defineCollection({
     course: z.string(),
     tag: z.string(),
     title: z.string(),
+    section: z.nullable(z.string()),
   }),
 });
 
@@ -37,5 +38,4 @@ export const collections = {
   questions: questionCollection,
   evaluations: evaluationCollection,
   tags: tagCollection,
-  section: z.nullable(z.string()),
 };
