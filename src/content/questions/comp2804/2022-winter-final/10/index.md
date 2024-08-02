@@ -7,6 +7,6 @@ question: comp2804/2022-winter-final/10/question.ts
 solution: comp2804/2022-winter-final/10/solution.md
 tags:
   - comp2804
-  - comp2804-midterm
+  - comp2804-final
   - comp2804-recursive-functions-(4.1)
 ---
