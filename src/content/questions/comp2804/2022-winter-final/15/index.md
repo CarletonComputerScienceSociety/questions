@@ -7,5 +7,5 @@ question: comp2804/2022-winter-final/15/question.ts
 solution: comp2804/2022-winter-final/15/solution.md
 tags:
   - comp2804
-  - comp2804-midterm
+  - comp2804-final
 ---

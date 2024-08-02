@@ -7,6 +7,6 @@ question: comp2804/2022-winter-final/6/question.ts
 solution: comp2804/2022-winter-final/6/solution.md
 tags:
   - comp2804
-  - comp2804-midterm
+  - comp2804-final
   - comp2804-newton's-binomial-theorem-(3.6.2)
 ---

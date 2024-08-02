@@ -6,5 +6,5 @@ author: Michiel Smid
 question: comp2804/2022-winter-final/25/question.ts
 tags:
   - comp2804
-  - comp2804-midterm
+  - comp2804-final
 ---
