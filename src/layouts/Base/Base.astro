@@ -5,6 +5,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const isProduction = import.meta.env.ENVIRONMENT === "production";
 ---
 
 <!doctype html>
@@ -24,6 +25,19 @@ const { title } = Astro.props;
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
     />
+    {
+      isProduction && (
+        <>
+          <noscript>
+            <img src="https://shynet-mpb4.onrender.com/ingress/cc9fac9d-2deb-4201-822e-3625f4530b8f/pixel.gif" />
+          </noscript>
+          <script
+            defer
+            src="https://shynet-mpb4.onrender.com/ingress/cc9fac9d-2deb-4201-822e-3625f4530b8f/script.js"
+          />
+        </>
+      )
+    }
   </head>
   <body>
     <slot />
