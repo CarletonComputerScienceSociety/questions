@@ -1,0 +1,93 @@
+---
+import { Fragment } from "astro/jsx-runtime";
+import "./Pagination.scss";
+const { pagination } = Astro.props;
+const adjacentLinks = 2;
+const maxLinks = adjacentLinks * 2 + 1;
+const lowerLimit = adjacentLinks + 1;
+const upperLimit = pagination.totalPages - adjacentLinks;
+---
+
+{
+  pagination.totalPages > 1 && (
+    <ul class="pagination">
+      {/* First page */}
+      {pagination.pageNumber !== 1 && (
+        <li class="pagination__item pagination__item--first">
+          <a class="pagination__link pagination__link--first" href={1}>
+            ««
+          </a>
+        </li>
+      )}
+
+      {/* Previous page */}
+      {pagination.hasPrev && (
+        <li class="pagination__item pagination__item--previous">
+          <a
+            href={pagination.prev.url}
+            class="pagination__link pagination__link--previous"
+          >
+            «
+          </a>
+        </li>
+      )}
+
+      {/* Page numbers */}
+      {pagination.pagers.map((page) => {
+        return (
+          <Fragment>
+            {(() => {
+              const isInRange =
+                pagination.totalPages > maxLinks
+                  ? pagination.pageNumber < lowerLimit + 1
+                    ? page.pageNumber < maxLinks + 1
+                    : pagination.pageNumber >= upperLimit
+                      ? page.pageNumber > pagination.totalPages - maxLinks
+                      : page.pageNumber >=
+                          pagination.pageNumber - adjacentLinks &&
+                        page.pageNumber <
+                          pagination.pageNumber + adjacentLinks + 1
+                  : true;
+
+              return (
+                isInRange && (
+                  <li
+                    class={`pagination__item${page.pageNumber === pagination.pageNumber ? " pagination__item--current" : ""}`}
+                  >
+                    <a href={page.url} class="pagination__link">
+                      {page.pageNumber}
+                    </a>
+                  </li>
+                )
+              );
+            })()}
+          </Fragment>
+        );
+      })}
+
+      {/* Next page */}
+      {pagination.hasNext && (
+        <li class="pagination__item pagination__item--next">
+          <a
+            href={pagination.next.url}
+            class="pagination__link pagination__link--next"
+          >
+            »
+          </a>
+        </li>
+      )}
+
+      {/* Last page */}
+      {pagination.pageNumber !== pagination.totalPages && (
+        <li class="pagination__item pagination__item--last">
+          <a
+            class="pagination__link pagination__link--last"
+            href={pagination.last.url}
+          >
+            »»
+          </a>
+        </li>
+      )}
+    </ul>
+  )
+}
