@@ -1,5 +1,6 @@
 import os
 
+
 def find_empty_solution_files(directory):
     for root, _, files in os.walk(directory):
         for file in files:
@@ -10,6 +11,7 @@ def find_empty_solution_files(directory):
                     content = f.read().strip()
                     if not content:
                         print(f"Empty file: {relative_path}")
+
 
 if __name__ == "__main__":
     # Define the specific directory path here
