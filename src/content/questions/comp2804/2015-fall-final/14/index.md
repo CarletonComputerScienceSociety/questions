@@ -8,6 +8,6 @@ solution: comp2804/2015-fall-final/14/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-the-birthday-paradox-(5.5)
-  - comp2804-the-complement-rule-(3.3)
+  - comp2804-the-birthday-paradox
+  - comp2804-the-complement-rule
 ---

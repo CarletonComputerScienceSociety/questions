@@ -8,5 +8,5 @@ solution: comp2804/2015-winter-final/16/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-determining-the-expected-value-(6.7.1)
+  - comp2804-determining-the-expected-value
 ---

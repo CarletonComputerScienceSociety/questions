@@ -8,5 +8,5 @@ solution: comp2804/2015-winter-final/17/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-conditional-probability-(5.8)
+  - comp2804-conditional-probability
 ---

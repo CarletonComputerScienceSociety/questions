@@ -8,6 +8,6 @@ solution: comp2804/2016-fall-final/21/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-basic-rules-of-probability-(5.3)
-  - comp2804-expected-values-(6.4)
+  - comp2804-basic-rules-of-probability
+  - comp2804-expected-values
 ---

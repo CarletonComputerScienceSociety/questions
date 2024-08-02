@@ -8,6 +8,6 @@ solution: comp2804/2022-winter-final/24/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-random-variables-and-expectation-(6)
-  - comp2804-indicator-random-variables-(6.8)
+  - comp2804-random-variables-and-expectation
+  - comp2804-indicator-random-variables
 ---

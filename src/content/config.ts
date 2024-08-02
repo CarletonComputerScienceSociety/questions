@@ -37,4 +37,5 @@ export const collections = {
   questions: questionCollection,
   evaluations: evaluationCollection,
   tags: tagCollection,
+  section: z.nullable(z.number()),
 };

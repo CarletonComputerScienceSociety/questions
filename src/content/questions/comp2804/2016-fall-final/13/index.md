@@ -8,6 +8,6 @@ solution: comp2804/2016-fall-final/13/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-the-product-rule-(3.1)
-  - comp2804-permutations-and-binomial-coefficients-(3.6.1)
+  - comp2804-the-product-rule
+  - comp2804-permutations-and-binomial-coefficients
 ---

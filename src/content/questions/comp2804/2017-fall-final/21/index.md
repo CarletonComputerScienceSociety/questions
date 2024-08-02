@@ -8,5 +8,5 @@ solution: comp2804/2017-fall-final/21/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-a-basic-property-of-independent-events-(5.11.2)
+  - comp2804-a-basic-property-of-independent-events
 ---
