@@ -6,7 +6,7 @@
   border-style: solid;
   border-radius: 0.6rem;
   border-width: 0.1rem;
-  border-color: #c0c0c07f;
+  border-color: #4e4e4e7f;
   margin: 1rem 0rem;
   transition: all 0.15s;
 
@@ -16,16 +16,16 @@
 
   &:hover {
     &[data-interactive="true"] {
-      background-color: #ededed;
-      &[data-selected="false"] {
-        cursor: pointer;
-      }
+      background-color: #474747;
+    }
+    &[data-selected="false"] {
+      cursor: pointer;
     }
   }
 
   &[data-revealed="false"] {
     &[data-selected="true"] {
-      background-color: #eaeaea;
+      background-color: #474747;
     }
   }
 

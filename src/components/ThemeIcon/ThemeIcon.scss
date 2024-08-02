@@ -1,0 +1,17 @@
+#themeToggle {
+  border: 0;
+  background: none;
+}
+.sun {
+  fill: black;
+}
+.moon {
+  fill: transparent;
+}
+
+:global(.light-mode) .sun {
+  fill: transparent;
+}
+:global(.dark-mode) .moon {
+  fill: white;
+}
