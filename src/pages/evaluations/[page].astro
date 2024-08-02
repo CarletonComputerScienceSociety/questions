@@ -12,10 +12,25 @@ const courseCodes = {
 
 const comp2804Evaluations = evaluations
   .filter((evaluation) => evaluation.data.course === "comp2804")
-  .sort((a, b) => Number(b.data.created_at) - Number(a.data.created_at))
-  .slice(0, 8);
+  .sort((a, b) => Number(b.data.created_at) - Number(a.data.created_at));
 
-const numberOfPages = Math.ceil(comp2804Evaluations.length / 8);
+export async function getStaticPaths({ paginate }) {
+  const evaluations = await getCollection("evaluations");
+
+  const comp2804Evaluations = evaluations
+    .filter((evaluation) => evaluation.data.course === "comp2804")
+    .sort((a, b) => Number(b.data.created_at) - Number(a.data.created_at));
+
+  // turn the above into a list
+  const evaluationPages = comp2804Evaluations.map((evaluation) => ({
+    evaluation,
+  }));
+
+  // Generate pages from our array of evaluations, with 5 to a page
+  return paginate(evaluationPages, { pageSize: 8 });
+}
+// All paginated data is passed on the "page" prop
+const { page } = Astro.props;
 ---
 
 <Layout title="Evaluations">
@@ -37,7 +52,7 @@ const numberOfPages = Math.ceil(comp2804Evaluations.length / 8);
   <br /> -->
   <div class="Evaluations__list" style="margin-bottom:0.75rem">
     {
-      comp2804Evaluations.map((evaluation) => (
+      page.data.map(({ evaluation }) => (
         <div>
           <a href={`/evaluations/${evaluation.slug}`}>
             <RowCard
@@ -51,15 +66,15 @@ const numberOfPages = Math.ceil(comp2804Evaluations.length / 8);
   </div>
   <Pagination
     pagination={{
-      pageNumber: 1,
-      totalPages: numberOfPages,
-      hasPrev: false,
-      prev: { url: "" },
-      hasNext: numberOfPages > 1,
-      next: { url: "/evaluations/2" },
+      pageNumber: page.currentPage,
+      totalPages: page.lastPage,
+      hasPrev: !!page.url.prev,
+      prev: { url: page.url.prev || "" },
+      hasNext: !!page.url.next,
+      next: { url: page.url.next || "" },
       first: { url: "/evaluations/1" },
-      last: { url: `/evaluations/${numberOfPages}` },
-      pagers: Array.from({ length: numberOfPages }, (_, i) => ({
+      last: { url: page.lastPage ? `/evaluations/${page.lastPage}` : "" },
+      pagers: Array.from({ length: page.lastPage }, (_, i) => ({
         pageNumber: i + 1,
         url: `/evaluations/${i + 1}`,
       })),
