@@ -4,27 +4,34 @@ import RowCard from "@components/RowCard/RowCard.astro";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
 import Pagination from "@components/Pagination/Pagination.astro";
-const evaluations = await getCollection("evaluations");
+
 const courseCodes = {
   comp2804: "COMP 2804",
 };
-const comp2804Evaluations = evaluations
-  .filter((evaluation) => evaluation.data.course === "comp2804")
-  .sort((a, b) => Number(b.data.created_at) - Number(a.data.created_at));
-export async function getStaticPaths({ paginate }) {
+
+export async function getStaticPaths({ paginate }: any) {
   const evaluations = await getCollection("evaluations");
   const comp2804Evaluations = evaluations
     .filter((evaluation) => evaluation.data.course === "comp2804")
     .sort((a, b) => Number(b.data.created_at) - Number(a.data.created_at));
-  // turn the above into a list
+
   const evaluationPages = comp2804Evaluations.map((evaluation) => ({
     evaluation,
   }));
-  // Generate pages from our array of evaluations, with 5 to a page
-  return paginate(evaluationPages, { pageSize: 8 });
+
+  return paginate(evaluationPages, { pageSize: 12 });
 }
-// All paginated data is passed on the "page" prop
-const { page } = Astro.props;
+
+const {
+  page,
+}: {
+  page: {
+    currentPage: any;
+    lastPage: any;
+    url: any;
+    data: any[];
+  };
+} = Astro.props;
 ---
 
 <Layout title="Evaluations">
@@ -37,16 +44,9 @@ const { page } = Astro.props;
     courses.
   </p>
   <div style="margin-top:2.5rem"></div>
-  <!-- <h2>COMP 2804: Discrete Structures II</h2>
-  <p>
-    Topics include: counting, sequences and sums, discrete probability, basic
-    statistics, recurrence relations, randomized algorithms. Material is
-    illustrated through examples from computing.
-  </p>
-  <br /> -->
   <div class="Evaluations__list" style="margin-bottom:0.75rem">
     {
-      page.data.map(({ evaluation }) => (
+      page.data.map(({ evaluation }: any) => (
         <div>
           <a href={`/evaluations/${evaluation.slug}`}>
             <RowCard
@@ -58,6 +58,7 @@ const { page } = Astro.props;
       ))
     }
   </div>
+  <div style="margin-top:2.5rem"></div>
   <Pagination
     pagination={{
       pageNumber: page.currentPage,
@@ -74,6 +75,7 @@ const { page } = Astro.props;
       })),
     }}
   />
+  <div style="margin-top:1rem"></div>
 </Layout>
 
 <style>

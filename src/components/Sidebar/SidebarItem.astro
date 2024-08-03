@@ -1,0 +1,14 @@
+---
+const { link, disabled, icon, title } = Astro.props;
+---
+
+<a href={link}>
+  <div
+    class={`Sidebar__item ${disabled ? "Sidebar__item--disabled" : "Sidebar__item--enabled"}`}
+  >
+    <div class="Sidebar__item__icon">
+      <i class={icon}></i>
+    </div>
+    <div class="Sidebar__item__title">{title}</div>
+  </div>
+</a>

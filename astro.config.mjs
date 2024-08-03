@@ -13,5 +13,6 @@ export default defineConfig({
   },
   redirects: {
     "/evaluations": "/evaluations/1",
+    "/" : "/comp2804",
   },
 });

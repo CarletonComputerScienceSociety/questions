@@ -1,9 +1,10 @@
-.pagination {
+.Pagination {
   text-align: center;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
-  max-width: 10rem;
+  align-items: center;
+  max-width: 8rem;
   margin: auto;
   padding: 0;
 
@@ -14,9 +15,12 @@
 
   a {
     text-decoration: auto;
+    color: black;
   }
 
-  .pagination__item--current {
-    color: black;
+  &__item--current {
+    a {
+      color: red;
+    }
   }
 }

@@ -13,6 +13,18 @@ const questionCollection = defineCollection({
   // }),
 });
 
+const courseCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    id: z.string(),
+    code: z.string(),
+    title: z.string(),
+    description: z.string(),
+    textbook: z.string(),
+    textbookUrl: z.string(),
+  }),
+});
+
 const evaluationCollection = defineCollection({
   type: "content",
   schema: z.object({
@@ -35,6 +47,7 @@ const tagCollection = defineCollection({
 });
 
 export const collections = {
+  courses: courseCollection,
   questions: questionCollection,
   evaluations: evaluationCollection,
   tags: tagCollection,
