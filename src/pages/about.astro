@@ -1,0 +1,120 @@
+---
+import Back from "@components/Back/Back.astro";
+import { default as Layout } from "src/layouts/Content/Content.astro";
+---
+
+<Layout title="Changelog">
+  <div class="Question__bar">
+    <Back href={`/`} label="Home" />
+  </div>
+  <h1>About</h1>
+  <p>
+    The Carleton Computer Science Question Repository is collection of practice
+    questions for Carleton University's Computer Science courses. The questions
+    are sourced from previous evaluations and are intended to help students
+    prepare for exams.
+  </p>
+  <p>
+    The project was developed by students with resources and content provided by
+    staff members of Carleton University's School of Computer Science
+  </p>
+  <p>
+    For those familliar with <a href="https://discretemath.ca/#/"
+      >DiscreteMath.ca</a
+    >, this website is a modernized version built to support multiple courses
+    and provide an easier experience for maintainers and volunteers.
+  </p>
+  <br />
+  <h2>Maintainers</h2>
+  <div class="Team">
+    <div class="Team__member">
+      <img src="/images/team/john_lu.jpg" alt="John Lu" />
+      <div><i>John Lu</i></div>
+    </div>
+    <div class="Team__member">
+      <img
+        src="/images/team/matthew_macrae_bovell.jpeg"
+        alt="Matthew MacRae-Bovell"
+      />
+      <div><i>Matthew MacRae-Bovell</i></div>
+    </div>
+    <div class="Team__member">
+      <img src="/images/team/nguyen_hanh_nong.jpeg" alt="Nguyen-Hanh Nong" />
+      <div><i>Nguyen-Hanh Nong</i></div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <h2>History / Credits</h2>
+  <p>
+    In January 2019, Forest Anderson, Alexa De Grandmont (previous COMP 2804
+    TA), and Matthew MacRae-Bovell would initially collaborate on creating more
+    accesible resources for COMP 2804 at the <a
+      href="https://github.com/hacking-2804">Hacking COMP 2804</a
+    > event hosted by the <a href="https://ccss.carleton.ca/"
+      >Carleton Computer Science Society</a
+    >.
+  </p>
+  <p>
+    In March 2020, the three would begin work on a project called the "Carleton
+    Computer Science Study Center", named to parralel the <a
+      href="https://cglab.ca/~discmath/about.html"
+      >Discrete Math Study Center"</a
+    > created by Prosenjit Bose and John Howat for COMP 1805 course. Using previous
+    midterms and finals written by Michiel Smid and Pat Morin, Alexa manually formatted
+    and organized each question from 2013-2019. Matthew wrote the first version of
+    the website.
+  </p>
+  <p>
+    In Summer 2021, Forest hosted another event focussed on developing
+    interactive resources at Carleton: "Hacking COMP 1XXX" and Matthew led an
+    effort to rebuild the site with a group of volunteers including Damilola
+    Adesola, Elias Hawa, Erica Li, Jonathon Steeves, and Robert Babaev. This
+    rebuild would come to be known as <a href="https://discretemath.ca/#/"
+      >DiscreteMath.ca</a
+    >.
+  </p>
+  <p>
+    Between 2021-2023 many volunteers would contribute to the <a
+      href="https://discretemath.ca/#/">DiscreteMath.ca</a
+    >
+    project. A full list of contributions can be found <a
+      href="https://github.com/CarletonComputerScienceSociety/discretemath.ca/graphs/contributors"
+      >here</a
+    >. During this time, Sam would improve, reformat, and add many of the COMP
+    2804 questions that at the time were only available in PDF format.
+  </p>
+  <p>
+    In Summer 2024, John Lu, Matthew MacRae-Bovell, and Nguyen-Hanh Nong rebuilt
+    the website for a third time. This time with a focus on eventually
+    supporting multiple courses and providing an easier experience for
+    maintainers and volunteers to contribute to the project. All content was
+    moved to a new repository and the project was renamed to "Carleton Computer
+    Science Question Repository". John Lu and Nguyen-Hanh Nong also collaborated
+    on writting out solutions for almost all of the past COMP 2804 questions.
+    John Lu also tagged all questions with tags related to their associated
+    course chapter, enabling students to be able to practice questions based on
+    the chapter they are currently studying.
+  </p>
+
+  <style>
+    .Team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4rem;
+    }
+
+    .Team__member {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      img {
+        width: 13rem;
+        border-radius: 50%;
+      }
+    }
+  </style>
+</Layout>
