@@ -7,5 +7,5 @@ question: comp2804/2017-fall-midterm/14/question.ts
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-fibonacci-numbers-(4.2)
+  - comp2804-fibonacci-numbers
 ---

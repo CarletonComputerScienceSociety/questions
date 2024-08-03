@@ -8,7 +8,7 @@ solution: comp2804/2014-winter-midterm/6/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-counting-functions-(3.1.2)
-  - comp2804-the-complement-rule-(3.3)
-  - comp2804-permutations-and-binomial-coefficients-(3.6.2)
+  - comp2804-counting-functions
+  - comp2804-the-complement-rule
+  - comp2804-permutations-and-binomial-coefficients
 ---

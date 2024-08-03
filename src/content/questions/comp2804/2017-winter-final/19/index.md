@@ -8,6 +8,6 @@ solution: comp2804/2017-winter-final/19/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-the-birthday-paradox-(5.5)
-  - comp2804-the-law-of-total-probability-(5.9)
+  - comp2804-the-birthday-paradox
+  - comp2804-the-law-of-total-probability
 ---

@@ -7,6 +7,6 @@ question: comp2804/2022-winter-final/9/question.ts
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-recursive-functions-(4.1)
-  - comp2804-counting-00-free-bitstrings-(4.2.1)
+  - comp2804-recursive-functions
+  - comp2804-counting-00-free-bitstrings
 ---

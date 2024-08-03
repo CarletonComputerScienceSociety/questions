@@ -8,6 +8,6 @@ solution: comp2804/2014-winter-final/17/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-independent-events-(5.11)
-  - comp2804-conditional-probability-(5.8)
+  - comp2804-independent-events
+  - comp2804-conditional-probability
 ---

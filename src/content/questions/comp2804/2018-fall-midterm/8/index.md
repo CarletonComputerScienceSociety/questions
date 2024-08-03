@@ -8,7 +8,7 @@ solution: comp2804/2018-fall-midterm/8/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-the-product-rule-(3.1)
-  - comp2804-permutations-and-binomial-coefficients-(3.6.2)
-  - comp2804-the-bijection-rule-(3.2.1)
+  - comp2804-the-product-rule
+  - comp2804-permutations-and-binomial-coefficients
+  - comp2804-the-bijection-rule
 ---

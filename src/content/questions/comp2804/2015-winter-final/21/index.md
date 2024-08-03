@@ -8,6 +8,6 @@ solution: comp2804/2015-winter-final/21/solution.md
 tags:
   - comp2804
   - comp2804-final
-  - comp2804-counting-bitstrings-of-length-n-(3.1.1)
-  - comp2804-independent-events-(5.11)
+  - comp2804-counting-bitstrings-of-length-n
+  - comp2804-independent-events
 ---

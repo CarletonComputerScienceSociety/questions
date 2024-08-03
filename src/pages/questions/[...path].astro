@@ -53,7 +53,8 @@ const title = formatString(path);
 const tags = await getCollection("tags");
 const tagMap: { [key: string]: string } = tags.reduce(
   (map, tag) => {
-    map[tag.data.tag] = tag.data.title;
+    map[tag.data.tag] =
+      tag.data.title + (tag.data.section ? " (" + tag.data.section + ")" : "");
     return map;
   },
   {} as { [key: string]: string },

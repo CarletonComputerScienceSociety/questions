@@ -8,5 +8,5 @@ solution: comp2804/2015-fall-midterm/5/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-permutations-and-binomial-coefficients-(3.6.2)
+  - comp2804-permutations-and-binomial-coefficients
 ---

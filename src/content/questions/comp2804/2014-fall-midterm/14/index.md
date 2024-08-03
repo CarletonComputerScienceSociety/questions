@@ -8,7 +8,7 @@ solution: comp2804/2014-fall-midterm/14/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-basic-rules-of-probability-(5.3)
+  - comp2804-basic-rules-of-probability
 ---
 
 You flip a fair coin 5 times. What is the probability that the first flip results in heads or the fifth flip results in heads?

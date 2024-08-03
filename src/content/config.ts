@@ -30,6 +30,7 @@ const tagCollection = defineCollection({
     course: z.string(),
     tag: z.string(),
     title: z.string(),
+    section: z.nullable(z.string()),
   }),
 });
 

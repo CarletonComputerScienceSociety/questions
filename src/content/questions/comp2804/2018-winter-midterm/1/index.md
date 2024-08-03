@@ -8,6 +8,6 @@ solution: comp2804/2018-winter-midterm/1/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-the-product-rule-(3.1)
-  - comp2804-counting-bitstrings-of-length-n-(3.1.1)
+  - comp2804-the-product-rule
+  - comp2804-counting-bitstrings-of-length-n
 ---

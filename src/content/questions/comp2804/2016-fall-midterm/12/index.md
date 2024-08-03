@@ -8,5 +8,5 @@ solution: comp2804/2016-fall-midterm/12/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-a-recursively-defined-set-(4.3)
+  - comp2804-a-recursively-defined-set
 ---

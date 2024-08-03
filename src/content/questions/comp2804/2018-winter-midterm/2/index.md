@@ -8,5 +8,5 @@ solution: comp2804/2018-winter-midterm/2/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-the-principle-of-inclusion-and-exclusion-(3.5)
+  - comp2804-the-principle-of-inclusion-and-exclusion
 ---

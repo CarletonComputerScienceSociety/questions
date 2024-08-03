@@ -8,5 +8,5 @@ solution: comp2804/2017-winter-midterm/9/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-newton's-binomial-theorem-(3.6.2)
+  - comp2804-newton's-binomial-theorem
 ---

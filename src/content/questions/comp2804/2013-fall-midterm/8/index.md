@@ -7,5 +7,5 @@ question: comp2804/2013-fall-midterm/8/question.ts
 solution: comp2804/2013-fall-midterm/8/solution.md
 tags:
   - comp2804
-  - comp2804-newton's-binomial-theorem-(3.6.2)
+  - comp2804-newton's-binomial-theorem
 ---

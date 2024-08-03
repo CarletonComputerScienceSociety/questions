@@ -7,5 +7,5 @@ question: comp2804/2013-fall-midterm/11/question.ts
 solution: comp2804/2013-fall-midterm/11/solution.md
 tags:
   - comp2804
-  - comp2804-recursive-functions-(4.1)
+  - comp2804-recursive-functions
 ---

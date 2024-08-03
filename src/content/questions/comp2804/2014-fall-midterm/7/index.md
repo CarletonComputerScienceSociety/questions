@@ -8,7 +8,7 @@ solution: comp2804/2014-fall-midterm/7/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-newton's-binomial-theorem-(3.6.2)
+  - comp2804-newton's-binomial-theorem
 ---
 
 What is the coefficient of $x^{20}y^{80}$ in the expansion of $(5x - 3y)^{100}$?

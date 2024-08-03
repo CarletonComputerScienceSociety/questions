@@ -8,5 +8,5 @@ solution: comp2804/2018-fall-midterm/6/solution.md
 tags:
   - comp2804
   - comp2804-midterm
-  - comp2804-the-pigeonhole-principle-(3.10)
+  - comp2804-the-pigeonhole-principle
 ---
