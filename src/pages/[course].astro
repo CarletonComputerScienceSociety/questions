@@ -1,0 +1,70 @@
+---
+import RowCard from "@components/RowCard/RowCard.astro";
+import { getCollection } from "astro:content";
+import { default as Layout } from "src/layouts/Content/Content.astro";
+
+export async function getStaticPaths() {
+  const course = await getCollection("courses");
+  return course.map((page) => {
+    return {
+      params: { course: page.data.id },
+      props: { page },
+    };
+  });
+}
+
+const { page } = Astro.props;
+const title = `${page.data.code}: ${page.data.title}`;
+---
+
+<Layout title={title}>
+  <h1>{title}</h1>
+  <p>
+    {page.data.description}
+  </p>
+  <div style="margin-top:3rem"></div>
+  <div class="Item__list">
+    <a href={page.data.textbookUrl}>
+      <RowCard
+        title={`Textbook`}
+        icon="mdi mdi-book"
+        description={page.data.textbook}
+      />
+    </a>
+    <a href="/evaluations">
+      <RowCard
+        title={`Evaluations`}
+        icon="mdi mdi-book-open-variant"
+        description="Practice previous midterms and finals"
+      />
+    </a>
+    <a href="/practice-by-tag">
+      <RowCard
+        title={`Practice By Tag`}
+        icon="mdi mdi-tag"
+        description="Practice questions across all evaluations that are marked with a specific tag"
+      />
+    </a>
+    <a
+      href="https://www.youtube.com/playlist?list=PLY7TEz3ZRQHTnY56q2uJtdXg-bl-c0sDk"
+    >
+      <RowCard
+        title={`Lectures`}
+        icon="mdi mdi-video"
+        description="Review lectures from Fall 2020"
+      />
+    </a>
+  </div>
+</Layout>
+
+<style>
+  p {
+    color: gray;
+  }
+
+  .Item__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+</style>

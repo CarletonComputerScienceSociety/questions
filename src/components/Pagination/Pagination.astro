@@ -1,0 +1,68 @@
+---
+import { Fragment } from "astro/jsx-runtime";
+import "./Pagination.scss";
+const { pagination } = Astro.props;
+const adjacentLinks = 2;
+const maxLinks = adjacentLinks * 2 + 1;
+const lowerLimit = adjacentLinks + 1;
+const upperLimit = pagination.totalPages - adjacentLinks;
+---
+
+{
+  pagination.totalPages > 1 && (
+    <ul class="Pagination">
+      {/* First page */}
+      <li class="Pagination__item pagination__item--first">
+        <a
+          class="Pagination__link pagination__link--first"
+          href={pagination.first.url}
+        >
+          <span style="font-size: 1.2rem" class="mdi mdi-page-first" />
+        </a>
+      </li>
+
+      {/* Page numbers */}
+      {pagination.pagers.map((page: any) => {
+        return (
+          <div>
+            {(() => {
+              const isInRange =
+                pagination.totalPages > maxLinks
+                  ? pagination.pageNumber < lowerLimit + 1
+                    ? page.pageNumber < maxLinks + 1
+                    : pagination.pageNumber >= upperLimit
+                      ? page.pageNumber > pagination.totalPages - maxLinks
+                      : page.pageNumber >=
+                          pagination.pageNumber - adjacentLinks &&
+                        page.pageNumber <
+                          pagination.pageNumber + adjacentLinks + 1
+                  : true;
+
+              return (
+                isInRange && (
+                  <li
+                    class={`Pagination__item ${page.pageNumber === pagination.pageNumber ? "Pagination__item--current" : ""}`}
+                  >
+                    <a href={page.url} class="Pagination__link">
+                      {page.pageNumber}
+                    </a>
+                  </li>
+                )
+              );
+            })()}
+          </div>
+        );
+      })}
+
+      {/* Last page */}
+      <li class="Pagination__item pagination__item--last">
+        <a
+          class="Pagination__link pagination__link--last"
+          href={pagination.last.url}
+        >
+          <span style="font-size: 1.2rem" class="mdi mdi-page-last" />
+        </a>
+      </li>
+    </ul>
+  )
+}

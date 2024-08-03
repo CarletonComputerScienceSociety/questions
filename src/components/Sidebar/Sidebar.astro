@@ -1,10 +1,11 @@
 ---
+import SidebarItem from "./SidebarItem.astro";
 import "./Sidebar.scss";
 
 // mdi mdi-file-document-multiple-outline
 // mdi mdi-bookmark-box-multiple-outline
+
 const sections = [
-  { icon: "mdi mdi-home", title: "Home", disabled: false, link: "/" },
   {
     icon: "mdi mdi-book-open-variant",
     title: "Evaluations",
@@ -12,16 +13,22 @@ const sections = [
     link: "/evaluations",
   },
   {
-    icon: "mdi mdi-school",
-    title: "Courses",
-    disabled: false,
-    link: "/courses",
-  },
-  {
     icon: "mdi mdi-tag",
     title: "Tags",
     disabled: false,
     link: "/practice-by-tag",
+  },
+  // {
+  //   icon: "mdi mdi-book",
+  //   title: "Textbook",
+  //   disabled: false,
+  //   link: "https://patmorin.me/teaching/2804/resources/DiscreteStructures.pdf",
+  // },
+  {
+    icon: "mdi mdi-video",
+    title: "Lectures",
+    disabled: false,
+    link: "https://www.youtube.com/playlist?list=PLY7TEz3ZRQHTnY56q2uJtdXg-bl-c0sDk",
   },
   { icon: "mdi mdi-creation", title: "Sandbox", disabled: true },
   // { icon: "mdi mdi-beaker", title: "Experiments", disabled: true },
@@ -47,34 +54,34 @@ const endSections = [
   <div class="Sidebar__sections">
     <div>
       <img class="Sidebar__logo" src="/logo2.png" alt="CCSS Logo" />
+      <hr style="border-color: #f1f1f12e; margin-bottom: 0.2rem" />
+      <SidebarItem
+        icon={"mdi mdi-school"}
+        title={"COMP 2804"}
+        link={"/comp2804"}
+        disabled={false}
+      />
+      <hr style="border-color: #f1f1f12e; margin-top: 0.2rem" />
       {
         sections.map((section) => (
-          <a href={section.link}>
-            <div
-              class={`Sidebar__item ${section.disabled ? "Sidebar__item--disabled" : "Sidebar__item--enabled"}`}
-            >
-              <div class="Sidebar__item__icon">
-                <i class={section.icon} />
-              </div>
-              <div class="Sidebar__item__title">{section.title}</div>
-            </div>
-          </a>
+          <SidebarItem
+            icon={section.icon}
+            title={section.title}
+            link={section.link}
+            disabled={section.disabled}
+          />
         ))
       }
     </div>
     <div>
       {
         endSections.map((endSection) => (
-          <a href={endSection.link}>
-            <div
-              class={`Sidebar__item ${endSection.disabled ? "Sidebar__item--disabled" : "Sidebar__item--enabled"}`}
-            >
-              <div class="Sidebar__item__icon">
-                <i class={endSection.icon} />
-              </div>
-              <div class="Sidebar__item__title">{endSection.title}</div>
-            </div>
-          </a>
+          <SidebarItem
+            icon={endSection.icon}
+            title={endSection.title}
+            link={endSection.link}
+            disabled={endSection.disabled}
+          />
         ))
       }
     </div>

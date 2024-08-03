@@ -1,15 +1,15 @@
 ---
-const { href, title, icon, div } = Astro.props;
+const { href, title, icon, description } = Astro.props;
 import "./RowCard.scss";
 ---
 
 <div class="RowCard">
   <div class="RowCard__section">
     <div class="RowCard__icon"><i class={icon}></i></div>
-    <div class="RowCard__title"><h4>{title}</h4></div>
+    <div class="RowCard__text">
+      <div class="RowCard__title">{title}</div>
+
+      {description && <div class="RowCard__description">{description}</div>}
+    </div>
   </div>
-  <!-- <div class="RowCard__section">
-    <div class="RowCard__icon"><i class={"mdi mdi-book-open-variant"}></i></div>
-    <div class="RowCard__icon"><i class={icon}></i></div>
-  </div> -->
 </div>

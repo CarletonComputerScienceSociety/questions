@@ -5,7 +5,7 @@ import RowCard from "@components/RowCard/RowCard.astro";
 import { getCollection } from "astro:content";
 
 const tags = await getCollection("tags");
-const sortTags = (a, b) => {
+const sortTags = (a: any, b: any) => {
   if (a.data.section === null) {
     return -1;
   } else if (b.data.section === null) {
@@ -30,6 +30,18 @@ const sortTags = (a, b) => {
 };
 
 const sortedTags = tags.map((tag) => tag).sort((a, b) => sortTags(a, b));
+const chapter3 = sortedTags.filter(
+  (tag) => tag.data.section && tag.data.section.startsWith("3"),
+);
+const chapter4 = sortedTags.filter(
+  (tag) => tag.data.section && tag.data.section.startsWith("4"),
+);
+const chapter5 = sortedTags.filter(
+  (tag) => tag.data.section && tag.data.section.startsWith("5"),
+);
+const chapter6 = sortedTags.filter(
+  (tag) => tag.data.section && tag.data.section.startsWith("6"),
+);
 ---
 
 <Layout title="Practice By Tag">
@@ -42,13 +54,83 @@ const sortedTags = tags.map((tag) => tag).sort((a, b) => sortTags(a, b));
     tag.
   </p>
   <div style="margin-top:2.5rem"></div>
-  <div class="Evaluations__list" style="margin-bottom:0.75rem">
+  <div class="Items">
+    <div>
+      <a href={`/practice/tag/comp2804-final`}>
+        <RowCard title={"COMP 2804: All Questions"} icon="mdi mdi-tag" />
+      </a>
+    </div>
+    <div>
+      <a href={`/practice/tag/comp2804-midterm`}>
+        <RowCard title={"COMP 2804: Midterm Questions"} icon="mdi mdi-tag" />
+      </a>
+    </div>
+    <div>
+      <a href={`/practice/tag/comp2804-final`}>
+        <RowCard title={"COMP 2804: Final Exam Questions"} icon="mdi mdi-tag" />
+      </a>
+    </div>
+  </div>
+  <div style="margin-top:2.5rem"></div>
+  <h2>Chapter 3: Counting</h2>
+  <div class="Items">
     {
-      sortedTags.map((tag) => (
+      chapter3.map((tag) => (
         <div>
           <a href={`/practice/tag/${tag.data.tag}`}>
             <RowCard
-              title={`${tag.data.title + (tag.data.section ? " (" + tag.data.section + ")" : "")} Questions`}
+              title={`${tag.data.section ? tag.data.section : ""}: ${tag.data.title}`}
+              icon="mdi mdi-tag"
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
+
+  <div style="margin-top:2.5rem"></div>
+  <h2>Chapter 4: Recursion</h2>
+  <div class="Items">
+    {
+      chapter4.map((tag) => (
+        <div>
+          <a href={`/practice/tag/${tag.data.tag}`}>
+            <RowCard
+              title={`${tag.data.section ? tag.data.section : ""}: ${tag.data.title}`}
+              icon="mdi mdi-tag"
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
+
+  <div style="margin-top:2.5rem"></div>
+  <h2>Chapter 5: Discrete Probability</h2>
+  <div class="Items">
+    {
+      chapter5.map((tag) => (
+        <div>
+          <a href={`/practice/tag/${tag.data.tag}`}>
+            <RowCard
+              title={`${tag.data.section ? tag.data.section : ""}: ${tag.data.title}`}
+              icon="mdi mdi-tag"
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
+
+  <div style="margin-top:2.5rem"></div>
+  <h2>Chapter 6: Random Variables and Expectation</h2>
+  <div class="Items">
+    {
+      chapter6.map((tag) => (
+        <div>
+          <a href={`/practice/tag/${tag.data.tag}`}>
+            <RowCard
+              title={`${tag.data.section ? tag.data.section : ""}: ${tag.data.title}`}
               icon="mdi mdi-tag"
             />
           </a>
@@ -63,7 +145,7 @@ const sortedTags = tags.map((tag) => tag).sort((a, b) => sortTags(a, b));
     color: gray;
   }
 
-  .Evaluations__list {
+  .Items {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;

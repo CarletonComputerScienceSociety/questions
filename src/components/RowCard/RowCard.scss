@@ -12,7 +12,24 @@
   transition: all 0.2s;
   margin-left: -0.8rem;
   margin-right: -0.8rem;
+  height: 4rem;
   cursor: grab;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 0.8rem;
+    color: #717171d5;
+  }
 
   &:hover {
     background-color: rgba(248, 248, 248, 0.753);

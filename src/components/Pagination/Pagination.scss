@@ -1,0 +1,26 @@
+.Pagination {
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 8rem;
+  margin: auto;
+  padding: 0;
+
+  li {
+    display: inline;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: auto;
+    color: black;
+  }
+
+  &__item--current {
+    a {
+      color: red;
+    }
+  }
+}

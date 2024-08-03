@@ -1,0 +1,91 @@
+---
+import Back from "@components/Back/Back.astro";
+import RowCard from "@components/RowCard/RowCard.astro";
+import { getCollection } from "astro:content";
+import { default as Layout } from "src/layouts/Content/Content.astro";
+import Pagination from "@components/Pagination/Pagination.astro";
+
+const courseCodes = {
+  comp2804: "COMP 2804",
+};
+
+export async function getStaticPaths({ paginate }: any) {
+  const evaluations = await getCollection("evaluations");
+  const comp2804Evaluations = evaluations
+    .filter((evaluation) => evaluation.data.course === "comp2804")
+    .sort((a, b) => Number(b.data.created_at) - Number(a.data.created_at));
+
+  const evaluationPages = comp2804Evaluations.map((evaluation) => ({
+    evaluation,
+  }));
+
+  return paginate(evaluationPages, { pageSize: 12 });
+}
+
+const {
+  page,
+}: {
+  page: {
+    currentPage: any;
+    lastPage: any;
+    url: any;
+    data: any[];
+  };
+} = Astro.props;
+---
+
+<Layout title="Evaluations">
+  <div class="Question__bar">
+    <div><Back href={`/`} label="Home" /></div>
+  </div>
+  <h1>Evaluations</h1>
+  <p>
+    Practice previous evaluations from Carleton University's Computer Science
+    courses.
+  </p>
+  <div style="margin-top:2.5rem"></div>
+  <div class="Evaluations__list" style="margin-bottom:0.75rem">
+    {
+      page.data.map(({ evaluation }: any) => (
+        <div>
+          <a href={`/evaluations/${evaluation.slug}`}>
+            <RowCard
+              title={`${courseCodes.comp2804}: ${evaluation.data.title}`}
+              icon="mdi mdi-book-open-variant"
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
+  <div style="margin-top:2.5rem"></div>
+  <Pagination
+    pagination={{
+      pageNumber: page.currentPage,
+      totalPages: page.lastPage,
+      hasPrev: !!page.url.prev,
+      prev: { url: page.url.prev || "" },
+      hasNext: !!page.url.next,
+      next: { url: page.url.next || "" },
+      first: { url: "/evaluations/1" },
+      last: { url: page.lastPage ? `/evaluations/${page.lastPage}` : "" },
+      pagers: Array.from({ length: page.lastPage }, (_, i) => ({
+        pageNumber: i + 1,
+        url: `/evaluations/${i + 1}`,
+      })),
+    }}
+  />
+  <div style="margin-top:1rem"></div>
+</Layout>
+
+<style>
+  p {
+    color: gray;
+  }
+
+  .Evaluations__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+</style>
