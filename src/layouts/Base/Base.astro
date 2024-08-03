@@ -5,6 +5,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const description =
+  "A repository of practice questions for Carleton University's Computer Science courses.";
 const isProduction = import.meta.env.ENVIRONMENT === "production";
 ---
 
@@ -12,7 +14,6 @@ const isProduction = import.meta.env.ENVIRONMENT === "production";
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link href="https://ccss.carleton.ca/favicon.ico" rel="icon" />
     <meta name="generator" content={Astro.generator} />
@@ -38,6 +39,35 @@ const isProduction = import.meta.env.ENVIRONMENT === "production";
         </>
       )
     }
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://questions.carletoncomputerscience.ca"
+    />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta
+      property="og:image"
+      content='https://ccss.carleton.ca/images/orientation2018-min.jpeg"'
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://questions.carletoncomputerscience.ca"
+    />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta
+      property="twitter:image"
+      content='https://ccss.carleton.ca/images/orientation2018-min.jpeg"'
+    />
+
+    <!-- Cacheing -->
+    <meta http-equiv="Cache-control" content="no-cache" />
   </head>
   <body>
     <slot />
