@@ -9,4 +9,8 @@ $layout-width-inner-spacing-base: 1rem;
     $layout-width-primary-max + $layout-width-secondary-max +
       $layout-width-inner-spacing-base
   );
+
+  @media (max-width: 768px) {
+    padding-bottom: 5rem;
+  }
 }

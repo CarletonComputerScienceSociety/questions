@@ -90,6 +90,14 @@ const endSections = [
 
 <div class="Sidebar__mobile">
   <div class="Sidebar__mobile__inner">
+    <a href={"/"}>
+      <div class={`Sidebar__item`}>
+        <div class="Sidebar__item__icon">
+          <i class={"mdi mdi-school"}></i>
+        </div>
+        <div class="Sidebar__item__title">{"COMP 2804"}</div>
+      </div>
+    </a>
     {
       sections
         .filter((section) => !section.disabled)
@@ -105,5 +113,13 @@ const endSections = [
           </a>
         ))
     }
+    <a href={"/about"}>
+      <div class={`Sidebar__item`}>
+        <div class="Sidebar__item__icon">
+          <i class={"mdi mdi-newspaper-variant-outline"}></i>
+        </div>
+        <div class="Sidebar__item__title">{"About"}</div>
+      </div>
+    </a>
   </div>
 </div>
