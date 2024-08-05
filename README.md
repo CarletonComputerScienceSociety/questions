@@ -1,6 +1,10 @@
-# Questions (name tbd)
+<img width="500px" src="./public/logo2.png"/>
 
-# Setup
+<br/>
+
+The Carleton Computer Science Question Repository is a website that hosts a collection of practice questions for Carleton University's Computer Science courses. The questions are sourced from previous evaluations and the project was developed by students with resources and content provided by staff members of Carleton University's School of Computer Science.
+
+# Project Setup
 
 1. Install the required dependencies:
 
@@ -14,7 +18,9 @@ npm install
 npm run dev
 ```
 
-# Add a new Multiple Choice Question
+# Content
+
+## Multiple Choice Questions
 
 Every multiple choice question directory should have the following structure
 
@@ -24,9 +30,9 @@ Every multiple choice question directory should have the following structure
 - `generator.ts` (optional): A script that generates a question alike to the one in the director
 - `generator.test.ts` (optional): The unit tests for `generator.ts`
 
-# Tags
+## Tags
 
-For the Discrete Math tests, here are all the tags that can be used:
+Here is the list of currently supported question tags:
 
 - comp2804-de-morgan's-law-(no-corresponding-chapter)
 - comp2804
