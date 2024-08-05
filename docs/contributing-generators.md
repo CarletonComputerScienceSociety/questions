@@ -72,7 +72,7 @@ export default Generator;
 
 ## 3. Associate your generator and question
 
-For the website to know your generator exists, you need to update your questions `index.md` file as shown where `{evaluation}` and `{question-number}` are replaced with the data related to your question.
+For the website to know your generator exists, you need to update your question's `index.md` file as shown where `{evaluation}` and `{question-number}` are replaced with the data related to your question.
 
 ```diff
 ---
