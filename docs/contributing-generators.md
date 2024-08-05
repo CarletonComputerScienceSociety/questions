@@ -84,7 +84,7 @@ question: comp2804/{evaluation}/{question-number}/question.ts
 + generator: comp2804/{evaluation}/{question-number}/generator.ts
 ```
 
-If you now navigate to your question in the website, the "create sparkles" will now be clickable and should take you to appears like the following:
+If you now navigate to your question in the website, the "create sparkles" will now be clickable and should take you to a page that appears like the following:
 
 <img src="../public/images/docs/blank_generator.png"/>
 
