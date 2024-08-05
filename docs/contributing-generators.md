@@ -18,6 +18,10 @@ Any question where the "create sparkles" are disabled is a question that does no
 
 The Golden example for how generators should be implemented is stored here: `src/content/questions/comp2804/2013-fall-midterm/1`
 
+## 0. Pick a question without a generator
+
+Go through the website and find a question that has it's "create sparkles" button disabled.
+
 ## 1. Find your base question
 
 Each generator is associated with a base question, so we need to first find where that question is stored in the project.
