@@ -90,7 +90,7 @@ If you now navigate to your question in the website, the "create sparkles" will 
 
 ## 4. Implementing your generator
 
-At this point, it's up to you to understand the logic behind how your question works to determine how your ``generator.ts` should generate the "body" and option "label" strings that are returned back by the generator. You can structure your class methods however you'd like or in whatever way best suits the approach needing for the problem.
+At this point, it's up to you to understand the logic behind how your question works to determine how your `generator.ts` should generate the "body" and option "label" strings that are returned back by the generator. You can structure your class methods however you'd like or in whatever way best suits the approach needing for the problem.
 
 Check if your question already has a written `solution.md` file to verify your logic matches the solution for the question.
 
