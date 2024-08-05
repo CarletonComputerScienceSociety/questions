@@ -4,6 +4,33 @@
 
 The Carleton Computer Science Question Repository is a website that hosts a collection of practice questions for Carleton University's Computer Science courses. The questions are sourced from previous evaluations and the project was developed by students with resources and content provided by staff members of Carleton University's School of Computer Science.
 
+# Contributing
+
+This project is a great opportunity for students to get their first open-source contribution.
+
+In addition to fixing issues found on our Github issues page, here are other ways you can contribute:
+
+### Contributing a "Generator"
+
+If you'd like to contribute a generator, read the [guide here](https://github.com/CarletonComputerScienceSociety/questions/blob/main/docs/contributing-generators.md).
+
+"Generators" are scripts that create variants of existing questions enabling students to better practice for exams. 
+
+They power the pages that you can navigate to whether you see the ✨ icon.
+
+Here is an example generator: [COMP 2804 Midterm Fall 2013 - 1](https://questions.carletoncomputerscience.ca/questions/generator/comp2804/2013-fall-midterm/1).
+
+<img src="./public/images/docs/generator_example.png"/>
+
+### Adding Missing Question Tags
+
+Do you believe a question is missing or improperly tagged? Open a pull request to correct the tagging of a question
+
+### Contributing & Improving Solutions
+
+Do you want to contribute a missing solution or improve the formatting of an existing solution? Open a pull request!
+
+
 # Project Setup
 
 1. Install the required dependencies:
