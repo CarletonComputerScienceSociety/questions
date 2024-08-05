@@ -54,14 +54,14 @@ const endSections = [
   <div class="Sidebar__sections">
     <div>
       <img class="Sidebar__logo" src="/logo2.png" alt="CCSS Logo" />
-      <hr style="border-color: #f1f1f12e; margin-bottom: 0.2rem" />
+      <!-- <hr style="border-color: #f1f1f12e; margin-bottom: 0.2rem" /> -->
       <SidebarItem
         icon={"mdi mdi-school"}
-        title={"COMP 2804"}
+        title={"Home"}
         link={"/comp2804"}
         disabled={false}
       />
-      <hr style="border-color: #f1f1f12e; margin-top: 0.2rem" />
+      <!-- <hr style="border-color: #f1f1f12e; margin-top: 0.2rem" /> -->
       {
         sections.map((section) => (
           <SidebarItem
@@ -90,14 +90,14 @@ const endSections = [
 
 <div class="Sidebar__mobile">
   <div class="Sidebar__mobile__inner">
-    <a href={"/"}>
+    <!-- <a href={"/"}>
       <div class={`Sidebar__item`}>
         <div class="Sidebar__item__icon">
           <i class={"mdi mdi-school"}></i>
         </div>
         <div class="Sidebar__item__title">{"COMP 2804"}</div>
       </div>
-    </a>
+    </a> -->
     {
       sections
         .filter((section) => !section.disabled)
