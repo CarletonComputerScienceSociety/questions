@@ -14,7 +14,7 @@ In addition to fixing issues found on our Github issues page, here are other way
 
 If you'd like to contribute a generator, read the [guide here](https://github.com/CarletonComputerScienceSociety/questions/blob/main/docs/contributing-generators.md).
 
-"Generators" are scripts that create variants of existing questions enabling students to better practice for exams. 
+"Generators" are scripts that create variants of existing questions enabling students to better practice for exams.
 
 They power the pages that you can navigate to whether you see the ✨ icon.
 
@@ -29,7 +29,6 @@ Do you believe a question is missing or improperly tagged? Open a pull request t
 ### Contributing & Improving Solutions
 
 Do you want to contribute a missing solution or improve the formatting of an existing solution? Open a pull request!
-
 
 # Project Setup
 
