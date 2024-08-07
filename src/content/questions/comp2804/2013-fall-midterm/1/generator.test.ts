@@ -1,7 +1,7 @@
 import { describe, expect } from "@jest/globals";
 import Generator from "./generator";
 
-describe("comp2804/2019-winter-final/1", () => {
+describe("comp2804/2013-fall-midterm/1", () => {
   describe("createSetSizes", () => {
     it("will make sizeA smaller than sizeB", () => {
       const generator = new Generator();
