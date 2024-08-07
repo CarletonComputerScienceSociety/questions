@@ -21,25 +21,40 @@ class Generator extends MultipleChoiceQuestionGenerator {
     return [stringLength, positions];
   }
 
-  createOptions(stringLength: number, positions: number): MultipleChoiceQuestionOption[] {
+  createOptions(
+    stringLength: number,
+    positions: number,
+  ): MultipleChoiceQuestionOption[] {
     const correctOption = this.createCorrectOption(stringLength, positions);
-    const incorrectOption1 = this.createIncorrectOption1(stringLength, positions);
-    const incorrectOption2 = this.createIncorrectOption2(stringLength, positions);
-    const incorrectOption3 = this.createIncorrectOption3(stringLength, positions);
-    const incorrectOption4 = this.createIncorrectOption4(stringLength, positions);
+    const incorrectOption1 = this.createIncorrectOption1(
+      stringLength,
+      positions,
+    );
+    const incorrectOption2 = this.createIncorrectOption2(
+      stringLength,
+      positions,
+    );
+    const incorrectOption3 = this.createIncorrectOption3(
+      stringLength,
+      positions,
+    );
+    const incorrectOption4 = this.createIncorrectOption4(
+      stringLength,
+      positions,
+    );
 
     return this.shuffleOptions([
-        correctOption, 
-        incorrectOption1, 
-        incorrectOption2, 
-        incorrectOption3,
-        incorrectOption4
+      correctOption,
+      incorrectOption1,
+      incorrectOption2,
+      incorrectOption3,
+      incorrectOption4,
     ]);
   }
 
   createCorrectOption(
     stringLength: number,
-    positions: number
+    positions: number,
   ): MultipleChoiceQuestionOption {
     return {
       label: `$\\binom{${stringLength}}{${positions}}\\cdot 4^{${stringLength - positions}}$`,
@@ -49,7 +64,7 @@ class Generator extends MultipleChoiceQuestionGenerator {
 
   createIncorrectOption1(
     stringLength: number,
-    positions: number
+    positions: number,
   ): MultipleChoiceQuestionOption {
     return {
       label: `$\\binom{${stringLength}}{${positions}}\\cdot 5^{${stringLength - positions}}$`,
@@ -59,7 +74,7 @@ class Generator extends MultipleChoiceQuestionGenerator {
 
   createIncorrectOption2(
     stringLength: number,
-    positions: number
+    positions: number,
   ): MultipleChoiceQuestionOption {
     return {
       label: `$\\binom{${stringLength}}{5}\\cdot 5^{${stringLength - positions}}$`,
@@ -69,7 +84,7 @@ class Generator extends MultipleChoiceQuestionGenerator {
 
   createIncorrectOption3(
     stringLength: number,
-    positions: number
+    positions: number,
   ): MultipleChoiceQuestionOption {
     return {
       label: `$\\binom{${stringLength}}{5}\\cdot 4^{${stringLength - positions}}$`,
@@ -79,15 +94,13 @@ class Generator extends MultipleChoiceQuestionGenerator {
 
   createIncorrectOption4(
     stringLength: number,
-    positions: number
+    positions: number,
   ): MultipleChoiceQuestionOption {
     return {
       label: `$5^{${positions}}\\cdot 4^{${stringLength - positions}}$`,
       correct: false,
     };
   } //does not use combinations
-
-
 }
 
 export default Generator;
