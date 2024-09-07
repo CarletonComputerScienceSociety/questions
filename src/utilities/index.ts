@@ -29,7 +29,9 @@ const dynamicImport = async (path: string, meta: string) => {
       type: DiscordMessageType.ERROR,
       data: {
         message: `Failed to dynamically import: ${path}`,
-        error,
+        error: error,
+        path: path,
+        meta: meta,
       },
     });
     throw error;
