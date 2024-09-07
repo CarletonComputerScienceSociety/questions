@@ -1,4 +1,5 @@
 import "mathjax/es5/tex-svg-full.js";
+import { DiscordMessageType, sendAlert } from "./discord";
 
 const mathjaxLoad = () => {
   if (!(window as any).MathJax.config.tex.inlineMath) {
@@ -19,10 +20,20 @@ const mathjaxTypeset = () => {
 };
 
 const dynamicImport = async (path: string, meta: string) => {
-  const pathString = decodeURIComponent(new URL(path, meta).pathname);
-
-  const module = await import(pathString);
-  return module;
+  try {
+    const pathString = decodeURIComponent(new URL(path, meta).pathname);
+    const module = await import(pathString);
+    return module;
+  } catch (error) {
+    sendAlert({
+      type: DiscordMessageType.ERROR,
+      data: {
+        message: `Failed to dynamically import: ${path}`,
+        error,
+      },
+    });
+    throw error;
+  }
 };
 
 export { dynamicImport, mathjaxLoad, mathjaxTypeset };
