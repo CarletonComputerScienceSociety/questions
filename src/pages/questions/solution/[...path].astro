@@ -7,21 +7,37 @@ import Tag from "@components/Tag/Tag.astro";
 import { dynamicImport } from "@utilities/index";
 import { getCollection } from "astro:content";
 import { default as Layout } from "src/layouts/Content/Content.astro";
+import { DiscordMessageType, sendAlert } from "@utilities/discord";
 
 export async function getStaticPaths() {
   const questions = await getCollection("questions");
-  return questions
-    .filter((question: any) => question.id.includes("index.md"))
-    .map((page) => {
-      return {
-        params: { path: page.slug },
-        props: { page },
-      };
-    });
+  const filteredQuestions = questions.filter((question: any) => {
+    return (
+      question.data.solution !== undefined && question.id.includes("index.md")
+    );
+  });
+  return filteredQuestions.map((page) => {
+    return {
+      params: { path: page.slug },
+      props: { page },
+    };
+  });
 }
 
 const { path } = Astro.params;
 const { page } = Astro.props;
+
+if (page.data.solution === undefined) {
+  sendAlert({
+    type: DiscordMessageType.ERROR,
+    data: {
+      message: `Solution not found for question ${page.data.path}`,
+      page: page,
+      path: path,
+    },
+  });
+}
+
 const { Content } = await page.render();
 const solutionFile = await dynamicImport(
   `../../../content/questions/${page.data.solution}`,
