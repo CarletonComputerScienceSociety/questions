@@ -1,7 +1,7 @@
 import { describe, expect } from "@jest/globals";
 import Generator from "./generator";
 
-describe("comp2804/2019-winter-final/1", () => {
+describe("comp2804/2013-fall-midterm/1", () => {
   describe("createSetSizes", () => {
     it("will make sizeA smaller than sizeB", () => {
       const generator = new Generator();
@@ -43,7 +43,7 @@ describe("comp2804/2019-winter-final/1", () => {
   });
 
   describe("createIncorrectOption1", () => {
-    it("will return an option where the numerator and delimeter are flipped", () => {
+    it("will return an option where the numerator and denominator are flipped", () => {
       const generator = new Generator();
 
       const option = generator.createIncorrectOption1(7, 13);
@@ -54,7 +54,7 @@ describe("comp2804/2019-winter-final/1", () => {
   });
 
   describe("createIncorrectOption2", () => {
-    it("will return an option where the delimeter is one less than the correct option", () => {
+    it("will return an option where the denominator is one less than the correct option", () => {
       const generator = new Generator();
 
       const option = generator.createIncorrectOption2(7, 13);
@@ -65,7 +65,7 @@ describe("comp2804/2019-winter-final/1", () => {
   });
 
   describe("createIncorrectOption3", () => {
-    it("will return an option where the numerator is one less than the correct option and the delimeter is one more than the correct option", () => {
+    it("will return an option where the numerator is one less than the correct option and the denominator is one more than the correct option", () => {
       const generator = new Generator();
 
       const option = generator.createIncorrectOption3(7, 13);
