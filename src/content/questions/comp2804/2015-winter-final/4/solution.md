@@ -1,6 +1,6 @@
 $ {(2x-7y)}^{15} $
 
-$ = \sum_{k=0}^{15} \binom{15}{k} {(2x)}^{n-k} {(-7y)}^{k} $
+$ = \sum\_{k=0}^{15} \binom{15}{k} {(2x)}^{n-k} {(-7y)}^{k} $
 
 We only consider $k=11$, as it results in $y^{11}$.
 

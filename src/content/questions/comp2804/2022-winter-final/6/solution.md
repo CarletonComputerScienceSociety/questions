@@ -1,6 +1,6 @@
 $ (2x - 3y)^{30} $
 
-$ = \sum_{k=0}^{30} \binom{30}{k} \cdot (2x)^{n-k} \cdot (-3y)^{k} $
+$ = \sum\_{k=0}^{30} \binom{30}{k} \cdot (2x)^{n-k} \cdot (-3y)^{k} $
 
 We only consider $k=20$, as it results in $y^{20}$.
 

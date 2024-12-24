@@ -1,4 +1,4 @@
-$ = \sum^{50}_{k=0} \binom{50}{k} {(5x)}^{n-k} {(-7y)}^k $
+$ = \sum^{50}\_{k=0} \binom{50}{k} {(5x)}^{n-k} {(-7y)}^k $
 
 We only consider $k=26$, as it results in $y^{26}$.
 

@@ -1,4 +1,4 @@
-$ = \sum^{100}_{k=0} \binom{100}{k} {(7x)}^{n-k} {(-13y)}^{k} $
+$ = \sum^{100}\_{k=0} \binom{100}{k} {(7x)}^{n-k} {(-13y)}^{k} $
 
 We only consider $k=80$, as it results in $y^{80}$.
 

@@ -1,4 +1,4 @@
-$ = \sum^{20}_{k=0} \binom{20}{k} {(-3x)}^{n-k} {(5y)}^{k} $
+$ = \sum^{20}\_{k=0} \binom{20}{k} {(-3x)}^{n-k} {(5y)}^{k} $
 
 We only consider $k=5$, as it results in $y^{5}$.
 

@@ -1,4 +1,4 @@
-$ = \sum_{k=0}^{55} \binom{55}{k} {(5x)}^{n-k} {(-3y)}^{k} $
+$ = \sum\_{k=0}^{55} \binom{55}{k} {(5x)}^{n-k} {(-3y)}^{k} $
 
 We only consider $k=35$, as it results in $y^{35}$.
 
