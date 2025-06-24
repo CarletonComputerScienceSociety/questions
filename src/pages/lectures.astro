@@ -32,15 +32,13 @@ for (const lec of lectures) {
       <>
         <h2>{course}</h2>
         <div class="Items">
-          {
-            list.map((lec) => (
-              <a href={lec.link} target="_blank">
-                <RowCard title={lec.title} icon="mdi mdi-video" />
-              </a>
-            ))
-          }
+          {list.map((lec) => (
+            <a href={lec.link} target="_blank">
+              <RowCard title={lec.title} icon="mdi mdi-video" />
+            </a>
+          ))}
         </div>
-        <div style="margin-top:2.5rem"></div>
+        <div style="margin-top:2.5rem" />
       </>
     ))
   }
