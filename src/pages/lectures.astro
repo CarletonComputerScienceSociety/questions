@@ -1,13 +1,59 @@
 ---
 import Back from "@components/Back/Back.astro";
 import { default as Layout } from "src/layouts/Content/Content.astro";
+import RowCard from "@components/RowCard/RowCard.astro";
+import fs from "fs";
+import path from "path";
+import yaml from "js-yaml";
+
+const filePath = path.resolve("src/data/lectures.yml");
+const file = fs.readFileSync(filePath, "utf8");
+const lectures = yaml.load(file);
+
+const grouped = {};
+for (const lec of lectures) {
+  if (!grouped[lec.course]) grouped[lec.course] = [];
+  grouped[lec.course].push(lec);
+}
 ---
 
 <Layout title="Lectures">
   <div class="Question__bar">
-    <Back href={`/`} label="Home" />
+    <Back href="/" label="Home" />
   </div>
 
   <h1>📚 Lectures</h1>
-  <p>This is a placeholder page for archived lectures. YAML integration coming soon.</p>
+  <p>Playlists of recorded lecture videos categorized by course.</p>
+
+  <div style="margin-top:2.5rem"></div>
+
+  {
+    Object.entries(grouped).map(([course, list]) => (
+      <>
+        <h2>{course}</h2>
+        <div class="Items">
+          {
+            list.map((lec) => (
+              <a href={lec.link} target="_blank">
+                <RowCard title={lec.title} icon="mdi mdi-video" />
+              </a>
+            ))
+          }
+        </div>
+        <div style="margin-top:2.5rem"></div>
+      </>
+    ))
+  }
 </Layout>
+
+<style>
+  p {
+    color: gray;
+  }
+
+  .Items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+</style>
