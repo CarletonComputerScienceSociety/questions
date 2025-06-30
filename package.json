@@ -21,6 +21,7 @@
     "astro": "^4.11.1",
     "axios": "^1.7.7",
     "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0",
     "katex": "^0.16.10",
     "mathjax": "^3.2.2",
     "mathjax-full": "^3.2.2",
