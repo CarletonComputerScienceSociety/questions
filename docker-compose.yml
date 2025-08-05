@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  astro:
+    build: .
+    ports:
+      - "3000:10000"
