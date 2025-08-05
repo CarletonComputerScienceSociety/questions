@@ -1,0 +1,30 @@
+# Node stuff that will be (re)installed inside image
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build outputs / local dev artifacts
+dist
+/.astro
+/.vercel
+/.turbo
+
+# Git metadata
+.git
+.gitignore
+
+# Editor/OS cruft
+.vscode/
+*.swp
+.DS_Store
+
+# Local environment files (could contain secrets)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Optional: if you have scripts or assets not needed in build context
+tests/
