@@ -20,6 +20,7 @@
     "@astrojs/svelte": "^5.6.0",
     "astro": "^4.11.1",
     "axios": "^1.7.7",
+    "canvas-confetti": "^1.9.4",
     "fs": "^0.0.1-security",
     "js-yaml": "^4.1.0",
     "katex": "^0.16.10",
@@ -32,6 +33,7 @@
     "typescript": "^5.5.2"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
     "@types/jest": "^29.5.12",
     "@types/katex": "^0.16.7",
     "@types/node": "^20.14.9",

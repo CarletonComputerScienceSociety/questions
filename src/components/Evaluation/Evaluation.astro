@@ -153,6 +153,33 @@ const sortedQuestionData = multipleChoiceQuestionData.sort(
 />
 
 <script>
+  import confetti from "canvas-confetti";
+
+  // Respect reduced motion preferences
+  const prefersReducedMotion =
+    window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches ?? false;
+
+  // Confetti that falls from the top of the screen
+  function dropConfetti(durationMs = 1500) {
+    if (prefersReducedMotion) return;
+
+    const end = Date.now() + durationMs;
+
+    (function frame() {
+      confetti({
+        particleCount: 8,
+        startVelocity: 0,
+        spread: 70,
+        ticks: 240,
+        gravity: 1.0,
+        origin: { x: Math.random(), y: 0 },
+        zIndex: 9999,
+      });
+
+      if (Date.now() < end) requestAnimationFrame(frame);
+    })();
+  }
+
   const nodes = document.getElementsByClassName("MultipleChoiceQuestion");
 
   for (let i = 0; i < nodes.length; i++) {
@@ -193,6 +220,10 @@ const sortedQuestionData = multipleChoiceQuestionData.sort(
       const element = options[i] as Element;
       element.setAttribute("data-revealed", "true");
     }
-    // alert(`You got ${correct} out of ${total} correct!`);
+
+    // Trigger confetti if user got all answers correct
+    if (total > 0 && correct === total) {
+      dropConfetti();
+    }
   });
 </script>
